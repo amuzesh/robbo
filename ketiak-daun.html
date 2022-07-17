@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ketiak Daun at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Ketiak Daun",
+  "datePublished": "2022-05-28T12:11:11Z",
+  "image": "https://tse1.mm.bing.net/th?q=ketiak%20daun",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ketiak%20daun&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ketiak%20daun" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ketiak%20daun" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ketiak Daun at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ketiak Daun</h2>
+    <p><strong>Ketiak Daun</strong>. Pijat ketiak dengan lembut menggunakan gel lidah buaya. Bisa langsung di stek/ditanam di media yang telah disediakan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ketiak%20daun" alt="Cara Menghilangkan Bau Ketiak Dengan Daun Sirih Cara Menghilangkan" />
+        <br>
+        <figcaption>Cara Menghilangkan Bau Ketiak Dengan Daun Sirih Cara Menghilangkan from tipspengobatanbaubadan.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Tunggulah hingga kering terlebih dahulu sebelum kita menggunakan baju seperti biasa. Jambu batu lazimnya digunakan sebagai ubat dalam perubatan tradisional dalam masyarakat asia, amerika tengah, caribbean dan. Daun kesemek merupakan daun tinggal, berseling, berbentuk lonjong, dan berwarna hijau.
+    </p>
+    <h3>Cara Menghilangkan Bau Ketiak Dengan Daun Sirih Cara Menghilangkan</h3>
+    <p>Bunga kesemek juga berbentuk tunggal dan biasanya tumbuh di ketiak daun. Biarkan mengering selama sekitar 20 menit. Daun jambu batu boleh digunakan sebagai ganti daun teh. Lakukan setiap hari untuk mencerahkan ketiak dengan lebih efektif.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="To My Blog Cara Menghilangkan Bau Badan Secara Alami" data-src="https://i2.wp.com/3.bp.blogspot.com/-zMePMRrxcTQ/UcDu7n4rcXI/AAAAAAAABjg/K5ZKa8I-tr8/s1600/Bau-badan-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: redskyware.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kami memiliki database lebih dari 122 ribu. Pencegahan bisa dimulai saat mandi. Berikut ini ulasan tentang lima cara menghilangkan bau ketiak yang menyengat secara alami. Biarkan mengering selama sekitar 20 menit. Caranya adalah dengan mengambil beberapa helai daun sirih lalu rebus dengan 2 gelas air kemudian campurkan dengan air yang anda.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Menghilangkan Bau Ketiak Dengan Daun Sirih Cara Menghilangkan" data-src="https://i2.wp.com/1.bp.blogspot.com/-Rh0_kl0zy4c/Wd4UjfjVBUI/AAAAAAAABJw/ZZEKJvPjQR4e3LpWD68dEkqV-twXuUzdgCLcBGAs/s1600/cara-menghilangkan-bau-ketiak-dengan-daun-sirih.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tipspengobatanbaubadan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kupas daun lidah buaya segar dan sisihkan ekstrak gelnya. Lakukan setiap hari untuk mencerahkan ketiak dengan lebih efektif. Vitamin c, tiamin, niacin, riboflavin, dan karoten ada pada daun sirih. Berikut ini ulasan tentang lima cara menghilangkan bau ketiak yang menyengat secara alami. Contextual translation of ketiak daun into english.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Menghilangkan Bau Ketiak Dengan Daun Sirih 5 Manfaat Daun Sirih" data-src="https://i2.wp.com/1.bp.blogspot.com/-VdE5s1per5A/Xn0iU4oEL1I/AAAAAAAAEwc/tV9tgsIb_6IgKXUSLTKcDGu6Xdj4tEfHQCLcBGAsYHQ/s1600/Cara%2BMengatasi%2BMasalah%2BBau%2BBadan%2BDengan%2BDaun%2BSirih.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: syamsulrahman123.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika ada lipatan lain seperti di bawah payudara, di perut, di selangkangan, jangan lupa keringkan area tersebut. Untuk menggunakan daun kemangi ini, kita bisa melakukan beberapa cara. Daun salam ternyata ampuh bikin tikus kabur Bilas dengan air hangat dan keringkan menggunakan handuk. Dan jika salah satu bagian tersebut tidak dimiliki.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Menghilangkan Bau Ketiak Dengan Daun Sirih 5 Manfaat Daun Sirih" data-src="https://i2.wp.com/4.bp.blogspot.com/-P2Gmo5EHAA0/WtFgqtfEjII/AAAAAAAACTc/fBCJVzzssxspOS0fnYip17reW5BTiMaIwCLcBGAs/s640/Manfaat%2BDaun%2BSirih%2BHijau.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: syamsulrahman123.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cara pertama adalah dengan mengambil beberapa lembar daun kemangi. Vitamin c, tiamin, niacin, riboflavin, dan karoten ada pada daun sirih. Andhikaazis663 fungsi ketiak daun adalah untuk membuat beberapa jalur air dari akar ke batang dan seterusnya yaitu dari batang ke daun. Perubahan pola makan seperti mengurangi bawang putih atau bawang merah bisa menjadi pilihan. Bunga di ketiak daun, tunggal atau.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dahsyat!!! Ketiak Harum Dalam 60 Detik Dengan Cara Alami Dari Daun" data-src="https://i2.wp.com/1.bp.blogspot.com/-LLeXNpnbqr0/WbxNtgiGcKI/AAAAAAAABPI/Js7KZk5BX2wEJIUlgFilkeWTM2J1PY9aACLcBGAs/s1600/daun%2Bkemangi.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: beritaibuanak.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Saat masih muda, buahnya berwarna hijau dan saat sudah tua berubah menjadi kuning. Keringat memberi makan bakteri, menghentikan keringat akan menjadi cara terbaik untuk mengontrol bau ketiak. Daun kesemek merupakan daun tinggal, berseling, berbentuk lonjong, dan berwarna hijau. Terdapat cara segar untuk menghindari bau ketiak, yakni dengan cara melalap daun kemangi. Bunga kesemek juga berbentuk tunggal dan biasanya tumbuh di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="6 Daun &amp; Bunga Ini Ampuh Usir Bau Ketiak Menyengat, Cobain Yuk?" data-src="https://i2.wp.com/cdn.idntimes.com/content-images/community/2019/07/daun-beluntas-83008a30c9b9a7c43a85b3903559c5bc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.idntimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bisa langsung di stek/ditanam di media yang telah disediakan. Keringat dan bau ketiak masih muncul meski sudah pakai deodoran, ini 3 sebabnya. Tapi biaya yang dikeluarkan pasti tidak murah. Jika ada lipatan lain seperti di bawah payudara, di perut, di selangkangan, jangan lupa keringkan area tersebut. Anda dapat mencobanya, tetapi saran saya adalah meminimalkan keringat di lengan, kata hooper.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Menghilangkan Bau Ketiak Permanen Agar Percaya Diri Meningkat" data-src="https://i2.wp.com/www.liputantimes.com/wp-content/uploads/2021/03/Post-2-9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berita-baca008.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cara menghilangkan bau ketiak dengan daun sirih yang perlu anda lakukan adalah mandi dengan menggunakan air rebusannya. Jika ada lipatan lain seperti di bawah payudara, di perut, di selangkangan, jangan lupa keringkan area tersebut. Pijat ketiak dengan lembut menggunakan gel lidah buaya. Tunggulah hingga kering terlebih dahulu sebelum kita menggunakan baju seperti biasa. Lidah lidah adalah selaput kecil terdapat pada.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Bunga Kembang Sepatu" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/XQob6q-FjdiO8W82B82tGHbN-JfM5lK84Xf8DQhSVSHx1LSZ3O-7mUhmAYAxQzefLV9Wa161TYMElAewoBUj0T2ELW4t3FD_d9Hfke-VBVw0LtzyPpXA0AOMODIQiOzF0UkNwcxtQ6xsTY9MuYx7kupZqxPdfJ6R=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mmantiko.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bunga di ketiak daun, tunggal atau 2 kuntum, putih,. Contextual translation of ketiak daun into english. Daftar isicara tepat menghilangkan bau ketiakmenggunakan daun siriholeskan campuran cuka apel + air ke ketiakgunakan deodoran untuk mengurangi baumenggunakan garammenggunakan teh hijaumengenakan baju katunmenggunakan bedakjaga pola makanmenggunakan baking soda tidak dipungkiri memang bahwa ketiak merupakan daerah. Lebih jelasnya mari simak penjelasan berikut ini. Bilas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Alami Hilangkan bau Ketiak Beranda Cantik" data-src="https://i2.wp.com/4.bp.blogspot.com/-MSGg-IOZmgI/VdVhPXSx92I/AAAAAAAAAKI/al5bHEcV5DQ/s1600/daun%2Bkemangi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berandacantik.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hal ini dinamakan ketiak daun, pada ketiak daun terdapat pucuk yang. Armpit, axilla, axillae, armpits, underarm. Kupas daun lidah buaya segar dan sisihkan ekstrak gelnya. Daun kesemek merupakan daun tinggal, berseling, berbentuk lonjong, dan berwarna hijau. Lidah lidah adalah selaput kecil terdapat pada batas antara upih dan helaian daun pada rumput (graminae).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="cara ampuh menghilangkan Bau Ketiak secara Alami Berbagi Kiat Sehat" data-src="https://i2.wp.com/2.bp.blogspot.com/-CUB44ZgGCNw/Uew7RaENP0I/AAAAAAAAAEI/MdmAy5hO8l0/s1600/menghilangkan-bau-ketiak-dengan-daun-kemangi.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berbagi-kiat-sehat.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Untuk menggunakan daun kemangi ini, kita bisa melakukan beberapa cara. Pencegahan bisa dimulai saat mandi. Kuncup samping biasanya akan menghasil kan cabang baru. Bunga nangka merupakan bunga majemuk yang berbentuk bulir, berada di ketiak daun dan berwarna kuning. Cara menghilangkan bau ketiak dengan daun sirih yang perlu anda lakukan adalah mandi dengan menggunakan air rebusannya.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-uas-mtk-kelas-12-smk-semester-2.html" class="be-post-title">
+				 <h6>contoh soal uas mtk kelas 12 smk semester 2 </h6>
+                </a>
+                <a href="contoh-soal-uas-mtk-kelas-12-smk-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20uas%20mtk%20kelas%2012%20smk%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal uas mtk kelas 12 smk semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ulangan-harian-tema-7-sub-tema-2-kelas-5-sd.html" class="be-post-title">
+				 <h6>soal ulangan harian tema 7 sub tema 2 kelas 5 sd </h6>
+                </a>
+                <a href="soal-ulangan-harian-tema-7-sub-tema-2-kelas-5-sd.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ulangan%20harian%20tema%207%20sub%20tema%202%20kelas%205%20sd&amp;w=50&amp;h=50&amp;c=7" alt="soal ulangan harian tema 7 sub tema 2 kelas 5 sd">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ulangan-kelas-2-sd-semester-2-tema-5.html" class="be-post-title">
+				 <h6>soal ulangan kelas 2 sd semester 2 tema 5 </h6>
+                </a>
+                <a href="soal-ulangan-kelas-2-sd-semester-2-tema-5.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ulangan%20kelas%202%20sd%20semester%202%20tema%205&amp;w=50&amp;h=50&amp;c=7" alt="soal ulangan kelas 2 sd semester 2 tema 5">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-ujian-nasional-sd-kelas-6.html" class="be-post-title">
+				 <h6>contoh soal ujian nasional sd kelas 6 </h6>
+                </a>
+                <a href="contoh-soal-ujian-nasional-sd-kelas-6.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20ujian%20nasional%20sd%20kelas%206&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal ujian nasional sd kelas 6">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-kelompok-yang-terikat-oleh-solidaritas-organis-yaitu.html" class="be-post-title">
+				 <h6>contoh kelompok yang terikat oleh solidaritas organis yaitu </h6>
+                </a>
+                <a href="contoh-kelompok-yang-terikat-oleh-solidaritas-organis-yaitu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20kelompok%20yang%20terikat%20oleh%20solidaritas%20organis%20yaitu&amp;w=50&amp;h=50&amp;c=7" alt="contoh kelompok yang terikat oleh solidaritas organis yaitu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jaringan-untuk-menyimpan-lemak-pada-makanan-adalah.html" class="be-post-title">
+				 <h6>jaringan untuk menyimpan lemak pada makanan adalah </h6>
+                </a>
+                <a href="jaringan-untuk-menyimpan-lemak-pada-makanan-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jaringan%20untuk%20menyimpan%20lemak%20pada%20makanan%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="jaringan untuk menyimpan lemak pada makanan adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dalam-mendesain-benda-kerajinan-perlu-memahami-ilmu-keindahan-yang-disebut.html" class="be-post-title">
+				 <h6>dalam mendesain benda kerajinan perlu memahami ilmu keindahan yang disebut </h6>
+                </a>
+                <a href="dalam-mendesain-benda-kerajinan-perlu-memahami-ilmu-keindahan-yang-disebut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dalam%20mendesain%20benda%20kerajinan%20perlu%20memahami%20ilmu%20keindahan%20yang%20disebut&amp;w=50&amp;h=50&amp;c=7" alt="dalam mendesain benda kerajinan perlu memahami ilmu keindahan yang disebut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nama-senyawa-cuso4.html" class="be-post-title">
+				 <h6>nama senyawa cuso4 </h6>
+                </a>
+                <a href="nama-senyawa-cuso4.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nama%20senyawa%20cuso4&amp;w=50&amp;h=50&amp;c=7" alt="nama senyawa cuso4">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uts-agama-islam-kelas-2-sd-semester-genap.html" class="be-post-title">
+				 <h6>soal uts agama islam kelas 2 sd semester genap </h6>
+                </a>
+                <a href="soal-uts-agama-islam-kelas-2-sd-semester-genap.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uts%20agama%20islam%20kelas%202%20sd%20semester%20genap&amp;w=50&amp;h=50&amp;c=7" alt="soal uts agama islam kelas 2 sd semester genap">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="60-5.html" class="be-post-title">
+				 <h6>60 5 </h6>
+                </a>
+                <a href="60-5.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=60%205&amp;w=50&amp;h=50&amp;c=7" alt="60 5">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

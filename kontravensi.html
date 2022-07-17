@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kontravensi at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Kontravensi",
+  "datePublished": "2022-04-28T01:24:16Z",
+  "image": "https://tse1.mm.bing.net/th?q=kontravensi",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kontravensi&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kontravensi" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kontravensi" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kontravensi at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kontravensi</h2>
+    <p><strong>Kontravensi</strong>. Meningkatnya usia anak mengakibatkan lingkungan pergaulan makin meluas sehingga orang tua khawatir anak akan menyimpang dari tradisi. Pengertian kontravensi (contravention) adalah keadaan sosial yang biasanya di dasari pada rasa ketidakpuasandan penyangkalan yang dilakukan secara perorangan atau kelompok sosial masyarakat, yang bisa dilakukan secara terbuka dan juga secara tertutup.pengertian kontravensi menurut para ahli.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kontravensi" alt="PintarBersama PERTENTANGAN MASALAH" />
+        <br>
+        <figcaption>PintarBersama PERTENTANGAN MASALAH from androvengancea7xbest.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Bertambahnya usia anak menyebabkan lingkungan sosial membesar, sehingga orang tua takut anak itu akan menyimpang dari tradisi. Kontravensi (posesif ku, mu, nya; Kontravensi termasuk salah satu tipe interaksi sosial yang memiliki sifat disosiatif.
+    </p>
+    <h3>PintarBersama PERTENTANGAN MASALAH</h3>
+    <p>Leopold von wise dan howard p. Pengertian kontravensi (contravention) menurut kamus besar bahasa indonesia, kontravensi berarti proses persaingan dan pertikaian yang ditandai oleh gejala ketidakpastian mengenai pribadi seseorang dan perasaan tidak suka yang disembunyikan terhadap kepribadian seseorang. Kontravensi di dalam skala yang besar dapat menyebabkan rasa ketidakpuasan, rasa takut, tertekan, marah, pertengkaran dan peperangan.; Hal ini terjadi dalam masyarakat yang mengalami perubahan cepat, misalnya hubungan anak dan orang tua.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="INTERAKSI SOSIAL BAG 2 Media Pembelajaran Online Guru Spensaka" data-src="https://i2.wp.com/1.bp.blogspot.com/-zjF8d4-oMs8/X26bV4qVzGI/AAAAAAAAALI/jZKi2RCu1yMf0XiGyaTSOC3cVZk18mE2gCLcBGAsYHQ/s611/2.-Interaksi-Sosial-Bentuk-Disosiatif.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.guruspensaka.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Topik yang akan kita bahas kali ini sangat menarik karena tidak banyak orang. Merupakan proses sosial yang ditandai oleh adanya ketidakpastian,keraguan,penolakan,dan penyangkaalan yang tidak diungkapkan secara terbuka. Jalan daksinapati barat iv, rawamangun, jakarta timur. Telepon (021) 4706287, 4706288, 4896558, 4894546. Adalah bentuk kontravensi yang terjadi dalam ruang lingkup masyarakat kecil,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Pengertian Kontravensi, Bentuk, Dampak, dan Contohnya Lengkap" data-src="https://i2.wp.com/dosensosiologi.com/wp-content/uploads/2018/02/Pengertian-Kontravensi.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dosensosiologi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Becker membagi kontravensi menjadi 5 (lima) bentuk. Daftar isipengertian kontravensipenyebab kontravensi.bentuk kontravensicontoh kontravensidampak. Pengertian kontravensi (contravention) menurut kamus besar bahasa indonesia, kontravensi berarti proses persaingan dan pertikaian yang ditandai oleh gejala ketidakpastian mengenai pribadi seseorang dan perasaan tidak suka yang disembunyikan terhadap kepribadian seseorang. Kamus besar bahasa indonesia (kbbi) kamus versi online/daring (dalam jaringan)? Kontravensi (psi) · proses persaingan dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="11 Contoh Kontravensi Pengertian, Bentuk, Tipe dan Dampak" data-src="https://i2.wp.com/www.gurupendidikan.co.id/wp-content/uploads/2021/01/Contoh-Kontravensi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gurupendidikan.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam kontravensi ada beberapa bentuk yang harus kita ketahui diantaranya: Meningkatnya usia anak mengakibatkan lingkungan pergaulan makin meluas sehingga orang tua khawatir anak akan menyimpang dari tradisi. Kontraversi ditandai dengan adanya sikap ketidakpastian, keraguan, penolakan, dan penyangkalan yang tidak diungkapkan secara terbuka. Bagian dari interaksi sosial adalah pelanggaran, suatu bentuk proses sosial antara kompetisi dan bahkan konflik disebut konvensi. Kontravensi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Gambar Kontravensi Dalam Interaksi Sosial Tempat Berbagi Gambar" data-src="https://i2.wp.com/www.pustakaindo.co.id/wp-content/uploads/2019/05/Pengertian-Kontravensi-Beserta-Bentuk-Dan-Tipe-Kontravensi-Lengkap.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: iniberbagigambar.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contohnya adalah kecurigaan terhadap para pemulung yang berkeliaran di pagi atau malam hari. Bisa lebih dari satu, contoh: Contoh kontraversi rahasia yaitu penghianatan dan membuka rahasia orang lain ke muka umum. Merupakan proses sosial yang ditandai oleh adanya ketidakpastian,keraguan,penolakan,dan penyangkaalan yang tidak diungkapkan secara terbuka. Pengertian kontravensi (contravention) menurut kamus besar bahasa indonesia, kontravensi berarti proses persaingan dan pertikaian yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kontravensi, Pengertian, Contohcontoh, dan Bentuknya" data-src="https://i2.wp.com/www.satujam.com/wp-content/uploads/2017/08/echotuts.blogspot.co_.id_-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: satujam.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kontravensi adalah bentuk proses sosial antara persaingan dan perselisihan. Jalan daksinapati barat iv, rawamangun, jakarta timur. Meskipun begitu, kontravensi sendiri sebenarnya secara singkat diartikan sebagai pertentangan. Contoh kontraversi intensif yaitu penghasutan, mengecewakan pihak lain. Kontravensi merupakan suatu bentuk hubungan sosial disosiatif yang terjadi dalam kehidupan bermasyarakat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PintarBersama PERTENTANGAN MASALAH" data-src="https://i2.wp.com/2.bp.blogspot.com/_OH85RjdQJEQ/TPSY5T18CEI/AAAAAAAAACE/nE1he8ioNBk/s1600/160322008mst12.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: androvengancea7xbest.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kontravensi termasuk salah satu tipe interaksi sosial yang memiliki sifat disosiatif. Ada tiga bentuk interaksi sosial disosiatif, yaitu persaingan atau kompetisi, kontravensi, dan konflik. Nah pada penjelasan kali ini kita akan membahas ketiga bentuk tersebut beserta contohnya: Telepon (021) 4706287, 4706288, 4896558, 4894546. Pengertian kontravensi (contravention) menurut kamus besar bahasa indonesia, kontravensi berarti proses persaingan dan pertikaian yang ditandai oleh.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kontravensi Pengertian, Bentuk, Tipe, Dan Dampak Beserta Contohnya" data-src="https://i2.wp.com/www.gurupendidikan.co.id/wp-content/uploads/2016/12/kontravensi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gurupendidikan.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Di dalam tipe interaksi sosial disosiatif terdapat konflik, kontravensi, persaingan. Kontravensi di dalam skala yang sempit hanya dapat menimbulkan rasa tidak suka kepada orang lain. Meningkatnya usia anak mengakibatkan lingkungan pergaulan makin meluas sehingga orang tua khawatir anak akan menyimpang dari tradisi. Kontravensi termasuk salah satu tipe interaksi sosial yang memiliki sifat disosiatif. Berikut adalah informasi kontak dari badan pengembangan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kontravensi Dalam Proses Interaksi Sosial Disosiatif Beserta Unsur Dan" data-src="https://i2.wp.com/4.bp.blogspot.com/-mgXKQBY_NHA/WfmC9OAzoQI/AAAAAAAAQpU/jGTOOYzV2qAbO1CVfHa1jusV0ZHo5xK_ACLcBGAs/s1600/Kontravensi%2BDalam%2BProses%2BInteraksi%2BSosial%2BDisosiatif%2BBeserta%2BUnsur%2BDan%2BTipenya.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tugassekolah.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jalan daksinapati barat iv, rawamangun, jakarta timur. Kontravensi dapat menghambat proses mobilisasi dari masyarakat. Kontravensi (posesif ku, mu, nya; Contoh kontraversi intensif yaitu penghasutan, mengecewakan pihak lain. Inilah rangkuman definisi kontravensi berdasarkan kamus bahasa indonesia dan berbagai referensi lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kontravensi, Pengertian, Contohcontoh, dan Bentuknya" data-src="https://i1.wp.com/satujam.com/wp-content/uploads/2017/08/media.npr_.org_.jpg?fit=750%2C499&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: satujam.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contoh kontraversi rahasia yaitu penghianatan dan membuka rahasia orang lain ke muka umum. Kontravensi merupakan bentuk interaksi sosial yang ditandai dengan rasa tidak aman tentang seseorang atau perasaan antipati yang tetap tersembunyi. Merupakan proses sosial yang ditandai oleh adanya ketidakpastian,keraguan,penolakan,dan penyangkaalan yang tidak diungkapkan secara terbuka. Arti kata &#039;kontravensi&#039; di kbbi adalah proses persaingan dan pertikaian yang ditandai oleh gejala.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Kontravensi, Bentuk, Contoh dan Dampaknya Murid.Co.Id" data-src="https://i2.wp.com/www.murid.co.id/wp-content/uploads/2020/02/kontravensi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.murid.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kontravensi adalah salah satu jenis interaksi sosial yang sifatnya disosiatif. Penyebab kontravensi adalah adanya perbedaan pendirian kalangan tertentu dengan kalangan lain di masyarakat. Adalah proses disosiasi antara kompetisi dan konflik/proses disosiasi yang mengarah pada penghancuran lawan secara tidak langsung. Contohnya saja seperti, terjadinya antar teman atau kerabat yang melakukan seperti pengejekan provokasi, atau juga cara halus misal saja berbahasa dan.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kelompok-organ-pencernaan-yang-benar-adalah.html" class="be-post-title">
+				 <h6>kelompok organ pencernaan yang benar adalah </h6>
+                </a>
+                <a href="kelompok-organ-pencernaan-yang-benar-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kelompok%20organ%20pencernaan%20yang%20benar%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="kelompok organ pencernaan yang benar adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-fisika-kurikulum-2013-kelas-10-bab-5.html" class="be-post-title">
+				 <h6>kunci jawaban fisika kurikulum 2013 kelas 10 bab 5 </h6>
+                </a>
+                <a href="kunci-jawaban-fisika-kurikulum-2013-kelas-10-bab-5.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20fisika%20kurikulum%202013%20kelas%2010%20bab%205&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban fisika kurikulum 2013 kelas 10 bab 5">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jangkrik-bernapas-dengan.html" class="be-post-title">
+				 <h6>jangkrik bernapas dengan </h6>
+                </a>
+                <a href="jangkrik-bernapas-dengan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jangkrik%20bernapas%20dengan&amp;w=50&amp;h=50&amp;c=7" alt="jangkrik bernapas dengan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-ruang-lingkup-fisika-dan-kaitannya-dengan-ilmu-lain.html" class="be-post-title">
+				 <h6>jelaskan ruang lingkup fisika dan kaitannya dengan ilmu lain </h6>
+                </a>
+                <a href="jelaskan-ruang-lingkup-fisika-dan-kaitannya-dengan-ilmu-lain.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20ruang%20lingkup%20fisika%20dan%20kaitannya%20dengan%20ilmu%20lain&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan ruang lingkup fisika dan kaitannya dengan ilmu lain">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-bahasa-indonesia-kelas-6-sd-dan-kunci-jawabannya.html" class="be-post-title">
+				 <h6>contoh soal bahasa indonesia kelas 6 sd dan kunci jawabannya </h6>
+                </a>
+                <a href="contoh-soal-bahasa-indonesia-kelas-6-sd-dan-kunci-jawabannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20bahasa%20indonesia%20kelas%206%20sd%20dan%20kunci%20jawabannya&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal bahasa indonesia kelas 6 sd dan kunci jawabannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kelompok-makanan-berikut-yang-merupakan-sumber-karbohidrat-adalah.html" class="be-post-title">
+				 <h6>kelompok makanan berikut yang merupakan sumber karbohidrat adalah </h6>
+                </a>
+                <a href="kelompok-makanan-berikut-yang-merupakan-sumber-karbohidrat-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kelompok%20makanan%20berikut%20yang%20merupakan%20sumber%20karbohidrat%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="kelompok makanan berikut yang merupakan sumber karbohidrat adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mengapa-laju-pertumbuhan-penduduk-yang-cepat-dapat-menyebabkan-kelangkaan.html" class="be-post-title">
+				 <h6>mengapa laju pertumbuhan penduduk yang cepat dapat menyebabkan kelangkaan </h6>
+                </a>
+                <a href="mengapa-laju-pertumbuhan-penduduk-yang-cepat-dapat-menyebabkan-kelangkaan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20laju%20pertumbuhan%20penduduk%20yang%20cepat%20dapat%20menyebabkan%20kelangkaan&amp;w=50&amp;h=50&amp;c=7" alt="mengapa laju pertumbuhan penduduk yang cepat dapat menyebabkan kelangkaan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-yang-bukan-merupakan-bank-milik-pemerintah-adalah.html" class="be-post-title">
+				 <h6>berikut ini yang bukan merupakan bank milik pemerintah adalah </h6>
+                </a>
+                <a href="berikut-ini-yang-bukan-merupakan-bank-milik-pemerintah-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20yang%20bukan%20merupakan%20bank%20milik%20pemerintah%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini yang bukan merupakan bank milik pemerintah adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bank-soal-pai-sma-pdf.html" class="be-post-title">
+				 <h6>bank soal pai sma pdf </h6>
+                </a>
+                <a href="bank-soal-pai-sma-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bank%20soal%20pai%20sma%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="bank soal pai sma pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="download-soal-hots-matematika-sd-kelas-6-pdf.html" class="be-post-title">
+				 <h6>download soal hots matematika sd kelas 6 pdf </h6>
+                </a>
+                <a href="download-soal-hots-matematika-sd-kelas-6-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=download%20soal%20hots%20matematika%20sd%20kelas%206%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="download soal hots matematika sd kelas 6 pdf">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

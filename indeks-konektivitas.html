@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Indeks Konektivitas at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Indeks Konektivitas",
+  "datePublished": "2022-04-24T02:00:35Z",
+  "image": "https://tse1.mm.bing.net/th?q=indeks%20konektivitas",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=indeks%20konektivitas&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=indeks%20konektivitas" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=indeks%20konektivitas" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Indeks Konektivitas at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Indeks Konektivitas</h2>
+    <p><strong>Indeks Konektivitas</strong>. Konektivitas wilayah rendah (a) dan konektivitas wilayah tinggi (b) sumber: Jarin gan jalan, struktur ruang, interaksi ruang, indeks konektivitas, indeks gtp, pola konektivitas,.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=indeks%20konektivitas" alt="Contoh Soal Teori Indeks Konektivitas Kj Kansky Beserta Jawaban" />
+        <br>
+        <figcaption>Contoh Soal Teori Indeks Konektivitas Kj Kansky Beserta Jawaban from sekolahsiswadoc.blogspot.com</figcaption>
+    </figure>
+        <p>
+        E = jumlah jaringan jalan. Indeks konektivitas merupakan cara dalam pengembangan wilayah dengan mempertimbangkan lokasi pembangunan yg akan berpengaruh pada pergerakan manusia dan. Kamu lagi nonton preview, nih.
+    </p>
+    <h3>Contoh Soal Teori Indeks Konektivitas Kj Kansky Beserta Jawaban</h3>
+    <p>Konektivitas antarwilayah ditingkatkan dengan cara pembangunan insfrastruktur. Indeks konektivitas global indonesia masih stagnan. Penelitian ini bertujuan untuk mengetahui indeks konektivitas di wilayah koridor ekonomi kepulauan maluku dan papua. Dengan melibatkan indeks konektivitas dalam penghitungannya.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berdasarkan gambar ilustrasi antara kota A dengan" data-src="https://i2.wp.com/imgix2.ruangguru.com/assets/miscellaneous/png_vjhctr_8602.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: roboguru.ruangguru.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Konektivitas wbi dibanding dengan wikipedia bahasa lain. Masuk untuk lanjut belajar nggak pake hambatan. Konsep dan cara menghitung indeks konektivitas. Indeks konektivitas jalan berada pada peringkat 120, walaupun kualitas jalan pada peringkat 75. Dengan melibatkan indeks konektivitas dalam penghitungannya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="KELAS XII. BAB I KONSEP WILAYAH SMA Syarif Hidayatullah Grati" data-src="https://i2.wp.com/1.bp.blogspot.com/-ZQKH8pXTras/YNqmeZuQppI/AAAAAAAAAW0/QbzMiNrz2i87226S5PzUhBDTIYBrFT6swCLcBGAsYHQ/s556/TEORI%2BKONEKTIVITAS%2BOK.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sma-syarifhidayatullah.sch.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dengan melibatkan indeks konektivitas dalam penghitungannya. Tiga tahun poros maritim dunia: Machus dalam rapat koordinasi, sinkronisasi, dan fasilitasi kebijakan pembangunan. E = jumlah jaringan jalan. Masuk untuk lanjut belajar nggak pake hambatan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Teori Indeks Konrktivitas Beserta Jawaban Siswa Rajin" data-src="https://i2.wp.com/1.bp.blogspot.com/-CqQWdy6ECi0/Vj3HUW4RESI/AAAAAAAACtA/uu4yvrhTcFA/s1600/14.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: siswarajinsekali.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Konektivitas wilayah rendah (a) dan konektivitas wilayah tinggi (b) sumber: Dilansir dari buku konektivitas jaringan jalan dalam pengembangan wilayah di zona utara aceh (2017) karya herman fithra, teori ini bekerja dengan membandingkan jumlah. Analisis yang dilakukan dalam penelitian konektivitas ini meliputi analisis dengan. Mencapai konektivitas nasional dalam rangka integritas nasional. Indeks konektivitas merupakan cara dalam pengembangan wilayah dengan mempertimbangkan lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kekuatan interaksi kota pada wilayah berikut terlihat dari indeks" data-src="https://i2.wp.com/id-static.z-dn.net/files/daf/f8babc9421b3df79f46d6af4433294b9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Konektivitas merupakan salah satu unsur penting dalam penyelengaraan transportasi. Konektivitas antarwilayah ditingkatkan dengan cara pembangunan insfrastruktur. Tiga tahun poros maritim dunia: Contoh soal perhitungan indeks konektivitas interaksi wilayah teori grafik k.j kansky, tentukanlah indeks. Penelitian ini bertujuan untuk mengetahui indeks konektivitas di wilayah koridor ekonomi kepulauan maluku dan papua.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Teori Indeks Konektivitas Kj Kansky Beserta Jawaban" data-src="https://i2.wp.com/1.bp.blogspot.com/-L8STt7CmMpQ/WX3PTKWNXII/AAAAAAAAFUQ/H7aILq1u6qo7P_4EoYYqers4DHmoJW9gACLcBGAs/s1600/ik.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: filepdf.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">E = jumlah jaringan jalan. Indeks konektivitas pengiriman kapal mengukur konektivitas pelabuhan suatu negara ke jaringan global lainnya (shi, 2011). Konektivitas merupakan salah satu unsur penting dalam penyelengaraan transportasi. Indeks konektivitas merupakan cara dalam pengembangan wilayah dengan mempertimbangkan lokasi pembangunan yg akan berpengaruh pada pergerakan manusia dan. Analisis yang dilakukan dalam penelitian konektivitas ini meliputi analisis dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Indeks Konektivitas, dan Trik cepatnya" data-src="https://i2.wp.com/1.bp.blogspot.com/-1fxCj1rRi9E/XyogoZfL_EI/AAAAAAAAAFo/HSqXhkoeQFQAFO1JQrIX0ReU6Kt7H6QdwCLcBGAsYHQ/w1200-h630-p-k-no-nu/20200805_095227.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lintanggaris.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pusat perbukuan departemen pendidikan nasional. Konektivitas merupakan salah satu unsur penting dalam penyelengaraan transportasi. Dalam hal ini, kansky menentukan kekuatan interaksi dengan indeks konektivitas. Peringkat tersebut naik dua posisi. Selama dua belas tahun terakhir, kerja sama di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PORTAL GEOGRAFI Daya Dukung Pertumbuhan Wilayah" data-src="https://i2.wp.com/2.bp.blogspot.com/-LMFzkztBdvM/W4IllPY3znI/AAAAAAAABPU/r5BQ0uMoOe8pzDMkFKAHeVQCG5OnkwXqgCLcBGAs/s1600/soal%2Bteori%2Bkonektivitas.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: portalgeograf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sekilas tentang indeks daya saing global 4.0 • indeks daya saing global 4.0 atau global competitiveness index 4.0 menilai produktivitas sebagai penentu utama. Analisis nilai indeks konektivitas dihitung dengan teori grafik, diukur dengan indeks α (alfa), β (beta), dan (gamma). Indeks konektivitas merupakan cara dalam pengembangan wilayah dengan mempertimbangkan lokasi pembangunan yg akan berpengaruh pada pergerakan manusia dan. Mencapai konektivitas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="TITIK HENTI, KEKUATAN INTERAKSI, DAN INDEKS KONEKTIVITAS Dari Logika" data-src="https://i2.wp.com/2.bp.blogspot.com/-XpBgdMlx2lE/UPnNp_WrwdI/AAAAAAAAMLY/VK6lMcq3u-w/s1600/indeks-konektivitas-dua-wilayah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: juliafebrianti.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Analisis nilai indeks konektivitas dihitung dengan teori grafik, diukur dengan indeks α (alfa), β (beta), dan (gamma). Indeks konektivitas pengiriman kapal mengukur konektivitas pelabuhan suatu negara ke jaringan global lainnya (shi, 2011). Setelah menonton video ini, lo akan bisa menentukan indeks konektivitas. Berikut ini adalah daftar konektivitas wikipedia dalam berbagai versi bahasa yang diurutkan berdasarkan jumlah artikel inti. E =.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hitung indeks konektivitas gambar tersebut! Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/dc5/6eac69f0fd9a359298b412d648afd3d7.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Indeks konektivitas jalan berada pada peringkat 120, walaupun kualitas jalan pada peringkat 75. Kekuatan interaksi desa dan kota. Berikut ini adalah daftar konektivitas wikipedia dalam berbagai versi bahasa yang diurutkan berdasarkan jumlah artikel inti. Konektivitas merupakan salah satu unsur penting dalam penyelengaraan transportasi. Analisis nilai indeks konektivitas dihitung dengan teori grafik, diukur dengan indeks α (alfa), β (beta), dan (gamma).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Teori Indeks Konektivitas Kj Kansky Beserta Jawaban" data-src="https://i2.wp.com/image.slidesharecdn.com/teoriinteraksi-161102132240/95/geografi-teori-interaksi-14-638.jpg?cb=1478093173" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sekolahsiswadoc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Analisis yang dilakukan dalam penelitian konektivitas ini meliputi analisis dengan. Konektivitas antarwilayah ditingkatkan dengan cara pembangunan insfrastruktur. Indeks konektivitas hasil analisis indeks keterangan indeks alfa 0.09 catatan penelitian indeks beta 1.18 simpul dan jalan di kota batam telah terkoneksi sebesar 39%. Hasil dari analisis konektivitas transportasi udara antar ibukota provinsi. Dalam hal ini, kansky menentukan kekuatan interaksi dengan indeks konektivitas.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cara-memegang-bet-tenis-meja-dinamakan.html" class="be-post-title">
+				 <h6>cara memegang bet tenis meja dinamakan </h6>
+                </a>
+                <a href="cara-memegang-bet-tenis-meja-dinamakan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20memegang%20bet%20tenis%20meja%20dinamakan&amp;w=50&amp;h=50&amp;c=7" alt="cara memegang bet tenis meja dinamakan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ulangan-matematika-kelas-2-sd-semester-ganjil.html" class="be-post-title">
+				 <h6>soal ulangan matematika kelas 2 sd semester ganjil </h6>
+                </a>
+                <a href="soal-ulangan-matematika-kelas-2-sd-semester-ganjil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ulangan%20matematika%20kelas%202%20sd%20semester%20ganjil&amp;w=50&amp;h=50&amp;c=7" alt="soal ulangan matematika kelas 2 sd semester ganjil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="otot-yang-kuat-berarti.html" class="be-post-title">
+				 <h6>otot yang kuat berarti </h6>
+                </a>
+                <a href="otot-yang-kuat-berarti.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=otot%20yang%20kuat%20berarti&amp;w=50&amp;h=50&amp;c=7" alt="otot yang kuat berarti">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="orbital-hibrida-sp3.html" class="be-post-title">
+				 <h6>orbital hibrida sp3 </h6>
+                </a>
+                <a href="orbital-hibrida-sp3.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=orbital%20hibrida%20sp3&amp;w=50&amp;h=50&amp;c=7" alt="orbital hibrida sp3">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uts-pjok-kelas-2-sd-semester-2-dan-kunci-jawaban.html" class="be-post-title">
+				 <h6>soal uts pjok kelas 2 sd semester 2 dan kunci jawaban </h6>
+                </a>
+                <a href="soal-uts-pjok-kelas-2-sd-semester-2-dan-kunci-jawaban.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uts%20pjok%20kelas%202%20sd%20semester%202%20dan%20kunci%20jawaban&amp;w=50&amp;h=50&amp;c=7" alt="soal uts pjok kelas 2 sd semester 2 dan kunci jawaban">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-bahasa-inggris-kelas-4-sd-semester-1-k13.html" class="be-post-title">
+				 <h6>soal uas bahasa inggris kelas 4 sd semester 1 k13 </h6>
+                </a>
+                <a href="soal-uas-bahasa-inggris-kelas-4-sd-semester-1-k13.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20bahasa%20inggris%20kelas%204%20sd%20semester%201%20k13&amp;w=50&amp;h=50&amp;c=7" alt="soal uas bahasa inggris kelas 4 sd semester 1 k13">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="magnesium-nitrida.html" class="be-post-title">
+				 <h6>magnesium nitrida </h6>
+                </a>
+                <a href="magnesium-nitrida.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=magnesium%20nitrida&amp;w=50&amp;h=50&amp;c=7" alt="magnesium nitrida">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="diapedesis-adalah.html" class="be-post-title">
+				 <h6>diapedesis adalah </h6>
+                </a>
+                <a href="diapedesis-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=diapedesis%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="diapedesis adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="konsep-morfologi-adalah.html" class="be-post-title">
+				 <h6>konsep morfologi adalah </h6>
+                </a>
+                <a href="konsep-morfologi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=konsep%20morfologi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="konsep morfologi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bank-soal-matematika-sma-kelas-11.html" class="be-post-title">
+				 <h6>bank soal matematika sma kelas 11 </h6>
+                </a>
+                <a href="bank-soal-matematika-sma-kelas-11.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bank%20soal%20matematika%20sma%20kelas%2011&amp;w=50&amp;h=50&amp;c=7" alt="bank soal matematika sma kelas 11">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

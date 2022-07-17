@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kalender Masehi Dihitung Berdasarkan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Kalender Masehi Dihitung Berdasarkan",
+  "datePublished": "2022-07-01T17:39:25Z",
+  "image": "https://tse1.mm.bing.net/th?q=kalender%20masehi%20dihitung%20berdasarkan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kalender%20masehi%20dihitung%20berdasarkan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kalender%20masehi%20dihitung%20berdasarkan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kalender%20masehi%20dihitung%20berdasarkan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kalender Masehi Dihitung Berdasarkan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kalender Masehi Dihitung Berdasarkan</h2>
+    <p><strong>Kalender Masehi Dihitung Berdasarkan</strong>. Karena itu tahun masehi juga disebut tahun syamsiah atau tahun matahari. Penanggalan jawa dihitung berdasarkan putaran bulan terhadap bumi, penanggalan masehi dihitung berdasarkan putaran bumi terhadap.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kalender%20masehi%20dihitung%20berdasarkan" alt="Dasar Pembuatan Kalender Hijriah adalah SAHABAT BELAJAR SD" />
+        <br>
+        <figcaption>Dasar Pembuatan Kalender Hijriah adalah SAHABAT BELAJAR SD from sahabatbelajar1.blogspot.co.id</figcaption>
+    </figure>
+        <p>
+        Di barat kalender islam biasa dituliskan dengan a.h, dari latinnya anno hegirae. Kalender masehi dihitung berdasarkan peredaran bumi mengelilingi. Menjadi dasar perhitungan pada kalender tahun masehi yaitu waktu yang diperlukan bumi untuk mengelilingi.
+    </p>
+    <h3>Dasar Pembuatan Kalender Hijriah adalah SAHABAT BELAJAR SD</h3>
+    <p>Satu tahun hijriah dibagi menjadi 12 bulan dengan pembagian jumlah hari sebagai berikut. Batas pergantian tanggal dan hari pada pukul 24:00 atau 0:00 (tengah malam). Tahun hijriah ditentukan berdasarkan kala revolusi bulan (waktu yang diperlukan bulan untuk sekali mengelilingi bumi). Jadi menurut kalender julian, tahun abad 1800, 1900, dan 2000 bukan tahun kabisat karena bilangannya tidak habis dibagi 400.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Kalender Masehi Dan Hijriyah naianecosta16" data-src="https://i2.wp.com/3.bp.blogspot.com/-1jFTGXvtFTg/WzEInzNejNI/AAAAAAAACVI/wPpkmIsKtOgdJT1QqEN-h7b2_ZVvwN03gCLcBGAs/s1600/kalender%2Bhijriyah%2Bmasehi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: naianecosta16.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kala revolusi bulan adalah 29 hari sehingga jumlah hari dalam satu tahun = 29 2 hari x 12 = 354 hari. Tahun hijriah ditentukan berdasarkan kala revolusi bulan (waktu yang diperlukan bulan untuk sekali mengelilingi bumi). Batas pergantian tanggal dan hari pada pukul 24:00 atau 0:00 (tengah malam). Mau dijawab kurang dari 3 menit? Kalender masehi dihitung berdasarkan peredaran bumi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perbedaan Tahun Syamsiyah dan Qomariyah / Hijriyah Tedi Sobandi" data-src="https://i2.wp.com/1.bp.blogspot.com/-QIBw0a191dA/XwiW1XpiY8I/AAAAAAAAEOA/AEjzHzgo5YAto9wqxEKeVpOwr6ZegbvsgCNcBGAsYHQ/s1600/kalender%2BMasehi%2Bdan%2BHijriyah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tedisobandi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jawaban yang benar untuk soal pertanyaan “perhitungan tahun pada kalender masehi berdasarkan ” adalah revolusi bumi atau bumi berputar mengelilingi matahari. Kalender masehi dihitung berdasarkan peredaran bumi mengelilingi. Tahun hijriah ditentukan berdasarkan kala revolusi bulan (waktu yang diperlukan bulan untuk sekali mengelilingi bumi). Kalender hijriah juga mengenal tahun. Sistem penanggalan masehi ditentukan berdasarkan kala revolusi bumi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dasar Pembuatan Kalender Hijriah adalah SAHABAT BELAJAR SD" data-src="https://i2.wp.com/2.bp.blogspot.com/-mrSHeP7vSVw/Vr3QmPqZE6I/AAAAAAAAAJ0/S1nC31qn4Ns/s1600/kalender-hijriah-dibuat-dari-perhitungan-revolusi-bulan-mengelilingi-bumi.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sahabatbelajar1.blogspot.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bila dibandingkan dengan tahun masehi, kita dapati tahun berdasarkan rembulan ini lebih sedikit 10,88 hari daripada. Perbedaan tersebut terletak pada dasar perhitungan hari. Kalender masehi dihitung berdasarkan peredaran bumi mengelilingi. Pada tahun 527 kaisar justinian memerintahkan dionisius exiguus (seorang biarawan, sejarawan, teolog, matematikawan, dan astronom ulung) untuk membuat perhitungan tahun berdasarkan kelahiran yesus kristus. Jika kalender masehi dihitung berdasarkan perputaran.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kalender Lebaran Haji 2021 Cuti Hari Raya 2020 Indonesia" data-src="https://i2.wp.com/www.a-pradana.net/wp-content/uploads/2019/08/KALENDER-2020-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nahlaconrad.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tahun masehi dihitung menurut perputaran. Kalender masehi dihitung berdasarkan peredaran bumi mengelilingi. Satu tahun dalam kalender masehi adalah lamanya bumi mengelilingi matahari, yaitu 365 hari 5 jam, 48 menit 46 detik atau 365 ¼ hari. 5.0 (1 rating) pertanyaan serupa. Kalender itu disebut masehi karena merujuk kepada yesus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Penyebab Kalender Masehi lebih Banyak 11 Hari Dibandingkan Kalender" data-src="https://i2.wp.com/4.bp.blogspot.com/-55cSQAIqH3A/VsIp3HRbFiI/AAAAAAAAANs/VAZsJtGrnfs/s1600/kalender-masehi-lebih-banyak-11-hari-dibandingkan-kalender-hijriah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sahabatbelajar1.blogspot.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Di bawah ini terdapat beberapa cara untuk menentukan apakah tahun tersebut tahun kabisat. Kalender masehi dihitung berdasarkan perjalanan bumi dalam melakukan revolusi penuh mengelilingi matahari selama 365 1/4 hari. Tahun masehi dihitung menurut perputaran bumi mengelilingi matahari (revolusi). Jadi menurut kalender julian, tahun abad 1800, 1900, dan 2000 bukan tahun kabisat karena bilangannya tidak habis dibagi 400. Beberapa sistem penanggalan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="catatan syifa kalender hijriah" data-src="https://i2.wp.com/4.bp.blogspot.com/-soeE6_179m0/VZzGv6DXVoI/AAAAAAAAAJM/CHGsJqVrb2U/s1600/Kalender%2B2015%2Bdan1436%2Bhijriyah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bilasalsabilasyifa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Beserta jawaban penjelasan dan pembahasan lengkap. Jawaban yang benar untuk soal pertanyaan “perhitungan tahun pada kalender masehi berdasarkan ” adalah revolusi bumi atau bumi berputar mengelilingi matahari. Kalender masehi dihitung berdasarkan perjalanan bumi dalam melakukan revolusi penuh mengelilingi matahari selama 365 1/4 hari. Batas pergantian tanggal dan hari pada pukul 24:00 atau 0:00 (tengah malam). Sistem penanggalan masehi ditentukan berdasarkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="54+ Gambar Kalender Hijriah Dan Masehi" data-src="https://i2.wp.com/1.bp.blogspot.com/-JNcvjxa49w4/WHrjNOz9rnI/AAAAAAAADhY/FEdNTOM-7ewsMoBr5TZKWDElMtcZUC2PgCLcB/s1600/Kalender2BTahun2B2017.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: modelbanner.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perhitungan tahun pada kalender masehi berdasarkan jawaban : Dalam mengawali tahun berjalannya masehi. Perhitungan penanggalan kalender masehi didasarkan pada kelahiran nabi isa a.s. Empat kali seperempat hari digabung menjadi satu hari. Di barat kalender islam biasa dituliskan dengan a.h, dari latinnya anno hegirae.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="kalender 2020 indonesia lengkap hari libur nasional (masehi, jawa" data-src="https://i2.wp.com/tambelan.com/wp-content/uploads/2020/02/kalender-2020-hari-libur-nasional-1024x916.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tambelan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Batas pergantian tanggal dan hari pada pukul 24:00 atau 0:00 (tengah malam). Pada 1 tahun dalam kalender. Dalam mengawali tahun berjalannya masehi. Jadi menurut kalender julian, tahun abad 1800, 1900, dan 2000 bukan tahun kabisat karena bilangannya tidak habis dibagi 400. Ada perbedaan perhitungan pada 2 jenis kalender ini, hal ini dikarenakan perputarannya pun didasarkan pada 2 hal yang berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sejarah Kalender Masehi,Kalender Masehi,Kalender Hijriyah" data-src="https://i2.wp.com/www.beritaislamonline.com/wp-content/uploads/2018/12/Kalender-1c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.beritaislamonline.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dilansir dari encyclopedia britannica, perhitungan kalender masehi berdasarkan peredaran bulan mengelilingi matahari. Batas pergantian tanggal dan hari pada pukul 24:00 atau 0:00 (tengah malam). Perbedaan yang terjadi dengan kalender hijriyah adalah karena adanya konsistensi penghitungan dari dalam kalender hijriyah. Sebelum berkenalan dengan apa itu sistem penanggalan atau kalender hijriyah, kita akan mengetahui terlebih dahulu beberapa sistem penanggalan yang umum dipakai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mataram Kita Tahun Kabisat Pada Kalender Hijriyah Dan Masehi" data-src="https://i2.wp.com/1.bp.blogspot.com/-o04bYR_b5v4/US1EX0rwpVI/AAAAAAAAAGE/IYxCI7SatTI/w1200-h630-p-k-no-nu/kalender+2013.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mataramkita.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dilansir dari encyclopedia britannica, perhitungan kalender masehi berdasarkan peredaran bulan mengelilingi matahari. Lalu apa perbedaan kalender masehi dan hijriah? Beserta jawaban penjelasan dan pembahasan lengkap. Kalender masehi dihitung berdasarkan perjalanan bumi dalam melakukan revolusi penuh mengelilingi matahari selama 365,256 hari. Sistem penanggalan masehi ditentukan berdasarkan kala revolusi bumi.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pada-hukum-pemantulan-cahaya-sudut-datang-sama-dengan.html" class="be-post-title">
+				 <h6>pada hukum pemantulan cahaya sudut datang sama dengan </h6>
+                </a>
+                <a href="pada-hukum-pemantulan-cahaya-sudut-datang-sama-dengan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pada%20hukum%20pemantulan%20cahaya%20sudut%20datang%20sama%20dengan&amp;w=50&amp;h=50&amp;c=7" alt="pada hukum pemantulan cahaya sudut datang sama dengan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-akm-bahasa-inggris-smp-pdf.html" class="be-post-title">
+				 <h6>soal akm bahasa inggris smp pdf </h6>
+                </a>
+                <a href="soal-akm-bahasa-inggris-smp-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20akm%20bahasa%20inggris%20smp%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal akm bahasa inggris smp pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="macam-macam-gugus-fungsi.html" class="be-post-title">
+				 <h6>macam macam gugus fungsi </h6>
+                </a>
+                <a href="macam-macam-gugus-fungsi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=macam%20macam%20gugus%20fungsi&amp;w=50&amp;h=50&amp;c=7" alt="macam macam gugus fungsi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="negara-yang-dianggap-sebagai-pelopor-revolusi-industri-adalah.html" class="be-post-title">
+				 <h6>negara yang dianggap sebagai pelopor revolusi industri adalah </h6>
+                </a>
+                <a href="negara-yang-dianggap-sebagai-pelopor-revolusi-industri-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=negara%20yang%20dianggap%20sebagai%20pelopor%20revolusi%20industri%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="negara yang dianggap sebagai pelopor revolusi industri adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bahan-makanan-yang-mengandung-karbohidrat-dapat-diperoleh-dari.html" class="be-post-title">
+				 <h6>bahan makanan yang mengandung karbohidrat dapat diperoleh dari </h6>
+                </a>
+                <a href="bahan-makanan-yang-mengandung-karbohidrat-dapat-diperoleh-dari.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bahan%20makanan%20yang%20mengandung%20karbohidrat%20dapat%20diperoleh%20dari&amp;w=50&amp;h=50&amp;c=7" alt="bahan makanan yang mengandung karbohidrat dapat diperoleh dari">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bagian-kulit-yg-berfungsi-menghasilkan-keringat.html" class="be-post-title">
+				 <h6>bagian kulit yg berfungsi menghasilkan keringat </h6>
+                </a>
+                <a href="bagian-kulit-yg-berfungsi-menghasilkan-keringat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bagian%20kulit%20yg%20berfungsi%20menghasilkan%20keringat&amp;w=50&amp;h=50&amp;c=7" alt="bagian kulit yg berfungsi menghasilkan keringat">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="apa-yang-dimaksud-dengan-pengelolaan-keuangan.html" class="be-post-title">
+				 <h6>apa yang dimaksud dengan pengelolaan keuangan </h6>
+                </a>
+                <a href="apa-yang-dimaksud-dengan-pengelolaan-keuangan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20dimaksud%20dengan%20pengelolaan%20keuangan&amp;w=50&amp;h=50&amp;c=7" alt="apa yang dimaksud dengan pengelolaan keuangan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gangguan-pada-cabang-tenggorokan-akibat-infeksi-disebut.html" class="be-post-title">
+				 <h6>gangguan pada cabang tenggorokan akibat infeksi disebut </h6>
+                </a>
+                <a href="gangguan-pada-cabang-tenggorokan-akibat-infeksi-disebut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gangguan%20pada%20cabang%20tenggorokan%20akibat%20infeksi%20disebut&amp;w=50&amp;h=50&amp;c=7" alt="gangguan pada cabang tenggorokan akibat infeksi disebut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-sekolah-bahasa-inggris-smk-kelas-12.html" class="be-post-title">
+				 <h6>soal ujian sekolah bahasa inggris smk kelas 12 </h6>
+                </a>
+                <a href="soal-ujian-sekolah-bahasa-inggris-smk-kelas-12.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20sekolah%20bahasa%20inggris%20smk%20kelas%2012&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian sekolah bahasa inggris smk kelas 12">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berdasarkan-peristiwa-tersebut-perubahan-fisika-ditunjukkan-oleh-nomor.html" class="be-post-title">
+				 <h6>berdasarkan peristiwa tersebut perubahan fisika ditunjukkan oleh nomor </h6>
+                </a>
+                <a href="berdasarkan-peristiwa-tersebut-perubahan-fisika-ditunjukkan-oleh-nomor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berdasarkan%20peristiwa%20tersebut%20perubahan%20fisika%20ditunjukkan%20oleh%20nomor&amp;w=50&amp;h=50&amp;c=7" alt="berdasarkan peristiwa tersebut perubahan fisika ditunjukkan oleh nomor">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

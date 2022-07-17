@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kata Dasar Dari Pembangunan Adalah at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Kata Dasar Dari Pembangunan Adalah",
+  "datePublished": "2022-05-27T13:49:10Z",
+  "image": "https://tse1.mm.bing.net/th?q=kata%20dasar%20dari%20pembangunan%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kata%20dasar%20dari%20pembangunan%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kata%20dasar%20dari%20pembangunan%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kata%20dasar%20dari%20pembangunan%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kata Dasar Dari Pembangunan Adalah at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kata Dasar Dari Pembangunan Adalah</h2>
+    <p><strong>Kata Dasar Dari Pembangunan Adalah</strong>. Kata pembangunan mungkin saja sangat akrab di telinga kita. Akan tetapi pada sebagian besar masyarakat, pembangunan selalu diartikan sebagai.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kata%20dasar%20dari%20pembangunan%20adalah" alt="Kenangan yang terbuku di hati dan jiwa..... Bab 11 Dasar Pembangunan" />
+        <br>
+        <figcaption>Kenangan yang terbuku di hati dan jiwa..... Bab 11 Dasar Pembangunan from zackgreed.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Hal itu bisa dilihat dari penamaan kabinet sejak pemerintahan orde baru yang selalu dikaitkan dengan kata “pembangunan”. Oleh karena itu, strategi pembangunan yang dianggap paling sesuai adalah akselerasi pertumbuhan ekonomi dengan mengundang modal asing dan melakukan industrialisasi. Dengan kata lain, hipotesis adalah bagian yang berisis simpulan sementara yang akan dibuktikan dalam penelitian.
+    </p>
+    <h3>Kenangan yang terbuku di hati dan jiwa..... Bab 11 Dasar Pembangunan</h3>
+    <p>Pembuatan berasal dari kata dasar buat. Sedangkan perkembangan adalah proses perubahan yang terjadi secara alami sebagai dampak dari adanya pembangunan (riyadi dan deddy. Bank yang dalam pengumpulan dananya menerima simpanan dalam bentuk deposito dan/atau mengeluarkan kertas berharga jangka menengah dan panjang, serta memberikan kredit jangka menengah dan panjang di bidang. Kami sadar bahwa makalah ini tidak dapat terselesaikan dengan baik tanpa bantuan guru/dosen, rekan.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kata Dasar Bahasa Lampung Bersuku 4 KATAKU" data-src="https://i2.wp.com/1.bp.blogspot.com/-8obkzl_A0G0/XYgRCfntT6I/AAAAAAAAJuI/5zVxMsH7v98Qq1w5IHS9AHZaN8fP3HvPQCLcBGAsYHQ/s1600/IMG_20190923_070628.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: katapilu.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Oleh karena itu, strategi pembangunan yang dianggap paling sesuai adalah akselerasi pertumbuhan ekonomi dengan mengundang modal asing dan melakukan industrialisasi. Kata pembangunan mungkin saja sangat akrab di telinga kita. Biaya pembuatan jalan itu cukup besar. Bangkit dari kemiskinan, menjadi lebih melek huruf, mengurangi angka pengangguran, serta ketidakadilan pada bidang sosial. Pembuatan memiliki arti dalam kelas nomina atau kata benda sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mksd Dari Pt Bona / Panitia Bona Taon dan Pelantikan Generasi Muda" data-src="https://i2.wp.com/www.truckmagz.com/wp-content/uploads/2019/03/Deklarasi-Truk-Pelopor-Keselamatan_TruckMagz.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: skyscrape8rnewsarticles.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bank yang dalam pengumpulan dananya menerima simpanan dalam bentuk deposito dan/atau mengeluarkan kertas berharga jangka menengah dan panjang, serta memberikan kredit jangka menengah dan panjang di bidang. Oleh karena itu, strategi pembangunan yang dianggap paling sesuai adalah akselerasi pertumbuhan ekonomi dengan mengundang modal asing dan melakukan industrialisasi. Seperti penggunaan kata dinamika pembangunan. Siagian (1994) menurut siagian, pembangunan adalah suatu rangkaian.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kata Dasar Yang Mendapat Awalan Akhiran Atau Sisipan Disebut KATAKU" data-src="https://i2.wp.com/image.slidesharecdn.com/panduanumumejaanbahasamelayu-140930101150-phpapp01/95/panduan-umumejaanbahasamelayu-19-638.jpg?cb=1412071953" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: katapilu.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pembuatan memiliki arti dalam kelas nomina atau kata benda sehingga pembuatan dapat menyatakan nama dari. Pembangunan [pem·ba·ngun·an] kata nomina (kata benda) dari kata dasar: Kami sadar bahwa makalah ini tidak dapat terselesaikan dengan baik tanpa bantuan guru/dosen, rekan. Tujuan yang baik harus memenuhi unsur smart, yaitu: Word stem) atau pemenggalan kata adalah kata yang menjadi dasar bentukan kata yang lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kata Gizi Berasal Dari Bahasa Arab Ghidza Yg Artinya KATAKU" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/34128807/mini_magick20190325-32027-8gjv2e.png?1553568300" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: katapilu.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Proses pembangunan pada dasarnya bukanlah sekedar fenomena ekonomi semata. Bangkit dari kemiskinan, menjadi lebih melek huruf, mengurangi angka pengangguran, serta ketidakadilan pada bidang sosial. Tikson, pembangunan nasional adalah transformasi ekonomi, sosial dan budaya secara sengaja melalui kebijakan dan strategi menuju arah yang diinginkan. Word stem) atau pemenggalan kata adalah kata yang menjadi dasar bentukan kata yang lebih besar. , inovasi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dasar Pembangunan Belia Negara / Bela negara merupakan suatu konsep" data-src="https://i2.wp.com/image.slidesharecdn.com/dasarbelianegara-121031101515-phpapp01/95/dasar-belia-negara-3-638.jpg?cb=1449559268" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ussfairt.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">3 arti pembuahan di kamus besar. Kondisi ini menyebabkan pemeliharaan fasilitas yang sudah ada sangat rendah. Spesific, measurable, achievable, realistic, and time. Kata pembangunan selain menjadi semboyan juga dipakai sebagai nama pemerintahan orde baru. Sedangkan perkembangan adalah proses perubahan yang terjadi secara alami sebagai dampak dari adanya pembangunan (riyadi dan deddy.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dasar Dasar Negara Malaysia" data-src="https://i2.wp.com/4.bp.blogspot.com/-FnI6zupTpq8/VQWr4oJDu0I/AAAAAAAAACc/rhINnkvzenE/s1600/pengajian-malaysia-dasar-pembangunan-negara-new-010713-065433-4-638.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: reagins.onrender.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(kbbi), arti kata pembuatan adalah proses, cara, perbuatan membuat. Pembuatan berasal dari kata dasar buat. Hipotesis sendiri merupakan jawaban sementara dari permasalahan yang diujikan. Word stem) atau pemenggalan kata adalah kata yang menjadi dasar bentukan kata yang lebih besar. Pembangunan tidak sekedar ditunjukkan oleh prestasi</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kata Dasar Yang Mendapat Imbuhan Awalan Sisipan Dan Akhiran Disebut" data-src="https://i2.wp.com/image.slidesharecdn.com/imbuhankatakerjaaktif-131030190823-phpapp02/95/imbuhan-kata-kerja-aktif-3-638.jpg?cb=1383160130" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: katapilu.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Saya menemukan fitur pengisian otomatis dan pembuatan kata sandi keeper lancar dan responsif. Partisipasi masyarakat dalam merencanakan dan pelaksanaan program pembangunan pendidikan di sd tidak terwujud. Effendi menyatakan di dalam pembangunan suatu daerah bukan hanya melakukan program pembangunan yang bergerak di bidang pembangunan fisik, tetapi juga 23 suryono, agus. Dalam bahasa indonesia, jual adalah kata dasar dari jualan, sedangkan jualan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bupati Bojonegoro “Bonus Demografi adalah Modal Dasar Pembangunan" data-src="https://i2.wp.com/damarinfo.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-14-at-22.24.31-1140x570.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: damarinfo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kata filosofis sendiri berasal dari kata “philosophis” yang asalnya dari bahasa. Kata pembangunan mungkin saja sangat akrab di telinga kita. Pembangunan [pem·ba·ngun·an] kata nomina (kata benda) dari kata dasar: (kbbi), arti kata pembuatan adalah proses, cara, perbuatan membuat. Kondisi ini menyebabkan pemeliharaan fasilitas yang sudah ada sangat rendah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kenangan yang terbuku di hati dan jiwa..... Bab 11 Dasar Pembangunan" data-src="https://i2.wp.com/1.bp.blogspot.com/-GYfabGuZqE8/UZqBaIW3-_I/AAAAAAAAAjs/Od2d3lEcF58/s1600/buku+pelan+strategik_img_66.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: zackgreed.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Teory pembangunan pengertian dan konsep pembangunan dr. Peranan sumber daya manusia (sdm) dalam strategi semacam ini hanyalah. (kbbi), arti kata pembuatan adalah proses, cara, perbuatan membuat. Pembuatan berasal dari kata dasar buat. Effendi menyatakan di dalam pembangunan suatu daerah bukan hanya melakukan program pembangunan yang bergerak di bidang pembangunan fisik, tetapi juga 23 suryono, agus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsep Pengantar Ekonomi Konsep Dasar Ilmu Ekonomi Pengantar" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/02qdd1w-pV2Z4ux_VmsAdcYuv26Txudp8z55F5AUSQqe3xxwBnQK6caQLPWOG8UF4SMHlx2EciSNguBIEyEZ0nd3tEuovHpE=w1200-h630-pd" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elizasellsflowers.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">, inovasi adalah hasil penciptaan sesuatu yang dianggap baru dan ditujukan untuk mengatasi masalah tertentu dan dilakukan oleh seseorang atau. Peranan sumber daya manusia (sdm) dalam strategi semacam ini hanyalah. Biaya pembuatan jalan itu cukup besar. Meskipun banyak varian pemikiran, pada dasarnya kata kunci dalam pembangunan adalah pembentukan modal. Pembuatan berasal dari kata dasar buat.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="elektrolisis-nacl.html" class="be-post-title">
+				 <h6>elektrolisis nacl </h6>
+                </a>
+                <a href="elektrolisis-nacl.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=elektrolisis%20nacl&amp;w=50&amp;h=50&amp;c=7" alt="elektrolisis nacl">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="latihan-soal-matematika-kelas-5-sd-semester-2.html" class="be-post-title">
+				 <h6>latihan soal matematika kelas 5 sd semester 2 </h6>
+                </a>
+                <a href="latihan-soal-matematika-kelas-5-sd-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=latihan%20soal%20matematika%20kelas%205%20sd%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="latihan soal matematika kelas 5 sd semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-matematika-kelas-3-sd-semester-2-tema-6.html" class="be-post-title">
+				 <h6>soal matematika kelas 3 sd semester 2 tema 6 </h6>
+                </a>
+                <a href="soal-matematika-kelas-3-sd-semester-2-tema-6.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20matematika%20kelas%203%20sd%20semester%202%20tema%206&amp;w=50&amp;h=50&amp;c=7" alt="soal matematika kelas 3 sd semester 2 tema 6">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kebutuhan-sekunder-dapat-menjadi-kebutuhan-primer-dikarenakan.html" class="be-post-title">
+				 <h6>kebutuhan sekunder dapat menjadi kebutuhan primer dikarenakan </h6>
+                </a>
+                <a href="kebutuhan-sekunder-dapat-menjadi-kebutuhan-primer-dikarenakan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kebutuhan%20sekunder%20dapat%20menjadi%20kebutuhan%20primer%20dikarenakan&amp;w=50&amp;h=50&amp;c=7" alt="kebutuhan sekunder dapat menjadi kebutuhan primer dikarenakan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="penemuan-televisi-merupakan-dampak-positif-di-bidang.html" class="be-post-title">
+				 <h6>penemuan televisi merupakan dampak positif di bidang </h6>
+                </a>
+                <a href="penemuan-televisi-merupakan-dampak-positif-di-bidang.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=penemuan%20televisi%20merupakan%20dampak%20positif%20di%20bidang&amp;w=50&amp;h=50&amp;c=7" alt="penemuan televisi merupakan dampak positif di bidang">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kata-dasar-dari-pembangunan-adalah.html" class="be-post-title">
+				 <h6>kata dasar dari pembangunan adalah </h6>
+                </a>
+                <a href="kata-dasar-dari-pembangunan-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kata%20dasar%20dari%20pembangunan%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="kata dasar dari pembangunan adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="apa-yang-dimaksud-dengan-drama.html" class="be-post-title">
+				 <h6>apa yang dimaksud dengan drama </h6>
+                </a>
+                <a href="apa-yang-dimaksud-dengan-drama.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20dimaksud%20dengan%20drama&amp;w=50&amp;h=50&amp;c=7" alt="apa yang dimaksud dengan drama">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-tematik-kelas-1-sd-semester-2-pdf.html" class="be-post-title">
+				 <h6>soal tematik kelas 1 sd semester 2 pdf </h6>
+                </a>
+                <a href="soal-tematik-kelas-1-sd-semester-2-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20tematik%20kelas%201%20sd%20semester%202%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal tematik kelas 1 sd semester 2 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gambar-jaringan-tulang-keras.html" class="be-post-title">
+				 <h6>gambar jaringan tulang keras </h6>
+                </a>
+                <a href="gambar-jaringan-tulang-keras.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gambar%20jaringan%20tulang%20keras&amp;w=50&amp;h=50&amp;c=7" alt="gambar jaringan tulang keras">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-3-masalah-ekonomi-modern.html" class="be-post-title">
+				 <h6>jelaskan 3 masalah ekonomi modern </h6>
+                </a>
+                <a href="jelaskan-3-masalah-ekonomi-modern.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%203%20masalah%20ekonomi%20modern&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan 3 masalah ekonomi modern">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

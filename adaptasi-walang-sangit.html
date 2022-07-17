@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Adaptasi Walang Sangit at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Adaptasi Walang Sangit",
+  "datePublished": "2022-07-14T09:10:55Z",
+  "image": "https://tse1.mm.bing.net/th?q=adaptasi%20walang%20sangit",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=adaptasi%20walang%20sangit&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=adaptasi%20walang%20sangit" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=adaptasi%20walang%20sangit" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Adaptasi Walang Sangit at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Adaptasi Walang Sangit</h2>
+    <p><strong>Adaptasi Walang Sangit</strong>. Itu adalah contoh adaptasi tingkah laku yang dilakukannya untuk mengelabui musuh. Leptocorisa acuta) adalah serangga yang menjadi hama penting pada tanaman budidaya, terutama padi.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=adaptasi%20walang%20sangit" alt="All About Science Bertahan HidupMelindungi Diri" />
+        <br>
+        <figcaption>All About Science Bertahan HidupMelindungi Diri from nugraha999.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Menjelang ujian ia lebih giat lagi dalam belajar. Adaptasi utama spesies kanguru ini adalah memiliki lengan yang lebih panjang dan kaki belakang yang lebih pendek dibandingkan dengan kanguru lainnya. Dilansir dari ensiklopedia, walang sangit beradaptasi dengan lingkungan dengan cara mengeluarkan bau yang menyengat.
+    </p>
+    <h3>All About Science Bertahan HidupMelindungi Diri</h3>
+    <p>Untuk melindungi dirinya, walang sangit mengeluarkan bau yang menyengat. Insektisida anjuran untuk tanaman padi sangat efektif terhadap walang sangit, dan dapat membantu mematikan telur ataupun bibit yang nantinya akan tumbuh. Cairan tubuh walang sangit akan menjadi penghantar listrik dan akan mengakibatkan kematian langsung. Kungkang (sunda), pianggang (sumatra), dan tenang (madura).</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="All About Science Bertahan HidupMelindungi Diri" data-src="https://i2.wp.com/1.bp.blogspot.com/-bj9qJDSq4JE/VD4jzt-WraI/AAAAAAAAASU/lhT2-FEUn9Q/s1600/img_2128.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nugraha999.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Seorang pelajar setiap hari belajar. Kali ini pakdosen akan membahas tentang adaptasi? Walang sangit akan melepaskan bau busuk di dalam penyedot debu, sehingga mesin tersebut akan berbau menyengat selama beberapa minggu. Namun dengan berkamuflase di pohon dengan tubuhnya. Revskarmeld verified answer untuk melindungi dirinya dari serangan predator di habitatnya, seperti burung.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ciri Khusus Walang Sangit dan Fungsinya Website Pendidikan Terpadu" data-src="https://i2.wp.com/3.bp.blogspot.com/-vAHDyr0JRMk/Vb9Ep2KqjnI/AAAAAAAAFwY/HmqgJfuC930/s1600/ciri-khusus-walang-sangit-dan-fungsinya.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.websitependidikan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ciri khusus hewan reptil kadal dan fungsinya. Klasifikasi makhluk hidup lima kingdom menurut whittaker. Misalnya seperti gigi singa, harimau, citah, macan, dan sebagainya yang runcing dan tajam untuk makan daging. Peran tokoh perumus uud nri tahun 1945, anggota bpupki telah mewakili seluruh wilayah indonesia, suku bangsa, golongan agama, dan pemikiran yang berkembang di masyarakat saat. Walang sangit memiliki bau yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ciri Khusus Walang Sangit dan Fungsinya . Biologi Pedia" data-src="https://i2.wp.com/1.bp.blogspot.com/-dLfomHS27z8/WXYtaMlr_hI/AAAAAAAABKE/M9V5Wh0DG-8DbKqnrTBgeVLtm7PixZo_gCLcBGAs/s1600/walang7.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jenisajatitik.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dengan cahaya seperti itu dapat menarik walang sangit hingga radius 15 meter. Adaptasi utama spesies kanguru ini adalah memiliki lengan yang lebih panjang dan kaki belakang yang lebih pendek dibandingkan dengan kanguru lainnya. Dilansir dari state.com, profesor eric benson mengatakan bahwa walang sangit akan mengeluarkan bau tidak sedap saat merasa terancam. Walang sangit ini biasanya banyak ditemukan pada tanaman padi,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klasifikasi Dan Morfologi Walang Sangit (Leptocorisa acuta Thunberg" data-src="https://i2.wp.com/3.bp.blogspot.com/-tFU7N22CR4E/WDZ2q0WtFvI/AAAAAAAABr4/A19Sj6WIdAYskrkmToZoCxNtMJZE_c7IACLcB/s1600/Leptocorisa-acuta4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: materipengetahuanumum.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Insektisida anjuran untuk tanaman padi sangat efektif terhadap walang sangit, dan dapat membantu mematikan telur ataupun bibit yang nantinya akan tumbuh. Hewan ini mudah dikenali dari bentuknya yang memanjang, berukuran sekitar 2 cm, berwarna cokelat kelabu… Walang sangit (leptocorisa oratorius) adalah salah satu hama yang menyerang tanaman padi. Untuk melindungi diri dari hembusan pasir dari padang pasir, unta memiliki dua.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hama Walang Sangit ANTARA Foto" data-src="https://i2.wp.com/v-images2.antarafoto.com/hama-walang-sangit-m80m81-prv.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.antarafoto.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Di indonesia, serangga ini disebut: Perkembangbiakannya melalui telur yang dapat dihasilkannya hingga 200 butir per indukan. Seorang pelajar setiap hari belajar. Walang sangit memiliki 6 kaki. Pengertian mencair, membeku, menguap, mengembun, dan menyublim serta contohnya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ADAPTASI CUMI [PDF Document]" data-src="https://i2.wp.com/static.fdokumen.com/img/1200x630/reader020/image/20190920/5571fe4e49795991699b19b7.png?t=1628920943" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fdokumen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Walang sangit ( leptcorisa oratorius) adalah serangga pengganggu atau hama yang sering merusak tanaman budidaya. Bentuk adaptasi hewan untuk memperoleh makanan bentuk adaptasi hewan pemakan daging (karnivor) untuk memperoleh. Oleh pakdosen diposting pada 11 mei 2022. Pengertian mencair, membeku, menguap, mengembun, dan menyublim serta contohnya. Evolusi ini memungkinkan mereka menjadi penghuni pohon yang luar biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Adaptasi IPA Edukasi" data-src="https://i2.wp.com/3.bp.blogspot.com/-1blJiD6uzRc/UDTKQ6kCmlI/AAAAAAAABPI/rHDiIDDYAVM/s1600/bentuk+kaki+burung.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ipaedukasi-supena.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perkembangbiakannya melalui telur yang dapat dihasilkannya hingga 200 butir per indukan. Bentuk adaptasi hewan untuk memperoleh makanan bentuk adaptasi hewan pemakan daging (karnivor) untuk memperoleh. Walang daun (berwarna seperti daun) berbeda dengan walang sangit, walang daun adalah hewan sejenis belalang yang tidak menggunakan bau untuk melindungi dirinya. Ketika merasa terancam, landak akan mengembangkan durinya sebagai bentuk pertahanan diri. Ciri khusus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Walang Sangit Melindungi Diri Dari Musuhnya Dengan Carles Pen" data-src="https://i2.wp.com/www.diedit.com/wp-content/uploads/2017/10/belalang-daun.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: carlespen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kali ini pakdosen akan membahas tentang adaptasi? Walang sangit merupakan kelompok hewan invertebrata, filum arthropoda pada kelas insekta. Walang sangit mengeluarkan bau tidak sedap. Ciri khusus hewan reptil kadal dan fungsinya. Walang sangit merupakan hewan dalam kelompok serangga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Soal Adaptasi Hewan Terhadap Lingkungan &amp; Jawaban" data-src="https://i2.wp.com/pembelajar.net/wp-content/uploads/2020/04/soal-adaptasi-hewan-terhadap-lingkungannya.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pembelajar.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lubang hidungnya dapat ditutup untuk mencegah hembusan pasir dari dapat masuk. Beberapa jenis hewan ada yang menyesuaikan diri dengan lingkungan dengan cara mengubah tingkah laku. Untuk melindungi dirinya, walang sangit mengeluarkan bau yang menyengat. Salah satu cara serangga untuk menghindari diri predator adalah dengan mengeluarkan bau tidak sedap. Menjelang ujian ia lebih giat lagi dalam belajar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Walang Sangit Melindungi Diri Dari Musuhnya Dengan Carles Pen" data-src="https://i2.wp.com/image.slidesharecdn.com/adaptasimakhlukhidup-121211043624-phpapp02/95/adaptasi-makhluk-hidup-30-638.jpg?cb=1355200786" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: carlespen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun dengan berkamuflase di pohon dengan tubuhnya. Hal tersebut didukung dengan kondisi iklim dan geografis indonesia yang sangat cocok digunakan untuk pertanian. Hama ini terdapat dan merusak pada hampir semua jenis tanaman. Duri landak yang kaku dan tajam digunakan untuk bertahan hidup. Itu adalah contoh adaptasi tingkah laku yang dilakukannya untuk mengelabui musuh.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-olimpiade-matematika-sd-2020-pdf.html" class="be-post-title">
+				 <h6>soal olimpiade matematika sd 2020 pdf </h6>
+                </a>
+                <a href="soal-olimpiade-matematika-sd-2020-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20olimpiade%20matematika%20sd%202020%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal olimpiade matematika sd 2020 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komik-adalah-salah-satu-sarana-menyampaikan-pesan-melalui.html" class="be-post-title">
+				 <h6>komik adalah salah satu sarana menyampaikan pesan melalui </h6>
+                </a>
+                <a href="komik-adalah-salah-satu-sarana-menyampaikan-pesan-melalui.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komik%20adalah%20salah%20satu%20sarana%20menyampaikan%20pesan%20melalui&amp;w=50&amp;h=50&amp;c=7" alt="komik adalah salah satu sarana menyampaikan pesan melalui">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-yang-termasuk-dalam-struktur-pembuatan-teks-biografi-adalah.html" class="be-post-title">
+				 <h6>berikut ini yang termasuk dalam struktur pembuatan teks biografi adalah </h6>
+                </a>
+                <a href="berikut-ini-yang-termasuk-dalam-struktur-pembuatan-teks-biografi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20yang%20termasuk%20dalam%20struktur%20pembuatan%20teks%20biografi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini yang termasuk dalam struktur pembuatan teks biografi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-bahasa-inggris-smp-kelas-7-semester-1.html" class="be-post-title">
+				 <h6>soal ujian bahasa inggris smp kelas 7 semester 1 </h6>
+                </a>
+                <a href="soal-ujian-bahasa-inggris-smp-kelas-7-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20bahasa%20inggris%20smp%20kelas%207%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian bahasa inggris smp kelas 7 semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="organel-sel-yang-tidak-bermembran-adalah.html" class="be-post-title">
+				 <h6>organel sel yang tidak bermembran adalah </h6>
+                </a>
+                <a href="organel-sel-yang-tidak-bermembran-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=organel%20sel%20yang%20tidak%20bermembran%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="organel sel yang tidak bermembran adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cuso4-nama-senyawa.html" class="be-post-title">
+				 <h6>cuso4 nama senyawa </h6>
+                </a>
+                <a href="cuso4-nama-senyawa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cuso4%20nama%20senyawa&amp;w=50&amp;h=50&amp;c=7" alt="cuso4 nama senyawa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="download-soal-uts-sd-kelas-6-semester-2.html" class="be-post-title">
+				 <h6>download soal uts sd kelas 6 semester 2 </h6>
+                </a>
+                <a href="download-soal-uts-sd-kelas-6-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=download%20soal%20uts%20sd%20kelas%206%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="download soal uts sd kelas 6 semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-smp-kelas-8-matematika.html" class="be-post-title">
+				 <h6>contoh soal smp kelas 8 matematika </h6>
+                </a>
+                <a href="contoh-soal-smp-kelas-8-matematika.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20smp%20kelas%208%20matematika&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal smp kelas 8 matematika">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-termasuk-struktur-teks-negosiasi-secara-kompleks-kecuali.html" class="be-post-title">
+				 <h6>berikut ini termasuk struktur teks negosiasi secara kompleks kecuali </h6>
+                </a>
+                <a href="berikut-ini-termasuk-struktur-teks-negosiasi-secara-kompleks-kecuali.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20termasuk%20struktur%20teks%20negosiasi%20secara%20kompleks%20kecuali&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini termasuk struktur teks negosiasi secara kompleks kecuali">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-pts-pai-smp-kelas-9-semester-1-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal pts pai smp kelas 9 semester 1 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-pts-pai-smp-kelas-9-semester-1-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20pts%20pai%20smp%20kelas%209%20semester%201%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal pts pai smp kelas 9 semester 1 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

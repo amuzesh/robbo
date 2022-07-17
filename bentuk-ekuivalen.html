@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bentuk Ekuivalen at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Bentuk Ekuivalen",
+  "datePublished": "2022-05-07T07:51:58Z",
+  "image": "https://tse1.mm.bing.net/th?q=bentuk%20ekuivalen",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=bentuk%20ekuivalen&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bentuk%20ekuivalen" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bentuk%20ekuivalen" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bentuk Ekuivalen at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Bentuk Ekuivalen</h2>
+    <p><strong>Bentuk Ekuivalen</strong>. Tidak ekuivalen dalam level bentuk namun acuan dan fungsi. Proyeksi ekuivalen adalah luas daerah dipertahankan sama,.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=bentuk%20ekuivalen" alt="Bentuk ekuivalen dari fungsi kuadrat y = x2 + 6x + 16 adalah. (A" />
+        <br>
+        <figcaption>Bentuk ekuivalen dari fungsi kuadrat y = x2 + 6x + 16 adalah. (A from brainly.co.id</figcaption>
+    </figure>
+        <p>
+        Dikutip dari kbbi, ekuivalen artinya nilai (ukuran, arti atau. Ekuivalen logis pada tautologi dan juga kontradiksi, dapat dipastikan bahwa jika dua buah ekspresi logika adalah. Bentuk yang ekuivalen dengan 20/15 oleh admin diposting pada juni 21, 2022.
+    </p>
+    <h3>Bentuk ekuivalen dari fungsi kuadrat y = x2 + 6x + 16 adalah. (A</h3>
+    <p>Proyeksi ekuivalen adalah luas daerah dipertahankan sama,. Ekuivalen logis pada tautologi dan juga kontradiksi, dapat dipastikan bahwa jika dua buah ekspresi logika adalah. Ekuivalen logika matematika dipelajari saat duduk di bangku sma. Proyeksi ekuivalen adalah luas daerah dipertahankan sama,.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bentuk yang ekuivalen dengan 12/3√2 Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/da0/e72a012efc93207b4de9b619048d0d04.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jadi, syarat dua pernyataan majemuk dikatakan. Pernyataan pada soal memuat kata semua yang merujuk pada pernyataan berkuantor universal. Misalnya harga 1 kilogram beras ekuivalen dengan 1 kilogram singkong. Apa yang dinaksud dengan inflasi. Bioekuivalensi adalah istilah dalam farmakokinetika yang digunakan untuk menilai kesetaraan biologis dalam makhluk hidup ( in vivo) dari dua produk obat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bentuk yang ekuivalen dengan 8 per √5 + 3 Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/dfb/4a9f02ebbb33ab4334ebcb096e8a00e1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tersebut memiliki acuan dan fungsi yang sama pada tsu dan tsa. Salah satu cara menunjukkan apakah dua pernyataan majemuk adalah ekuivalen yaitu dengan menggunakan tabel kebenaran. Jika anda menemukan padanan kata atau arti kata yang menurut anda tidak sesuai atau tidak benar, maka anda dapat menghubungi ke pihak badan bahasa kemdikbud untuk memberikan. Sedangkan ekuivalen lebih cocok untuk menggambarkan nilai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bentuk yang ekuivalen dengan adalah Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d1a/26c1b790be9dda16ae073a446401adc2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nah disini kita mempunyai soal untuk mencari bentuk ekuivalen dari dua tangan x per 1 + tangen kuadrat x dan perlu diingat rumus identitas trigonometri yaitu 1 + tangen kuadrat x. Homepage / tugas sekolah / bentuk yang ekuivalen dengan 20/15. Biasanya, materi ini diajarkan untuk siswa/i di sekolah menengah pertama (smp). Hal ini dik are nakan frasa. Saharjo no.161,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bentuk ekuivalen dari fungsi kuadrat y = x2 + 6x + 16 adalah. (A" data-src="https://i2.wp.com/id-static.z-dn.net/files/d9d/7d39e9d453241d5d75f00b91f3cd2883.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">¬ ∨ dan ¬ ∧¬ hukum de morgan solusi: Homepage / tugas sekolah / bentuk yang ekuivalen dengan 20/15. Menyederhanakan ekspresi bentuk akar 2 b.4 mengidentifikasi bentuk ekuivalen 3 bentuk eksponen menggunakan sifat eksponen (termasuk 3 hubungan pangkat rasional dan. Jadi, syarat dua pernyataan majemuk dikatakan. Bentuk yang ekuivalen dengan adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bentuk yang ekuivalen dengan 8 per √5 + 3 Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d8d/8798e5337db0dd924f0ce68df0ed7fa3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pernyataan pada soal memuat kata semua yang merujuk pada pernyataan berkuantor universal. (p ∨ q) ≡ (q ∨ p). Tersebut memiliki acuan dan fungsi yang sama pada tsu dan tsa. Berikut ini arti, makna, pengertian, dan definisi ekuivalen lengkap dengan contoh penggunaan kata ekuivalen berdasarkan kamus besar bahasa indonesia (kbbi) dan juga sumber lainnya. Bentuk ingkaran pernyataan berkuantor universal:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bentuk yang ekuivalen dengan.. Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d6e/84d6ef536857beb20de7404338025edc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bentuk yang ekuivalen dengan tan2⁡x + sec⁡x adalah. Dewi sangat cantik dan peramah. Ekuivalen logis pada tautologi dan juga kontradiksi, dapat dipastikan bahwa jika dua buah ekspresi logika adalah. Salah satu cara menunjukkan apakah dua pernyataan majemuk adalah ekuivalen yaitu dengan menggunakan tabel kebenaran. ¬ ∨ dan ¬ ∧¬ hukum de morgan solusi:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bentuk yang ekuivalen den... Lihat cara penyelesaian di QANDA" data-src="https://i2.wp.com/thumb.mathpresso.io/qanda-storage/cbb1cb07-edf3-4408-9bcb-9e3a9300fb92.jpg?target_format=jpg&amp;width=642" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: qanda.ai</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam bentuk notasi, p ∨ q ekuivalen dengan q ∨ p. Tersebut memiliki acuan dan fungsi yang sama pada tsu dan tsa. Ekuivalen logika matematika dipelajari saat duduk di bangku sma. Ekuivalen ditulis menggunakan notasi ≡. Kedua pernyataan di atas, tanpa dipikir panjang, akan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BENTUK EKUIVALEN SEBUAH AKAR UN SMP YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/8l5QggjkqYo/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bentuk yang ekuivalen dengan 20/akar5. Kedua pernyataan di atas, tanpa dipikir panjang, akan. Proyeksi ekuivalen adalah luas daerah dipertahankan sama,. Menyederhanakan ekspresi bentuk akar 2 b.4 mengidentifikasi bentuk ekuivalen 3 bentuk eksponen menggunakan sifat eksponen (termasuk 3 hubungan pangkat rasional dan. Hal ini dik are nakan frasa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bentuk yang ekuivalen dengan 8 per √5+3 adalah a.2√5+6 b. 2√56. c. 6+2" data-src="https://i2.wp.com/id-static.z-dn.net/files/d93/72091d0cd954c3a83ded633ecb2cc0aa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bentuk yang ekuivalen dengan 20/15 oleh admin diposting pada juni 21, 2022. Dikutip dari kbbi, ekuivalen artinya nilai (ukuran, arti atau. Titik ekuivalen titrasi adalah bagian daripada adanya serangkaian keadaan dimana pada titik tersebut jumlah partikel analit yang bereaksi sama dengan jumlah titran yang. Pengukuran diameter suatu tabung menggunakan mikrometer sekrup pada skala utama. Kedua pernyataan di atas, tanpa dipikir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bentuk ekuivalen yang benar dari 9/akar 7 2 adalah. Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/de6/d9ee57cd9ee72689aed866ea3ff26f82.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hal ini dik are nakan frasa. Bioekuivalensi adalah istilah dalam farmakokinetika yang digunakan untuk menilai kesetaraan biologis dalam makhluk hidup ( in vivo) dari dua produk obat. Ekuivalen suatu pernyataan berarti kita mencari bentuk lain dimana nilai kebenarannya setara atau sama dengan pernyataan semula. Satu hal yang penting harus dicatat bahwa jangan mengalikan atau membagi penyebut dan pecahan dengan 0.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dari-permukaan-air-laut-sinyal-bunyi-dikirim-ke-dasar-laut.html" class="be-post-title">
+				 <h6>dari permukaan air laut sinyal bunyi dikirim ke dasar laut </h6>
+                </a>
+                <a href="dari-permukaan-air-laut-sinyal-bunyi-dikirim-ke-dasar-laut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dari%20permukaan%20air%20laut%20sinyal%20bunyi%20dikirim%20ke%20dasar%20laut&amp;w=50&amp;h=50&amp;c=7" alt="dari permukaan air laut sinyal bunyi dikirim ke dasar laut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kmno4-nama-senyawa.html" class="be-post-title">
+				 <h6>kmno4 nama senyawa </h6>
+                </a>
+                <a href="kmno4-nama-senyawa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kmno4%20nama%20senyawa&amp;w=50&amp;h=50&amp;c=7" alt="kmno4 nama senyawa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="indikator-kesehatan-suatu-negara-berdasarkan-hdi-yaitu.html" class="be-post-title">
+				 <h6>indikator kesehatan suatu negara berdasarkan hdi yaitu </h6>
+                </a>
+                <a href="indikator-kesehatan-suatu-negara-berdasarkan-hdi-yaitu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=indikator%20kesehatan%20suatu%20negara%20berdasarkan%20hdi%20yaitu&amp;w=50&amp;h=50&amp;c=7" alt="indikator kesehatan suatu negara berdasarkan hdi yaitu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-pengertian-kronologi-kronik-dan-sinkronik.html" class="be-post-title">
+				 <h6>jelaskan pengertian kronologi kronik dan sinkronik </h6>
+                </a>
+                <a href="jelaskan-pengertian-kronologi-kronik-dan-sinkronik.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20pengertian%20kronologi%20kronik%20dan%20sinkronik&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan pengertian kronologi kronik dan sinkronik">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="akar-akar-persamaan-kuadrat-x2.html" class="be-post-title">
+				 <h6>akar akar persamaan kuadrat x2 </h6>
+                </a>
+                <a href="akar-akar-persamaan-kuadrat-x2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=akar%20akar%20persamaan%20kuadrat%20x2&amp;w=50&amp;h=50&amp;c=7" alt="akar akar persamaan kuadrat x2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bahasa-jawa-lagi-ngapain.html" class="be-post-title">
+				 <h6>bahasa jawa lagi ngapain </h6>
+                </a>
+                <a href="bahasa-jawa-lagi-ngapain.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bahasa%20jawa%20lagi%20ngapain&amp;w=50&amp;h=50&amp;c=7" alt="bahasa jawa lagi ngapain">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-pretest-ppg-2022-matematika-smp-pdf.html" class="be-post-title">
+				 <h6>soal pretest ppg 2022 matematika smp pdf </h6>
+                </a>
+                <a href="soal-pretest-ppg-2022-matematika-smp-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20pretest%20ppg%202022%20matematika%20smp%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal pretest ppg 2022 matematika smp pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="logam-magnesium-dapat-dibuat-melalui-reaksi.html" class="be-post-title">
+				 <h6>logam magnesium dapat dibuat melalui reaksi </h6>
+                </a>
+                <a href="logam-magnesium-dapat-dibuat-melalui-reaksi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=logam%20magnesium%20dapat%20dibuat%20melalui%20reaksi&amp;w=50&amp;h=50&amp;c=7" alt="logam magnesium dapat dibuat melalui reaksi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="istana-sentris-adalah.html" class="be-post-title">
+				 <h6>istana sentris adalah </h6>
+                </a>
+                <a href="istana-sentris-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=istana%20sentris%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="istana sentris adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-dampak-negatif-dari-asimilasi-menurut-pendapat-anda.html" class="be-post-title">
+				 <h6>jelaskan dampak negatif dari asimilasi menurut pendapat anda </h6>
+                </a>
+                <a href="jelaskan-dampak-negatif-dari-asimilasi-menurut-pendapat-anda.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20dampak%20negatif%20dari%20asimilasi%20menurut%20pendapat%20anda&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan dampak negatif dari asimilasi menurut pendapat anda">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

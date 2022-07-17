@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Abstraksi Teks Adalah at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Abstraksi Teks Adalah",
+  "datePublished": "2022-06-05T16:49:36Z",
+  "image": "https://tse1.mm.bing.net/th?q=abstraksi%20teks%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=abstraksi%20teks%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=abstraksi%20teks%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=abstraksi%20teks%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Abstraksi Teks Adalah at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Abstraksi Teks Adalah</h2>
+    <p><strong>Abstraksi Teks Adalah</strong>. Abstrak memberikan gambaran kepada pembaca mengenai isi karya tulis ilmiah secara ringkas. Teks akademik bersifat taksonomik dan abstrak.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=abstraksi%20teks%20adalah" alt="Interprestasi Adalah Bagian Pada Teks Cerita Inspiratif Yang Berisi" />
+        <br>
+        <figcaption>Interprestasi Adalah Bagian Pada Teks Cerita Inspiratif Yang Berisi from sibarealo.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Jadi, apa sebenarnya arti dan maksud dari kata ini? Abstrak dapat diartikan sebagai ringkasan mengenai isi karya tulis ilmiah. Abstraksi adalah abstrak yang berisi uraian ringkas tentang objek atau hal yang hendak disindir atau dikritik.
+    </p>
+    <h3>Interprestasi Adalah Bagian Pada Teks Cerita Inspiratif Yang Berisi</h3>
+    <p>Bersifat humoris dan sindiran halus yang alami. Struktur teks anekdot yang benar adalah abstrak (abstraksi), orientasi, krisis, reaksi, dan koda. Apsiganocj dan 184 orang menganggap jawaban ini membantu. Selain itu, abstrak juga memuat tentang latar belakang tesis atau disertasi serta kesimpulan karya ilmiah.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Langkah Abstraksi Teks Prosedur Kompleks Kosongin" data-src="https://i2.wp.com/kosongin.com/wp-content/uploads/2020/06/Langkah-Abstraksi-Teks-Prosedur-Kompleks.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kosongin.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mengabstraksi adalah proses menghasilkan abstrak (ringkasan). Teks anekdot adalah cerita singkat lucu yang digunakan untuk menyampaikan kritik melalui sindiran, serta berisi pendidikan atau petuah kehidupan berdasarkan kejadian nyata atau fiksi. Apsiganocj dan 184 orang menganggap jawaban ini membantu. Koda merupakan bagian yang menutup cerita dalam teks tersebut. Oleh karena itu, abstraksi bisa juga disebut sebagai tahap pembukaan dan bersifat opsional.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Abstraksi yang tepat terhadap penggalan teks tersebut adalah" data-src="https://i2.wp.com/id-static.z-dn.net/files/db6/3f3bd6974275c6bcb614d2514c9331d6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abstraksi yaitu bagian di awal paragraf yang berfungsi memberi gambaran tentang isi teks. Di dunia pendidikan tulisan singkat ini dipergunakan oleh sebuah lembaga atau institusi sebagai informasi pertama pada suatu penelitian ketika akan di. Abstrak adalah hasil tulisan ringkas dari beberapa uraian. Nah, berikut 5 struktur teks anekdot selengkapnya. Argumentasi yang logis harus dibarengi dengan observasi untuk memecahkan sebuah problem.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Dan Pembahasan Abstraksi Teks Lembar Jawaban" data-src="https://i2.wp.com/1.bp.blogspot.com/-wX-VnzVtUyA/WNtk62OPKRI/AAAAAAAAEik/b2n5wnEY0oU-JPRq8qgWaZkirNcgb9a2ACLcB/w1200-h630-p-k-no-nu/Contoh%2BSoal%2BAbstraksi%2BTeks%2BBerita.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lembarjawabansiswa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abstraksi merupakan kegiatan membuat ringkasan, intisari, atau garis besar suatu teks. Ada hasil yang dicapai dan ada kesimpulan yang dapat diambil. Dengan cara ini, ia merujuk pada ilmu fisika, tetapi ilmu alam lain seperti kimia dan biologi juga melakukan hal yang sama. Ada beberapa jenis abstrak (sumber: Cobalah untuk memahami inti dari setiap poin penting dalam ringkasan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Teks Yang Bertujuan Mengklasifikasi Dan Atau Mendeskripsikan" data-src="https://i2.wp.com/id-static.z-dn.net/files/d6b/5136449269e05bd3aeef0733e455c390.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kelasonlinepelajar.web.app</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Orientasi adalah bagian yang menunjukkan awal kejadian cerita atau latar belakang bagaimana peristiwa terjadi. Untuk menjadikan abstrak tersebut tergolong kedalam abstrak yang baik harus memiliki 4 unsur ini : Maka dari itu bagaimana jika anda coba berbagi dan melengkapi cara penggunaan kata/istilah maupun. Biasanya bagian ini menunjukkan hal unik yang akan ada di dalam teks. Seperti penutup, struktur teks anekdot.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jelaskan Yang Dimaksud Abstraksi Teks Iklan Berbagai Teks Penting" data-src="https://i2.wp.com/id-static.z-dn.net/files/d20/fe92f2b49fe160239e9750dd52af0bdd.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berbagaiteks.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Struktur teks anekdot yang benar adalah abstrak (abstraksi), orientasi, krisis, reaksi, dan koda. Freepik) abstrak adalah tulisan atau pernyataan yang singkat, kuat, dan menggambarkan isi karya ilmiah yang dibuat. Apsiganocj dan 184 orang menganggap jawaban ini membantu. Abstraksi adalah struktur anekdot yang terletak pada bagian awal paragraf, yang berisikan gambaran awal tentang isi dari teks anekdot. Lebih lanjut, berikut dipaparkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Abstraksi Teks Cerita Sejarah Kosongin" data-src="https://i2.wp.com/kosongin.com/wp-content/uploads/2020/05/Abstraksi-Teks-Cerita-Sejarah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kosongin.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abstrak dapat diartikan sebagai ringkasan mengenai isi karya tulis ilmiah. Ada dua konsep utama dalam membuat abstrak, yaitu conciseness yang artinya ringkas dan padat. Nah, berikut 5 struktur teks anekdot selengkapnya. Abstrak harus ditulis secara akurat, mudah dibaca, jelas, dan padat. Koda merupakan bagian yang menutup cerita dalam teks tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Karakteristik dan Cara Membuat Abstraksi Teks Pantun" data-src="https://i2.wp.com/kosongin.com/wp-content/uploads/2020/06/Karakteristik-dan-Cara-Membuat-Abstraksi-Teks-Pantun.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kosongin.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abstraksi yaitu bagian di awal paragraf yang berfungsi memberi gambaran tentang isi teks. Maka dari itu bagaimana jika anda coba berbagi dan melengkapi cara penggunaan kata/istilah maupun. Abstrak dapat diartikan sebagai ringkasan mengenai isi karya tulis ilmiah. Biasanya bagian ini menunjukkan hal unik yang akan ada di dalam teks. Adapun tujuan dari abstrak ini adalah untuk menjelaskan isi informasi asli.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Interprestasi Adalah Bagian Pada Teks Cerita Inspiratif Yang Berisi" data-src="https://i2.wp.com/3.bp.blogspot.com/-XQsKIudHsNM/WRnS_SQPndI/AAAAAAAAACw/Zr3UqGCA7n8raDdTyQgCcDprOEBZZUmsgCLcB/s1600/1494862u55uu8-picsay.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sibarealo.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abstraksi, yaitu bagian awal paragraf cerita yang berisi gambaran isi teks, biasanya mengandung hal unik.; Cobalah untuk memahami inti dari setiap poin penting dalam ringkasan. Untuk memperjelas atas materi abstrak dalam penelitian ilmiah diatas, berikut ini adalah contoh penulisan abstrak yang baik. Seperti teks pada umumnya, teks anekdot juga memiliki struktur tertentu yang harus diperhatikan. Abstraksi diletakan di awal paragraf.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="berikut ini alasan teks di atas bukan termasuk teks anekdot adalah....a" data-src="https://i2.wp.com/id-static.z-dn.net/files/d81/8d886d4b79c62177d97b4b076d752367.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Abstrak adalah hasil tulisan ringkas dari beberapa uraian. Abstrak adalah bagian penting dari penulisan karya ilmiah.simak penjelasan cara membuat abstrak berikut ini. Isinya adalah rangkuman dari penelitian yang dilakukan. Biasanya bagian ini menunjukkan hal unik yang akan ada di dalam teks. Freepik) abstrak adalah tulisan atau pernyataan yang singkat, kuat, dan menggambarkan isi karya ilmiah yang dibuat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Abstraksi Anekdot Dunia Belajar" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/C7f4Twze1s4bBxCvGj66kCLIf_ce2nYNsksCG09QnwK1RUuCMQ9Rv6EyQhP7NoiVSq-vk6PiyTh3cVo6LVyYGcvLbP608hGqdRIcJ9Bo2YWFk17yWFQZjnVZaQ=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: belajarduniasoal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Isinya adalah rangkuman dari penelitian yang dilakukan. Abstraksi menjadi struktur teks anekdot yang diletakan paling awal. Teks akademik bersifat taksonomik dan abstrak pada dasarnya taksonomi adalah pemetaan pokok persoalan melalui klasifikasi terhadap sesuatu. Abstraksi adalah abstrak yang berisi uraian ringkas tentang objek atau hal yang hendak disindir atau dikritik. Ada beberapa jenis abstrak (sumber:</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-akm-smp-kelas-9-bahasa-indonesia-beserta-jawabannya.html" class="be-post-title">
+				 <h6>contoh soal akm smp kelas 9 bahasa indonesia beserta jawabannya </h6>
+                </a>
+                <a href="contoh-soal-akm-smp-kelas-9-bahasa-indonesia-beserta-jawabannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20akm%20smp%20kelas%209%20bahasa%20indonesia%20beserta%20jawabannya&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal akm smp kelas 9 bahasa indonesia beserta jawabannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jepang-diwajibkan-untuk-menjaga-status-quo-yang-artinya.html" class="be-post-title">
+				 <h6>jepang diwajibkan untuk menjaga status quo yang artinya </h6>
+                </a>
+                <a href="jepang-diwajibkan-untuk-menjaga-status-quo-yang-artinya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jepang%20diwajibkan%20untuk%20menjaga%20status%20quo%20yang%20artinya&amp;w=50&amp;h=50&amp;c=7" alt="jepang diwajibkan untuk menjaga status quo yang artinya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="fungsi-perihal-dalam-surat-lamaran-pekerjaan.html" class="be-post-title">
+				 <h6>fungsi perihal dalam surat lamaran pekerjaan </h6>
+                </a>
+                <a href="fungsi-perihal-dalam-surat-lamaran-pekerjaan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=fungsi%20perihal%20dalam%20surat%20lamaran%20pekerjaan&amp;w=50&amp;h=50&amp;c=7" alt="fungsi perihal dalam surat lamaran pekerjaan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-tema-1-kelas-5-halaman-146-sampai-153.html" class="be-post-title">
+				 <h6>kunci jawaban tema 1 kelas 5 halaman 146 sampai 153 </h6>
+                </a>
+                <a href="kunci-jawaban-tema-1-kelas-5-halaman-146-sampai-153.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20tema%201%20kelas%205%20halaman%20146%20sampai%20153&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban tema 1 kelas 5 halaman 146 sampai 153">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nama-nama-wali-songo-dan-asalnya.html" class="be-post-title">
+				 <h6>nama nama wali songo dan asalnya </h6>
+                </a>
+                <a href="nama-nama-wali-songo-dan-asalnya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nama%20nama%20wali%20songo%20dan%20asalnya&amp;w=50&amp;h=50&amp;c=7" alt="nama nama wali songo dan asalnya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-untuk-smk-farmasi.html" class="be-post-title">
+				 <h6>contoh soal untuk smk farmasi </h6>
+                </a>
+                <a href="contoh-soal-untuk-smk-farmasi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20untuk%20smk%20farmasi&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal untuk smk farmasi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-peran-pemerintah-dalam-perekonomian.html" class="be-post-title">
+				 <h6>jelaskan peran pemerintah dalam perekonomian </h6>
+                </a>
+                <a href="jelaskan-peran-pemerintah-dalam-perekonomian.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20peran%20pemerintah%20dalam%20perekonomian&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan peran pemerintah dalam perekonomian">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-matematika-kelas-8-semester-2-halaman-311-dan-caranya.html" class="be-post-title">
+				 <h6>kunci jawaban matematika kelas 8 semester 2 halaman 311 dan caranya </h6>
+                </a>
+                <a href="kunci-jawaban-matematika-kelas-8-semester-2-halaman-311-dan-caranya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20matematika%20kelas%208%20semester%202%20halaman%20311%20dan%20caranya&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban matematika kelas 8 semester 2 halaman 311 dan caranya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kegiatan-pemberdayaan-didasarkan-pada.html" class="be-post-title">
+				 <h6>kegiatan pemberdayaan didasarkan pada </h6>
+                </a>
+                <a href="kegiatan-pemberdayaan-didasarkan-pada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kegiatan%20pemberdayaan%20didasarkan%20pada&amp;w=50&amp;h=50&amp;c=7" alt="kegiatan pemberdayaan didasarkan pada">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-bahasa-inggris-kelas-2-sd-pdf.html" class="be-post-title">
+				 <h6>soal uas bahasa inggris kelas 2 sd pdf </h6>
+                </a>
+                <a href="soal-uas-bahasa-inggris-kelas-2-sd-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20bahasa%20inggris%20kelas%202%20sd%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal uas bahasa inggris kelas 2 sd pdf">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

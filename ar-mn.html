@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ar Mn at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Ar Mn",
+  "datePublished": "2022-05-04T18:52:04Z",
+  "image": "https://tse1.mm.bing.net/th?q=ar%20mn",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ar%20mn&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ar%20mn" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ar%20mn" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ar Mn at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ar Mn</h2>
+    <p><strong>Ar Mn</strong>. Manganese oxide is used as an oxidising agent; Here&#039;s the quick answer if you have friends taking shifts as driver so that you can make the entire trip by.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ar%20mn" alt="Minnesota Basketball Previewing Arkansas State" />
+        <br>
+        <figcaption>Minnesota Basketball Previewing Arkansas State from www.chatsports.com</figcaption>
+    </figure>
+        <p>
+        This includes an average layover. Lambang unsur, nomor atom, massa atom atau isotop yang paling stabil, serta golongan dan nomor periode dalam tabel periodik. Shopping cart(0) no products in the cart.
+    </p>
+    <h3>Minnesota Basketball Previewing Arkansas State</h3>
+    <p>How far is minnesota from arkansas? What is the cheapest month to fly from minnesota to arkansas? See the complete profile on linkedin and discover ar_’s connections and jobs. Join facebook to connect with år mñ and others you may know.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minnesota BasketballMinnesota Beats Arkansas State 8275 The Daily" data-src="https://i2.wp.com/cdn.vox-cdn.com/thumbor/oCjcdh-Yu0ijF723xUvp7B-5N6o=/0x0:4206x3363/1200x800/filters:focal(1767x1346:2439x2018)/cdn.vox-cdn.com/uploads/chorus_image/image/52446805/usa_today_9729645.0.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thedailygopher.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lambang unsur, nomor atom, massa atom atau isotop yang paling stabil, serta golongan dan nomor periode dalam tabel periodik. It is a hard, brittle, silvery metal, often found in minerals in combination with iron. The list of requirements for minnesota&#039;s frontline worker pay is fairly simple. With a nationwide footprint and recovery rates nearly double the industry average, summit account.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="WholeHogSports ArkansasMinnesota Live Blog" data-src="https://i2.wp.com/wehco.media.clients.ellingtoncms.com/img/photos/2013/11/26/Arkansas_Minnesota_Ba_Jone1_r600x400.jpg?689b03237e9432d372b8e4e059d8b6cfaff1b604" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wholehogsports.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ar has 1 job listed on their profile. Mn relay service at 711. Find contact&#039;s direct phone number, email address, work history, and more. Facebook gives people the power to share and makes the world more open and connected. Voters in georgia, alabama, texas, and arkansas are selecting their gop and democrat nominees in several hotly contested primary states on.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minnesota Gophers 85, Arkansas Razorbacks 71 Credibility Arkansas Fight" data-src="https://i2.wp.com/cdn.vox-cdn.com/thumbor/CFh8je1UJhQ9brlPo5GFCGgTMJk=/0x0:1938x2359/1200x800/filters:focal(654x804:964x1114)/cdn.vox-cdn.com/uploads/chorus_image/image/51968411/usa_today_9697464.0.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.arkansasfight.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">View ar mn’s profile on linkedin, the world’s largest professional community. Lihat profil lengkap di linkedin dan terokai kenalan. What is the cheapest month to fly from minnesota to arkansas? See the complete profile on linkedin and discover ar’s connections and jobs at. Facebook gives people the power to share and makes the world more open and connected.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minnesota Basketball Previewing Arkansas State The Daily Gopher" data-src="https://i2.wp.com/cdn.vox-cdn.com/thumbor/eMvNQ9KsoLa1XdPMnJ6wrIaZ030=/0x0:2829x1884/1200x800/filters:focal(1189x716:1641x1168)/cdn.vox-cdn.com/uploads/chorus_image/image/52440117/usa_today_8954606.0.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thedailygopher.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The travel time is 3 hours and 2 minutes. You must have worked at least 120 hours from march 15, 2020, to june 30, 2021, in one more or. Driving distance from jonesboro, ar to minnesota lake, mn is 0 miles (0 km). View ar_ mn’s profile on linkedin, the world’s largest professional community. Ar north america has been able.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7.5&#039;&#039; Billet upper/lower budget Ar pistol (FTF in MN) LOWERED" data-src="https://i2.wp.com/i.imgur.com/BNrzJMB.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ar15.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How far is minnesota from arkansas? Mn relay service at 711. Minnesota only honors idaho and south dakota enhanced carry permits, and north dakota class 1 licenses. Apf armory, your hometown ar builder, 100% american made ar15 rifles and parts It is a hard, brittle, silvery metal, often found in minerals in combination with iron.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Preview and Thread Hogs Take On Minnesota Arkansas Fight" data-src="https://i2.wp.com/cdn.vox-cdn.com/thumbor/-ag9B0Sx_EZhYPpranuNggFxvoQ=/0x0:2117x2837/920x613/filters:focal(974x1599:1312x1937)/cdn.vox-cdn.com/uploads/chorus_image/image/57919077/usa_today_9697622.0.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.arkansasfight.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How far is it from jonesboro, ar to minnesota lake, mn? Driving distance from jonesboro, ar to minnesota lake, mn is 0 miles (0 km). 5:12 pm arrive in rochester (minnesota) day 2 driving ≈ 5 hours. Register for eden prairie adaptive. View ar mn&#039;s business profile as banker at smbc nikko capital markets.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Arkansas vs Houston Will be a Big Home Test for Hogs" data-src="https://i2.wp.com/images2.minutemediacdn.com/image/fetch/w_850,h_560,c_fill,g_auto,f_auto/https://i2.wp.com/razorbackers.com/files/2016/12/9697621-mike-anderson-ncaa-basketball-arkansas-minnesota-1-850x560.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: razorbackers.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Information about eden prairie adaptive recreation. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. Mangan, 25 mn sifat umum; The journey time between arkansas and minnesota is around 23h 40m and covers a distance of around 1048 miles. Head north on 4th street.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Minnesota Basketball Previewing Arkansas State" data-src="https://i2.wp.com/cdn.chatsports.com/thumbnails/5078-13382-original.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.chatsports.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What is the cheapest month to fly from minnesota to arkansas? Lihat profil ar mn di linkedin, komuniti profesional yang terbesar di dunia. 5:12 pm arrive in rochester (minnesota) day 2 driving ≈ 5 hours. The distance between willmar, mn and moorhead, mn is 164 mi by car. See the complete profile on linkedin and discover ar’s connections and jobs.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cue the Horns Texas vs Arkansas Pregame Lone Star Shootout" data-src="https://i2.wp.com/images2.minutemediacdn.com/image/fetch/w_850,h_560,c_fill,g_auto,f_auto/https://i2.wp.com/razorbackers.com/files/2016/12/9697470-ncaa-basketball-arkansas-minnesota-850x560.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: razorbackers.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">See the complete profile on linkedin and discover ar_’s connections and jobs. Lihat profil lengkap di linkedin dan terokai kenalan. How far is it from jonesboro, ar to minnesota lake, mn? Here&#039;s the quick answer if you have friends taking shifts as driver so that you can make the entire trip by. Ar mn is on facebook.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Arkansas Men&#039;s Basketball Takes on Stephen F. Austin" data-src="https://i2.wp.com/images2.minutemediacdn.com/image/fetch/w_850,h_560,c_fill,g_auto,f_auto/https://i2.wp.com/razorbackers.com/files/2016/11/9697467-ncaa-basketball-arkansas-minnesota-850x560.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: razorbackers.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Flight distance is approximately 577. Driving distance from jonesboro, ar to minnesota lake, mn is 0 miles (0 km). Ar_ has 1 job listed on their profile. What is the cheapest month to fly from minnesota to arkansas? Manganese oxide is used as an oxidising agent;</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mengapa-matahari-termasuk-bintang.html" class="be-post-title">
+				 <h6>mengapa matahari termasuk bintang </h6>
+                </a>
+                <a href="mengapa-matahari-termasuk-bintang.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20matahari%20termasuk%20bintang&amp;w=50&amp;h=50&amp;c=7" alt="mengapa matahari termasuk bintang">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-matematika-smk-kelas-12-dan-jawabannya.html" class="be-post-title">
+				 <h6>soal matematika smk kelas 12 dan jawabannya </h6>
+                </a>
+                <a href="soal-matematika-smk-kelas-12-dan-jawabannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20matematika%20smk%20kelas%2012%20dan%20jawabannya&amp;w=50&amp;h=50&amp;c=7" alt="soal matematika smk kelas 12 dan jawabannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-dan-pembahasan-un-matematika-smp-2020-pdf.html" class="be-post-title">
+				 <h6>soal dan pembahasan un matematika smp 2020 pdf </h6>
+                </a>
+                <a href="soal-dan-pembahasan-un-matematika-smp-2020-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20dan%20pembahasan%20un%20matematika%20smp%202020%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal dan pembahasan un matematika smp 2020 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-yang-bukan-merupakan-kegiatan-pelaksanaan-penelitian-ilmiah-adalah.html" class="be-post-title">
+				 <h6>berikut ini yang bukan merupakan kegiatan pelaksanaan penelitian ilmiah adalah </h6>
+                </a>
+                <a href="berikut-ini-yang-bukan-merupakan-kegiatan-pelaksanaan-penelitian-ilmiah-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20yang%20bukan%20merupakan%20kegiatan%20pelaksanaan%20penelitian%20ilmiah%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini yang bukan merupakan kegiatan pelaksanaan penelitian ilmiah adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jamur-yang-berperan-dalam-pembuatan-tempe.html" class="be-post-title">
+				 <h6>jamur yang berperan dalam pembuatan tempe </h6>
+                </a>
+                <a href="jamur-yang-berperan-dalam-pembuatan-tempe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jamur%20yang%20berperan%20dalam%20pembuatan%20tempe&amp;w=50&amp;h=50&amp;c=7" alt="jamur yang berperan dalam pembuatan tempe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hcl-asam-atau-basa.html" class="be-post-title">
+				 <h6>hcl asam atau basa </h6>
+                </a>
+                <a href="hcl-asam-atau-basa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hcl%20asam%20atau%20basa&amp;w=50&amp;h=50&amp;c=7" alt="hcl asam atau basa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="garis-khayal-yang-membentang-secara-vertikal-diatas-permukaan-bumi-disebut.html" class="be-post-title">
+				 <h6>garis khayal yang membentang secara vertikal diatas permukaan bumi disebut </h6>
+                </a>
+                <a href="garis-khayal-yang-membentang-secara-vertikal-diatas-permukaan-bumi-disebut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=garis%20khayal%20yang%20membentang%20secara%20vertikal%20diatas%20permukaan%20bumi%20disebut&amp;w=50&amp;h=50&amp;c=7" alt="garis khayal yang membentang secara vertikal diatas permukaan bumi disebut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ulangan-harian-tema-5-kelas-2-sd-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal ulangan harian tema 5 kelas 2 sd kurikulum 2013 </h6>
+                </a>
+                <a href="soal-ulangan-harian-tema-5-kelas-2-sd-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ulangan%20harian%20tema%205%20kelas%202%20sd%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal ulangan harian tema 5 kelas 2 sd kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="asean-merupakan-singkatan-dari.html" class="be-post-title">
+				 <h6>asean merupakan singkatan dari </h6>
+                </a>
+                <a href="asean-merupakan-singkatan-dari.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=asean%20merupakan%20singkatan%20dari&amp;w=50&amp;h=50&amp;c=7" alt="asean merupakan singkatan dari">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="besarnya-tekanan-hidrostatis-bergantung-pada.html" class="be-post-title">
+				 <h6>besarnya tekanan hidrostatis bergantung pada </h6>
+                </a>
+                <a href="besarnya-tekanan-hidrostatis-bergantung-pada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=besarnya%20tekanan%20hidrostatis%20bergantung%20pada&amp;w=50&amp;h=50&amp;c=7" alt="besarnya tekanan hidrostatis bergantung pada">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

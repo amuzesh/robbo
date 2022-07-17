@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Pendekatan Multidimensional at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Pendekatan Multidimensional",
+  "datePublished": "2022-04-29T22:52:21Z",
+  "image": "https://tse1.mm.bing.net/th?q=pendekatan%20multidimensional",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=pendekatan%20multidimensional&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pendekatan%20multidimensional" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pendekatan%20multidimensional" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Pendekatan Multidimensional at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Pendekatan Multidimensional</h2>
+    <p><strong>Pendekatan Multidimensional</strong>. Analisis keberlanjutan pengembangan kawasan pariwisata dilakukan dengan pendekatan multidimensional scaling (mds) yang merupakan pengembangan dari model rapfish. In particular, this paper is useful for stakeholders who will use a multidimensional approach in learning the history of the kurikulum merdeka.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=pendekatan%20multidimensional" alt="Sugiono Pendekatan Multidimensional Cegah Bentrok Papua FRAKSI" />
+        <br>
+        <figcaption>Sugiono Pendekatan Multidimensional Cegah Bentrok Papua FRAKSI from www.fraksigerindra.id</figcaption>
+    </figure>
+        <p>
+        Download free pendekatan multidimensional installation notice: Ilmu bantu sejarah dalam pendekatan multidimensional adalah sosiologi, antropologi, hingga ekonomi. Dalam perencanaan yang matang salah satunya adalah menggunakan pendekatan multidimensional dan interdisipliner.
+    </p>
+    <h3>Sugiono Pendekatan Multidimensional Cegah Bentrok Papua FRAKSI</h3>
+    <p>Sedangkan sejarah non naratif adalah ilmu yang lebih berfokus. This plan is bundled with adware. Komentar, feedback, bantuan, tulis di sini ya. · linking rewards to performance.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sugiono Pendekatan Multidimensional Cegah Bentrok Papua FRAKSI" data-src="https://i2.wp.com/www.fraksigerindra.id/wp-content/uploads/2021/04/sugiono-650x375.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.fraksigerindra.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pembangunan tidak memiliki konsep dan makna tunggal. Pay out incredibly close focus when putting in; Di samping itu, orang bisa dipekerjakan dan dipecat melalui uang. The 3rd party offers are usually not necessary for this software package to operate. The key features that multidimensional performance models tried to address are:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENERAPAN ANALISIS MULTIDIMENSIONAL SCALING DENGAN PENDEKATAN" data-src="https://i2.wp.com/image1.slideserve.com/3454098/abstrak-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sedangkan sejarah non naratif adalah ilmu yang lebih berfokus. Pendekatan sosio kultural pendekatan sosio in sanggat penting karena berkaitan dengan harkat dan martabat manusia. Ada pepatah mengatakan, “uang lebih manis dari pada madu.” pendekatan ini memandang orang sebagai manusia ekonomi. Nilai stress pada metode mds sebesar 0,092 (9,2%) sedangkan pada metode wmds. Analisis keberlanjutan pengembangan kawasan pariwisata dilakukan dengan pendekatan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berpikir Sinkronik dan Diakronik Melalui Pendekatan Multidimensional" data-src="https://i2.wp.com/1.bp.blogspot.com/-Em9yBmR-1Ko/XudyEJcrylI/AAAAAAAAAnM/kTvY1Q_uFkMEUvm2knK1jkw_oR8MemHQQCLcBGAsYHQ/s1600/pendekatan-multidimensional.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bloggerzar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The 3rd party offers are usually not necessary for this software package to operate. Selanjutnya, dalam interaksinya dengan sesama. Dalam perencanaan yang matang salah satunya adalah menggunakan pendekatan multidimensional dan interdisipliner. Dalam perkembangan pendekatan multidimensional muncul dua pendekatan baru dalam ilmu sejarah, yaitu sejarah naratif dan sejarah non naratif. In particular, this paper is useful for stakeholders who will use.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pendekatan Multidimensional Sebuah Alternatif Kritik Sastra Indonesia" data-src="https://i2.wp.com/3.bp.blogspot.com/-zzuP94ssNsk/WGp6AAkB8qI/AAAAAAAABmM/0woEotZsnpkJHEBxGekBWlwhef11J2h8gCLcB/s1600/multi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kajiansastra.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Artikel ini membahas tentang implementasi pendekatan multidimensional dalam pembelajaran sejarah kurikulum merdeka. Pendekatan sosio kultural pendekatan sosio in sanggat penting karena berkaitan dengan harkat dan martabat manusia. Komentar, feedback, bantuan, tulis di sini ya. Ada pepatah mengatakan, “uang lebih manis dari pada madu.” pendekatan ini memandang orang sebagai manusia ekonomi. The 3rd party offers are usually not necessary for this.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Penulisan Sejarah Dengan Menggunakan Pendekatan Multidimensional" data-src="https://i2.wp.com/www.seputarpengetahuan.co.id/wp-content/uploads/2018/09/Pengertian-Historiografi-Macam-Macam-Contoh-Terlengkap.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bagikansejarah.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">· linking rewards to performance. The 3rd party offers are usually not necessary for this software package to operate. Di samping itu, orang bisa dipekerjakan dan dipecat melalui uang. Padahal implementasi kedua pendekatan tersebut dalam proses pembelajaran memiliki beberapa keuntungan yaitu menumbuhkan lifelong learning skills,. Multidimensional performance models where created in response to the weaknesses of traditional performance management systems.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gerindra Perlu pendekatan multidimensional cegah bentrok di Papua" data-src="https://i2.wp.com/cdn.antaranews.com/cache/800x533/2021/04/25/IMG_20210425_211445.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jateng.antaranews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sejujurnya, uanglah yang paling penting. Download citation | penerapan manajemen sumber daya manusia dengan pendekatan “multidimensional” dalam meningkatkan pembangunan desa bonder | penelitian ini bertujuan untuk mengetahui. · setting performance standards and targets. Di samping itu, orang bisa dipekerjakan dan dipecat melalui uang. Semoga dapat membantu walau kurangnya jawaban pengertian lengkap untuk menyatakan artinya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENERAPAN ANALISIS MULTIDIMENSIONAL SCALING DENGAN PENDEKATAN" data-src="https://i2.wp.com/image1.slideserve.com/3454098/pendahuluan-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selanjutnya, dalam interaksinya dengan sesama. · linking performance to strategy. Ini aspek yang pertama dari berpikir multidimensional yang berhubungan dengan peradaban. The key features that multidimensional performance models tried to address are: Artikel ini membahas tentang implementasi pendekatan multidimensional dalam pembelajaran sejarah kurikulum merdeka.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENERAPAN ANALISIS MULTIDIMENSIONAL SCALING DENGAN PENDEKATAN" data-src="https://i2.wp.com/image1.slideserve.com/3454098/slide12-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">· linking performance to strategy. Hasil penelitian diperoleh perbedaan antara metode multidimensional scaling dan weighted multidimensional scaling. The key features that multidimensional performance models tried to address are: · setting performance standards and targets. Dalam perencanaan yang matang salah satunya adalah menggunakan pendekatan multidimensional dan interdisipliner.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT PENERAPAN ANALISIS MULTIDIMENSIONAL SCALING DENGAN PENDEKATAN" data-src="https://i2.wp.com/image1.slideserve.com/3454098/tinjauan-teori-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Karena itu, model penelitian yang menggunakan konstruk multidimensional, pengujian atau analisis dilakukan pada dua jenjang, yaitu analisis pada first order construct. Padahal implementasi kedua pendekatan tersebut dalam proses pembelajaran memiliki beberapa keuntungan yaitu menumbuhkan lifelong learning skills,. The 3rd party offers are usually not necessary for this software package to operate. Ada pepatah mengatakan, “uang lebih manis dari pada madu.”.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Pendekatan Multidimensional dalam Sejarah Efrial Ruliandi" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/48738276/mini_magick20180815-30829-1uqxmym.png?1534369378" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academia.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Nilai stress pada metode mds sebesar 0,092 (9,2%) sedangkan pada metode wmds. Namun demikian, pembangunan selalu identik dengan aspek ekonomi di mana mengurangi kemiskinan harus disertai dengan meningkatkan pendapatan si miskin agar tidak lagi menjadi miskin. Ini aspek yang pertama dari berpikir multidimensional yang berhubungan dengan peradaban. Model rapfish (rapid appraisal for fisheries) telah digunakan oleh university of british columbia,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="epirogenesa-negatif.html" class="be-post-title">
+				 <h6>epirogenesa negatif </h6>
+                </a>
+                <a href="epirogenesa-negatif.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=epirogenesa%20negatif&amp;w=50&amp;h=50&amp;c=7" alt="epirogenesa negatif">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-matematika-kls-9-halaman-102.html" class="be-post-title">
+				 <h6>kunci jawaban matematika kls 9 halaman 102 </h6>
+                </a>
+                <a href="kunci-jawaban-matematika-kls-9-halaman-102.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20matematika%20kls%209%20halaman%20102&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban matematika kls 9 halaman 102">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ilmu-yang-mempelajari-tentang-peta-adalah.html" class="be-post-title">
+				 <h6>ilmu yang mempelajari tentang peta adalah </h6>
+                </a>
+                <a href="ilmu-yang-mempelajari-tentang-peta-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ilmu%20yang%20mempelajari%20tentang%20peta%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="ilmu yang mempelajari tentang peta adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="i-hope-tomorrow-will-be-than-today.html" class="be-post-title">
+				 <h6>i hope tomorrow will be than today </h6>
+                </a>
+                <a href="i-hope-tomorrow-will-be-than-today.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=i%20hope%20tomorrow%20will%20be%20than%20today&amp;w=50&amp;h=50&amp;c=7" alt="i hope tomorrow will be than today">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jenis-ganggang-yang-dapat-dimanfaatkan-sebagai-bahan-agar-agar-adalah.html" class="be-post-title">
+				 <h6>jenis ganggang yang dapat dimanfaatkan sebagai bahan agar agar adalah </h6>
+                </a>
+                <a href="jenis-ganggang-yang-dapat-dimanfaatkan-sebagai-bahan-agar-agar-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jenis%20ganggang%20yang%20dapat%20dimanfaatkan%20sebagai%20bahan%20agar%20agar%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="jenis ganggang yang dapat dimanfaatkan sebagai bahan agar agar adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-pai-kelas-2-sd-semester-genap.html" class="be-post-title">
+				 <h6>soal uas pai kelas 2 sd semester genap </h6>
+                </a>
+                <a href="soal-uas-pai-kelas-2-sd-semester-genap.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20pai%20kelas%202%20sd%20semester%20genap&amp;w=50&amp;h=50&amp;c=7" alt="soal uas pai kelas 2 sd semester genap">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-usbn-ips-smp-pdf.html" class="be-post-title">
+				 <h6>soal usbn ips smp pdf </h6>
+                </a>
+                <a href="soal-usbn-ips-smp-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20usbn%20ips%20smp%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal usbn ips smp pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-olimpiade-ipa-sd-dan-pembahasannya-doc.html" class="be-post-title">
+				 <h6>soal olimpiade ipa sd dan pembahasannya doc </h6>
+                </a>
+                <a href="soal-olimpiade-ipa-sd-dan-pembahasannya-doc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20olimpiade%20ipa%20sd%20dan%20pembahasannya%20doc&amp;w=50&amp;h=50&amp;c=7" alt="soal olimpiade ipa sd dan pembahasannya doc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-olimpiade-ips-smp-2020-pdf.html" class="be-post-title">
+				 <h6>soal olimpiade ips smp 2020 pdf </h6>
+                </a>
+                <a href="soal-olimpiade-ips-smp-2020-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20olimpiade%20ips%20smp%202020%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal olimpiade ips smp 2020 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-uts-fisika-kelas-11-semester-2.html" class="be-post-title">
+				 <h6>contoh soal uts fisika kelas 11 semester 2 </h6>
+                </a>
+                <a href="contoh-soal-uts-fisika-kelas-11-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20uts%20fisika%20kelas%2011%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal uts fisika kelas 11 semester 2">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

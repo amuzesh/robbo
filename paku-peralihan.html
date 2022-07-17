@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Paku Peralihan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Paku Peralihan",
+  "datePublished": "2022-03-30T14:43:03Z",
+  "image": "https://tse1.mm.bing.net/th?q=paku%20peralihan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=paku%20peralihan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=paku%20peralihan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=paku%20peralihan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Paku Peralihan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Paku Peralihan</h2>
+    <p><strong>Paku Peralihan</strong>. Setelah itu dengan metode meiosis, sporangium akan menghasilkan dan membetuk spora dengan kromosom yang. Ketika ada spora yang jatuh di tempat yang cocok, spora tadi akan berkembang menjadi protalium yang merupakan generasi penghasil gamet atau biasa disebut sebagai generasi gametofit, yang akan segera membentuk anteredium yang akan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=paku%20peralihan" alt="15+ Contoh Tumbuhan Paku Lengkap [ Penjelasan dan Gambarnya]" />
+        <br>
+        <figcaption>15+ Contoh Tumbuhan Paku Lengkap [ Penjelasan dan Gambarnya] from toriqa.com</figcaption>
+    </figure>
+        <p>
+        Paku peralihan merupakan jenis tumbuhan paku yang menghasilkan spora dengan bentuk dan ukuran yang sama, serta diketahui gamet jantan dan betinanya. Keterangan gambar di atas sebagai berikut. [add] rantai makanan adalah bagian dari dinamika ekosistem, ketahui jenis dan contohnya.
+    </p>
+    <h3>15+ Contoh Tumbuhan Paku Lengkap [ Penjelasan dan Gambarnya]</h3>
+    <p>3sama halnya dengan metagenesis paku homospora sel telur dan spermatozoid yang bertemu akan. Berdasarkan uraian di atas, dapat diketahui bahwa contoh tumbuhan paku peralihan yaitu equisetum debile. Tumbuhan paku peralihan contoh : Tanaman ini di daunnya terdapat alat reproduksi atau perkembang biakkkan yang disebut spora jika diamati terlihat di.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Noministnow Gambar Struktur Tumbuhan Paku Homospora" data-src="https://i2.wp.com/image.slidesharecdn.com/presentasibiologi-121009022640-phpapp02/95/tumbuhan-paku-9-728.jpg?cb=1349749669" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nominimalistnow.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Liputan6.com, jakarta jenis tumbuhan paku dan gambarnya perlu. Metagenesis tumbuhan paku adanya suatu kelompok tanaman yang memiliki sistem pembuluh darah nyata tracheopyta tetapi tidak menghasilkan biji. Skema daur hidup tumbuhan paku peralihan. Contoh tumbuhan paku peralihan adalah paku ekor kuda (equisetum) klasifikasi tumbuhan paku. Jenis tumbuhan paku peralihan akan menghasilkan spora yang ukurannya sama dan mampu dibedakan antara spora jantang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Chiconas Skema Metagenesis Tumbuhan Paku Peralihan" data-src="https://i2.wp.com/image2.slideserve.com/4651996/skema-metagenesis-paku-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: chiconashoestringdecoratingblog.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contohnya, paku ekor kuda (equisetum) yang menghasilkan spora dengan ukuran sama dan jenis berbeda. Tanaman ini di daunnya terdapat alat reproduksi atau perkembang biakkkan yang disebut spora jika diamati terlihat di. Kemudian setelah tumbuhan paku menjadi dewasa akan membentuk sporangium dengan kromosom diploid (2n). Paku peralihan merupakan jenis tumbuhan paku yang menghasilkan spora dengan bentuk dan ukuran yang sama, serta.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pterydophyta Davider" data-src="https://i2.wp.com/2.bp.blogspot.com/-i-uPVoIjdVk/TimOT9TcxjI/AAAAAAAAAK4/NUcGYLD0f-8/s1600/daur+hidup+paku+peralihan.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: davider-lmc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">3sama halnya dengan metagenesis paku homospora sel telur dan spermatozoid yang bertemu akan. Contoh tumbuhan paku peralihan adalah paku ekor kuda (equisetum debile). Metagenesis pada lumut dan paku mengalami dua generasi, yaitu: Contoh paku peralihan adalah equisetum debile. Tumbuhan paku peralihan menghasilkan dua macam spora yang sama bentuk dan ukurannya tetapi memiliki jenis kelamin yang berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Metagenesis Tumbuhan Paku dan Lumut Materi dan Soal Biologi" data-src="https://i2.wp.com/1.bp.blogspot.com/-iQtBsj_VZ0g/VtHj8wGgT9I/AAAAAAAAKN4/vbJuK22Nxmg/s1600/diagram-skema-metagenesis-tumbuhan-paku-peralihan.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kumpulanmateribiologisahabat.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contoh tumbuhan paku peralihan adalah paku ekor kuda (equisetum) klasifikasi tumbuhan paku. Tumbuhan paku peralihan contoh : Daun pada tumbuhan paku yang sudah menjadi epidermis, daging daun, dan tulang daun tersebut. Setelah itu dengan metode meiosis, sporangium akan menghasilkan dan membetuk spora dengan kromosom yang. Contohnya paku ekor kuda (equisetum).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klasifikasi Tumbuhan Paku (Pteridophyta)" data-src="https://i2.wp.com/www.kajianpendidikan.com/wp-content/uploads/2019/03/PAKU-PURBA.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kajianpendidikan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Paku peralihan merupakan jenis tumbuhan paku yang menghasilkan spora dengan bentuk dan ukuran yang sama, serta diketahui gamet jantan dan betinanya. Tumbuhan paku keturunan peralihan keturunan ini menghasilkan spora jantan dan betina yang sama ukurannya contoh tumbuhan paku ekor kuda equisetum debile. Beginilah tanaman paku atau dikenal dengan nama ilmiah pterydophyta berada dilingkungan , terlihat berwarna hijau , menyegarkan karena.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="15+ Contoh Tumbuhan Paku Lengkap [ Penjelasan dan Gambarnya]" data-src="https://i2.wp.com/toriqa.com/wp-content/uploads/2019/11/Contoh-Tumbuhan-Paku-Peralihan.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: toriqa.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tumbuhan paku yang merupakan bentuk peralihan antara paku homospora dengan paku heterospora adalah equisetum debile. Paku peralihan merupakan jenis tumbuhan paku yang menghasilkan spora dengan bentuk dan ukuran yang sama, serta diketahui gamet jantan dan betinanya. Paku peralihan atau campuran adalah tumbuhan paku yang menghasilkan spora berukuran sama, tetapi jenisnya berbeda (berkelamin jantan atau betina). Contohnya paku ekor kuda (equisetum)..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="59+ Gambar Skema Metagenesis Tumbuhan Lumut" data-src="https://i.pinimg.com/originals/11/81/bf/1181bf5a90e1fcaf2b093d6d4668f97d.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tipsblog.my.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metagenesis tumbuhan paku bermula pada sporofit terlebih dahulu, karena fase sporofit pada tumbuhan ini lebih dominan. 3 adalah protalium, fase sporofit muda. Di dalam kindom plantae, tumbuhan paku dibagi menjadi empat divisi atau kelompok, yaitu sebagai berikut. Alur daur hidup tumbuhan paku peralihan dapat dilihat pada bagan di bawah. Tumbuhan paku peralihan menghasilkan dua macam spora yang sama bentuk dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BIOLOGI GONZAGA PAKU HOMOSPORE PERALIHAN" data-src="https://i2.wp.com/3.bp.blogspot.com/-10YMkRovifg/ThUaaUGeXNI/AAAAAAAAKY4/dFZDI8jnAgE/s1600/paku%2Bekor%2Bkuda%2BEquisetum%2Bdebile%2Bpaku%2Bperalihan.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: biologigonz.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ketika ada spora yang jatuh di tempat yang cocok, spora tadi akan berkembang menjadi protalium yang merupakan generasi penghasil gamet atau biasa disebut sebagai generasi gametofit, yang akan segera membentuk anteredium yang akan. Mereka adalah tumbuhan vaskular (mereka yang memiliki jaringan xilem dan floem) yang berkembang biak dengan melepaskan spora dan bukan biji, dan mereka termasuk tumbuhan pakis yang sangat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Noministnow Metagenesis Tumbuhan Paku Peralihan" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/SyqSBLHKojv_UCeaaLpjU6coz1sJbbfLdI-tidus2iNtW-ea9-fBx3KpqZZeQ2IDKPo-kBuaBpl3M8ZKx5WfYH-ZfrITBYURLJH3qKMp=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nominimalistnow.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut skema metagenesis pada tumbuhan paku homospora heterospora dan peralihan. Jenis tumbuhan paku peralihan akan menghasilkan spora yang ukurannya sama dan mampu dibedakan antara spora jantang dan spora betina. Pada metagenesis tumbuhan paku, baik pada paku homospora, paku heterospora, ataupun paku peralihan, pada prinsipnya sama. Pada generasi ini, tumbuhan paku akan menyokong kehidupan awalnya. Berdasarkan uraian di atas, dapat diketahui.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="CiriCiri Tumbuhan Paku Homospora, Heterospora &amp; Peralihan Artikelsiana" data-src="https://i2.wp.com/artikelsiana.com/wp-content/uploads/2020/05/ciriciritumbuhanpakuheterospora-min.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: artikelsiana.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada paku ini spora yang dihasilkan mempunyai bentuk dan ukuran yang sama, tetapi sebagian berkelamin jantan dan sebagian lagi berkelamin betina. Contoh tumbuhan paku peralihan adalah paku ekor kuda (equisetum debile). Daun pada tumbuhan paku yang sudah menjadi epidermis, daging daun, dan tulang daun tersebut. Satu berjenis kelamin jantan dan lainnya berjenis kelamin. Liputan6.com, jakarta jenis tumbuhan paku dan gambarnya.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-statistika-smp-kelas-8-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal statistika smp kelas 8 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-statistika-smp-kelas-8-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20statistika%20smp%20kelas%208%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal statistika smp kelas 8 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-matematika-kelas-4-sd-semester-2.html" class="be-post-title">
+				 <h6>contoh soal matematika kelas 4 sd semester 2 </h6>
+                </a>
+                <a href="contoh-soal-matematika-kelas-4-sd-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20matematika%20kelas%204%20sd%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal matematika kelas 4 sd semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-matematika-sd-kelas-4-semester-1.html" class="be-post-title">
+				 <h6>soal matematika sd kelas 4 semester 1 </h6>
+                </a>
+                <a href="soal-matematika-sd-kelas-4-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20matematika%20sd%20kelas%204%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="soal matematika sd kelas 4 semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-matematika-kelas-6-sd-semester-2.html" class="be-post-title">
+				 <h6>soal uas matematika kelas 6 sd semester 2 </h6>
+                </a>
+                <a href="soal-uas-matematika-kelas-6-sd-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20matematika%20kelas%206%20sd%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="soal uas matematika kelas 6 sd semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-akm-bahasa-inggris-smk-kelas-12.html" class="be-post-title">
+				 <h6>contoh soal akm bahasa inggris smk kelas 12 </h6>
+                </a>
+                <a href="contoh-soal-akm-bahasa-inggris-smk-kelas-12.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20akm%20bahasa%20inggris%20smk%20kelas%2012&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal akm bahasa inggris smk kelas 12">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cerminan-peradaban-tinggi-pada-peradaban-kuno-amerika-tampak-pada.html" class="be-post-title">
+				 <h6>cerminan peradaban tinggi pada peradaban kuno amerika tampak pada </h6>
+                </a>
+                <a href="cerminan-peradaban-tinggi-pada-peradaban-kuno-amerika-tampak-pada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cerminan%20peradaban%20tinggi%20pada%20peradaban%20kuno%20amerika%20tampak%20pada&amp;w=50&amp;h=50&amp;c=7" alt="cerminan peradaban tinggi pada peradaban kuno amerika tampak pada">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="keahlian-untuk-berkomunikasi-bekerjasama-dan-memotivasi-orang-lain-disebut.html" class="be-post-title">
+				 <h6>keahlian untuk berkomunikasi bekerjasama dan memotivasi orang lain disebut </h6>
+                </a>
+                <a href="keahlian-untuk-berkomunikasi-bekerjasama-dan-memotivasi-orang-lain-disebut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=keahlian%20untuk%20berkomunikasi%20bekerjasama%20dan%20memotivasi%20orang%20lain%20disebut&amp;w=50&amp;h=50&amp;c=7" alt="keahlian untuk berkomunikasi bekerjasama dan memotivasi orang lain disebut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-praktek-kelas-6-sd-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal ujian praktek kelas 6 sd kurikulum 2013 </h6>
+                </a>
+                <a href="soal-ujian-praktek-kelas-6-sd-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20praktek%20kelas%206%20sd%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian praktek kelas 6 sd kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cara-mencari-modal-akhir.html" class="be-post-title">
+				 <h6>cara mencari modal akhir </h6>
+                </a>
+                <a href="cara-mencari-modal-akhir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mencari%20modal%20akhir&amp;w=50&amp;h=50&amp;c=7" alt="cara mencari modal akhir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-hots-matematika-sma-dan-pembahasannya-pdf.html" class="be-post-title">
+				 <h6>contoh soal hots matematika sma dan pembahasannya pdf </h6>
+                </a>
+                <a href="contoh-soal-hots-matematika-sma-dan-pembahasannya-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20hots%20matematika%20sma%20dan%20pembahasannya%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal hots matematika sma dan pembahasannya pdf">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

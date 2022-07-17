@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Buku Non Fiksi Ditulis Berdasarkan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Buku Non Fiksi Ditulis Berdasarkan",
+  "datePublished": "2022-06-02T19:14:44Z",
+  "image": "https://tse1.mm.bing.net/th?q=buku%20non%20fiksi%20ditulis%20berdasarkan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=buku%20non%20fiksi%20ditulis%20berdasarkan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=buku%20non%20fiksi%20ditulis%20berdasarkan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=buku%20non%20fiksi%20ditulis%20berdasarkan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Buku Non Fiksi Ditulis Berdasarkan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Buku Non Fiksi Ditulis Berdasarkan</h2>
+    <p><strong>Buku Non Fiksi Ditulis Berdasarkan</strong>. Jenis atau genre buku non fiksi cukup beragam. Apakah yang dimaksud dengan buku.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=buku%20non%20fiksi%20ditulis%20berdasarkan" alt="Apa Perbedaan Resensi Buku Fiksi Dan Non Fiksi?" />
+        <br>
+        <figcaption>Apa Perbedaan Resensi Buku Fiksi Dan Non Fiksi? from penerbitbukudeepublish.com</figcaption>
+    </figure>
+        <p>
+        Buku literatur sering ditulis berdasarkan. Apa yang ditulis dalam buku non fiksi berguna untuk menyampaikan informasi secara lengkap, atau bersifat to the point. Berbanding terbalik dengan fiksi, buku nonfiksi berisi kejadian nyata atau fakta yang bersifat informatif.
+    </p>
+    <h3>Apa Perbedaan Resensi Buku Fiksi Dan Non Fiksi?</h3>
+    <p>Buku fiksi lebih ditulis berdasarkan imajinasi sehingga. Biasanya, buku literatur sering ditulis berdasarkan penelitian. Sedangkan buku non fiksi berisi fakta berdasarkan pengalaman, pengetahuan, hasil, maupun hasil penelitian. A brief history of humankind.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Non Fiksi Ditulis Berdasarkan Asik Belajar" data-src="https://i.pinimg.com/originals/59/11/63/591163f6847d5ad54f4bf3df2335a691.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: asikbelajarsoal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Buku fiksi termasuk dalam karya sastra yang mengandung cerita khayalan berdasarkan imajinasi pengarang. Cara membuat karangan non fiksi. Www.conedm.nl buku non fiksi bersifat informatif dengan bahasa yang jelas, akurat, dan disajikan apa adanya sesuai dengan fakta yang terjadi. Dongeng adalah jawaban yang paling benar, bisa dibuktikan dari buku bacaan dan informasi yang ada di google. Buku yang berisi cerita sejarah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Laporan Buku Fiksi Dan Non Fiksi Master Soal" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/4ECXwRnozmwuRcu9s509sYaU6Wdi-nCjC7ODnzczzSIt2xRTOX_eQk4fv2v3dH3Os6O-ew4yQdFb9a-OpIE72CwO7cpKr_pNsffCJ3DdAANZ_mX2Q_Vo0cMGn1Vlhxp0etEcK84aYzjsy7DaF_jdaBan3nxC2ZFIA05IlHjor5eF7ucaWUQIoYfs-lJbbg=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mastersoaldoc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Www.conedm.nl buku non fiksi bersifat informatif dengan bahasa yang jelas, akurat, dan disajikan apa adanya sesuai dengan fakta yang terjadi. Buku tersebut berdasarkan pada fakta dan juga kenyataan. Buku fiksi lebih ditulis berdasarkan imajinasi sehingga. Buku karya yuval noah harari menceritakan kehidupan. Fiksi berasal dari imajinasi yang dipunyai sang pengarang, sedangkan non fiksi dibuat berdasarkan fakta.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Buku Non Fiksi Dan Fiksi Soal Kita" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/BFObjiVKXzD47N5XXb1hVuRRzWZ-id74lXD7f9LmlREOBWDfEub2Kebz7NLCclsker_BDszlGqdBUdzQqknu3gLSYhTYAkjHU92rHqI4TlFELyEnLXVtW9KtnuTFLkf8=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soalkitas.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jenis atau genre buku non fiksi cukup beragam. Dengan kata lain, buku fiksi ini tidak berdasarkan dari kisah nyata. Dikatakan buku non fiksi adalah buku yang ditulis tanpa mencampurkan imajinasi di dalam buku. Buku karya yuval noah harari menceritakan kehidupan. Fiksi berasal dari imajinasi yang dipunyai sang pengarang, sedangkan non fiksi dibuat berdasarkan fakta.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Non Fiksi Dibuat Berdasarkan Blog Yuri" data-src="https://i2.wp.com/id-static.z-dn.net/files/d40/65d4db9881ef40e377224f5131019e4c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogyuripdf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Buku fiksi ditulis berdasarkan imajinasi sehingga isi dari jenis buku ini lebih banyak berupa cerita yang menghibur dan membangkitkan emosi. Sedangkan buku non fiksi berisi fakta berdasarkan pengalaman, pengetahuan, hasil, maupun hasil penelitian. Buku karya yuval noah harari menceritakan kehidupan. Ciri yang pertama sekaligus yang utama dari buku fiksi adalah bersifat fakta sebagaimana yang sudah dijelaskan di awal. Buku jenis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Non Fiksi Blog Trending" data-src="https://i.pinimg.com/originals/e0/cf/ca/e0cfcab1ed8dead4039da505eb6412d9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: trendings-hari-ini.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Buku fiksi termasuk dalam karya sastra yang mengandung cerita khayalan berdasarkan imajinasi pengarang. Buku literatur sering ditulis berdasarkan. Dari format penulisan buku buku fiksi ditulis berdasarkan alur cerita, sedangkan buku non fiksi ditulis. Buku fiksi lebih ditulis berdasarkan imajinasi sehingga. Buku non fiksi merupakan buku yang ditulis oleh penulis atau pengarang yang sesuai dengan fakta atau kejadian yang sebenarnya muncul.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Kutipan Buku Non Fiksi Guru Luring" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/4DlsXVc8etDdHMwIIRlXlXM-O3vMiATVJjhBuL9t8ZGF0tfYrp5mpz6DmyVrZCOrrMopgS5wNQ7PWuL1w-Z6LKy8RmbtyGcPcdjRp5F0RIJpo1H1C6fT8ssPxG4Y=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: guruluring.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apa yang ditulis dalam buku non fiksi berguna untuk menyampaikan informasi secara lengkap, atau bersifat to the point. Buku non fiksi bersifat informatif dengan bahasa yang jelas, akurat,. Jenis atau genre buku nonfiksi cukup beragam. Buku fiksi lebih ditulis berdasarkan imajinasi sehingga. Buku non fiksi merupakan jenis buku yang ditulis secara objektif,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Laporan Buku Fiksi Dan Non Fiksi Lina Pdf" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/CbGnCFVh7sB1qYj2vJL88d4ZR0I35sbLcJ7igjC7bGNJqGkHwqQuAecmI1Ps4NAH4SWe70GyNBgDiqUUb3MUDnXwYVbJw-AqXmmhbuIfKYIjTNeCVszMPhlyxZ3qX5cx=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: linapdfs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A brief history of humankind. Buku literatur sering ditulis berdasarkan. Sedangkan buku non fiksi berisi fakta berdasarkan pengalaman, pengetahuan, hasil, maupun hasil penelitian. Fiksi berasal dari imajinasi yang dipunyai sang pengarang, sedangkan non fiksi dibuat berdasarkan fakta. Dengan kata lain, buku fiksi ini tidak berdasarkan dari kisah nyata.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Apa Perbedaan Resensi Buku Fiksi Dan Non Fiksi?" data-src="https://i2.wp.com/penerbitbukudeepublish.com/wp-content/uploads/2019/12/resensi-buku-fiksi-e1575946612938-600x480.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: penerbitbukudeepublish.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Buku fiksi lebih ditulis berdasarkan imajinasi sehingga. Sedangkan judul buku non fiksi lebih ilmiah, simpel dan dilengkapi data. Salah satu cara untuk membedakan kedua jenis buku ini cukup mudah, salah satu hal mencoloknya berada di bagian isi buku. Isi dalam buku nonfiksi bukanlah khayalan seperti halnya buku fiksi. Buku fiksi termasuk dalam karya sastra yang mengandung cerita khayalan berdasarkan imajinasi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Novel Non Fiksi Sekolah Siswa" data-src="https://i.pinimg.com/originals/94/d1/2e/94d12e14cafa97dd026855ce918a4412.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sekolahsiswadoc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berbanding terbalik dengan fiksi, buku nonfiksi berisi kejadian nyata atau fakta yang bersifat informatif. Isi dalam buku nonfiksi bukanlah khayalan seperti halnya buku fiksi. Dengan kata lain, buku fiksi ini tidak berdasarkan dari kisah nyata. Buku non fiksi bersifat informatif dengan bahasa yang jelas, akurat,. Buku literatur sering disebut diktat atau buku kuliah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Buku Non Fiksi Ditulis Berdasarkan Asik Belajar" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/64qbl8mHww3ef0gl9DbBCQcOWTkC-5CG2yDJMAb7h9cdqR9i8C8e-ewrVSawZUEOo2BMC4yzodPcENPrQNLvJQtIT7mz7g6eSATdgBy837LmxpOQvyV0fV7_eNx8GJm8=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: asikbelajarsoal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Fiksi berasal dari imajinasi yang dipunyai sang pengarang, sedangkan non fiksi dibuat berdasarkan fakta. Buku non fiksi merupakan jenis buku yang ditulis secara objektif,. Sementara itu, buku non fiksi ialah buku yang ditulis dari kisah nyata, berdasarkan fakta dan kejadian. Buku yang berisi cerita sejarah adalah bentuk. Jenis atau genre buku nonfiksi cukup beragam.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-pernyataan-yang-sesuai-dengan-konsep-berpikir-diakronik-adalah.html" class="be-post-title">
+				 <h6>berikut pernyataan yang sesuai dengan konsep berpikir diakronik adalah </h6>
+                </a>
+                <a href="berikut-pernyataan-yang-sesuai-dengan-konsep-berpikir-diakronik-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20pernyataan%20yang%20sesuai%20dengan%20konsep%20berpikir%20diakronik%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut pernyataan yang sesuai dengan konsep berpikir diakronik adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="metagenesis-tumbuhan-lumut.html" class="be-post-title">
+				 <h6>metagenesis tumbuhan lumut </h6>
+                </a>
+                <a href="metagenesis-tumbuhan-lumut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=metagenesis%20tumbuhan%20lumut&amp;w=50&amp;h=50&amp;c=7" alt="metagenesis tumbuhan lumut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="istilah-sejarah-berasal-dari-bahasa-arab-yaitu-syajaratun-yang-artinya.html" class="be-post-title">
+				 <h6>istilah sejarah berasal dari bahasa arab yaitu syajaratun yang artinya </h6>
+                </a>
+                <a href="istilah-sejarah-berasal-dari-bahasa-arab-yaitu-syajaratun-yang-artinya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=istilah%20sejarah%20berasal%20dari%20bahasa%20arab%20yaitu%20syajaratun%20yang%20artinya&amp;w=50&amp;h=50&amp;c=7" alt="istilah sejarah berasal dari bahasa arab yaitu syajaratun yang artinya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-latar-belakang-dibentuknya-voc.html" class="be-post-title">
+				 <h6>jelaskan latar belakang dibentuknya voc </h6>
+                </a>
+                <a href="jelaskan-latar-belakang-dibentuknya-voc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20latar%20belakang%20dibentuknya%20voc&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan latar belakang dibentuknya voc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-akm-smp-pdf.html" class="be-post-title">
+				 <h6>contoh soal akm smp pdf </h6>
+                </a>
+                <a href="contoh-soal-akm-smp-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20akm%20smp%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal akm smp pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bank-soal-matematika-smp-kelas-9-beserta-jawabannya.html" class="be-post-title">
+				 <h6>bank soal matematika smp kelas 9 beserta jawabannya </h6>
+                </a>
+                <a href="bank-soal-matematika-smp-kelas-9-beserta-jawabannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bank%20soal%20matematika%20smp%20kelas%209%20beserta%20jawabannya&amp;w=50&amp;h=50&amp;c=7" alt="bank soal matematika smp kelas 9 beserta jawabannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-pat-bahasa-inggris-smp-kelas-7-semester-2-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal pat bahasa inggris smp kelas 7 semester 2 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-pat-bahasa-inggris-smp-kelas-7-semester-2-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20pat%20bahasa%20inggris%20smp%20kelas%207%20semester%202%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal pat bahasa inggris smp kelas 7 semester 2 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ukk-pjok-kelas-3-sd-semester-2-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal ukk pjok kelas 3 sd semester 2 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-ukk-pjok-kelas-3-sd-semester-2-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ukk%20pjok%20kelas%203%20sd%20semester%202%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal ukk pjok kelas 3 sd semester 2 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kpk-dari-6-dan-8-adalah.html" class="be-post-title">
+				 <h6>kpk dari 6 dan 8 adalah </h6>
+                </a>
+                <a href="kpk-dari-6-dan-8-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kpk%20dari%206%20dan%208%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="kpk dari 6 dan 8 adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="khutbah-secara-bahasa-artinya.html" class="be-post-title">
+				 <h6>khutbah secara bahasa artinya </h6>
+                </a>
+                <a href="khutbah-secara-bahasa-artinya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=khutbah%20secara%20bahasa%20artinya&amp;w=50&amp;h=50&amp;c=7" alt="khutbah secara bahasa artinya">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

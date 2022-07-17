@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Artikel Ilmiah Disajikan Berdasarkan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Artikel Ilmiah Disajikan Berdasarkan",
+  "datePublished": "2022-06-19T01:51:10Z",
+  "image": "https://tse1.mm.bing.net/th?q=artikel%20ilmiah%20disajikan%20berdasarkan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=artikel%20ilmiah%20disajikan%20berdasarkan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=artikel%20ilmiah%20disajikan%20berdasarkan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=artikel%20ilmiah%20disajikan%20berdasarkan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Artikel Ilmiah Disajikan Berdasarkan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Artikel Ilmiah Disajikan Berdasarkan</h2>
+    <p><strong>Artikel Ilmiah Disajikan Berdasarkan</strong>. Pengertian artikel ilmiah yang perlu diketahui. Artikel konseptual sendiri merupakan artikel yang diangkat berdasarkan gagasan atau ide dari penulis.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=artikel%20ilmiah%20disajikan%20berdasarkan" alt="(PDF) Analisis Frekuensi Kata untuk Mengekstrak Kata Kunci dari Artikel" />
+        <br>
+        <figcaption>(PDF) Analisis Frekuensi Kata untuk Mengekstrak Kata Kunci dari Artikel from www.researchgate.net</figcaption>
+    </figure>
+        <p>
+        Bahkan, serangkaian tulisan tersebut kerapkali dituangkan dan dapat ditemui di berbagai media cetak maupun media online. Berikut contoh artikel ilmiah singkat kesehatan,. Bagaimana artikel ilmiah disusun dari bagian judul.
+    </p>
+    <h3>(PDF) Analisis Frekuensi Kata untuk Mengekstrak Kata Kunci dari Artikel</h3>
+    <p>Artikel ilmiah yang dimuat pada majalah ilmiah (jurnal) bisa. Logis, yaitu mengacu pada pembahasan yang rasional dengan urutan yang konsisten, serta dapat diterima oleh akal sehat. Artikel ilmiah bisa diartikan sebagai karya tulis berisi ulasan maupun penelitian dengan mengutamakan objektifitas dari penulisnya dan disusun secara sistematis. Bertujuan untuk mendidik pembaca agar mencari.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Analisis Frekuensi Kata untuk Mengekstrak Kata Kunci dari Artikel" data-src="https://i2.wp.com/i1.rgstatic.net/publication/332117700_Analisis_Frekuensi_Kata_untuk_Mengekstrak_Kata_Kunci_dari_Artikel_Ilmiah_Berbahasa_Indonesia/links/5d535d5e299bf16f07369ee6/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Para pemuda jaman sekarang tentu masih sangat banyak yang gemar membaca. Dapat disesuaikan dengan jenjang pendidikan yang ada. Artikel ilmiah biasa diterbitkan di sebuah jurnal ilmiah yang tersusun secara sistematis, sesuai fakta, dan masuk akal atau rasional. 9 jenis artikel ilmiah dan contoh singkatnya. Artikel ilmiah wajib ditulis dengan kaidah bahasa yang benar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Media Pembelajaran Berbasis Online" data-src="https://i2.wp.com/1.bp.blogspot.com/-rd3JnPVs_7o/XrIf6qW6fqI/AAAAAAAAVS8/kgEwBswRQ4cZhz3kUf_mMuwmiVrVAq3dwCLcBGAsYHQ/s1600/KORAN%2B6%252C2%2BMEI%2B2020.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sarastiana.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Judul harus ada dalam artikel ilmiah dengan ketentuan sebaik mungkin. Karya tulis tersebut bersifat saintifik jadi tidak bisa ditulis secara sembarangan. 70), dalam menulis artikel ilmiah, penulis harus menguasai secara aktif kaidah penyusunan kalimat yang dalam kaitan ini kita merujuk pada: Pengkajian, dan evaluasi yang disajikan dalam bentuk terstruktur sesuai dengan metode ilmiah. Maka, bagian ini tidak perlu ada.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kumpulan Contoh Artikel Ilmiah PDF Karya Tulis Ilmiah Paling Lengkap" data-src="https://i2.wp.com/masmufid.com/wp-content/uploads/2019/12/Contoh-Artikel-Ilmiah-PDF.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: masmufid.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Istilah ini mengacu pada tulisan yang bersifat ilmiah, namun disajikan dengan cara penuturan yang mudah dimengerti (soeseno 1982: Leave a comment cancel reply Efisien, artinya mempergunakan kata, kalimat dan bahasa yang baik, sesuai, dan mudah dipahami. Jika masih kebingungan anda bisa simak artikel ilmiah tentang kesehatan mata. Artikel ilmiah yang dimuat pada majalah ilmiah (jurnal) bisa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Landasan Teori Artikel Ilmiah" data-src="https://i2.wp.com/2.bp.blogspot.com/-QOtJq5WykX4/WLaK8QW-LFI/AAAAAAAABFE/Klg8zsvbiqkngK9JljuQ0aPfehOLgXtowCEw/s1600/strategi-menulis-artikel-untuk-jurnal-ilmiah-nasional-1-728.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: recommended.lif.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Karya tulis tersebut bersifat saintifik jadi tidak bisa ditulis secara sembarangan. Artikel ilmiah dapat berupa artikel orisinal, mini review, komentar, dan pertukaran / catatan / komentar singkat. Salah satu anggota tim pengabdian sebagai narasumber menyajikan materi mengenai artikel ilmiah disajikan oleh gambar 2. Oleh rina hayati diposting pada 27 desember 2021. Hasil biasanya disajikan secara singkat, padat, dan jelas,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Karya Tulis Ilmiah" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/86708807/original/4a06a568ad/1569238017?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maka penulis juga harus memberikan pembahasan secara ilmiah berdasarkan dengan rujukan atau referensi tertentu. Artikel ilmiah biasa diterbitkan di sebuah jurnal ilmiah yang tersusun secara sistematis, sesuai fakta, dan masuk akal atau rasional. Artikel ilmiah bisa diartikan sebagai karya tulis berisi ulasan maupun penelitian dengan mengutamakan objektifitas dari penulisnya dan disusun secara sistematis. Menggunakan pemikiran yang logis dan empiris atau.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) ANALISIS MINAT BACA MAHASISWA PENDIDIKAN BAHASA INGGRIS TERHADAP" data-src="https://i2.wp.com/i1.rgstatic.net/publication/338222256_ANALISIS_MINAT_BACA_MAHASISWA_PENDIDIKAN_BAHASA_INGGRIS_TERHADAP_ARTIKEL_ILMIAH/links/5e08a0dd4585159aa4a33256/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">9 jenis artikel ilmiah dan contoh singkatnya. Artikel ilmiah bisa diartikan sebagai karya tulis berisi ulasan maupun penelitian dengan mengutamakan objektifitas dari penulisnya dan disusun secara sistematis. Tulisan yang dibuat harus mengacu pada teori. Baca juga ini dia 5 tempat wisata surabaya yang memiliki keunikan yang harus kamu kunjungi. Pengertian artikel ilmiah yang perlu diketahui.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="29+ Contoh Review Artikel Jurnal Ilmiah Gif" data-src="https://i2.wp.com/image.slidesharecdn.com/tugasreviewjurnalilmiah-130814114236-phpapp01/95/tugas-review-jurnal-ilmiah-kewirausahaan-imigran-korea-vs-iran-1-638.jpg?cb=1376480602" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: guru-id.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maka penulis juga harus memberikan pembahasan secara ilmiah berdasarkan dengan rujukan atau referensi tertentu. Leave a comment cancel reply Beberapa kelemahan dalam penulisan artikel jurnal ilmiah. Karya tulis tersebut bersifat saintifik jadi tidak bisa ditulis secara sembarangan. Penulisan ilmiah bukan sekedar tulisan tentang sains;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Daftar Pustaka Jurnal Contoh" data-src="https://i2.wp.com/i1.rgstatic.net/publication/320686280_Menulis_Artikel_Ilmiah_Proses_Menemukan_Ide_Hingga_Publikasi/links/59f47f660f7e9b553ebbdfe7/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: caracek.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Judul harus ada dalam artikel ilmiah dengan ketentuan sebaik mungkin. Dapat disesuaikan dengan jenjang pendidikan yang ada. Main measured parameter were fish biomass and survival rate. Baik membaca tulisan fiksi maupun tulisan non fiksi. Salah satu anggota tim pengabdian sebagai narasumber menyajikan materi mengenai artikel ilmiah disajikan oleh gambar 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Artikel Ilmiah Ditulis Berdasarkan yang Wajib Anda Simak Master Cahaya" data-src="https://i2.wp.com/masterartikelcahaya.com/wp-content/uploads/2020/10/artikel-ilmiah-ditulis-berdasarkan.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: masterartikelcahaya.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun, jika bukan artikel ilmiah dengan jenis penelitian. Berikut contoh artikel ilmiah singkat kesehatan,. Each treatment was replicated 5 times. Bahasa yang digunakan untuk penulisan artikel ilmiah memiliki aturan sendiri. Penulisan karya ilmiah menggunakan logika berpikir dan gaya bahasa yang sistematis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Contoh Artikel Ilmiah Singkat, 5 Poin Ini Wajib Ada" data-src="https://i2.wp.com/saungwriter.com/wp-content/uploads/2020/09/artikel-ilmiah-yang-baik-dan-benar.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: saungwriter.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Harus lugas, artinya tidak emosional. Bertujuan untuk mendidik pembaca agar mencari. Salah satu anggota tim pengabdian sebagai narasumber menyajikan materi mengenai artikel ilmiah disajikan oleh gambar 2. Artikel ilmiah biasa diterbitkan di sebuah jurnal ilmiah yang tersusun secara sistematis, sesuai fakta, dan masuk akal atau rasional. Oleh rina hayati diposting pada 27 desember 2021.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-yang-dimaksud-dengan-unsur-pendukung-tari.html" class="be-post-title">
+				 <h6>jelaskan yang dimaksud dengan unsur pendukung tari </h6>
+                </a>
+                <a href="jelaskan-yang-dimaksud-dengan-unsur-pendukung-tari.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20yang%20dimaksud%20dengan%20unsur%20pendukung%20tari&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan yang dimaksud dengan unsur pendukung tari">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="h2s-asam-atau-basa.html" class="be-post-title">
+				 <h6>h2s asam atau basa </h6>
+                </a>
+                <a href="h2s-asam-atau-basa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=h2s%20asam%20atau%20basa&amp;w=50&amp;h=50&amp;c=7" alt="h2s asam atau basa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-might-the-student-respond-to-the-teacher-s-question.html" class="be-post-title">
+				 <h6>how might the student respond to the teacher&#039;s question </h6>
+                </a>
+                <a href="how-might-the-student-respond-to-the-teacher-s-question.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20might%20the%20student%20respond%20to%20the%20teacher%27s%20question&amp;w=50&amp;h=50&amp;c=7" alt="how might the student respond to the teacher&amp;#039;s question">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-tema-5-kelas-1-sd-semester-2.html" class="be-post-title">
+				 <h6>contoh soal tema 5 kelas 1 sd semester 2 </h6>
+                </a>
+                <a href="contoh-soal-tema-5-kelas-1-sd-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20tema%205%20kelas%201%20sd%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal tema 5 kelas 1 sd semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-perbedaan-antara-pencernaan-mekanis-dan-pencernaan-kimiawi.html" class="be-post-title">
+				 <h6>jelaskan perbedaan antara pencernaan mekanis dan pencernaan kimiawi </h6>
+                </a>
+                <a href="jelaskan-perbedaan-antara-pencernaan-mekanis-dan-pencernaan-kimiawi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20perbedaan%20antara%20pencernaan%20mekanis%20dan%20pencernaan%20kimiawi&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan perbedaan antara pencernaan mekanis dan pencernaan kimiawi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-nasional-sd-2021-kelas-6-matematika.html" class="be-post-title">
+				 <h6>soal ujian nasional sd 2021 kelas 6 matematika </h6>
+                </a>
+                <a href="soal-ujian-nasional-sd-2021-kelas-6-matematika.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20nasional%20sd%202021%20kelas%206%20matematika&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian nasional sd 2021 kelas 6 matematika">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-peluang-matematika-kelas-12-sma.html" class="be-post-title">
+				 <h6>contoh soal peluang matematika kelas 12 sma </h6>
+                </a>
+                <a href="contoh-soal-peluang-matematika-kelas-12-sma.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20peluang%20matematika%20kelas%2012%20sma&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal peluang matematika kelas 12 sma">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-pkn-sd-kelas-2-semester-1.html" class="be-post-title">
+				 <h6>contoh soal pkn sd kelas 2 semester 1 </h6>
+                </a>
+                <a href="contoh-soal-pkn-sd-kelas-2-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20pkn%20sd%20kelas%202%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal pkn sd kelas 2 semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-matematika-sma-kelas-xii-ips-semester-1.html" class="be-post-title">
+				 <h6>soal uas matematika sma kelas xii ips semester 1 </h6>
+                </a>
+                <a href="soal-uas-matematika-sma-kelas-xii-ips-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20matematika%20sma%20kelas%20xii%20ips%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="soal uas matematika sma kelas xii ips semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="klitelum-pada-cacing-tanah-berfungsi-sebagai-alat.html" class="be-post-title">
+				 <h6>klitelum pada cacing tanah berfungsi sebagai alat </h6>
+                </a>
+                <a href="klitelum-pada-cacing-tanah-berfungsi-sebagai-alat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=klitelum%20pada%20cacing%20tanah%20berfungsi%20sebagai%20alat&amp;w=50&amp;h=50&amp;c=7" alt="klitelum pada cacing tanah berfungsi sebagai alat">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

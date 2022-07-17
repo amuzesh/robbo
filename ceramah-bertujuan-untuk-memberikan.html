@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ceramah Bertujuan Untuk Memberikan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Ceramah Bertujuan Untuk Memberikan",
+  "datePublished": "2022-07-07T06:46:32Z",
+  "image": "https://tse1.mm.bing.net/th?q=ceramah%20bertujuan%20untuk%20memberikan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ceramah%20bertujuan%20untuk%20memberikan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ceramah%20bertujuan%20untuk%20memberikan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ceramah%20bertujuan%20untuk%20memberikan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ceramah Bertujuan Untuk Memberikan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ceramah Bertujuan Untuk Memberikan</h2>
+    <p><strong>Ceramah Bertujuan Untuk Memberikan</strong>. Ceramah dibedakan menjadi 2, yaitu : Informatif, yaitu ceramah bertujuan untuk memberikan informasi kepada pendengar agar mengenal suatu hal dan mampu memahami dari apa yang disampaikan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ceramah%20bertujuan%20untuk%20memberikan" alt="Ceramah Agama dan Polemik Kesehatan di Masyarakat Tirto.ID" />
+        <br>
+        <figcaption>Ceramah Agama dan Polemik Kesehatan di Masyarakat Tirto.ID from tirto.id</figcaption>
+    </figure>
+        <p>
+        Dalam penyampaian pidato, pidato juga bertujuan untuk melakukan tindakan. Jadi ceramah umum adalah pidato yang bertujuan untuk memberikan nasehat kepada khalayak umum atau maysrakat luas. Ceramah dibedakan menjadi dua, yaitu:
+    </p>
+    <h3>Ceramah Agama dan Polemik Kesehatan di Masyarakat Tirto.ID</h3>
+    <p>Dalam teks ceramah di atas, penyampai pesan. Dalam teks ceramah di atas, penyampai pesan. Informatif, yaitu ceramah bertujuan untuk memberikan informasi kepada pendengar agar mengenal suatu hal dan mampu memahami dari apa yang disampaikan. Pendengarnya pun bisa siapa saja, tetapi umumnya pendengar dari ceramah bersifat spesifik karena dikelompokkan di.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ceramah Kerjaya Dalam slot ceramah kerjaya ini, penceramah memberikan" data-src="https://i2.wp.com/raihan.awaken-image.com/wp-content/uploads/2018/11/46795846_1185266151614443_4457082739258032128_n-768x825.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: raihan.awaken-image.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Khalayak yang mendengarkan pun bisa siapa saja. Tujuan dari ceramah ini adalah untuk memberikan informasi kepada para pendengar agar mengenal suatu hal dan mampu memahami pesan yang ingin. Jelaskan tujuan umum dalam teks ceramah! Teks di atas merupakan struktur teks ceramah bagian… a. Tujuan pidato dapat dibagi menjadi tiga, yaitu:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perjumpaan dan Ceramah Motivasi MuridMurid Tahun 6 bersama IbuBapa" data-src="https://i2.wp.com/lh3.googleusercontent.com/-ze-FKXclGzs/TX2fqANZYHI/AAAAAAAACHs/QaI_sS6Ig2U/s1600/DSC00143.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: srtungku.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Teks ceramah ialah tulisan yang terdiri dari beberapa paragraf yang isinya mengandung informasi pengetahuan atau ajakan kepada khalayak yang. Dalam teks ceramah di atas, penyampai pesan. Ceramah dibedakan menjadi 2, yaitu : Informatif, yaitu ceramah bertujuan untuk memberikan informasi kepada pendengar agar mengenal suatu hal dan mampu memahami dari apa yang disampaikan. Teks di atas merupakan struktur teks ceramah bagian….</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MISIMISI AQSA2GAZA A4P Ceramah Terbuka dan Derma Untuk Palestin" data-src="https://i2.wp.com/1.bp.blogspot.com/-nWsZiaIID44/T_LgN2fTx4I/AAAAAAAABSc/D5OhQ0VTG14/s1600/1+A4P+Museum+Melaka+25.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: aqsa2gaza3.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jelaskan tujuan umum dalam teks ceramah! Ceramah bertujuan untuk memberikan nasihat dan petunjuk. Teks ceramah biasanya memiliki pesan yang bertujuan untuk memberikan nasihat, petunjuk, atau petuah secara lisan. Maksud dari tujuan melakukan tindakan adalah…. Tujuan dari ceramah ini adalah untuk memberikan informasi kepada para pendengar agar mengenal suatu hal dan mampu memahami pesan yang ingin.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ceramah Danlanud BNY untuk Bijak Bermedia Sosial" data-src="https://i2.wp.com/tni-au.mil.id/konten/unggahan/2019/10/img-20191016-133751-464.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tni-au.mil.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pendengarnya pun bisa siapa saja, tetapi umumnya pendengar dari ceramah bersifat spesifik karena dikelompokkan di. Tujuan pidato dapat dibagi menjadi tiga, yaitu: Jadi ceramah umum adalah pidato yang bertujuan untuk memberikan nasehat kepada khalayak umum atau maysrakat luas. Dalam teks ceramah di atas, penyampai pesan. Ceramah dibedakan menjadi dua, yaitu:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ceramah Tematik Oleh Gubernur Jawa Timur" data-src="https://i2.wp.com/bpsdm.jatimprov.go.id/assets/images/1562564474_ct-5.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bpsdm.jatimprov.go.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ceramah dibedakan menjadi 2, yaitu : Tujuan dari ceramah ini adalah untuk memberikan informasi kepada para pendengar agar mengenal suatu hal dan mampu memahami pesan yang ingin. Informatif, yaitu ceramah bertujuan untuk memberikan informasi kepada pendengar agar mengenal suatu hal dan mampu memahami dari apa yang disampaikan. Pendengarnya pun bisa siapa saja, tetapi umumnya pendengar dari ceramah bersifat spesifik karena.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ceramah Agama dan Polemik Kesehatan di Masyarakat Tirto.ID" data-src="https://i2.wp.com/mmc.tirto.id/image/otf/1024x535/2017/08/10/Ilustrasi-memberikan-ceramah-02--ISTOCK.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tirto.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pendengarnya pun bisa siapa saja, tetapi umumnya pendengar dari ceramah bersifat spesifik karena dikelompokkan di. Informatif, yaitu ceramah bertujuan untuk memberikan informasi kepada pendengar agar mengenal suatu hal dan mampu memahami dari apa yang disampaikan. Ceramah dibedakan menjadi dua, yaitu: Tujuan pidato dapat dibagi menjadi tiga, yaitu: Teks di atas merupakan struktur teks ceramah bagian… a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Download Audio Ceramah Ustad Somad Tema Menjaga Kesucian Setelah Ramadhan" data-src="https://i2.wp.com/1.bp.blogspot.com/-UxdjkykaisY/XO_swxtfteI/AAAAAAAAAgI/mHgGpJuh8f0dKhTQ7s3IzH7v2kU2XLVhQCLcBGAs/s1600/somad-menjaga-hati-setelah-ramadhan.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.caracek.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maksud dari tujuan melakukan tindakan adalah…. Teks ceramah ialah tulisan yang terdiri dari beberapa paragraf yang isinya mengandung informasi pengetahuan atau ajakan kepada khalayak yang. Pendengarnya pun bisa siapa saja, tetapi umumnya pendengar dari ceramah bersifat spesifik karena dikelompokkan di. Informatif, yaitu ceramah bertujuan untuk memberikan informasi kepada pendengar agar mengenal suatu hal dan mampu memahami dari apa yang disampaikan..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Materi Kultum Singkat Ceramah Ramadhan Kumpulan ceramah ramadhan 2021" data-src="https://i2.wp.com/www.gurupendidikan.co.id/wp-content/uploads/2021/02/Kumpulan-Materi-Kultum-Singkat-Terlengkap.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tipe2mobilporsche.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Teks ceramah biasanya memiliki pesan yang bertujuan untuk memberikan nasihat, petunjuk, atau petuah secara lisan. Jelaskan tujuan umum dalam teks ceramah! Teks ceramah ialah tulisan yang terdiri dari beberapa paragraf yang isinya mengandung informasi pengetahuan atau ajakan kepada khalayak yang. Di dalam ceramah umum ini keseluruhannya bersifat. Pendengarnya pun bisa siapa saja, tetapi umumnya pendengar dari ceramah bersifat spesifik karena.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perjumpaan dan Ceramah Motivasi MuridMurid Tahun 6 bersama IbuBapa" data-src="https://i2.wp.com/lh6.googleusercontent.com/-zIrx8edRKbc/TX2iPYb7btI/AAAAAAAACH4/eYoSrPnHl8k/s1600/DSC00147.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: srtungku.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ceramah dibedakan menjadi dua, yaitu: Khalayak yang mendengarkan pun bisa siapa saja. Pendengarnya pun bisa siapa saja, tetapi umumnya pendengar dari ceramah bersifat spesifik karena dikelompokkan di. Ceramah bertujuan untuk memberikan nasihat dan petunjuk. Ceramah dibedakan menjadi 2, yaitu :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Teks Ceramah (Pengertian, Struktur, Ciri, Jenis &amp; Contohnya)" data-src="https://i2.wp.com/1.bp.blogspot.com/-yOWgl1G0-Zo/X7u0G1l2-6I/AAAAAAAABWI/xpXxMybtoS4IlAHwlNbPxORBXJCNGiELACLcBGAsYHQ/s1280/lecture-385357_1280%2B%25281%2529.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.materibindo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jelaskan tujuan umum dalam teks ceramah! Ceramah bertujuan untuk memberikan nasihat dan petunjuk. Dalam penyampaian pidato, pidato juga bertujuan untuk melakukan tindakan. Khalayak yang mendengarkan pun bisa siapa saja. Pada kegiatan ceramah biasanya ada.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bank-soal-try-out-sd-kelas-6.html" class="be-post-title">
+				 <h6>bank soal try out sd kelas 6 </h6>
+                </a>
+                <a href="bank-soal-try-out-sd-kelas-6.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bank%20soal%20try%20out%20sd%20kelas%206&amp;w=50&amp;h=50&amp;c=7" alt="bank soal try out sd kelas 6">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uts-mtk-kls-4-sd-semester-1.html" class="be-post-title">
+				 <h6>soal uts mtk kls 4 sd semester 1 </h6>
+                </a>
+                <a href="soal-uts-mtk-kls-4-sd-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uts%20mtk%20kls%204%20sd%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="soal uts mtk kls 4 sd semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-dan-pembahasan-fisika-kelas-xi-semester-2-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal dan pembahasan fisika kelas xi semester 2 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-dan-pembahasan-fisika-kelas-xi-semester-2-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20dan%20pembahasan%20fisika%20kelas%20xi%20semester%202%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal dan pembahasan fisika kelas xi semester 2 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kisi-kisi-uas-pai-kelas-12-smk-2022.html" class="be-post-title">
+				 <h6>kisi-kisi uas pai kelas 12 smk 2022 </h6>
+                </a>
+                <a href="kisi-kisi-uas-pai-kelas-12-smk-2022.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kisi-kisi%20uas%20pai%20kelas%2012%20smk%202022&amp;w=50&amp;h=50&amp;c=7" alt="kisi-kisi uas pai kelas 12 smk 2022">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-uts-fisika-kelas-11-semester-1-dan-pembahasannya.html" class="be-post-title">
+				 <h6>contoh soal uts fisika kelas 11 semester 1 dan pembahasannya </h6>
+                </a>
+                <a href="contoh-soal-uts-fisika-kelas-11-semester-1-dan-pembahasannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20uts%20fisika%20kelas%2011%20semester%201%20dan%20pembahasannya&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal uts fisika kelas 11 semester 1 dan pembahasannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-matematika-kelas-8-semester-2-halaman-302.html" class="be-post-title">
+				 <h6>kunci jawaban matematika kelas 8 semester 2 halaman 302 </h6>
+                </a>
+                <a href="kunci-jawaban-matematika-kelas-8-semester-2-halaman-302.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20matematika%20kelas%208%20semester%202%20halaman%20302&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban matematika kelas 8 semester 2 halaman 302">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-brain-out-memutar-otak-14.html" class="be-post-title">
+				 <h6>kunci jawaban brain out memutar otak 14 </h6>
+                </a>
+                <a href="kunci-jawaban-brain-out-memutar-otak-14.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20brain%20out%20memutar%20otak%2014&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban brain out memutar otak 14">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-matematika-kelas-8-semester-2-halaman-263.html" class="be-post-title">
+				 <h6>kunci jawaban matematika kelas 8 semester 2 halaman 263 </h6>
+                </a>
+                <a href="kunci-jawaban-matematika-kelas-8-semester-2-halaman-263.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20matematika%20kelas%208%20semester%202%20halaman%20263&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban matematika kelas 8 semester 2 halaman 263">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-garis-dan-sudut-kelas-4-sd-pdf.html" class="be-post-title">
+				 <h6>soal garis dan sudut kelas 4 sd pdf </h6>
+                </a>
+                <a href="soal-garis-dan-sudut-kelas-4-sd-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20garis%20dan%20sudut%20kelas%204%20sd%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal garis dan sudut kelas 4 sd pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-pkn-kelas-2-sd-semester-2-tentang-nilai-pancasila.html" class="be-post-title">
+				 <h6>soal pkn kelas 2 sd semester 2 tentang nilai pancasila </h6>
+                </a>
+                <a href="soal-pkn-kelas-2-sd-semester-2-tentang-nilai-pancasila.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20pkn%20kelas%202%20sd%20semester%202%20tentang%20nilai%20pancasila&amp;w=50&amp;h=50&amp;c=7" alt="soal pkn kelas 2 sd semester 2 tentang nilai pancasila">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

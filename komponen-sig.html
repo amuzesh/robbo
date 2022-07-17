@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Komponen Sig at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Komponen Sig",
+  "datePublished": "2022-05-22T01:45:46Z",
+  "image": "https://tse1.mm.bing.net/th?q=komponen%20sig",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=komponen%20sig&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=komponen%20sig" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=komponen%20sig" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Komponen Sig at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Komponen Sig</h2>
+    <p><strong>Komponen Sig</strong>. Merujuk situs resmi esri, perusahaan pemasok software sistem. Data atribut adalah suatu data yang merepresentasikan aspek deskriptif pada fenomena yang dimodelkan seperti misalnya ,data sensus ekonomi.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=komponen%20sig" alt="Berikut Ini Yang Merupakan Perangkat Lunak Sig Yaitu Rajin Belajar" />
+        <br>
+        <figcaption>Berikut Ini Yang Merupakan Perangkat Lunak Sig Yaitu Rajin Belajar from rajinbelajarsekolah.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Manusia berfungsi sebagai pengendali sistem dan analisator pada informasi yang dibutuhkan. Menurut murai ( 1999) sig sebagai sistem informasi yang digunakan untuk memasukkan, menyimpan, memanggil kembali, mengolah, menganalisis dan menghasilkan data bereferensi geografis atau data geospatial, untuk mendukung pengambilan keputusan dalam perencanaan dan pengelolaan penggunaan lahan, sumber daya alam, lingkungan, transportasi, fasilitas. Hal ini dikarenakan sehebat apapun alat yang digunakan bila tanpa ada manusia maka tidak akan bisa berjalan.
+    </p>
+    <h3>Berikut Ini Yang Merupakan Perangkat Lunak Sig Yaitu Rajin Belajar</h3>
+    <p>Jadi singkatnya, sig merupakan sistem yang berfungsi untuk mengumpulkan, mengelola, menyimpan, dan menyajikan segala data yang berkaitan dengan kondisi geografis suatu wilayah. Data spasial adalah suatu data yang berupa representasi fenomena dari permukaan bumi yang dapat berupa foto udara, koordinat dll. Komponen sumber daya manusia merupakan komponen yang sangat penting. Akses informasi cepat dan mudah.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Elearning Managemen Kesehatan Masyarakat SISTEM INFORMASI GEOGRAFIS" data-src="https://i2.wp.com/1.bp.blogspot.com/-sBoQSP2gJhQ/U4xYBbsw_II/AAAAAAAAFeM/oluq5rqLON4/s1600/Slide12.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: afaelearning.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perangkat keras dalam sig terbagi menjadi 3 kelompok yaitu: Komponen sistem informasi geografis (sig) merupakan suatu sistem komputer yang dimanfaatkan untuk memasukkan, memeriksa, menyimpan, memanipulasi, mengintegrasikan, menganalisis, serta menampilkan data yang berkaitan dengan berbagai lokasi yang ada di muka bumi. Manusia berfungsi sebagai pengendali sistem dan analisator pada informasi yang dibutuhkan. Secara global kelima komponen tersebut dapat disederhanakan menjadi tiga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ 4 Jenis Komponen SIG (Sistem Informasi Geografis) dan Fungsinya IPS" data-src="https://i2.wp.com/ipsterpadu.com/wp-content/uploads/2019/08/Komponen-Sistem-Informasi-Geografis.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ipsterpadu.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data, merupakan data spasial serta, data atribut. 13 june 2022 by admin. Perangkat keras sig •perangkat keras sig merupakan komputer beserta instrumennya (perangkat pendukungnya). Data yang terdapat dalam sig diolah melalui perangkat keras. Secara global kelima komponen tersebut dapat disederhanakan menjadi tiga komponen utama yang lebih kompak yaitu:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komponen SIG Katalog Geografi" data-src="https://i2.wp.com/4.bp.blogspot.com/-GSxFiIAFMIw/U_qpjYOX7kI/AAAAAAAAAbo/umMPplkCr4Y/w1200-h630-p-k-no-nu/gb-5-komponen-sig.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kataloggeografi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Anderson, 2003 menyampaikan bahwa komponen sistem informasi geografis (sig) atas 5 bagian yang mengoperasikan sig. Perangkat keras sig •perangkat keras sig merupakan komputer beserta instrumennya (perangkat pendukungnya). Perangkat keras (hardware) antara lain berupa komputer (pc), mouse, printer, digitizer, plotter, dan scanner. Sebagai manajemen tata guna lahan. Merujuk situs resmi esri, perusahaan pemasok software sistem.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ 9 Fungsi Komponen Sistem Informasi Geografis (SIG) dan Penjelasannya" data-src="https://i2.wp.com/dosengeografi.com/wp-content/uploads/2018/08/Komponen-Sistem-Informasi-Geografis.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dosengeografi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hardware (perangkat keras), yaitu berupa segala perlengkapan yang mendukung kerja sig seperti cpu, monitor, printer, digitizer, scanner, plotter, cd rom, vdu, dan flash disk, dsb. Perangkat keras (hardware) antara lain berupa komputer (pc), mouse, printer, digitizer, plotter, dan scanner. Contohnya, sig bisa mempermudah perencana untuk menghitung waktu tanggap darurat dengan cepat saat bencana alam terjadi atau. Alat masukan (input) sebagai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Materi Geografi Tentang Sig Guru Paud" data-src="https://i2.wp.com/www.pendidik.co.id/wp-content/uploads/2019/03/Pengertian-SIG-Komponen-Manfaat-Ruang-Lingkup-Lengkap.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gurupaud.my.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data, sistem komputer (perangkat keras dan perangkat lunak), dan manusia (pelaksana). Komponen sumber daya manusia merupakan komponen yang sangat penting. Data spasial adalah suatu data yang berupa representasi fenomena dari permukaan bumi yang dapat berupa foto udara, koordinat dll. Sebagai manajemen tata guna lahan. Untuk penyimpanan tidak memerlukan ruangan yang besar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tutorial SIG Part 1 Apa Yang Kita Butuhkan Sebelum Belajar Sistem" data-src="https://i2.wp.com/4.bp.blogspot.com/-_xwZK83EKA4/XKQ9Y-SJoLI/AAAAAAAADjM/x9ElGYy8eu4f_o4k30yC5Zb7CoEA3pSfgCLcBGAs/s640/SIG1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indowhiz.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data atribut adalah suatu data yang merepresentasikan aspek deskriptif pada fenomena yang dimodelkan seperti misalnya ,data sensus ekonomi. Data, merupakan data spasial serta, data atribut. Semoga apa yang diulas dapat bermanfaat bagi pembaca. Jadi singkatnya, sig merupakan sistem yang berfungsi untuk mengumpulkan, mengelola, menyimpan, dan menyajikan segala data yang berkaitan dengan kondisi geografis suatu wilayah. Sebagai bidang perencanaan kota dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 Komponenkomponen SIG (Sistem Informasi Geografis) Konsep Geografi" data-src="https://i2.wp.com/3.bp.blogspot.com/-e--qMNZi4qI/WgjznDungbI/AAAAAAAAH1I/BHJnZ3Jhrq8DhVKe9eMcGc3qzq_CTVdiwCLcBGAs/s1600/komponen-sig.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.konsepgeografi.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Itulah ulasan mengenai √ sistem informasi geografis (sig) : Data managemen berfungsi melakukan pengorganisasian data spasial dan. Data atribut adalah suatu data yang merepresentasikan aspek deskriptif pada fenomena yang dimodelkan seperti misalnya ,data sensus ekonomi. Data spasial adalah suatu data yang berupa representasi fenomena dari permukaan bumi yang dapat berupa foto udara, koordinat dll. Data, sistem komputer (perangkat keras dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berikut Ini Yang Merupakan Perangkat Lunak Sig Yaitu Rajin Belajar" data-src="https://i2.wp.com/2.bp.blogspot.com/-vxb0679F2Eg/WQ114FonGuI/AAAAAAAACVQ/vjypZFc0F1okzuO72INBSuWWYX0DL3vuwCLcB/s1600/skhema_en.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rajinbelajarsekolah.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komponen sig terdiri atas pelaksana, perangkat keras, perangkat lunak, prosedur, dan data. Data input berfungsi mengumpulkan data spasial (misalnya: Software (perangkat lunak), berupa berbagai macam program yang mendukung kerjaja sig baik untuk proses memasukkan,. Untuk pengawasan daerah bencana alam. Alat masukan (input) sebagai alat untuk memasukkan data ke dalam jaringan computer.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komponen SIG Rangkuman Geografi" data-src="https://i2.wp.com/4.bp.blogspot.com/-7A0sL_EBoTo/VAGU7hj0oFI/AAAAAAAAAIA/NkGuLEiVfjo/s1600/komponen-GIS1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rangkumangeografi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data, sistem komputer (perangkat keras dan perangkat lunak), dan manusia (pelaksana). Hardware (perangkat keras), yaitu berupa segala perlengkapan yang mendukung kerja sig seperti cpu, monitor, printer, digitizer, scanner, plotter, cd rom, vdu, dan flash disk, dsb. Secara global kelima komponen tersebut dapat disederhanakan menjadi tiga komponen utama yang lebih kompak yaitu: Merujuk situs resmi esri, perusahaan pemasok software sistem. Software.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SIG kuliah 1" data-src="https://i2.wp.com/image.slidesharecdn.com/pertemuan-1-sig-1234361382361089-2/95/sig-kuliah-1-21-728.jpg?cb=1234344224" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Data input berfungsi mengumpulkan data spasial (misalnya: Anderson, 2003 menyampaikan bahwa komponen sistem informasi geografis (sig) atas 5 bagian yang mengoperasikan sig. By si manis posted on january 30, 2022. Menurut murai ( 1999) sig sebagai sistem informasi yang digunakan untuk memasukkan, menyimpan, memanggil kembali, mengolah, menganalisis dan menghasilkan data bereferensi geografis atau data geospatial, untuk mendukung pengambilan keputusan dalam.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mode-switchport-adalah.html" class="be-post-title">
+				 <h6>mode switchport adalah </h6>
+                </a>
+                <a href="mode-switchport-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mode%20switchport%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="mode switchport adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-fisika-sma-pdf.html" class="be-post-title">
+				 <h6>soal fisika sma pdf </h6>
+                </a>
+                <a href="soal-fisika-sma-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20fisika%20sma%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal fisika sma pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dimensi-modulus-young.html" class="be-post-title">
+				 <h6>dimensi modulus young </h6>
+                </a>
+                <a href="dimensi-modulus-young.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dimensi%20modulus%20young&amp;w=50&amp;h=50&amp;c=7" alt="dimensi modulus young">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dimensi-usaha.html" class="be-post-title">
+				 <h6>dimensi usaha </h6>
+                </a>
+                <a href="dimensi-usaha.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dimensi%20usaha&amp;w=50&amp;h=50&amp;c=7" alt="dimensi usaha">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="latihan-soal-pat-matematika-kelas-5-sd-semester-2.html" class="be-post-title">
+				 <h6>latihan soal pat matematika kelas 5 sd semester 2 </h6>
+                </a>
+                <a href="latihan-soal-pat-matematika-kelas-5-sd-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=latihan%20soal%20pat%20matematika%20kelas%205%20sd%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="latihan soal pat matematika kelas 5 sd semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="apa-yang-dimaksud-dengan-adiksimba.html" class="be-post-title">
+				 <h6>apa yang dimaksud dengan adiksimba </h6>
+                </a>
+                <a href="apa-yang-dimaksud-dengan-adiksimba.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20dimaksud%20dengan%20adiksimba&amp;w=50&amp;h=50&amp;c=7" alt="apa yang dimaksud dengan adiksimba">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="alat-yang-digunakan-untuk-mengukur-tekanan-udara-luar-adalah.html" class="be-post-title">
+				 <h6>alat yang digunakan untuk mengukur tekanan udara luar adalah </h6>
+                </a>
+                <a href="alat-yang-digunakan-untuk-mengukur-tekanan-udara-luar-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=alat%20yang%20digunakan%20untuk%20mengukur%20tekanan%20udara%20luar%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="alat yang digunakan untuk mengukur tekanan udara luar adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="karena-pengaruh-tegangan-permukaan-maka-zat-cair-cenderung-untuk.html" class="be-post-title">
+				 <h6>karena pengaruh tegangan permukaan maka zat cair cenderung untuk </h6>
+                </a>
+                <a href="karena-pengaruh-tegangan-permukaan-maka-zat-cair-cenderung-untuk.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=karena%20pengaruh%20tegangan%20permukaan%20maka%20zat%20cair%20cenderung%20untuk&amp;w=50&amp;h=50&amp;c=7" alt="karena pengaruh tegangan permukaan maka zat cair cenderung untuk">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-matematika-kelas-2-sd-semester-2-tema-6.html" class="be-post-title">
+				 <h6>soal matematika kelas 2 sd semester 2 tema 6 </h6>
+                </a>
+                <a href="soal-matematika-kelas-2-sd-semester-2-tema-6.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20matematika%20kelas%202%20sd%20semester%202%20tema%206&amp;w=50&amp;h=50&amp;c=7" alt="soal matematika kelas 2 sd semester 2 tema 6">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jerat-pidana-maksimal-bagi-pembuat-dan-pengedar-narkoba-adalah-selama.html" class="be-post-title">
+				 <h6>jerat pidana maksimal bagi pembuat dan pengedar narkoba adalah selama </h6>
+                </a>
+                <a href="jerat-pidana-maksimal-bagi-pembuat-dan-pengedar-narkoba-adalah-selama.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jerat%20pidana%20maksimal%20bagi%20pembuat%20dan%20pengedar%20narkoba%20adalah%20selama&amp;w=50&amp;h=50&amp;c=7" alt="jerat pidana maksimal bagi pembuat dan pengedar narkoba adalah selama">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

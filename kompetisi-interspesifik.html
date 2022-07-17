@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kompetisi Interspesifik at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Kompetisi Interspesifik",
+  "datePublished": "2022-03-18T23:32:35Z",
+  "image": "https://tse1.mm.bing.net/th?q=kompetisi%20interspesifik",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kompetisi%20interspesifik&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kompetisi%20interspesifik" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kompetisi%20interspesifik" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kompetisi Interspesifik at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kompetisi Interspesifik</h2>
+    <p><strong>Kompetisi Interspesifik</strong>. Bentuk kompetisi yang muncul dan menimbulkan masalah dapat berupa kompetisi intraspesifik maupun interspesifik. Kompetisi interspesifik adalah persaingan yang terjadi antara dua individu atau organisme yang berbeda spesies.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kompetisi%20interspesifik" alt="Biologi Kelas X SMA/MA/SMK_Ekosistem dan Lingkungan Hidup" />
+        <br>
+        <figcaption>Biologi Kelas X SMA/MA/SMK_Ekosistem dan Lingkungan Hidup from www.slideshare.net</figcaption>
+    </figure>
+        <p>
+        Dalam suatu jurnal berjudul “pengaruh kompetisi intraspesifik dan interspesifik terhadap pertumbuhan tanaman jagung (zea mays) dan kacang hijau (vigna radiata)” yang ditulis oleh dian eka kusumawati pada tahun 2018, membahas mengenai kompetisi antar tumbuhan yang diletakkan dalam wilayah atau ruang tumbuh sama dengan sumber daya. Jenis interaksi ini dapat antara organisme dari spesies yang sama (intraspesifik) atau antara organisme dari spesies yang berbeda (interspesifik). Karena tumbuhan bergerak pasif maka tumbuhan yang terlebih dahulu tumbuh akan menguasai cahaya matahari.
+    </p>
+    <h3>Biologi Kelas X SMA/MA/SMK_Ekosistem dan Lingkungan Hidup</h3>
+    <p>Jenis interaksi ini dapat antara organisme dari spesies yang sama (intraspesifik) atau antara organisme dari spesies yang berbeda (interspesifik). Kompetisi antar spesies adalah kompetisi yang terjadi antara spesies yang berbeda dalam area ekologi yang sama. Kompetisi intraspesifik adalah persaingan antara individu dengan spesies yang sama. Kompetisi yang terjadi antara individu sejenis disebut sebagai kompetisi intraspesifik sedangakan interaksi antara individu yang tidak sejenis disebut interaksi interspesifik.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kompetisi intraspesifik &amp; interspesifik iii.ppt" data-src="https://i2.wp.com/image.slidesharecdn.com/kompetisiintraspesifikinterspesifikiii-131004055105-phpapp01/95/kompetisi-intraspesifik-interspesifik-iiippt-2-638.jpg?cb=1380865926" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contohnya kompetisi antara tanaman anggrek dan melati, kedua tanaman ini saling bersaing untuk mendapatkan air, cahaya matahari, dan kebutuhan lainnya karena hidup di satu lahan yang sama. Contoh persaingan interspesifik pada hewan terjadi pada singa dengan hyena yang merebutkan hewan buruannya. Kompetisi antar spesies adalah kompetisi untuk makanan, habitat dan kebutuhan lainnya antara dua atau lebih spesies organisme. Kompetisi interspesifik.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kompetisi Interspesifik" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/118902599/original/d3b79e7475/1620740725?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun tidak menutup kemungkinan akan terjadi kompetisi intra spesifik antara tanaman kacang tanah dengan gulma atau cabai dengan gulma. Dalam kasus tersebut kompetisi interspesifik terjadi antara tanaman kacang tanah dengan cabai, sedangkan antar tanaman cabai ataupun antar tanaman kacang tanah terjadi kompetisi interspesifik. Persaingan terjadi untuk sumber daya yang terbatas seperti makanan, cahaya, air, dan wilayah. Kompetisi jenis ini terjadi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Persaingan di dalam Ekosistem Mikirbae" data-src="https://i2.wp.com/1.bp.blogspot.com/-k4rWZ7Jtf2E/WIQ2SSfAcuI/AAAAAAAALmg/F4oVO7HocV8EB6TwTycs077Hhq6fwIhxwCLcB/s1600/kompetisi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mikirbae.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika dua spesies atau lebih terlibat dalam kompetisi secara. Kompetisi interspesifik adalah persaingan antarindividu dengan spesies beda. Ada empat jenis persaingan dalam sistem pasar bebas: Kompetisi adalah suatu interaksi populasi yang didalamnya dua individu atau lebih memiliki kebutuhan yang bersamaan terhadap satu jenis sumber tetapi persediaan sumber tidak mencukupi kebutuhan semua individu. Desember 2014 pukul 13.30 wib di depan halaman.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kompetisi intraspesifik &amp; interspesifik iii.ppt" data-src="https://i2.wp.com/image.slidesharecdn.com/kompetisiintraspesifikinterspesifikiii-131004055105-phpapp01/95/kompetisi-intraspesifik-interspesifik-iiippt-14-638.jpg?cb=1380865926" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kompetisi interspesifik adalah suatu persaingan yang terjadi diantara organisme yang berbeda spesies, contoh dari kompetisi interspesifik adalah tanaman jagung serta juga rumput yang sama tumbuh di ladang. Dua jenis pola persaingan antarspesies dapat diidentifikasi antara spesies berdasarkan mekanisme. Pada praktikum ini yang berjudul, “kompetisi interspesifik” adalah bertujuan untuk mempelajari kompetisi interspesifik diantara dua jenis tumbuhan yang berbeda pada suatu wilayah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Competition in the Age of Collaboration The Age of Thrivability" data-src="https://i2.wp.com/ageofthrivability.com/files/2013/01/competition.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ageofthrivability.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Persaingan intraspesifik pada tumbuhan dapat dipengaruhi oleh beberapa faktor yaitu: Dua jenis pola persaingan antarspesies dapat diidentifikasi antara spesies berdasarkan mekanisme. Bentuk kompetisi yang muncul dan menimbulkan masalah dapat berupa kompetisi intraspesifik maupun interspesifik. Kompetisi intraspesifik ini adalah kompetisi antara organisme dari spesies yang sama (spesies). Dalam suatu jurnal berjudul “pengaruh kompetisi intraspesifik dan interspesifik terhadap pertumbuhan tanaman jagung (zea.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kompetisi intraspesifik &amp; interspesifik iii.ppt" data-src="https://i2.wp.com/image.slidesharecdn.com/kompetisiintraspesifikinterspesifikiii-131004055105-phpapp01/95/kompetisi-intraspesifik-interspesifik-iiippt-13-638.jpg?cb=1380865926" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contohnya kompetisi antara tanaman anggrek dan melati, kedua tanaman ini saling bersaing untuk mendapatkan air, cahaya matahari, dan kebutuhan lainnya karena hidup di satu lahan yang sama. Kecepatan perkecambahan biji tumbuhan dan pertumbuhan anakan (seedling) merupakan suatu faktor yang menentukan kemampuan spesies tumbuhan tertentu untuk menghadapi dan menaggulangi. Persaingan dapat terjadi antar tanaman sejenis (intraspesifik) dan antar tanaman berbeda jenis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Biologi Kelas X SMA/MA/SMK_Ekosistem dan Lingkungan Hidup" data-src="https://i2.wp.com/image.slidesharecdn.com/biologibab9new-120413034626-phpapp02/95/biologi-kelas-x-smamasmkekosistem-dan-lingkungan-hidup-18-728.jpg?cb=1334290121" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dua jenis pola persaingan antarspesies dapat diidentifikasi antara spesies berdasarkan mekanisme. Kompetisi interspesifik tanaman jagung (zea mays) dan kacang hijau (vigna radiata) dari hasil pengamatan yang dilakukan pada tanaman jagung dan kacang hijau diperoleh data rerata tinggi tanaman tiap perlakuan selama 3 minggu. Kompetisi atau persaingan tanaman dapat didefenisikan sebagai salah satu bentuk interaksi antar tanaman yang saling memperebutkan sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kompetisi intraspesifik &amp; interspesifik iii.ppt" data-src="https://i2.wp.com/image.slidesharecdn.com/kompetisiintraspesifikinterspesifikiii-131004055105-phpapp01/95/kompetisi-intraspesifik-interspesifik-iiippt-3-638.jpg?cb=1380865926" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dua jenis pola persaingan antarspesies dapat diidentifikasi antara spesies berdasarkan mekanisme. Kompetisi adalah suatu interaksi populasi yang didalamnya dua individu atau lebih memiliki kebutuhan yang bersamaan terhadap satu jenis sumber tetapi persediaan sumber tidak mencukupi kebutuhan semua individu. Kompetisi adalah kekuatan pendorong utama dalam evolusi, proses dimana organisme hidup. Jagung dan kacang hijau merupakan jenis tumbuhan dengan. Kompetisi interspesifik adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kompetisi intraspesifik &amp; interspesifik iii.ppt" data-src="https://i2.wp.com/image.slidesharecdn.com/kompetisiintraspesifikinterspesifikiii-131004055105-phpapp01/95/kompetisi-intraspesifik-interspesifik-iiippt-1-638.jpg?cb=1380865926" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kompetisi interspesifik terjadi ketika dua atau lebih spesies mengalami penurunan laju pertumbuhan yang dikaitkan dengan kehadiran bersama mereka di suatu daerah. Kompetisi intraspesifik ini adalah kompetisi antara organisme dari spesies yang sama (spesies). F kompetisi yang terjadi, baik intraspesifik dan interspesifik adalah merugikan. Kompetisi jenis ini terjadi dalam satu ruang lingkup yang sama. Kompetisi yang terjadi, baik intraspesifik dan interspesifik.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="KOMPETISI" data-src="https://i2.wp.com/image.slidesharecdn.com/kelompok5xiiak3-141213212152-conversion-gate02/95/kompetisi-5-638.jpg?cb=1418505878" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kompetisi intraspesifik adalah kompetisi yang terjadi antar anggota spesies (intra=di dalam), misalnya kompetisi untuk memperebutkan pasangan kawin pada serangga kompetisi interspesifik adalah kompetisi yang terjadi antar spesies yang berbeda. Dengan demikian, banyak spesies yang terlibat dalam kompetisi interspesifik. Contoh sesama kambing jantan berkelahi memperebutkan pasangan kawinnya. Dalam kasus tersebut kompetisi interspesifik terjadi antara tanaman kacang tanah dengan cabai, sedangkan antar.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="alat-yang-menggunakan-prinsip-elektromagnetik.html" class="be-post-title">
+				 <h6>alat yang menggunakan prinsip elektromagnetik </h6>
+                </a>
+                <a href="alat-yang-menggunakan-prinsip-elektromagnetik.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=alat%20yang%20menggunakan%20prinsip%20elektromagnetik&amp;w=50&amp;h=50&amp;c=7" alt="alat yang menggunakan prinsip elektromagnetik">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="di-bawah-ini-yang-termasuk-kegiatan-manajemen-administrasi.html" class="be-post-title">
+				 <h6>di bawah ini yang termasuk kegiatan manajemen administrasi </h6>
+                </a>
+                <a href="di-bawah-ini-yang-termasuk-kegiatan-manajemen-administrasi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=di%20bawah%20ini%20yang%20termasuk%20kegiatan%20manajemen%20administrasi&amp;w=50&amp;h=50&amp;c=7" alt="di bawah ini yang termasuk kegiatan manajemen administrasi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bentuk-molekul-sf4.html" class="be-post-title">
+				 <h6>bentuk molekul sf4 </h6>
+                </a>
+                <a href="bentuk-molekul-sf4.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bentuk%20molekul%20sf4&amp;w=50&amp;h=50&amp;c=7" alt="bentuk molekul sf4">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-syarat-syarat-terjadinya-revolusi-kecuali.html" class="be-post-title">
+				 <h6>berikut ini syarat syarat terjadinya revolusi kecuali </h6>
+                </a>
+                <a href="berikut-ini-syarat-syarat-terjadinya-revolusi-kecuali.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20syarat%20syarat%20terjadinya%20revolusi%20kecuali&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini syarat syarat terjadinya revolusi kecuali">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="monomer-dari-polimer-berikut-adalah.html" class="be-post-title">
+				 <h6>monomer dari polimer berikut adalah </h6>
+                </a>
+                <a href="monomer-dari-polimer-berikut-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=monomer%20dari%20polimer%20berikut%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="monomer dari polimer berikut adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-matematika-kelas-7-smp-beserta-jawabannya.html" class="be-post-title">
+				 <h6>contoh soal matematika kelas 7 smp beserta jawabannya </h6>
+                </a>
+                <a href="contoh-soal-matematika-kelas-7-smp-beserta-jawabannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20matematika%20kelas%207%20smp%20beserta%20jawabannya&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal matematika kelas 7 smp beserta jawabannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="buku-karya-multatuli-berjudul-max-havelaar-1860-berisi.html" class="be-post-title">
+				 <h6>buku karya multatuli berjudul max havelaar 1860 berisi </h6>
+                </a>
+                <a href="buku-karya-multatuli-berjudul-max-havelaar-1860-berisi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=buku%20karya%20multatuli%20berjudul%20max%20havelaar%201860%20berisi&amp;w=50&amp;h=50&amp;c=7" alt="buku karya multatuli berjudul max havelaar 1860 berisi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-ulangan-harian-matematika-kelas-6-sd-semester-2.html" class="be-post-title">
+				 <h6>contoh soal ulangan harian matematika kelas 6 sd semester 2 </h6>
+                </a>
+                <a href="contoh-soal-ulangan-harian-matematika-kelas-6-sd-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20ulangan%20harian%20matematika%20kelas%206%20sd%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal ulangan harian matematika kelas 6 sd semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ulangan-harian-tema-5-kelas-2-sd-subtema-1.html" class="be-post-title">
+				 <h6>soal ulangan harian tema 5 kelas 2 sd subtema 1 </h6>
+                </a>
+                <a href="soal-ulangan-harian-tema-5-kelas-2-sd-subtema-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ulangan%20harian%20tema%205%20kelas%202%20sd%20subtema%201&amp;w=50&amp;h=50&amp;c=7" alt="soal ulangan harian tema 5 kelas 2 sd subtema 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="arah-penyimpangan-jarum-galvanometer-berikut-yang-benar-adalah.html" class="be-post-title">
+				 <h6>arah penyimpangan jarum galvanometer berikut yang benar adalah </h6>
+                </a>
+                <a href="arah-penyimpangan-jarum-galvanometer-berikut-yang-benar-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=arah%20penyimpangan%20jarum%20galvanometer%20berikut%20yang%20benar%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="arah penyimpangan jarum galvanometer berikut yang benar adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

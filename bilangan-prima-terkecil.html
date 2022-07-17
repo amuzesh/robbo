@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bilangan Prima Terkecil at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Bilangan Prima Terkecil",
+  "datePublished": "2022-06-29T18:53:08Z",
+  "image": "https://tse1.mm.bing.net/th?q=bilangan%20prima%20terkecil",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=bilangan%20prima%20terkecil&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bilangan%20prima%20terkecil" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bilangan%20prima%20terkecil" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bilangan Prima Terkecil at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Bilangan Prima Terkecil</h2>
+    <p><strong>Bilangan Prima Terkecil</strong>. Tentukan faktor prima dari 45! (2) mari kita perhatikan bilangan tiga angka terkecil yaitu 100.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=bilangan%20prima%20terkecil" alt="Menentukan Kelipatan Persekutuan Terkecil (KPK) dan Faktor Persekutuan" />
+        <br>
+        <figcaption>Menentukan Kelipatan Persekutuan Terkecil (KPK) dan Faktor Persekutuan from balaiedukasi.blogspot.com</figcaption>
+    </figure>
+        <p>
+        2, 3, 5, 7, 11, 13, 17,. Lima bilangan pertama adalah bilangan prima, tetapi yang keenam,. Dan terakhir, bagi 9 dengan menggunakan bilangan prima terkecil yang bisa membagi 9 adalah angka 3, maka 9 :
+    </p>
+    <h3>Menentukan Kelipatan Persekutuan Terkecil (KPK) dan Faktor Persekutuan</h3>
+    <p>Pernyataan (2) menyatakan bahwa suku terkecil dari s merupakan bilangan prima terkecil dan suku. 2, 3, 5, 7, 11, 13, 17,. Sebutkan bilangan prima antara 10. Bilangan 1 bukan bilangan prima karena faktornya hanya 1.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Soal Matematika Bilangan Prima Untuk Kelas 4 SD Plus Kunci Jawaban" data-src="https://i2.wp.com/3.bp.blogspot.com/-0-iTYCv1RGg/XOAaVItRRVI/AAAAAAAACIs/2ztjzPKz1yw1JchBZK1maN75llETfkn6ACLcBGAs/w1200-h630-p-k-no-nu/prima.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.apologiku.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(2) mari kita perhatikan bilangan tiga angka terkecil yaitu 100. Sebutkan bilangan prima antara 10. Urutkan bilangan berikut dari terbesar hingga terkecil, meliputi a. 83 bilangan prima adalah bilangan yang memiliki 2 faktor yaitu 1 dan bilangan itu sendiri. Kunci jawaban matematika kelas 6 sd mi halaman 17 di buku senang belajar matematika.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Soal Matematika Bilangan Prima Untuk Kelas 4 SD Plus Kunci Jawaban" data-src="https://i2.wp.com/3.bp.blogspot.com/-0-iTYCv1RGg/XOAaVItRRVI/AAAAAAAACIs/2ztjzPKz1yw1JchBZK1maN75llETfkn6ACLcBGAs/s1600/prima.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.apologiku.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mari kita ambil 101, yang. Sedangkan bilangan bulat positif yang lebih dari 1 dan bukan bilangan prima disebut dengan bilangan komposit (tersusun). Jadi, faktor prima dari 40 yaitu=2x2x2x5. Bilangan prima lebih dari 20 : Terdapat satu bilangan prima genap, yaitu angka 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Membuat Program Bilangan Prima Dalam Bahasa C RheinaMF Blog ♥" data-src="https://i2.wp.com/4.bp.blogspot.com/-oJEj0QBXEgU/Vl_aICRzdAI/AAAAAAAAAyA/XAvfMv93WBg/s1600/bilangan%2Bprima.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rheina-mf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bilangan satu ini sekaligus menjadi bilangan prima yang terkecil. Bilangan ini sekaligus menjadi bilangan prima terkecil. 2, 3, 5, 7, 11, 13, 17,. Kemudian, bagi bilangan tersebut mulai dari bilangan prima terkecil lebih dahulu, yaitu 2 sampai bilangan. 83 bilangan prima adalah bilangan yang memiliki 2 faktor yaitu 1 dan bilangan itu sendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ruang Bercerita Mencari FPB dan KPK dengan metode tusuk sate" data-src="https://i2.wp.com/4.bp.blogspot.com/-chSkRKxauak/UEg-rv1oN8I/AAAAAAAAAV8/gXEw8rxFbFU/s640/fpb+dan+kpk+metode+tusuk+sate.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: yuanitahandoko.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Untuk mendapatkan faktor prima dari soal di atas kita harus membagi bilangan 70 dengan bilangan prima, coba mulai dari yang terkecil, yaitu 2. Artinya adalah, bilangan prima hanya dapat dibagi dan menghasilkan bilangan bulat jika dibagi dengan angka 1 dan bilangan itu sendiri. Pernyataan (2) menyatakan bahwa suku terkecil dari s merupakan bilangan prima terkecil dan suku. Bilangan ini sekaligus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="apa saja bilangan prima 1 sampai 100 Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/dfb/706fb4ccf42cbb076a8105eae0791049.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Himpunan bagian dari bilangan prima dapat dibuat dengan berbagai rumus untuk bilangan prima. Penjelasan lengkap apa itu bilangan prima mulai dari pengertian, rumus, tabel, definisi, arti, cara mencari bilangannya, dan contoh bilangan. Bilangan satu ini sekaligus menjadi bilangan prima yang terkecil. 100 tidak termasuk dalam kelompok bilangan prima. Terdapat satu bilangan prima genap, yaitu angka 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Banyaknya Bilangan Yang Merupakan Faktor Dari 40 Adalah Modern" data-src="https://i2.wp.com/rumus.co.id/wp-content/uploads/2018/12/bilangan-prima-1-100.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: belajarsemua.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pertama anda harus mencari bilangan yang akan dicari faktornya (14 dan 40) setelah itu bagi lah bilangan tersebut menggunakan bilangan prima. Halo eni n jawaban yang tepat adalah d. Kemudian, bagi bilangan tersebut mulai dari bilangan prima terkecil lebih dahulu, yaitu 2 sampai bilangan. Jadi, faktor prima dari 40 yaitu=2x2x2x5. Untuk mendapatkan faktor prima dari soal di atas kita harus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bilangan Prima Ganjil Yang Terkecil Adalah Modern" data-src="https://i2.wp.com/id-static.z-dn.net/files/d5a/8ad50b10a2900a5f8664e56d5189735d.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: belajarsemua.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selain itu, 2 juga merupakan bilangan. Kemudian, bagi bilangan tersebut mulai dari bilangan prima terkecil lebih dahulu, yaitu 2 sampai bilangan. Kunci jawaban matematika kelas 6 sd mi halaman 17 di buku senang. Menurut teorema euklides, ada bilangan prima yang takhingga. Jadi, faktor prima dari 72 adalah = 2 x 2 x 2 x 3 x 3.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fajar Nugroho Algoritma Menampilkan Bilangan Prima" data-src="https://i2.wp.com/3.bp.blogspot.com/-GGwCSsTxpbE/ThsGXGLJCVI/AAAAAAAAAKg/IHX2aY4qdV0/w1200-h630-p-k-no-nu/Picture1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fajarnugrohorpl.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bilangan yang dibentuk dengan menambahkan 1 pada hasil kali dari bilangan prima terkecil disebut bilangan euklides. Bilangan prima adalah bilangan asli yang faktor pembaginya adalah 1 dan bilangan itu sendiri. Kunci jawaban matematika kelas 6 sd mi halaman 17 di buku senang belajar matematika. Kunci jawaban matematika kelas 6 sd mi halaman 17 di buku senang. Jadi, faktor prima dari.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Menentukan Kelipatan Persekutuan Terkecil (KPK) dan Faktor Persekutuan" data-src="https://i2.wp.com/2.bp.blogspot.com/-mGmU9WEJMIE/VSFGqqBaZ2I/AAAAAAAAGSs/uIwoq6v8egc/s1600/fpb%2B1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: balaiedukasi.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Terdapat satu bilangan prima genap, yaitu angka 2. Sebutkan bilangan prima kurang dari 10? Bilangan yang dibentuk dengan menambahkan 1 pada hasil kali dari bilangan prima terkecil disebut bilangan euklides. Sedangkan bilangan bulat positif yang lebih dari 1 dan bukan bilangan prima disebut dengan bilangan komposit (tersusun). Kunci jawaban matematika kelas 6 sd mi halaman 17 di buku senang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="kelipatan persekutuan terkecil (kpk) dari 36, 54 dan 60 dalam bentuk" data-src="https://i2.wp.com/id-static.z-dn.net/files/d00/f2c0541115f870bfa6bbe7a50cd11622.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Himpunan bagian dari bilangan prima dapat dibuat dengan berbagai rumus untuk bilangan prima. Untuk mendapatkan faktor prima dari soal di atas kita harus membagi bilangan 70 dengan bilangan prima, coba mulai dari yang terkecil, yaitu 2. Bilangan 1 bukan bilangan prima karena faktornya hanya 1. Informasi ini tidak memberi tahu apapun mengenai suku terkecil dan suku terbesar. Menurut teorema euklides,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pada-peta-diatas-benua-afrika-ditunjukkan-dengan-nomor.html" class="be-post-title">
+				 <h6>pada peta diatas benua afrika ditunjukkan dengan nomor </h6>
+                </a>
+                <a href="pada-peta-diatas-benua-afrika-ditunjukkan-dengan-nomor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pada%20peta%20diatas%20benua%20afrika%20ditunjukkan%20dengan%20nomor&amp;w=50&amp;h=50&amp;c=7" alt="pada peta diatas benua afrika ditunjukkan dengan nomor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-pts-pai-kelas-5-sd-semester-2-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal pts pai kelas 5 sd semester 2 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-pts-pai-kelas-5-sd-semester-2-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20pts%20pai%20kelas%205%20sd%20semester%202%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal pts pai kelas 5 sd semester 2 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-pola-pengembangan-urutan-kejadian-pada-teks-eksplanasi.html" class="be-post-title">
+				 <h6>jelaskan pola pengembangan urutan kejadian pada teks eksplanasi </h6>
+                </a>
+                <a href="jelaskan-pola-pengembangan-urutan-kejadian-pada-teks-eksplanasi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20pola%20pengembangan%20urutan%20kejadian%20pada%20teks%20eksplanasi&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan pola pengembangan urutan kejadian pada teks eksplanasi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-faktor-yang-menyebabkan-keragaman-kebudayaan-nasional.html" class="be-post-title">
+				 <h6>jelaskan faktor yang menyebabkan keragaman kebudayaan nasional </h6>
+                </a>
+                <a href="jelaskan-faktor-yang-menyebabkan-keragaman-kebudayaan-nasional.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20faktor%20yang%20menyebabkan%20keragaman%20kebudayaan%20nasional&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan faktor yang menyebabkan keragaman kebudayaan nasional">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jaringan-palisade-terdapat-pada-nomor.html" class="be-post-title">
+				 <h6>jaringan palisade terdapat pada nomor </h6>
+                </a>
+                <a href="jaringan-palisade-terdapat-pada-nomor.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jaringan%20palisade%20terdapat%20pada%20nomor&amp;w=50&amp;h=50&amp;c=7" alt="jaringan palisade terdapat pada nomor">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="objek-dari-sejarah-adalah.html" class="be-post-title">
+				 <h6>objek dari sejarah adalah </h6>
+                </a>
+                <a href="objek-dari-sejarah-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=objek%20dari%20sejarah%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="objek dari sejarah adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-mid-semester-1-kelas-4-sd-matematika-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal mid semester 1 kelas 4 sd matematika kurikulum 2013 </h6>
+                </a>
+                <a href="soal-mid-semester-1-kelas-4-sd-matematika-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20mid%20semester%201%20kelas%204%20sd%20matematika%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal mid semester 1 kelas 4 sd matematika kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dalam-bidang-pertanian-redistribusi-pendapatan-dapat-berupa.html" class="be-post-title">
+				 <h6>dalam bidang pertanian redistribusi pendapatan dapat berupa </h6>
+                </a>
+                <a href="dalam-bidang-pertanian-redistribusi-pendapatan-dapat-berupa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dalam%20bidang%20pertanian%20redistribusi%20pendapatan%20dapat%20berupa&amp;w=50&amp;h=50&amp;c=7" alt="dalam bidang pertanian redistribusi pendapatan dapat berupa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="faktor-penghambat-kematian.html" class="be-post-title">
+				 <h6>faktor penghambat kematian </h6>
+                </a>
+                <a href="faktor-penghambat-kematian.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=faktor%20penghambat%20kematian&amp;w=50&amp;h=50&amp;c=7" alt="faktor penghambat kematian">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gerak-lurus-berubah-beraturan-diperlambat.html" class="be-post-title">
+				 <h6>gerak lurus berubah beraturan diperlambat </h6>
+                </a>
+                <a href="gerak-lurus-berubah-beraturan-diperlambat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gerak%20lurus%20berubah%20beraturan%20diperlambat&amp;w=50&amp;h=50&amp;c=7" alt="gerak lurus berubah beraturan diperlambat">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

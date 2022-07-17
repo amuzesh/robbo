@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bilangan Prima Yang Terkecil Adalah at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Bilangan Prima Yang Terkecil Adalah",
+  "datePublished": "2022-05-05T01:57:58Z",
+  "image": "https://tse1.mm.bing.net/th?q=bilangan%20prima%20yang%20terkecil%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=bilangan%20prima%20yang%20terkecil%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bilangan%20prima%20yang%20terkecil%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bilangan%20prima%20yang%20terkecil%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bilangan Prima Yang Terkecil Adalah at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Bilangan Prima Yang Terkecil Adalah</h2>
+    <p><strong>Bilangan Prima Yang Terkecil Adalah</strong>. * 5 poin 1, 2, 3, 4, 6, 9. X, z , y b.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=bilangan%20prima%20yang%20terkecil%20adalah" alt="Pengertian Bilangan Prima dan Contoh Bilangan Prima 1100 Berpendidikan" />
+        <br>
+        <figcaption>Pengertian Bilangan Prima dan Contoh Bilangan Prima 1100 Berpendidikan from www.berpendidikan.com</figcaption>
+    </figure>
+        <p>
+        Jadi, kpk dari 5 dan 6 adalah 30. Bilangan prima adalah bilang yang lebih besar dari 1 dan dapat dibagi 2, yaitu 1 dan bilangan itu sendiri. * 5 poin 1,2,3,8,16,32 1,2,4,8,16,32 1,2,6,12,16,32 1,3,6,12,16,32 2.
+    </p>
+    <h3>Pengertian Bilangan Prima dan Contoh Bilangan Prima 1100 Berpendidikan</h3>
+    <p>Jika kalian masih belum paham,. Angka 15 memiliki pembagi 1,3,5,15 karena: Bilangan prima adalah bilangan asli yang dapat dibagi oleh bilangan itu sendiri dan dapat pula dibagi dengan angka 1. Dalam matematika, khususnya di bidang teori bilangan dan ilmu komputer, fungsi bilangan bulat terbesar (bahasa inggris:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bilangan Prima Kurang Dari 15 Banyak Himpunan Bagian Dari B Yang" data-src="https://i2.wp.com/id-static.z-dn.net/files/d4d/cc74420569e5dd67c6d92c48cb8e0638.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: belajarsemua.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sudah sedikit disinggung sebelumnya, kegunaan yang pertama adalah bisa digunakan untuk mencari faktor prima dari suatu bilangan kompusit. Faktor dari bilangan 36 adalah. 2, 3, 5, 7, 11, 13, 17,. 100 tidak termasuk dalam kelompok bilangan prima. Bagi 30 dengan bilangan prima terkecil yang bisa membagi 30 adalah = 2 30 :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bilangan prima dari 1 sampai 100!! Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d98/b7b96198e6f9183e8aecdab25aaee293.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dan terakhir, bagi 9 dengan menggunakan bilangan prima terkecil. Bilangan prima terkecil adalah 2, karena 2 merupakan asli terkecil yang faktornya adalah 1 dan 2 itu sendiri. Tulis 2 bilangan prima yang terkecil,. Bilangan prima adalah bilang yang lebih besar dari 1 dan dapat dibagi 2, yaitu 1 dan bilangan itu sendiri. Jika memiliki pembagi lain, maka bukanlah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Bilangan Prima dan Contoh Bilangan Prima 1100 Berpendidikan" data-src="https://i2.wp.com/3.bp.blogspot.com/-VBSBNTHzL1Y/VU81UKdTv8I/AAAAAAAAAE8/_sL2JO66oF0/s1600/bilangan-prima.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.berpendidikan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam matematika, khususnya di bidang teori bilangan dan ilmu komputer, fungsi bilangan bulat terbesar (bahasa inggris: Artinya adalah, bilangan prima hanya dapat dibagi dan menghasilkan bilangan bulat jika dibagi dengan angka 1 dan bilangan itu sendiri. Pertama, bagi 72 dengan bilangan prima terkecil yang bisa membagi 72 adalah angka 2 maka, 72 : Dengan demikian, bilangan prima hanya bisa habis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bilangan Prima Ganjil Yang Terkecil Adalah Modern" data-src="https://i2.wp.com/id-static.z-dn.net/files/d5a/8ad50b10a2900a5f8664e56d5189735d.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: belajarsemua.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Yang dimaksud bilangan prima adalah suatu bilangan yang hanya dapat dibagi dengan angka 1 atau bilangan itu sendiri. 1 bukanlah bilangan prima karena 1. Bilangan prima 3 digit terkecil adalah:(1) 100(2) 101(3) 103(4) 109. Untuk mendapatkan faktor prima dari soal di atas. 100 tidak termasuk dalam kelompok bilangan prima.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bilangan Prima, Pelajaran Matematika Kelas 4 SD Juragan Les" data-src="https://i2.wp.com/4.bp.blogspot.com/-mdbz_yIcY7Y/WBgb71BCfQI/AAAAAAAACZ8/uJVCNQpkqkI-5pD-ehDeAurpW7kS-wQFQCLcB/s1600/Tabel-bilangan-prima-1-100.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.juraganles.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maka kpk nya adalah 35 35 adalah. Dalam ilmu matematika, angka ini hanya mempunyai dua faktor, yaitu dibagi dengan angka satu atau dengan angka itu sendiri. 2, 3, 5, 7, 11, 13, 17,. Mari kita ambil 101, yang tidak dibagi. Bilangan prima terkecil adalah 2 dan bilangan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mari Belajar Bilangan Prima, Rumus Beserta Variasi Soalnya Eman Mendrofa" data-src="https://i2.wp.com/1.bp.blogspot.com/-DenvPwcv8So/X94yD_nfnII/AAAAAAAASTY/fUvtdeiq3kUovoFrsG5eLApdf2-NXglnQCLcBGAsYHQ/s16000/Bilangan%2Bprima%2B1-100%2Bdan%2Bbilangan%2Bprima%2B1-1000.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: emanmendrofa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Faktor dari bilangan 32 adalah. Dalam ilmu matematika, angka ini hanya mempunyai dua faktor, yaitu dibagi dengan angka satu atau dengan angka itu sendiri. Untuk mendapatkan faktor prima dari soal di atas. Bagi 30 dengan bilangan prima terkecil yang bisa membagi 30 adalah = 2 30 : Bilangan prima terkecil adalah 2 dan bilangan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="apa saja bilangan prima 1 sampai 100 Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/dfb/706fb4ccf42cbb076a8105eae0791049.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bilangan prima adalah bilang yang lebih besar dari 1 dan dapat dibagi 2, yaitu 1 dan bilangan itu sendiri. Sejarah dan definisi bilangan prima. Dalam matematika, khususnya di bidang teori bilangan dan ilmu komputer, fungsi bilangan bulat terbesar (bahasa inggris: Bilangan 1 bukan bilangan prima karena faktornya hanya 1. Yang dimaksud bilangan prima adalah suatu bilangan yang hanya dapat dibagi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Menentukan FPB dan KPK Dengan Pohon Faktor" data-src="https://i2.wp.com/2.bp.blogspot.com/-m7NMDKE4e9s/U9UD1DYHErI/AAAAAAAAKok/mg80l8irkNs/s1600/diagram+pohon.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: onlinelessonbook.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sebagai contoh, bilangan biner 110110 dituliskan menjadi 110110 (2). Tulis 2 bilangan prima yang terkecil,. Angka 15 memiliki pembagi 1,3,5,15 karena: Cara penulisan pada sistem bilangan biner menggunakan subscript angka 2 setelah nilai bit terkecil atau lsb. Faktor dari bilangan 32 adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MENENTUKAN BILANGAN PRIMA DAN FAKTOR BILANGAN asa generasiku" data-src="https://i2.wp.com/4.bp.blogspot.com/-m5yGF06R6xc/UBxuKa6s11I/AAAAAAAABZI/nRsAf7K-Ve0/s1600/tabel+prima.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: asagenerasiku.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Faktor persekutuan terbesar (fpb) fpb adalah faktor terbesar yang. (2) mari kita perhatikan bilangan tiga angka terkecil yaitu 100. 2, 3, 5, 7, 11, 13, 17,. Artinya adalah, bilangan prima hanya dapat dibagi dan menghasilkan bilangan bulat jika dibagi dengan angka 1 dan bilangan itu sendiri. Bagi 15 dengan bilangan prima terkecil yang bisa membagi 15 adalah = 3 15.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bilangan Prima 1 100 Pengertian, Materi, Rumus, Contoh Soal" data-src="https://i2.wp.com/rumus.co.id/wp-content/uploads/2018/12/bilangan-prima-1-100.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rumus.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bilangan 1 bukan bilangan prima karena faktornya hanya 1. Dalam kompetisi matematika yang terdiri dari 50 soal, peserta. Greatest integer function) adalah suatu fungsi dimana ketika suatu. Jadi, kpk dari 5 dan 6 adalah 30. * 5 poin 1,2,3,8,16,32 1,2,4,8,16,32 1,2,6,12,16,32 1,3,6,12,16,32 2.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="inti-atom-terdiri-dari.html" class="be-post-title">
+				 <h6>inti atom terdiri dari </h6>
+                </a>
+                <a href="inti-atom-terdiri-dari.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=inti%20atom%20terdiri%20dari&amp;w=50&amp;h=50&amp;c=7" alt="inti atom terdiri dari">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="atom-yang-bermuatan-negatif-disebut.html" class="be-post-title">
+				 <h6>atom yang bermuatan negatif disebut </h6>
+                </a>
+                <a href="atom-yang-bermuatan-negatif-disebut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=atom%20yang%20bermuatan%20negatif%20disebut&amp;w=50&amp;h=50&amp;c=7" alt="atom yang bermuatan negatif disebut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="alat-penyimpan-data-yang-biasa-digunakan-pada-handycam-adalah.html" class="be-post-title">
+				 <h6>alat penyimpan data yang biasa digunakan pada handycam adalah </h6>
+                </a>
+                <a href="alat-penyimpan-data-yang-biasa-digunakan-pada-handycam-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=alat%20penyimpan%20data%20yang%20biasa%20digunakan%20pada%20handycam%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="alat penyimpan data yang biasa digunakan pada handycam adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-ujian-nasional-pkn-kelas-6-sd.html" class="be-post-title">
+				 <h6>contoh soal ujian nasional pkn kelas 6 sd </h6>
+                </a>
+                <a href="contoh-soal-ujian-nasional-pkn-kelas-6-sd.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20ujian%20nasional%20pkn%20kelas%206%20sd&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal ujian nasional pkn kelas 6 sd">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kepanjangan-dari-nica.html" class="be-post-title">
+				 <h6>kepanjangan dari nica </h6>
+                </a>
+                <a href="kepanjangan-dari-nica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kepanjangan%20dari%20nica&amp;w=50&amp;h=50&amp;c=7" alt="kepanjangan dari nica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cormophyta.html" class="be-post-title">
+				 <h6>cormophyta </h6>
+                </a>
+                <a href="cormophyta.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cormophyta&amp;w=50&amp;h=50&amp;c=7" alt="cormophyta">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gambarkan-contoh.html" class="be-post-title">
+				 <h6>gambarkan contoh </h6>
+                </a>
+                <a href="gambarkan-contoh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gambarkan%20contoh&amp;w=50&amp;h=50&amp;c=7" alt="gambarkan contoh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="organisasi-pemuda-yang-pertama-kali-berdiri-di-indonesia-adalah.html" class="be-post-title">
+				 <h6>organisasi pemuda yang pertama kali berdiri di indonesia adalah </h6>
+                </a>
+                <a href="organisasi-pemuda-yang-pertama-kali-berdiri-di-indonesia-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=organisasi%20pemuda%20yang%20pertama%20kali%20berdiri%20di%20indonesia%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="organisasi pemuda yang pertama kali berdiri di indonesia adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-latihan-agama-islam-kelas-5-sd-semester-1.html" class="be-post-title">
+				 <h6>soal latihan agama islam kelas 5 sd semester 1 </h6>
+                </a>
+                <a href="soal-latihan-agama-islam-kelas-5-sd-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20latihan%20agama%20islam%20kelas%205%20sd%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="soal latihan agama islam kelas 5 sd semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="lagu-bangun-pemudi-pemuda-dinyanyikan-dengan-tempo.html" class="be-post-title">
+				 <h6>lagu bangun pemudi pemuda dinyanyikan dengan tempo </h6>
+                </a>
+                <a href="lagu-bangun-pemudi-pemuda-dinyanyikan-dengan-tempo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=lagu%20bangun%20pemudi%20pemuda%20dinyanyikan%20dengan%20tempo&amp;w=50&amp;h=50&amp;c=7" alt="lagu bangun pemudi pemuda dinyanyikan dengan tempo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

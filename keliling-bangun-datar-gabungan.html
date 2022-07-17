@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Keliling Bangun Datar Gabungan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Keliling Bangun Datar Gabungan",
+  "datePublished": "2022-05-28T03:35:26Z",
+  "image": "https://tse1.mm.bing.net/th?q=keliling%20bangun%20datar%20gabungan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=keliling%20bangun%20datar%20gabungan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=keliling%20bangun%20datar%20gabungan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=keliling%20bangun%20datar%20gabungan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Keliling Bangun Datar Gabungan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Keliling Bangun Datar Gabungan</h2>
+    <p><strong>Keliling Bangun Datar Gabungan</strong>. Berikut ini admin membagikan artikel tentang soal ulangan bab keliling dan luas bangun datar kelas 4 sd disertai dengan pembahasannya. Tentunya materi ini ditayangkan dalam program belajar dari rumah tvri.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=keliling%20bangun%20datar%20gabungan" alt="Contoh Soal Bangun Datar Gabungan dan Pembahasannya rpp.co.id" />
+        <br>
+        <figcaption>Contoh Soal Bangun Datar Gabungan dan Pembahasannya rpp.co.id from rpp.co.id</figcaption>
+    </figure>
+        <p>
+        A) 50 cm b) 35 cm c) 78 cm d) 64 cm 4) keliling bangun datar gabungan berikut adalah. Tentunya materi ini ditayangkan dalam program belajar dari rumah tvri. Perhatikan gambar bangun yang terdiri dari jajargenjang dan segitiga siku siku tentukan keliling brainly co id.
+    </p>
+    <h3>Contoh Soal Bangun Datar Gabungan dan Pembahasannya rpp.co.id</h3>
+    <p>Berikut ini merupakan soal dan pembahasan terkait keliling dan luas bangun datar yang umumnya dipelajari oleh siswa kelas iv sampai viii. 2 4.5 menaksir keliling dan luas lingkaran serta menggunakannya untukmenyelesaikan masalah 4.5.1 memecahkan masalah yang terkait penaksiran luas dan keliling bangun datar gabungan yang Jika alasnya 12 cm, maka tingginya segitiga tersebut adalah.cm. Segitiga, segi empat, dan lingkaran termasuk bangun datar.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Luas Dan Keliling Gabungan Bangun Datar Dapatkan Contoh" data-src="https://i2.wp.com/1.bp.blogspot.com/-6bHmjz_veeI/WiSEweSAsZI/AAAAAAAAT0o/MudSx7-yCMYNh37BDpiILtQQg5peE9FagCLcBGAs/s1600/1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dapatkancontoh.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Soal dan pembahasan bangun datar â€“ jawara tugas sekolah. Soal uh matematika kelas 4 semester 1 bab keliling dan. Guru sd smp sma contoh soal bangun ruang gabungan kelas 6 sd. While downloading, if for some reason. = ½ x 16 x 12.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Luas Dan Keliling Bangun Datar Gabungan Dan Jawabannya" data-src="https://i2.wp.com/2.bp.blogspot.com/-956r79ZMNHQ/WPo12bWx8zI/AAAAAAAAFx4/8UdJJw2EpFY9umkCa-uYWUDpwrZA1Ho5QCLcB/w1200-h630-p-k-no-nu/luas_gabungan.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: contohsoalterbaik.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">= ½ x (16 + 20) x 6. Keliling dan luas bangun datar 1. Contoh soal bangun datar gabungan ini dapat diselesaikan dengan menghitung luas masing masing bangun trapesium di atas. Luas i = a x t. Luas trapesium i = ½ x (a + b) x t.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Luas Dan Keliling Bangun Datar Gabungan Dan Jawabannya" data-src="https://i2.wp.com/3.bp.blogspot.com/-tuik61W2Nq4/WfV7c6WbWEI/AAAAAAAACeU/fVx2AbBxD5YwbC2UqB79sSTyS6vk6fqPACLcBGAs/s1600/Layang-layang%2B%252B%2BTrapesium.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ensiklopediilmupopuler613.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Untuk menyelesaikan contoh soal tersebut dapat menggunakan rumus bangun datar gabungan berupa rumus luas trapesium. Coba bandingkan luas bangun gabungan dengan hasil penjumlahan luas bangun a dan bangun b. Content on the website is provided to you as is for your information and personal use and may not be sold / licensed / shared on other websites without getting consent.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Luas Dan Keliling Bangun Datar Gabungan Belajar" data-src="https://i2.wp.com/id-static.z-dn.net/files/da6/288a5b24457ae6acc45290de4ddfb2a4.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: detiks.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut ini saya berikan contoh soal gabungan dua bangun datar dan cara penyelesaian tentunya, semoga bermanfaat. Soal dan pembahasan bangun datar â€“ jawara tugas sekolah. Contoh soal bangun datar gabungan tersebut merupakan dua buah trapesium siku siku yang di gabung menjadi satu. Untuk menyelesaikan contoh soal tersebut dapat menggunakan rumus bangun datar gabungan berupa rumus luas trapesium. Jika alasnya 12.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Bangun Datar Gabungan dan Pembahasannya rpp.co.id" data-src="https://i2.wp.com/rpp.co.id/wp-content/uploads/2020/11/gabungan1-535x420.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rpp.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contoh soal bangun datar gabungan tersebut merupakan dua buah trapesium siku siku yang di gabung menjadi satu. Luas trapesium i = ½ x (a + b) x t. A) jengkal b) langkah c) meter d) hasta 2) keliling bangun datar gabungan berikut adalah. = ½ x (16 + 20) x 6. Pos sebelumnya rumus volume air dalam kubus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Matematikamu Matematikaku Keliling Gabungan Dua Bangun Datar" data-src="https://i2.wp.com/1.bp.blogspot.com/-fr0xiib--nE/VW5GvKafvbI/AAAAAAAAAKk/eFjdL9PKmuo/s1600/gabungan%2B2.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dunduman.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Luas dan keliling bangun datar gabungan. Luas bangun gabungan dapat dihitung dengan cara menjumlahkan luas bangun pembentuknya. Berikut ini saya berikan contoh soal gabungan dua bangun datar dan cara penyelesaian tentunya, semoga bermanfaat. Tentunya materi ini ditayangkan dalam program belajar dari rumah tvri. 1 3.5 menjelaskan taksiran keliling dan luas lingkaran 3.5.1 mengidentifikasi masalah terkait luas dan keliling bangun datar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hitunglah Luas Dan Keliling Bangun Gabungan Berikut Bagis" data-src="https://i2.wp.com/www.yuksinau.id/wp-content/uploads/2020/03/soal-bangun-datar-gabungan.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: belajarsemua.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pertama kita akan mencari luas persegi panjang = panjang x lebar = 12 cm x 8 cm = 96 cm. Jika alasnya 12 cm, maka tingginya segitiga tersebut adalah.cm. Keliling dan luas bangun datar 1. Soal uh matematika kelas 4 semester 1 bab keliling dan. 1 3.5 menjelaskan taksiran keliling dan luas lingkaran 3.5.1 mengidentifikasi masalah terkait luas dan keliling.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Menghitung Luas Dan Keliling Bangun Datar Gabungan Dunia Belajar" data-src="https://i2.wp.com/id-static.z-dn.net/files/db0/ad7b1f387fe8d0ef13ff44b6928650cb.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: duniabelajars.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A) 80 cm b) 90 cm c) 50 cm d) 65 cm 3) keliling bangun datar gabungan berikut adalah. Contoh soal bangun datar gabungan ini dapat diselesaikan dengan menghitung luas masing masing bangun trapesium di atas. An image/link below is provided (as is) to download presentation. Soal dan pembahasan bangun datar â€“ jawara tugas sekolah. Luas = ½ x diagonal.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tentukan keliling gabungan bangun datar di atas! Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/dfa/0c5fb0bb1283ea583c598934ab811c01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Faktor penting untuk mencari luas dari bangun datar yaitu ketepatan mencari ukuran setiap unsur bangun penyusunnya. Contoh soal bangun datar gabungan tersebut merupakan dua buah trapesium siku siku yang di gabung menjadi satu. Sementara, bangun kedua merupakan belah ketupat dengan ukuran d₁ = 2×8 = 16 cm dan d₂ = 2×6 = 12 cm. Panjang sisi persegi 6 cm sedangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Bangun Ruang Gabungan Dan Jawabannya" data-src="https://i2.wp.com/www.yuksinau.id/wp-content/uploads/2019/08/contoh-soal-keliling-dan-luas-bangun-datar.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bakingupforlosttime.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">An image/link below is provided (as is) to download presentation. Ketemu lagi di dunia matematika, matematikamu matematikaku. A) 50 cm b) 35 cm c) 78 cm d) 64 cm 4) keliling bangun datar gabungan berikut adalah. Diberikan sebuah bangun trapesium sama kaki dan sebuah bangun setengah lingkaran sebgaimana gambar berikut. Satu kelompok terdiri dari 4 siswa.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="apa-yang-dimaksud-dengan-semangat.html" class="be-post-title">
+				 <h6>apa yang dimaksud dengan semangat </h6>
+                </a>
+                <a href="apa-yang-dimaksud-dengan-semangat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20dimaksud%20dengan%20semangat&amp;w=50&amp;h=50&amp;c=7" alt="apa yang dimaksud dengan semangat">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="amanat-adalah.html" class="be-post-title">
+				 <h6>amanat adalah </h6>
+                </a>
+                <a href="amanat-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=amanat%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="amanat adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kapal-laut-dapat-terapung-di-permukaan-air-hal-ini-disebabkan.html" class="be-post-title">
+				 <h6>kapal laut dapat terapung di permukaan air hal ini disebabkan </h6>
+                </a>
+                <a href="kapal-laut-dapat-terapung-di-permukaan-air-hal-ini-disebabkan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kapal%20laut%20dapat%20terapung%20di%20permukaan%20air%20hal%20ini%20disebabkan&amp;w=50&amp;h=50&amp;c=7" alt="kapal laut dapat terapung di permukaan air hal ini disebabkan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="norma-law.html" class="be-post-title">
+				 <h6>norma law </h6>
+                </a>
+                <a href="norma-law.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=norma%20law&amp;w=50&amp;h=50&amp;c=7" alt="norma law">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pada-molekul-n2-jumlah-pasangan-elektron-yang-digunakan-bersama-adalah.html" class="be-post-title">
+				 <h6>pada molekul n2 jumlah pasangan elektron yang digunakan bersama adalah </h6>
+                </a>
+                <a href="pada-molekul-n2-jumlah-pasangan-elektron-yang-digunakan-bersama-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pada%20molekul%20n2%20jumlah%20pasangan%20elektron%20yang%20digunakan%20bersama%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="pada molekul n2 jumlah pasangan elektron yang digunakan bersama adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-tts-cak-lontong-lengkap.html" class="be-post-title">
+				 <h6>kunci jawaban tts cak lontong lengkap </h6>
+                </a>
+                <a href="kunci-jawaban-tts-cak-lontong-lengkap.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20tts%20cak%20lontong%20lengkap&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban tts cak lontong lengkap">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-sekolah-smp-2021-matematika-kelas-9.html" class="be-post-title">
+				 <h6>soal ujian sekolah smp 2021 matematika kelas 9 </h6>
+                </a>
+                <a href="soal-ujian-sekolah-smp-2021-matematika-kelas-9.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20sekolah%20smp%202021%20matematika%20kelas%209&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian sekolah smp 2021 matematika kelas 9">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-komponen-komponen-sig.html" class="be-post-title">
+				 <h6>jelaskan komponen komponen sig </h6>
+                </a>
+                <a href="jelaskan-komponen-komponen-sig.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20komponen%20komponen%20sig&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan komponen komponen sig">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-bukan-fungsi-pajak-adalah.html" class="be-post-title">
+				 <h6>berikut ini bukan fungsi pajak adalah </h6>
+                </a>
+                <a href="berikut-ini-bukan-fungsi-pajak-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20bukan%20fungsi%20pajak%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini bukan fungsi pajak adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gerak-benda-yang-mengalami-perlambatan.html" class="be-post-title">
+				 <h6>gerak benda yang mengalami perlambatan </h6>
+                </a>
+                <a href="gerak-benda-yang-mengalami-perlambatan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gerak%20benda%20yang%20mengalami%20perlambatan&amp;w=50&amp;h=50&amp;c=7" alt="gerak benda yang mengalami perlambatan">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

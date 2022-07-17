@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Latar Belakang Penulis at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Latar Belakang Penulis",
+  "datePublished": "2022-07-07T08:39:49Z",
+  "image": "https://tse1.mm.bing.net/th?q=latar%20belakang%20penulis",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=latar%20belakang%20penulis&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=latar%20belakang%20penulis" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=latar%20belakang%20penulis" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Latar Belakang Penulis at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Latar Belakang Penulis</h2>
+    <p><strong>Latar Belakang Penulis</strong>. Sukacita dalam hal hidup bagi kristus. Unsur ekstrinsik cerpen yang mempengaruhi suatu cerita pendek adalah latar belakang pengarang atau penulis cerpen.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=latar%20belakang%20penulis" alt="PERNYATAAN KEASLIAN SKRIPSI DEPAN.pdfDari latar belakang diatas" />
+        <br>
+        <figcaption>PERNYATAAN KEASLIAN SKRIPSI DEPAN.pdfDari latar belakang diatas from pdfslide.net</figcaption>
+    </figure>
+        <p>
+        Mengutip buku cerdas menulis karya ilmiah oleh prof. 23), latar belakang tidak boleh. Sukacita dalam hal hidup bagi kristus.
+    </p>
+    <h3>PERNYATAAN KEASLIAN SKRIPSI DEPAN.pdfDari latar belakang diatas</h3>
+    <p>Beberapa faktor yang menjadi latar belakang penulis yaitu: Nama ini mungkin menjadi singkatan dari malakhiah yang artinya utusan tuhan. Panjang dan detail informasi latar belakang juga bergantung pada sejauh mana penulis mau menunjukkan masalah penelitian kepada pembaca. Pada bab 1 penulis mengemukan sub bab sebagai berikut :</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gambar Kartu Undangan Bunga Cat Air Latar Belakang Multiguna Untuk" data-src="https://i2.wp.com/png.pngtree.com/png-vector/20190223/ourlarge/pngtree-watercolor-floral-invitation-card-multi-purpose-background-for-anniversarybirthdaywedding-and-other-png-image_703339.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.pngtree.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kemudian untuk lebih jelasnya adalah sebagai berikut : 5 nama tokoh yang disebut. Mr 6:3).mungkin yudas menyebutkan nama. Riwayat hidup seorang pengarang cerpen akan sangat berpengaruh kepada. Latar belakang masalah harus dibuat dengan rinci, agar proses pembuatan makalah menjadi lancar dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Latar Belakang Karya Ilmiah Bisnis Online Kuttab" data-src="https://i0.wp.com/titikdua.net/wp-content/uploads/2019/12/Contoh-Latar-Belakang-Makalah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kuttabdigital.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Seperti halnya karya sastra lainnya novel juga dibentuk oleh berbagai unsur diantaranya. Cara membuat &amp; poin penting dalam latar belakang. 23), latar belakang tidak boleh. 5 nama tokoh yang disebut. Sebaiknya, hindari mengulang pernyataan yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Latar Belakang Pendidikan Dalam Bahasa Inggris Terkait Pendidikan" data-src="https://i2.wp.com/s1.studylibid.com/store/data/000790722_1-17ac35aadeb6c379d4e9627bd7265cb9.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: terkaitpendidikan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun, alasan pada latar belakang bukanlah yang bersifat subjektif menurut pendapat penulis, tetapi harus berupa uraian objektif serta dilengkapi dengan alasan teoritis dan bukti faktual. Latar belakang biasanya berisikan berbagai alasan yang melatarbelakangi sebuah penelitian dilakukan dan dalam latar belakang, penulis akan bertindak layaknya seorang detektif yang mengamati suatu perkara atau masalah. Contoh latar belakang penulis novel. Kemudian untuk lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Latar Belakang Makalah Perencanaan Tes Soal Matpel" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/37164883/mini_magick20180817-25240-1aaw4u1.png?1534545938" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soalmatpel.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">5 nama tokoh yang disebut. Aplikasi remove bg sendiri sering saya gunakan untuk merubah atau menghapus latar belakang foto secara otomatis, bukan hanya itu remove bg juga memiliki kelebihan dalam hal edit latar belakang, user bisa merubah atau menghapus bahkan mengganti warna latar belakang langsung di aplikasi, bisa. Unsur ekstrinsik cerpen yang mempengaruhi suatu cerita pendek adalah latar belakang pengarang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Artikel Dan Nama Penulis Latar Belakang Felda Sangkil" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/2Qt7VvhY34YNWXS0y7Io58qUeSAIso7KFCLRW76LvpbLWRnwcOA67YxDpK7zVe_3olXODW_UYKa9cVJaHA1_6CfU41Jt-RwtGRxsV801YEMQVn-F0cUAXLQOHH4MLJJ7GmFwTEYhztttIFqtEZcbkUhnCzJALiO_oyYUiV_zDNsnZBYXqI-eLqVPCBU8t9_mx7YDctEKmco=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kisngkil.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penulis juga belajar memahami cara mengajar setiap guru di sd ningrat sehingga suatu hari nanti bisa penulis aplikasikan saat mulai mengajar di sekolah. Latar belakang masalah menjadi pijakan dasar mengapa kita harus melakukan. Penulis melihat singa itu sebagai anak domba yang disembelih (5:6) yaitu yesus Beberapa faktor yang menjadi latar belakang penulis yaitu: Perlu diingat, agar latar belakang menjadi relevan,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Latar Belakang Makalah Tentang Cerita Rakyat Makalah Lengkap" data-src="https://i2.wp.com/s1.studylibid.com/store/data/000713322_1-1dfa1a8102bba4c59d41640bee075766.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: makalahterlengkappdf.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">5 nama tokoh yang disebut. Latar belakang masalah harus dibuat dengan rinci, agar proses pembuatan makalah menjadi lancar dan. (1) latar belakang dan masalah, (2) tujuan penelitian, (3) ruang lingkup penelitian, (4) anggapan dasar, hipotesis, dan teori, (5) penentuan sumber data, (6) metodologi penelitian, (7) teknik penelitian. Sebagai seorang penulis yang terkenal sangat produktif, total sudah ada lebih dari 30.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7+ Contoh Latar Belakang, Karya Ilmiah, laporan PKL, Penilaian, Skripsi dll" data-src="https://i2.wp.com/www.moondoggiesmusic.com/wp-content/uploads/2018/08/Membuat-Latar-Belakang.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.moondoggiesmusic.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penulis juga belajar memahami cara mengajar setiap guru di sd ningrat sehingga suatu hari nanti bisa penulis aplikasikan saat mulai mengajar di sekolah. Seperti halnya karya sastra lainnya novel juga dibentuk oleh berbagai unsur diantaranya. Bagian ini menjelaskan topik penelitian, masalah yang menjadi topik utama, dan alasan penulis melakukan penelitian. Untuk menulis latar belakang masalah yang baik, kita harus mendukung.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PERNYATAAN KEASLIAN SKRIPSI DEPAN.pdfDari latar belakang diatas" data-src="https://i2.wp.com/img.pdfslide.net/img/1200x630/reader022/reader/2020050305/5d4cca5d88c9933b0f8b8051/r-1.jpg?t=1627870565" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pdfslide.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cara membuat &amp; poin penting dalam latar belakang. Sebenarnya cukup mudah untuk para penulis menentukan latar belakang pada sebuah karya ilmiah, seperti makalah, skripsi, dan laporan. Kisah hidup penulis cerita pendek akan sangat mempengaruhi cara berpikir dan cara pandangnya. Riwayat hidup penulis adalah biografi pengarang cerpen secara keseluruhan. Untuk menulis latar belakang masalah yang baik, kita harus mendukung permasalahan yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Latar Belakang Karya Tulis Ilmiah Contoh AJa" data-src="https://i0.wp.com/image.slidesharecdn.com/contohmakalahbi-131128063656-phpapp02/95/contoh-makalah-bahasa-indonesia-3-638.jpg?w=640" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ewmasrijo.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Latar belakang biasanya berisikan berbagai alasan yang melatarbelakangi sebuah penelitian dilakukan dan dalam latar belakang, penulis akan bertindak layaknya seorang detektif yang mengamati suatu perkara atau masalah. Sebaiknya, hindari mengulang pernyataan yang. Sebenarnya cukup mudah untuk para penulis menentukan latar belakang pada sebuah karya ilmiah, seperti makalah, skripsi, dan laporan. Kemudian untuk lebih jelasnya adalah sebagai berikut : Doktrin yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Latar Belakang Makalah Tema Teknologi Soal Matpel" data-src="https://i2.wp.com/s1.studylibid.com/store/data/000456598_1-7c2024f871378a72cfa390d24c17b4e6.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soalmatpel.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">5 nama tokoh yang disebut. Latar belakang dalam sebuah karya tulis ilmiah adalah menceritakan kembali latar belakang dari isi penelitian yang menjelaskan tentang alasan mengapa peneliti memilih judul penelitiannya. (1) latar belakang dan masalah, (2) tujuan penelitian, (3) ruang lingkup penelitian, (4) anggapan dasar, hipotesis, dan teori, (5) penentuan sumber data, (6) metodologi penelitian, (7) teknik penelitian. Biografi penulis adalah.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ulangan-smp-kelas-7-bahasa-indonesia.html" class="be-post-title">
+				 <h6>soal ulangan smp kelas 7 bahasa indonesia </h6>
+                </a>
+                <a href="soal-ulangan-smp-kelas-7-bahasa-indonesia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ulangan%20smp%20kelas%207%20bahasa%20indonesia&amp;w=50&amp;h=50&amp;c=7" alt="soal ulangan smp kelas 7 bahasa indonesia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="adanya-zat-terlarut-dapat-mengakibatkan.html" class="be-post-title">
+				 <h6>adanya zat terlarut dapat mengakibatkan </h6>
+                </a>
+                <a href="adanya-zat-terlarut-dapat-mengakibatkan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=adanya%20zat%20terlarut%20dapat%20mengakibatkan&amp;w=50&amp;h=50&amp;c=7" alt="adanya zat terlarut dapat mengakibatkan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kalimat-balasan-surat-lamaran-kerja-yang-santun-adalah.html" class="be-post-title">
+				 <h6>kalimat balasan surat lamaran kerja yang santun adalah </h6>
+                </a>
+                <a href="kalimat-balasan-surat-lamaran-kerja-yang-santun-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kalimat%20balasan%20surat%20lamaran%20kerja%20yang%20santun%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="kalimat balasan surat lamaran kerja yang santun adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-yang-merupakan-peran-rumah-tangga-konsumsi-adalah.html" class="be-post-title">
+				 <h6>berikut ini yang merupakan peran rumah tangga konsumsi adalah </h6>
+                </a>
+                <a href="berikut-ini-yang-merupakan-peran-rumah-tangga-konsumsi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20yang%20merupakan%20peran%20rumah%20tangga%20konsumsi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini yang merupakan peran rumah tangga konsumsi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-tema-9-kelas-4-halaman-64-osnipa.html" class="be-post-title">
+				 <h6>kunci jawaban tema 9 kelas 4 halaman 64 osnipa </h6>
+                </a>
+                <a href="kunci-jawaban-tema-9-kelas-4-halaman-64-osnipa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20tema%209%20kelas%204%20halaman%2064%20osnipa&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban tema 9 kelas 4 halaman 64 osnipa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dalam-pengawetan-makanan-harus-memperhatikan.html" class="be-post-title">
+				 <h6>dalam pengawetan makanan harus memperhatikan </h6>
+                </a>
+                <a href="dalam-pengawetan-makanan-harus-memperhatikan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dalam%20pengawetan%20makanan%20harus%20memperhatikan&amp;w=50&amp;h=50&amp;c=7" alt="dalam pengawetan makanan harus memperhatikan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-ujian-sd-kelas-6-2022.html" class="be-post-title">
+				 <h6>contoh soal ujian sd kelas 6 2022 </h6>
+                </a>
+                <a href="contoh-soal-ujian-sd-kelas-6-2022.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20ujian%20sd%20kelas%206%202022&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal ujian sd kelas 6 2022">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="konka-berfungsi-untuk.html" class="be-post-title">
+				 <h6>konka berfungsi untuk </h6>
+                </a>
+                <a href="konka-berfungsi-untuk.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=konka%20berfungsi%20untuk&amp;w=50&amp;h=50&amp;c=7" alt="konka berfungsi untuk">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-fisika-kelas-12-semester-1-dan-pembahasannya-2020.html" class="be-post-title">
+				 <h6>soal uas fisika kelas 12 semester 1 dan pembahasannya 2020 </h6>
+                </a>
+                <a href="soal-uas-fisika-kelas-12-semester-1-dan-pembahasannya-2020.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20fisika%20kelas%2012%20semester%201%20dan%20pembahasannya%202020&amp;w=50&amp;h=50&amp;c=7" alt="soal uas fisika kelas 12 semester 1 dan pembahasannya 2020">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-sd-kelas-6-2021-ipa.html" class="be-post-title">
+				 <h6>soal ujian sd kelas 6 2021 ipa </h6>
+                </a>
+                <a href="soal-ujian-sd-kelas-6-2021-ipa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20sd%20kelas%206%202021%20ipa&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian sd kelas 6 2021 ipa">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

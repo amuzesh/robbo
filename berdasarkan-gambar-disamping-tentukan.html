@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Berdasarkan Gambar Disamping Tentukan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Berdasarkan Gambar Disamping Tentukan",
+  "datePublished": "2022-04-10T09:05:50Z",
+  "image": "https://tse1.mm.bing.net/th?q=berdasarkan%20gambar%20disamping%20tentukan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=berdasarkan%20gambar%20disamping%20tentukan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=berdasarkan%20gambar%20disamping%20tentukan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=berdasarkan%20gambar%20disamping%20tentukan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Berdasarkan Gambar Disamping Tentukan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Berdasarkan Gambar Disamping Tentukan</h2>
+    <p><strong>Berdasarkan Gambar Disamping Tentukan</strong>. Suatu survei dilakukan secara online untuk. Berdasarkan tabel 4.1, jika 1 kg bahan tersebut dipanaskan dengan menggunakan nyala api yang sama,.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=berdasarkan%20gambar%20disamping%20tentukan" alt="Berdasarkan gambar diatas , tentukana. Keuntungan mekanisnya dan b" />
+        <br>
+        <figcaption>Berdasarkan gambar diatas , tentukana. Keuntungan mekanisnya dan b from brainly.co.id</figcaption>
+    </figure>
+        <p>
+        Misalnya puncak ke puncak, atau lembah ke lembah. File musik perhatikan tabel berikut. Nguyen_nganvt 20 hours ago 5 comments.
+    </p>
+    <h3>Berdasarkan gambar diatas , tentukana. Keuntungan mekanisnya dan b</h3>
+    <p>Home / fisika / soal ipa. Home / fisika / soal ipa. Ab 2 = 5 2 + 4 2. Post a comment for perhatikan gambar berikut!</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berdasarkan gambar tersebut, tentukan amplitudo, periode, panjang" data-src="https://i2.wp.com/id-static.z-dn.net/files/d29/3c72dec7f42ab90863df82bb7e4de656.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jumlah gelombang  newer posts older posts pondok budaya bumi wangi. Apakah anda mencari gambar tentang berdasarkan gambar di samping tentukan? File musik perhatikan tabel berikut. Jumlah gelombang newer posts older posts pondok budaya bumi wangi. Nguyen_nganvt 20 hours ago 5 comments.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="berdasarkan gambar berikut,tentukan nilai x°dan y°! Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d76/eec7bbf377a886dc77f503bc4c8588f6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jadi, panjang ab adalah √41 cm. Berdasarkan gambar di bawah, tentukan: Dengan wilayah yang luas, hutan bakau sebagai potensi. Berdasarkan gambar di samping, tentukan: Hutan mangrove (hutan bakau) menurut data unesco, hutan bakau di indonesia mencapai angka 3.617.000 hektar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="panjang CE berdasarkan gambar disamping adalah Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d34/3e23523b150fd479b423a577b05db3e4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">2 16 cm luas segitiga ½ x alas x tinggi ½ x 16 x 30 240 cm2 jawaban yang tepat c. Panjang gelombang adalah jarak antara satuan berulang dari sebuah pola gelombang. Demikianlah jawaban dari soal tentukan panjang ab dari gambar berikut. File musik perhatikan tabel berikut. Nah, berdasarkan karakteristik geraknya, maka soal ini dapat kita selesaikan dengan dua metode.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Berdasarkan gambar diatas , tentukana. Keuntungan mekanisnya dan b" data-src="https://i2.wp.com/id-static.z-dn.net/files/dff/38ef24a7b7c86fd1df69fe5c42ee4c78.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jadi, panjang ab adalah √41 cm. Sd matematika bahasa indonesia ipa terpadu penjaskes ppkn ips terpadu seni agama bahasa. Apakah anda mencari gambar tentang berdasarkan gambar di samping tentukan? Garis zw dan yv merupakan diameter lingkaran. Y (4x+ 15)° (2x+ 65)° wx vz.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="1. Tentukan judul fabel 2. Tentukan nama tokoh 3. Tuliskan ceritanya" data-src="https://i2.wp.com/id-static.z-dn.net/files/d1a/35b14bd8f775da2e4e98a15ecbd77416.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Untuk lebih jelasnya, perhatikan penyelesaian di bawah ini. Earn free access learn more &gt; upload documents Demikianlah jawaban dari soal tentukan panjang ab dari gambar berikut. Suatu survei dilakukan secara online untuk. Jelajahi koleksi gambar, foto, dan wallpaper kami yang sangat luar biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="gelombang merambat pada tali seperti gambar disamping. berdasarkan" data-src="https://i2.wp.com/id-static.z-dn.net/files/d30/fcc3410b0625f06a69578601461ecd3a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jumlah gelombang newer posts older posts pondok budaya bumi wangi. Berdasarkan gambar grafik fungsi di atas, kita dapat menetapkan bahwa titik puncak parabola di (1 ½, 0) dan melalui titik (0, 4 ½). Alas prisma abc.def adalah segitiga siku siku di c. Sd matematika bahasa indonesia ipa terpadu penjaskes ppkn ips terpadu seni agama bahasa. Jadi nilai x adalah 28.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="berdasarkan gambar tersebut, tentukan bagian yang termasuk konduktir" data-src="https://i2.wp.com/id-static.z-dn.net/files/dde/ca6d3fde98381e2e458e1b1a31357a7e.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">File musik perhatikan tabel berikut. Jelajahi koleksi gambar, foto, dan wallpaper kami yang sangat luar biasa. Garis zw dan yv merupakan diameter lingkaran. Sd matematika bahasa indonesia ipa terpadu penjaskes ppkn ips terpadu seni agama bahasa. Post a comment for perhatikan gambar berikut!</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="berdasarkan Gambar disamping Tentukan a. Berapa jumlah gelombang b" data-src="https://i2.wp.com/id-static.z-dn.net/files/d57/3a655947bd82e744df77498976b04180.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Suatu survei dilakukan secara online untuk. Berdasarkan gambar tersebut tentukan satu getaran penuh, simpangan dan amplitudo! 2 16 cm luas segitiga ½ x alas x tinggi ½ x 16 x 30 240 cm2 jawaban yang tepat c. Sd matematika bahasa indonesia ipa terpadu penjaskes ppkn ips terpadu seni agama bahasa. Hutan mangrove (hutan bakau) menurut data unesco, hutan bakau di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="berdasarkan gambar Tentukan amplitudo, periode dan frekuensi gelombang" data-src="https://i2.wp.com/id-static.z-dn.net/files/df4/fb0f34b9e9dfa46371b3546c8e67f0aa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Panjang ad pada gambar segi empat abcd di atas adalah. Jelajahi koleksi gambar, foto, dan wallpaper kami yang sangat luar biasa. Demikianlah jawaban dari soal tentukan panjang ab dari gambar berikut. File musik perhatikan tabel berikut. Berdasarkan gambar di samping, tentukan:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="berdasarkan gambar disamping, tentukan panjang PQ! Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d2c/8242665011a68cf1cd3cf0c856e67ea8.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dari gambar disamping tentukan a frekuensi b periode gelombang. Panjang gelombang adalah jarak antara satuan berulang dari sebuah pola gelombang. Jumlah gelombang  newer posts older posts pondok budaya bumi wangi. Terapkan rumus titik berat bidang gabungan disumbu x dan y dengan rumus. Jumlah gelombang newer posts older posts pondok budaya bumi wangi.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bagian-bagian-gunung-api.html" class="be-post-title">
+				 <h6>bagian bagian gunung api </h6>
+                </a>
+                <a href="bagian-bagian-gunung-api.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bagian%20bagian%20gunung%20api&amp;w=50&amp;h=50&amp;c=7" alt="bagian bagian gunung api">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-3-struktur-teks-eksplanasi.html" class="be-post-title">
+				 <h6>jelaskan 3 struktur teks eksplanasi </h6>
+                </a>
+                <a href="jelaskan-3-struktur-teks-eksplanasi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%203%20struktur%20teks%20eksplanasi&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan 3 struktur teks eksplanasi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uts-sd-kelas-1-semester-2-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal uts sd kelas 1 semester 2 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-uts-sd-kelas-1-semester-2-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uts%20sd%20kelas%201%20semester%202%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal uts sd kelas 1 semester 2 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jika-bisnis-seseorang-mengalami-break-even-point-bisnis-tersebut.html" class="be-post-title">
+				 <h6>jika bisnis seseorang mengalami break even point bisnis tersebut </h6>
+                </a>
+                <a href="jika-bisnis-seseorang-mengalami-break-even-point-bisnis-tersebut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jika%20bisnis%20seseorang%20mengalami%20break%20even%20point%20bisnis%20tersebut&amp;w=50&amp;h=50&amp;c=7" alt="jika bisnis seseorang mengalami break even point bisnis tersebut">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-nasional-matematika-sma-doc.html" class="be-post-title">
+				 <h6>soal ujian nasional matematika sma doc </h6>
+                </a>
+                <a href="soal-ujian-nasional-matematika-sma-doc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20nasional%20matematika%20sma%20doc&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian nasional matematika sma doc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aswawarman-disebut-sebagai-wangsakarta-dari-kerajaan-kutai-karena.html" class="be-post-title">
+				 <h6>aswawarman disebut sebagai wangsakarta dari kerajaan kutai karena </h6>
+                </a>
+                <a href="aswawarman-disebut-sebagai-wangsakarta-dari-kerajaan-kutai-karena.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aswawarman%20disebut%20sebagai%20wangsakarta%20dari%20kerajaan%20kutai%20karena&amp;w=50&amp;h=50&amp;c=7" alt="aswawarman disebut sebagai wangsakarta dari kerajaan kutai karena">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-brain-out-memutar-otak-level-29.html" class="be-post-title">
+				 <h6>kunci jawaban brain out memutar otak level 29 </h6>
+                </a>
+                <a href="kunci-jawaban-brain-out-memutar-otak-level-29.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20brain%20out%20memutar%20otak%20level%2029&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban brain out memutar otak level 29">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jarak-antara-dua-kota.html" class="be-post-title">
+				 <h6>jarak antara dua kota </h6>
+                </a>
+                <a href="jarak-antara-dua-kota.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jarak%20antara%20dua%20kota&amp;w=50&amp;h=50&amp;c=7" alt="jarak antara dua kota">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gas-buangan-dari-parfum-semprot.html" class="be-post-title">
+				 <h6>gas buangan dari parfum semprot </h6>
+                </a>
+                <a href="gas-buangan-dari-parfum-semprot.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gas%20buangan%20dari%20parfum%20semprot&amp;w=50&amp;h=50&amp;c=7" alt="gas buangan dari parfum semprot">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kelelahan-otot-menyebabkan-otot-kejang-keadaan-ini-disebut.html" class="be-post-title">
+				 <h6>kelelahan otot menyebabkan otot kejang keadaan ini disebut </h6>
+                </a>
+                <a href="kelelahan-otot-menyebabkan-otot-kejang-keadaan-ini-disebut.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kelelahan%20otot%20menyebabkan%20otot%20kejang%20keadaan%20ini%20disebut&amp;w=50&amp;h=50&amp;c=7" alt="kelelahan otot menyebabkan otot kejang keadaan ini disebut">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

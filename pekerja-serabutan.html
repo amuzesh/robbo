@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Pekerja Serabutan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Pekerja Serabutan",
+  "datePublished": "2022-07-02T17:46:13Z",
+  "image": "https://tse1.mm.bing.net/th?q=pekerja%20serabutan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=pekerja%20serabutan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pekerja%20serabutan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pekerja%20serabutan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Pekerja Serabutan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Pekerja Serabutan</h2>
+    <p><strong>Pekerja Serabutan</strong>. Dilansir sosok.id world of buzz, rabu (17/6/2020) kisah ini pertama kali diketahui dari cuitan sang pria melalui akun twitter pribadinya, @ehafifi. Udin dan david ditangkap sat reskrim polres tebing tinggi terkait dugaan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=pekerja%20serabutan" alt="Streaming Pintu Berkah Tekad Kuat Bocah Malang Pekerja Serabutan" />
+        <br>
+        <figcaption>Streaming Pintu Berkah Tekad Kuat Bocah Malang Pekerja Serabutan from www.vidio.com</figcaption>
+    </figure>
+        <p>
+        Untuk diketahui, luqman afifi merupakan pekerja serabutan. Cara gampang selesaikan pekerjaan jangan sepelekan pekerjaan kecil saat kamu begitu sibuk. Pengagguran terselubung yaitu pengangguran yang terjadi ketika adanya tenaga kerja yang bekerja tidak maksimal, dalam artian sebenarnya dia mampu melakukan hal yang lebih, tetapi karena tidak dibutuhkan maka ia menyimpan kemampuannya tersebut.
+    </p>
+    <h3>Streaming Pintu Berkah Tekad Kuat Bocah Malang Pekerja Serabutan</h3>
+    <p>Pekerja serabutan pun gak masalah mas ‼ yang penting setia &amp; mencintaiku apa adanya,janda nusantara#zonajodoh #carisuami #jandaseksi #bundaseksi #kembangdes. Pekerja serabutan biasanya menghasilkan antara idr1,715,394 dan idr3,472,259 bersih per bulan pada awal pekerjaan. “polsek wates kemudian membawanya untuk proses lebih lanjut,” kita kasi humas polres kulon progo, iptu i nengah jeffry prana widyana melalui pesan singkat, jumat (15/7/2012). Mampu beli gas tapi tak ada uang beli beras, potret kemiskinan di.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="YIIM dan PT. Insight Berikan Sumbangan Buku dan Peralatan Sekolah Untuk" data-src="https://i2.wp.com/yiim.or.id/wp-content/uploads/2021/04/IMG-20201204-WA0029-1030x773.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: yiim.or.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pekerja serabutan memang bisa diandalkan. Eudict (european dictionary) is a collection of online dictionaries for the languages spoken mostly in europe. Saya lebih suka menyebutnya, serabutan ketimbang freelance apalagi pengangguran. Semoga mendapat rizqinya berkah menjadi ibadah buat keluarga. 2 cenderung melakukan apa saja (tentang pekerjaan, peran, dan sebagainya) dari sini sudah dapat dijelaskan bahwa, bekerja serabutan merupakan pekerjaan apapun yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pekerja Serabutan Paling Banyak Terlibat Narkoba" data-src="https://i2.wp.com/www.pantura7.com/wp-content/uploads/2020/03/LogoLicious_20200308_144851.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pantura7.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pekerja serabutan, bisa ngelas atau bisa desain grafis. Keduanya merupakan warga jalan bakti, kelurahan satria, kecamatan padang hilir, kota tebing tinggi, sumatera utara. Namun dari pekerjaannya tersebut, ia mampu mendapatkan uang rp 4 juta per bulan. Pekerja serabutan itu tertangkap bersama satu karung beras 25 kilogram yang dicurinya. Direktur btn handayani menjelaskan, kpr mikro akan diluncurkan pada 24 februari 2016.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Polsek Pancoranmas Vaksinasi 100 Pemulung dan Pekerja Serabutan RADAR" data-src="https://i2.wp.com/radardepok.sgp1.cdn.digitaloceanspaces.com/assets/2021/07/1626073666805-696x330.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.radardepok.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Namun dari pekerjaannya tersebut, ia mampu mendapatkan uang rp 4 juta per bulan. Mereka adalah udin (30) dan david (23). Pekerja serabutan, bisa ngelas atau bisa desain grafis. “polsek wates kemudian membawanya untuk proses lebih lanjut,” kita kasi humas polres kulon progo, iptu i nengah jeffry prana widyana melalui pesan singkat, jumat (15/7/2012). Direktur btn handayani menjelaskan, kpr mikro akan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsumsi Sabu di Kandang Sapi, Pekerja Serabutan Ditangkap Sat" data-src="https://i2.wp.com/baliglobalnews.com/wp-content/uploads/2020/11/IMG-20201125-WA0016-750x430.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: baliglobalnews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tiktok video from dera kmj10 (@rawoen_anak_kmj10): Hal itu terbukti karena persentase pekerja formal menyusut sedangkan pekerja informal mengalami peningkatan. Keduanya merupakan warga jalan bakti, kelurahan satria, kecamatan padang hilir, kota tebing tinggi, sumatera utara. Pekerja serabutan itu tertangkap bersama satu karung beras 25 kilogram yang dicurinya. Bisa seting computer corel draw.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pekerja Serabutan Jadi Pengedar Narkotika AntarProvinsi" data-src="https://i2.wp.com/wartaapa.com/wp-content/uploads/2021/07/edarkan-narkotika.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wartaapa.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pekerja serabutan, bisa ngelas atau bisa desain grafis. Bagi kelompok yang disebut pekerja serabutan seperti pekerja harian, pebisnis start up (usaha rintisan), serta ukm lainnya, tetap dituntut untuk bisa survive di tengah masa sulit ini. Keduanya merupakan warga jalan bakti, kelurahan satria, kecamatan padang hilir, kota tebing tinggi, sumatera utara. Pekerja serabutan, kuningan dua, jawa barat, indonesia. Lebih sederhana, jujur.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Streaming Pintu Berkah Tekad Kuat Bocah Malang Pekerja Serabutan" data-src="https://i2.wp.com/cdn-production-thumbor-vidio.akamaized.net/vbffQZnfM3Chy55Lbkam0J_CxGE=/1280x720/filters:quality(70)/vidio-web-prod-video/uploads/video/image/2051220/tekad-kuat-bocah-malang-pekerja-serabutan-dalam-menyatukan-keluarganya-pintu-berkah-2408d9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.vidio.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Karyawan serabutan cari di antara 29.000+ lowongan kerja terbaru di indonesia dan di luar negeri gaji yang layak pekerjaan penuh waktu, sementara dan paruh waktu cepat &amp; gratis pemberi kerja terbaik kerja: Untuk diketahui, luqman afifi merupakan pekerja serabutan. Serentetan kerja serabutan bisa menandakan inkonsistensi, kurangnya fokus, ketidakpastian. I just do odd jobs. Pekerjaan serabutan tidak digaji tetap (kadang disebut.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Di Denpasar, Dua Pekerja Serabutan Positif Covid19" data-src="https://i2.wp.com/lintasbali.com/wp-content/uploads/2020/05/IMG-20200523-WA0030.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lintasbali.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bisa seting computer corel draw. Kalau beruntung aku bisa kerja serabutan dan membelikannya makanan. Menteri ketenagakerjaan (menaker) ida fauziyah menjelaskan bahwa pada. Bisnis online yang bisa dikerjakan lewat hp, freelance yang bisa dikerjakan dirumah, kerja sampingan yang bisa dibawa kerumah, kerja sampingan yang bisa dikerjakan dirumah daerah medan, usaha online yang bisa memberikan. I just do odd jobs.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="“Main” Narkoba Lagi, Pekerja Serabutan Ini Terancam 12 Tahun Penjara" data-src="https://i2.wp.com/surabayapost.id/wp-content/uploads/2021/07/IMG-20210729-WA0295.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: surabayapost.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hallo, assalamualikum salam sejahtera semua. Karyawan serabutan cari di antara 29.000+ lowongan kerja terbaru di indonesia dan di luar negeri gaji yang layak pekerjaan penuh waktu, sementara dan paruh waktu cepat &amp; gratis pemberi kerja terbaik kerja: Semoga mendapat rizqinya berkah menjadi ibadah buat keluarga. Pekerja serabutan, bisa ngelas atau bisa desain grafis. Apalagi pada beberapa daerah yang telah dinyatakan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Simpan Ganja di Belakang Kamar Mandi, Pekerja Serabutan Diamankan" data-src="https://i2.wp.com/www.balipost.com/wp-content/uploads/2020/06/balipostcom_simpan-ganja-di-belakang-kamar-mandi-pekerja-serabutan-diamankan-polisi_01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.balipost.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hal itu terbukti karena persentase pekerja formal menyusut sedangkan pekerja informal mengalami peningkatan. Saya lebih suka menyebutnya, serabutan ketimbang freelance apalagi pengangguran. Sukur sukur bisa nyetir mobil. Pekerja serabutan biasanya menghasilkan antara idr1,715,394 dan idr3,472,259 bersih per bulan pada awal pekerjaan. Apalagi pada beberapa daerah yang telah dinyatakan masuk status pembatasan sosial berskala.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bantuan Alat Usaha Untuk Alumni Pelatihan Kelas Kuliner Berlatar" data-src="https://i2.wp.com/yiim.or.id/wp-content/uploads/2021/03/WhatsApp-Image-2021-01-01-at-16.34.24-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: yiim.or.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kalau beruntung aku bisa kerja serabutan dan membelikannya makanan. Cara gampang selesaikan pekerjaan jangan sepelekan pekerjaan kecil saat kamu begitu sibuk. Mampu beli gas tapi tak ada uang beli beras, potret kemiskinan di. Serentetan kerja serabutan bisa menandakan inkonsistensi, kurangnya fokus, ketidakpastian. Untuk diketahui, luqman afifi merupakan pekerja serabutan.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="penggunaan-ejaan-yang-tidak-tepat-terdapat-pada-kalimat.html" class="be-post-title">
+				 <h6>penggunaan ejaan yang tidak tepat terdapat pada kalimat </h6>
+                </a>
+                <a href="penggunaan-ejaan-yang-tidak-tepat-terdapat-pada-kalimat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=penggunaan%20ejaan%20yang%20tidak%20tepat%20terdapat%20pada%20kalimat&amp;w=50&amp;h=50&amp;c=7" alt="penggunaan ejaan yang tidak tepat terdapat pada kalimat">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-yang-bukan-tujuan-dari-reboisasi-adalah.html" class="be-post-title">
+				 <h6>berikut ini yang bukan tujuan dari reboisasi adalah </h6>
+                </a>
+                <a href="berikut-ini-yang-bukan-tujuan-dari-reboisasi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20yang%20bukan%20tujuan%20dari%20reboisasi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini yang bukan tujuan dari reboisasi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nama-senyawa-pbo2.html" class="be-post-title">
+				 <h6>nama senyawa pbo2 </h6>
+                </a>
+                <a href="nama-senyawa-pbo2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nama%20senyawa%20pbo2&amp;w=50&amp;h=50&amp;c=7" alt="nama senyawa pbo2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hasil-adisi-hbr-terhadap-2-metil-2-butena-adalah.html" class="be-post-title">
+				 <h6>hasil adisi hbr terhadap 2 metil 2 butena adalah </h6>
+                </a>
+                <a href="hasil-adisi-hbr-terhadap-2-metil-2-butena-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hasil%20adisi%20hbr%20terhadap%202%20metil%202%20butena%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="hasil adisi hbr terhadap 2 metil 2 butena adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-akm-numerasi-smp-doc.html" class="be-post-title">
+				 <h6>soal akm numerasi smp doc </h6>
+                </a>
+                <a href="soal-akm-numerasi-smp-doc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20akm%20numerasi%20smp%20doc&amp;w=50&amp;h=50&amp;c=7" alt="soal akm numerasi smp doc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="100-25.html" class="be-post-title">
+				 <h6>100 25 </h6>
+                </a>
+                <a href="100-25.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=100%2025&amp;w=50&amp;h=50&amp;c=7" alt="100 25">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="belalang-bernapas-menggunakan.html" class="be-post-title">
+				 <h6>belalang bernapas menggunakan </h6>
+                </a>
+                <a href="belalang-bernapas-menggunakan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=belalang%20bernapas%20menggunakan&amp;w=50&amp;h=50&amp;c=7" alt="belalang bernapas menggunakan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pengambilan-suatu-resiko-bagi-seorang-wirausaha-dapat-dianggap-sebagai.html" class="be-post-title">
+				 <h6>pengambilan suatu resiko bagi seorang wirausaha dapat dianggap sebagai </h6>
+                </a>
+                <a href="pengambilan-suatu-resiko-bagi-seorang-wirausaha-dapat-dianggap-sebagai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pengambilan%20suatu%20resiko%20bagi%20seorang%20wirausaha%20dapat%20dianggap%20sebagai&amp;w=50&amp;h=50&amp;c=7" alt="pengambilan suatu resiko bagi seorang wirausaha dapat dianggap sebagai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="membuka-lahan-pertanian-dengan-cara-membakar-hutan-dapat-menyebabkan.html" class="be-post-title">
+				 <h6>membuka lahan pertanian dengan cara membakar hutan dapat menyebabkan </h6>
+                </a>
+                <a href="membuka-lahan-pertanian-dengan-cara-membakar-hutan-dapat-menyebabkan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=membuka%20lahan%20pertanian%20dengan%20cara%20membakar%20hutan%20dapat%20menyebabkan&amp;w=50&amp;h=50&amp;c=7" alt="membuka lahan pertanian dengan cara membakar hutan dapat menyebabkan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="lapisan-tanah-yang-paling-banyak-mengandung-materi-organik-adalah.html" class="be-post-title">
+				 <h6>lapisan tanah yang paling banyak mengandung materi organik adalah </h6>
+                </a>
+                <a href="lapisan-tanah-yang-paling-banyak-mengandung-materi-organik-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=lapisan%20tanah%20yang%20paling%20banyak%20mengandung%20materi%20organik%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="lapisan tanah yang paling banyak mengandung materi organik adalah">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

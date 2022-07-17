@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Pembuat Nol Fungsi at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Pembuat Nol Fungsi",
+  "datePublished": "2022-06-04T18:20:40Z",
+  "image": "https://tse1.mm.bing.net/th?q=pembuat%20nol%20fungsi",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=pembuat%20nol%20fungsi&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pembuat%20nol%20fungsi" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pembuat%20nol%20fungsi" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Pembuat Nol Fungsi at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Pembuat Nol Fungsi</h2>
+    <p><strong>Pembuat Nol Fungsi</strong>. Total durasi video 50:41 menit. Setelah nonton video ini, lo akan bisa menentukan pembuat nol fungsi polinomial.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=pembuat%20nol%20fungsi" alt="Menentukan Pembuat Nol Fungsi Kuadrat YouTube" />
+        <br>
+        <figcaption>Menentukan Pembuat Nol Fungsi Kuadrat YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Setelah nonton video ini, lo akan bisa menentukan pembuat nol fungsi polinomial. Textbook solutions expert tutors earn. Menentukan interval fungsi naik dan fungsi turun.
+    </p>
+    <h3>Menentukan Pembuat Nol Fungsi Kuadrat YouTube</h3>
+    <p>Total durasi video 50:41 menit. Untuk mencari nilai 𝑥 dapat menggunakan rumus persamaan kuadrat sebagai. Domain = {0,1,2,3,4,5,6} domain disebut daerah asal. Textbook solutions expert tutors earn.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tolong di jawab yg nomor 5 nya.. 5. pembuat nol pada tabel fungsi di" data-src="https://i2.wp.com/id-static.z-dn.net/files/d6a/74f6331a378a0af4ab39eafdf89f25cd.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tentukan pembuat nol fungsi dan persamaan sumbu simetri dari fungsi kuadrat berikut. Untuk mencari nilai 𝑥 dapat menggunakan rumus persamaan kuadrat sebagai. Setelah nonton video ini, lo akan bisa menentukan pembuat nol fungsi polinomial. Pembuat nol 𝑓(𝑥) atau harga nol 𝑓(𝑥). Total durasi video 50:41 menit.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Grafik Fungsi Real Pembuat nol, daerah positif &amp; negatif YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/DDGffVAjN3Y/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jadi kurva memotong sumbu x di titik (0,0) dan (2,0) langkah 2. Bentuk umum fungsi kuadrat f x ax bx c dengan a 0. About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. Maksud pembuat nol disini adalah nilai 𝑥 yang menyebabkan 𝑓 𝑥 =.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pembuat nol fungsi f(x)x2... Lihat cara penyelesaian di QANDA" data-src="https://i2.wp.com/thumb.mathpresso.io/qanda-storage/5f55094a-f701-4046-aa9c-08d09a3ba647.jpg?target_format=jpg&amp;width=642" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: qanda.ai</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Setelah nonton video ini, lo akan bisa menentukan pembuat nol fungsi polinomial. Pada fungsi polinomial p, untuk nilai adalah : Untuk membuat grafik dari sebuah persaman kuadrat, ada tiga langkah penting yang harus dilakukan agar grafiknya tepat. Pembuat nol dari 𝑓 𝑥 𝑎𝑥2 𝑏𝑥 𝑐. Video kali ini membahas mengenai fungsi dan relasi kelas 8, lebih dalam mengenai rumus fungsi,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="perhatikan gambar tersebut a. pembuat nol fungsi F b. koordinat titik" data-src="https://i2.wp.com/id-static.z-dn.net/files/df2/553f3a593a40a23f97d7732d53a892b4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada fungsi kuadrat ini akan diselidiki mengenai: Textbook solutions expert tutors earn. Untuk mencari daerah hasil fungsi, kita substitusikan daerah asal ke dalam fungsi, seperti yang. Pada saat ini kita diminta untuk menentukan pembuat nol fungsi pada fungsi kuadrat berikut. Bentuk umum fungsi kuadrat f x ax bx c dengan a 0.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tentukana. pembuat nol fungsi.b. persamaan sumbu simetri.c. titik" data-src="https://i2.wp.com/id-static.z-dn.net/files/d61/f6f661a9766c51ee4aa27ec6a3e450b1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jadi kurva memotong sumbu x di titik (0,0) dan (2,0) langkah 2. Nah artinya kita diminta untuk mencari tahu nilai x ini berapa sehingga nilai fungsinya nanti sama dengan nol sehingga sekarang dapat kita lihat fungsinya ini 2 x kuadrat + x kurang 6 sama dengan nol itu berbentuk seperti ini di mana itu sama dengan 2 dan bedanya ini.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="pembuat fungsi nol dari Y=X2+2X3 adalah? Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d0b/41c0618e2957dbaac16a950e761aab97.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Grafik fungsi polinomial (derajat ganjil) 07:59. About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. Jadi, x=4 atau x=2 adalah pembuat nol fungsi. Setelah nonton video ini, lo akan bisa menentukan pembuat nol fungsi polinomial. Kita harus melakukan tiga langkah penting sebelum menggambar grafiknya, yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Menentukan Pembuat Nol Fungsi Kuadrat YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/uodXlAxkcpg/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tentukan pembuat nol fungsi dan persamaan sumbu simetri dari fungsi kuadrat berikut. Pembuat nol dari 𝑓 𝑥 = 𝑎𝑥2 + 𝑏𝑥 + 𝑐; About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. Pembuat nol dari 𝑓 𝑥 𝑎𝑥2 𝑏𝑥 𝑐. Untuk mencari daerah hasil fungsi,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pembuat Nol pada fungsi tabel diatas setelah dilengkapi adalah" data-src="https://i2.wp.com/id-static.z-dn.net/files/d1e/87d1fb6529db7e6dca7425b28d08a8c0.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Total durasi video 50:41 menit. Untuk mencari nilai 𝑥 dapat menggunakan rumus persamaan kuadrat sebagai. Maksud pembuat nol disini adalah nilai 𝑥 yang menyebabkan 𝑓 𝑥 = 0. Untuk mencari daerah hasil fungsi, kita substitusikan daerah asal ke dalam fungsi, seperti yang. Pembuat nol fungsi f :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tolong di jawab yg nomor 5 nya.. 5. pembuat nol pada tabel fungsi di" data-src="https://i2.wp.com/id-static.z-dn.net/files/d91/3619651d4e7411055fdd41d6e717cca1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jadi kurva memotong sumbu x di titik (0,0) dan (2,0) langkah 2. Untuk mencari daerah hasil fungsi, kita substitusikan daerah asal ke dalam fungsi, seperti yang. Maksud pembuat nol disini adalah nilai 𝑥 yang menyebabkan 𝑓 𝑥 = 0. Pada fungsi polinomial p, untuk nilai adalah : Pembuat nol dari 𝑓 𝑥 = 𝑎𝑥2 + 𝑏𝑥 + 𝑐;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tolong bantu jawab ya Pembuat nol fungsi f(x) adalah.. a. 1/2 dan 3 b" data-src="https://i2.wp.com/id-static.z-dn.net/files/d8b/a4589b859b224ba74105ee0b8b3df27c.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Anda bisa mencari nilai maksimum dan minimum bila fungsi yang diberikan ditulis dalam bentuk umum atau bentuk standar sesudah itu anda juga bisa menggunakan kalkulus sederhana untuk mencari nilai maksimum dan minimum setiap fungsi kuadrat. Total durasi video 50:41 menit. Pada fungsi polinomial p, untuk nilai adalah : Grafik fungsi polinomial (derajat ganjil) 07:59. Menentukan interval fungsi naik dan fungsi.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-kelas-6-sd-semester-2-bahasa-indonesia.html" class="be-post-title">
+				 <h6>soal ujian kelas 6 sd semester 2 bahasa indonesia </h6>
+                </a>
+                <a href="soal-ujian-kelas-6-sd-semester-2-bahasa-indonesia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20kelas%206%20sd%20semester%202%20bahasa%20indonesia&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian kelas 6 sd semester 2 bahasa indonesia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="menurut-penelitian-who-70-orang-yang-mengidap-aids-disebabkan-oleh.html" class="be-post-title">
+				 <h6>menurut penelitian who 70 orang yang mengidap aids disebabkan oleh </h6>
+                </a>
+                <a href="menurut-penelitian-who-70-orang-yang-mengidap-aids-disebabkan-oleh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=menurut%20penelitian%20who%2070%20orang%20yang%20mengidap%20aids%20disebabkan%20oleh&amp;w=50&amp;h=50&amp;c=7" alt="menurut penelitian who 70 orang yang mengidap aids disebabkan oleh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="organ-pencernaan-yang-berfungsi-menyerap-sari-sari-makanan-adalah.html" class="be-post-title">
+				 <h6>organ pencernaan yang berfungsi menyerap sari sari makanan adalah </h6>
+                </a>
+                <a href="organ-pencernaan-yang-berfungsi-menyerap-sari-sari-makanan-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=organ%20pencernaan%20yang%20berfungsi%20menyerap%20sari%20sari%20makanan%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="organ pencernaan yang berfungsi menyerap sari sari makanan adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ujian-agama-islam-kelas-4-sd-semester-1.html" class="be-post-title">
+				 <h6>soal ujian agama islam kelas 4 sd semester 1 </h6>
+                </a>
+                <a href="soal-ujian-agama-islam-kelas-4-sd-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ujian%20agama%20islam%20kelas%204%20sd%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="soal ujian agama islam kelas 4 sd semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-gejala-alam-kejadian-pada-objek-abiotik-adalah.html" class="be-post-title">
+				 <h6>contoh gejala alam kejadian pada objek abiotik adalah </h6>
+                </a>
+                <a href="contoh-gejala-alam-kejadian-pada-objek-abiotik-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20gejala%20alam%20kejadian%20pada%20objek%20abiotik%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="contoh gejala alam kejadian pada objek abiotik adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mengapa-otot-lurik-disebut-juga-otot-rangka.html" class="be-post-title">
+				 <h6>mengapa otot lurik disebut juga otot rangka </h6>
+                </a>
+                <a href="mengapa-otot-lurik-disebut-juga-otot-rangka.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20otot%20lurik%20disebut%20juga%20otot%20rangka&amp;w=50&amp;h=50&amp;c=7" alt="mengapa otot lurik disebut juga otot rangka">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bank-soal-sma-kelas-11-pdf.html" class="be-post-title">
+				 <h6>bank soal sma kelas 11 pdf </h6>
+                </a>
+                <a href="bank-soal-sma-kelas-11-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bank%20soal%20sma%20kelas%2011%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="bank soal sma kelas 11 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="buku-non-fiksi-ditulis-berdasarkan.html" class="be-post-title">
+				 <h6>buku non fiksi ditulis berdasarkan </h6>
+                </a>
+                <a href="buku-non-fiksi-ditulis-berdasarkan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=buku%20non%20fiksi%20ditulis%20berdasarkan&amp;w=50&amp;h=50&amp;c=7" alt="buku non fiksi ditulis berdasarkan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="negara-berkembang-di-asia-barat.html" class="be-post-title">
+				 <h6>negara berkembang di asia barat </h6>
+                </a>
+                <a href="negara-berkembang-di-asia-barat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=negara%20berkembang%20di%20asia%20barat&amp;w=50&amp;h=50&amp;c=7" alt="negara berkembang di asia barat">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hasil-kebudayaan-bangsa-deutro-melayu-disebut-kebudayaan.html" class="be-post-title">
+				 <h6>hasil kebudayaan bangsa deutro melayu disebut kebudayaan </h6>
+                </a>
+                <a href="hasil-kebudayaan-bangsa-deutro-melayu-disebut-kebudayaan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hasil%20kebudayaan%20bangsa%20deutro%20melayu%20disebut%20kebudayaan&amp;w=50&amp;h=50&amp;c=7" alt="hasil kebudayaan bangsa deutro melayu disebut kebudayaan">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

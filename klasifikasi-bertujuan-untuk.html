@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Klasifikasi Bertujuan Untuk at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Klasifikasi Bertujuan Untuk",
+  "datePublished": "2022-03-20T21:22:45Z",
+  "image": "https://tse1.mm.bing.net/th?q=klasifikasi%20bertujuan%20untuk",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=klasifikasi%20bertujuan%20untuk&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=klasifikasi%20bertujuan%20untuk" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=klasifikasi%20bertujuan%20untuk" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Klasifikasi Bertujuan Untuk at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Klasifikasi Bertujuan Untuk</h2>
+    <p><strong>Klasifikasi Bertujuan Untuk</strong>. Klasifikasi adalah proses penemuan model yang menggambarkan dan membedakan kelas data atau konsep yang bertujuan agar bisa digunakan untuk memprediksi kelas dari objek yang label kelasnya tidak diketahui. Klasifikasi makhluk hidup merupakan suatu cara memilah dari mengelompokkan makhluk hidup menjadi golongan atau unit tertentu yang disebut takson.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=klasifikasi%20bertujuan%20untuk" alt="(PDF) Komparasi Algoritma Klasifikasi Data Mining Untuk Memprediksi" />
+        <br>
+        <figcaption>(PDF) Komparasi Algoritma Klasifikasi Data Mining Untuk Memprediksi from www.academia.edu</figcaption>
+    </figure>
+        <p>
+        Memberikan penempatan bahan pustaka yang tepat sehingga mudah ditemukan dan dikembalikan sesuai dengan sistem. Dalam penyusunan skema klasifikasi arsip dilakukan dengan cara sebagai berikut : Kegiatan klasifikasi biaya sendiri bertujuan untuk membuat laporan terkait mengenai data yang ada dan bertujuan memberikan data keuangan perusahaan secara faktual berdasarkan peruntukan dan penggolongan.
+    </p>
+    <h3>(PDF) Komparasi Algoritma Klasifikasi Data Mining Untuk Memprediksi</h3>
+    <p>Kemudian, saya sangat menyarankan anda untuk membaca pertanyaan selanjutnya yaitu. Klasifikasi bertujuan untuk menyederhanakan makhluk hidup sehingga mudah dipelajari. Selain bertujuan untuk meningkatkan penjualan, strategi dalam promosi juga bertujuan untuk hal lain, yaitu: Kingdom ( dunia ) merupakan tingkat takson tertinggi dan terbagi atas lima golongan, yaitu plantae, animalia, fungi, protista.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Komparasi Algoritma Klasifikasi Data Mining Untuk Memprediksi" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/43572213/mini_magick20180817-29818-11zuyob.png?1534546064" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academia.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Seperti namanya, penelitian eksplorasi bertujuan untuk mengeksplorasi sekelompok pertanyaan. Perwilayahan juga terdiri atas wilayah formal dan fungsional. Klasifikasi membuatnya mudah untuk mempelajari makhluk hidup yang sangat berbeda. Ya, dengan pengklasifikasian makhluk hidup, akan mempermudah melakukan penelitian. Menghasilkan urutan bahan pustaka yang berguna bagi staf perpustakaan maupun bagi pengunjung perpustakaan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Evaluasi Klasifikasi Berbasis Objek Untuk Pemetaan Liputan Hutan" data-src="https://i2.wp.com/i1.rgstatic.net/publication/279851306_Evaluasi_Klasifikasi_Berbasis_Objek_Untuk_Pemetaan_Liputan_Hutan_dan_Lahan/links/559bf5f708aee2c16df0307d/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Seperti namanya, penelitian eksplorasi bertujuan untuk mengeksplorasi sekelompok pertanyaan. Memberikan penempatan bahan pustaka yang tepat sehingga mudah ditemukan dan dikembalikan sesuai dengan sistem. Untuk mempelajari makhluk hidup tersebut perlu dilakukan klasifikasi (pengelompokan) guna memperoleh gambaran yang jelas secara mudah. Klasifikasi adalah proses penemuan model yang menggambarkan dan membedakan kelas data atau konsep yang bertujuan agar bisa digunakan untuk memprediksi kelas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klasifikasi Makhluk Hidup Bertujuan Untuk" data-src="https://i2.wp.com/img.dokumen.tips/img/1200x630/reader020/image/20190929/5571fc6549795991699728b5.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: daftartujuan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Klasifikasi mahkluk hidup bertujuan untuk: Kingdom ( dunia ) merupakan tingkat takson tertinggi dan terbagi atas lima golongan, yaitu plantae, animalia, fungi, protista. Memudahkan untuk mengenal makhluk hidup. Dari sekian banyak organisme di dunia ini, tentu tidak mengherankan jika beberapa di antaranya belum memiliki nama. Namun, dalam pemberian nama ini tidak boleh dilakukan secara sembarangan karena harus mengikuti aturan tertentu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klasifikasi Biaya Untuk Pengambilan Keputusan Lancang Kuning" data-src="https://i2.wp.com/lancangkuning.com/?img=https://i2.wp.com/cdn.lancangkuning.com/lc-uploads/2021/04/07/Klasifikasi-Biaya-Untuk-Pengambilan-Keputusan.png&amp;w=600&amp;h=315" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lancangkuning.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam penyusunan skema klasifikasi arsip dilakukan dengan cara sebagai berikut : Mengklasifikasi makhluk hidup dengan pengelompokkan sudah dilakukan dari zaman prasejarah. Kemudian, saya sangat menyarankan anda untuk membaca pertanyaan selanjutnya yaitu. Laut, pantai, atmosfer, tata surya, dsb. Namun, dalam pemberian nama ini tidak boleh dilakukan secara sembarangan karena harus mengikuti aturan tertentu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Klasifikasi Karst Untuk kawasan lindung dan kawasan budi daya" data-src="https://i2.wp.com/i1.rgstatic.net/publication/333515846_Klasifikasi_Karst_Untuk_kawasan_lindung_dan_kawasan_budi_daya/links/5cf128a5299bf1fb184cdf94/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada iklim fisis, ada 3 faktor yang dapat mempengaruhi keadaan iklim sebuah wilayah, yakni: Kegiatan klasifikasi biaya sendiri bertujuan untuk membuat laporan terkait mengenai data yang ada dan bertujuan memberikan data keuangan perusahaan secara faktual berdasarkan peruntukan dan penggolongan. Pengelompokan memudahkan kita mempelajari organisme yang beraneka ragam. Tujuan klasifikasi makhluk hidup untuk mempermudah mengenali, membandingkan, dan mempelajari makhluk hidup.membandingkan berarti.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klasifikasi Makhluk Hidup Bertujuan Untuk" data-src="https://i2.wp.com/static.fdokumen.com/img/1200x630/reader020/image/20191003/55cf93b5550346f57b9e24d2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: daftartujuan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Klasifikasi adalah proses menyusun dan mengelompokkan organisme berdasarkan struktur, karakter, adaptasi, dan perkembangan embrioniknya. Selain itu klasifikasi bertujuan a menyederhanakan cara mengenal objek. Perwilayahan juga terdiri atas wilayah formal dan fungsional. Kalimat perintah dalam bentuk lisan biasanya. Regresi, klasifikasi, dan clustering merupakan tiga metode yang sering digunakan untuk analisis data.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Perbandingan Metode Regresi Logistik dan Random Forest untuk" data-src="https://i2.wp.com/i1.rgstatic.net/publication/334365255_Perbandingan_Metode_Regresi_Logistik_dan_Random_Forest_untuk_Klasifikasi_Data_Imbalanced_Studi_Kasus_Klasifikasi_Rumah_Tangga_Miskin_di_Kabupaten_Karangasem_Bali_Tahun_2017/links/5d9bd544299bf1c363ff0670/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kingdom ( dunia ) merupakan tingkat takson tertinggi dan terbagi atas lima golongan, yaitu plantae, animalia, fungi, protista. Mengetahui adanya hubungan kekerabatan antarmakhluk hidup. Demikianlah penjelasan mengenai √ sistem : Manfaat klasifikasi makhluk hidup salah satunya adalah untuk. Selain tiga teknik tersebut, masih ada beberapa teknik atau metode lainnya yang dapat digunakan yang telah saya singgung sedikit di artikel pengenalan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klasifikasi Makhluk Hidup Bertujuan Untuk Apa? Nusa Caraka" data-src="https://i2.wp.com/nusacaraka.com/wp-content/uploads/2019/03/wrckfix-18.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nusacaraka.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Memudahkan untuk mengenal makhluk hidup. Sistem yang dibentuk dari suatu kejadian yang alami. Tahapan klasifikasi yang terakhir adalah pemberian nama. Manfaat klasifikasi makhluk hidup salah satunya adalah untuk. Klasifikasi adalah proses menyusun dan mengelompokkan organisme berdasarkan struktur, karakter, adaptasi, dan perkembangan embrioniknya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(PDF) Kajian kemampuan metode neural network untuk klasifikasi penutup" data-src="https://i2.wp.com/i1.rgstatic.net/publication/329120858_Kajian_kemampuan_metode_neural_network_untuk_klasifikasi_penutup_lahan_dengan_menggunakan_Citra_Landsat-8_OLI_kasus_di_Kota_Yogyakarta_dan_sekitarnya/links/5bf6b30e4585150b2bca0f68/largepreview.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Klasifikasi makhluk hidup bertujuan untuk melakukan penelitian ilmiah makhluk hidup. Ya, dengan pengklasifikasian makhluk hidup, akan mempermudah melakukan penelitian. Klasifikasi makhluk hidup juga memiliki peran penting bagi kepentingan manusia. Klasifikasi membuatnya mudah untuk mempelajari makhluk hidup yang sangat berbeda. Klasifikasi biaya memiliki pengertian sebagai sebuah pengelompokan dan elemen biaya secara sistematis dalam penggolongan tertentu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Urutan Tingkatan Takson dalam Klasfikasi Makhluk Hidup Dengan" data-src="https://i2.wp.com/ipa.pelajaran.co.id/wp-content/uploads/2020/11/taksonomi-klasifikasi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ipa.pelajaran.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kalimat perintahatau kalimat imperatif adalah kalimat yang bertujuan untuk memberikan perintah kepada seseorang untuk melakukan sesuatu. Dilansir dari encyclopedia britannica, klasifikasi makhluk hidup bertujuan untuk memberi nama mahluk hidup, sehingga mudah dikenal dan diketahui. Dari sekian banyak organisme di dunia ini, tentu tidak mengherankan jika beberapa di antaranya belum memiliki nama. Memudahkan untuk mengenal makhluk hidup. Klasifikasi dapat digunakan untuk.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kelompok-sosial-menurut-emile-durkheim.html" class="be-post-title">
+				 <h6>kelompok sosial menurut emile durkheim </h6>
+                </a>
+                <a href="kelompok-sosial-menurut-emile-durkheim.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kelompok%20sosial%20menurut%20emile%20durkheim&amp;w=50&amp;h=50&amp;c=7" alt="kelompok sosial menurut emile durkheim">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jaring-jaring-kubus.html" class="be-post-title">
+				 <h6>jaring jaring kubus </h6>
+                </a>
+                <a href="jaring-jaring-kubus.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jaring%20jaring%20kubus&amp;w=50&amp;h=50&amp;c=7" alt="jaring jaring kubus">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="argumen-pendukung-adalah.html" class="be-post-title">
+				 <h6>argumen pendukung adalah </h6>
+                </a>
+                <a href="argumen-pendukung-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=argumen%20pendukung%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="argumen pendukung adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="luas-segitiga.html" class="be-post-title">
+				 <h6>luas segitiga </h6>
+                </a>
+                <a href="luas-segitiga.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=luas%20segitiga&amp;w=50&amp;h=50&amp;c=7" alt="luas segitiga">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-matematika-smp-kelas-9-kesebangunan-dan-pembahasannya.html" class="be-post-title">
+				 <h6>contoh soal matematika smp kelas 9 kesebangunan dan pembahasannya </h6>
+                </a>
+                <a href="contoh-soal-matematika-smp-kelas-9-kesebangunan-dan-pembahasannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20matematika%20smp%20kelas%209%20kesebangunan%20dan%20pembahasannya&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal matematika smp kelas 9 kesebangunan dan pembahasannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-sd-kelas-6-matematika.html" class="be-post-title">
+				 <h6>contoh soal sd kelas 6 matematika </h6>
+                </a>
+                <a href="contoh-soal-sd-kelas-6-matematika.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20sd%20kelas%206%20matematika&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal sd kelas 6 matematika">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="dibawah-ini-yang-termasuk-buku-fiksi-adalah.html" class="be-post-title">
+				 <h6>dibawah ini yang termasuk buku fiksi adalah </h6>
+                </a>
+                <a href="dibawah-ini-yang-termasuk-buku-fiksi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=dibawah%20ini%20yang%20termasuk%20buku%20fiksi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="dibawah ini yang termasuk buku fiksi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-us-matematika-smp-doc.html" class="be-post-title">
+				 <h6>soal us matematika smp doc </h6>
+                </a>
+                <a href="soal-us-matematika-smp-doc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20us%20matematika%20smp%20doc&amp;w=50&amp;h=50&amp;c=7" alt="soal us matematika smp doc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-metode-impromtu-dalam-berpidato.html" class="be-post-title">
+				 <h6>jelaskan metode impromtu dalam berpidato </h6>
+                </a>
+                <a href="jelaskan-metode-impromtu-dalam-berpidato.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20metode%20impromtu%20dalam%20berpidato&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan metode impromtu dalam berpidato">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-bahasa-inggris-kelas-6-sd-beserta-kunci-jawaban.html" class="be-post-title">
+				 <h6>contoh soal bahasa inggris kelas 6 sd beserta kunci jawaban </h6>
+                </a>
+                <a href="contoh-soal-bahasa-inggris-kelas-6-sd-beserta-kunci-jawaban.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20bahasa%20inggris%20kelas%206%20sd%20beserta%20kunci%20jawaban&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal bahasa inggris kelas 6 sd beserta kunci jawaban">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Latar Belakang Perlawanan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Latar Belakang Perlawanan",
+  "datePublished": "2022-06-22T13:52:35Z",
+  "image": "https://tse1.mm.bing.net/th?q=latar%20belakang%20perlawanan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=latar%20belakang%20perlawanan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=latar%20belakang%20perlawanan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=latar%20belakang%20perlawanan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Latar Belakang Perlawanan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Latar Belakang Perlawanan</h2>
+    <p><strong>Latar Belakang Perlawanan</strong>. Awal kedatangan jepang ke hindia belanda pada tahun 1942 menjadi angin segar bagi rakyat karena mereka dapat mengusir belanda dari tanah air. A) portugis melakukan monopoli perdagangan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=latar%20belakang%20perlawanan" alt="Latar Belakang Kesultanan Johor Riau Richardctzx" />
+        <br>
+        <figcaption>Latar Belakang Kesultanan Johor Riau Richardctzx from richardctzx.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Untuk mengetahui lebih dalam tentang perang aceh, maka artikel kali ini akan membahas tentang latar belakang perang aceh, mengapa sampai terjadi perlawanan di aceh. Pada mulanya merupakan pertempuran sesama saudara. D) portugis membenci pemeluk agama islam karena tidak sepaham dengan.
+    </p>
+    <h3>Latar Belakang Kesultanan Johor Riau Richardctzx</h3>
+    <p>Pada awalnya, perang antara belanda dan spanyol bersifat agama karena belanda mayoritas beragama kristen protestan sedangkan orang spanyol beragama kristen katolik. Pemerintah kolonial memberlakukan kembali penyerahan wajib dan kerja wajib. Sejarah perlawanan rakyat banten terhadap belanda (voc) merupakan salah satu perang fenomenal yang akan kita bahas pada kesempatan kali ini, sub tema meliputi latar belakang, tujuan, jalannya perlawanan, strategi, tokoh, akhir, dampak positif dan negatif.sedikit pendahuluan, banten adalah sebuah provinsi yang lokasinya paling barat di pulau jawa. B) portugis ikut campur tangan dalam pemerintahan.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kolonialisme dan Imperialisme Latar Belakang, Persamaan, Dampak dan" data-src="https://i2.wp.com/www.gurupendidikan.co.id/wp-content/uploads/2019/10/kolonialisme-dan-imperialisme.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gurupendidikan.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">B) portugis ikut campur tangan dalam pemerintahan. D) portugis membenci pemeluk agama islam karena tidak sepaham dengan. Pasukan jepang pertama kali mendarat di pontianak, kalimantan barat, pada 19 desember 1941. Jadi, latar belakang terjadinya perlawanan tersebut adalah belanda ingin menguasai daerah indonesia termasuk daerah pelosok (ingin merebut laguboti dari negara kesatuan republik indonesia). Penyebab perlawanan rakyat kalimantan terhadap jepang sangat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sejarah dan Latar Belakang Perlawanan Rakyat Aceh Terhadap Portugis" data-src="https://i2.wp.com/3.bp.blogspot.com/-jlvzfBAS1GY/VyYEeVC24aI/AAAAAAAANVM/2lCZaLFuktAfH5pTTZ0i6CS8AKfHnlnYACLcB/w585/aceh1.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mimundounlibro.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apa latar belakang terjadinya perlawanan rakyat irian jawaban : Pasukan jepang pertama kali mendarat di pontianak, kalimantan barat, pada 19 desember 1941. Perlawanan rakyat singaparna dipimpin oleh kh zainal mustofa. Latar belakang perlawanan rayat indonesia terhadap jepang. Salah satu perlawanan dalam sejarah pendudukan belanda berasal dari sumatra barat yang kemudian dikenal dengan perang padri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SebabSebab Terjadinya Perang Banjar Satu Jam" data-src="https://i2.wp.com/satujam.com/wp-content/uploads/2016/05/banjar.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.satujam.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pemerintah kolonial memberlakukan kembali penyerahan wajib dan kerja wajib. Walaupun pasukan mataram kelelahan akibat menempuh jarak yang sangat jauh dengan persediaan bahan makanan yang mulai menipis, pasukan mataram mampu melakukan. Latar belakang terjadinya perlawanan rakyat singaparna. Latar belakang terjadinya perang 10 november 1945. Latar belakang sarekat islam perlawanan rakyat mataram terhadap voc di batavia dilakukan pada bulan agustus 1628 yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perlawanan Banten Terhadap VOC Latar Belakang, Jalan, Akhir" data-src="https://i2.wp.com/kelasips.com/wp-content/uploads/2019/11/Latar-Belakang-Perlawanan-Banten-Terhadap-VOC.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kelasips.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Latar belakang perlawanan rakyat makassar terhadap voc. Perdagangan yang dijalankan antara demak dan malaka adalah beras dan bahan pangan, seperti dikutip dari sejarah nasional indonesia jilid iii oleh marwati djoened pesponegoro. C) portugis ingin menyebarkan agama katholik, yang berarti bertentangan dengan agama yang telah dianut oleh rakyat ternate. Perlawanan ini terjadi karena rakyat singaparna diharuskan melakukan kegiatan seikerei atau penghormatan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Perang Padri Sejarah, Latar Belakang, Penyebab, Dampak" data-src="https://i2.wp.com/www.pintarnesia.com/wp-content/uploads/2020/01/perang-padri-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pintarnesia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Latar belakang terjadinya perang singaparna. Perlawanan ini terjadi karena rakyat singaparna diharuskan melakukan kegiatan seikerei atau penghormatan terhadap dewa matahari. Untuk mengetahui lebih dalam tentang perang aceh, maka artikel kali ini akan membahas tentang latar belakang perang aceh, mengapa sampai terjadi perlawanan di aceh. D) portugis membenci pemeluk agama islam karena tidak sepaham dengan. Perlawanan rakyat singaparna dipimpin oleh kh.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mapel Sejarah ( Mengevaluasi Perang Melawan Penjajahan Kolonial Hondia" data-src="https://i2.wp.com/3.bp.blogspot.com/-XXuJFt61SnI/Ve6GFsQ3xzI/AAAAAAAAAFc/Trub35E1w5c/s1600/4-jenderal-Aceh.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sejarahku22.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada awalnya, perang antara belanda dan spanyol bersifat agama karena belanda mayoritas beragama kristen protestan sedangkan orang spanyol beragama kristen katolik. Hingga kedua kalinya pada 24 februari bersama pejabat daerah yang memihak jepang yang ingin menangkap zainal mustafa, namun tak mampu. Sejarah latar belakang terjadinya perang padri. Perlawanan rakyat singaparna dipimpin oleh kh zainal mustofa. Sejarah perlawanan singaparna melawan jepang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cerita Singkat Perlawanan Kerajaan Banten Terhadap VOC All About Story" data-src="https://i2.wp.com/4.bp.blogspot.com/-Pffw_Vc_SDI/WfOTqkWO7pI/AAAAAAAAA4Q/yXtZaT9I9foVzrf4tlynuQHJHTS5Dt-lACLcBGAs/s1600/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lilis-mardiana.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perang pattimura adalah perlawanan yang dilakukan oleh pasukan pattimura melawan pasukan belanda. Sedangkan sebab khusus ialah berkenaan dengan pembuatan jalan yang melewati makam leluhur pangeran diponegoro yang dilakukan tanpa sepengetahuannya. Awal kedatangan jepang ke hindia belanda pada tahun 1942 menjadi angin segar bagi rakyat karena mereka dapat mengusir belanda dari tanah air. Oleh karena itu, bangsa indonesia melakukan perlawanan terhadap.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sejarah, Latar Belakang, Dan Imbas Perang Padri Lengkap Berbagi Ilmu" data-src="https://i2.wp.com/1.bp.blogspot.com/-XlAqchp2zys/WkRyYvz5nmI/AAAAAAAABGk/DRxRvaQem2AUD2DcCcfLQplnwwV22PgqgCLcBGAs/s1600/padri.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ilmudasarsekolah.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perlawanan rakyat singaparna dipimpin oleh kh zainal mustofa. Salah satu perlawanan dalam sejarah pendudukan belanda berasal dari sumatra barat yang kemudian dikenal dengan perang padri. Beberapa perlawanan berupa perang akibat ekonomi dan politik in,. Untuk mengetahui lebih dalam tentang perang aceh, maka artikel kali ini akan membahas tentang latar belakang perang aceh, mengapa sampai terjadi perlawanan di aceh. Latar belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perjanjian Bongaya dan Latar Belakang Terjadinya" data-src="https://i2.wp.com/satujam.com/wp-content/uploads/2017/08/bugiswarta.cm_.jpg?fit=750%2C423&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.satujam.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Latar belakang perlawanan pangeran diponegoro disebabkan oleh sebab umum dan sebab khudus dimana sebab umum ialah berhubungan dengan rakyat terutama penderitaan yang ditimbulkan. Latar belakang terjadinya perang 10 november 1945. Sejarah latar belakang terjadinya perang padri. Pada awalnya, perang antara belanda dan spanyol bersifat agama karena belanda mayoritas beragama kristen protestan sedangkan orang spanyol beragama kristen katolik. Latar belakang dari.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Latar Belakang Kesultanan Johor Riau Richardctzx" data-src="https://i2.wp.com/asset.kompas.com/crops/2J7nYqDxPkjyFZVQ9TUgVRGNcpY=/0x31:243x193/780x390/data/photo/2020/10/19/5f8d8cb3a65bd.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: richardctzx.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perdagangan yang dijalankan antara demak dan malaka adalah beras dan bahan pangan, seperti dikutip dari sejarah nasional indonesia jilid iii oleh marwati djoened pesponegoro. Latar belakang sarekat islam perlawanan rakyat mataram terhadap voc di batavia dilakukan pada bulan agustus 1628 yang dipimpin oleh tumenggung bahurekso. Penyebab perlawanan rakyat kalimantan terhadap jepang sangat kompleks. Latar belakang terjadinya perang 10 november 1945..</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uts-pkn-sd-kelas-4-semester-1.html" class="be-post-title">
+				 <h6>soal uts pkn sd kelas 4 semester 1 </h6>
+                </a>
+                <a href="soal-uts-pkn-sd-kelas-4-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uts%20pkn%20sd%20kelas%204%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="soal uts pkn sd kelas 4 semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-keunggulan-dan-kelemahan-sig.html" class="be-post-title">
+				 <h6>jelaskan keunggulan dan kelemahan sig </h6>
+                </a>
+                <a href="jelaskan-keunggulan-dan-kelemahan-sig.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20keunggulan%20dan%20kelemahan%20sig&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan keunggulan dan kelemahan sig">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="leukoplas-yang-berfungsi-untuk-membentuk-dan-menyimpan-lemak-adalah.html" class="be-post-title">
+				 <h6>leukoplas yang berfungsi untuk membentuk dan menyimpan lemak adalah </h6>
+                </a>
+                <a href="leukoplas-yang-berfungsi-untuk-membentuk-dan-menyimpan-lemak-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=leukoplas%20yang%20berfungsi%20untuk%20membentuk%20dan%20menyimpan%20lemak%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="leukoplas yang berfungsi untuk membentuk dan menyimpan lemak adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bagaimana-kesepakatan-itu-terjadi.html" class="be-post-title">
+				 <h6>bagaimana kesepakatan itu terjadi </h6>
+                </a>
+                <a href="bagaimana-kesepakatan-itu-terjadi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20kesepakatan%20itu%20terjadi&amp;w=50&amp;h=50&amp;c=7" alt="bagaimana kesepakatan itu terjadi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-pilihan-ganda-statistika-kelas-8-smp.html" class="be-post-title">
+				 <h6>soal pilihan ganda statistika kelas 8 smp </h6>
+                </a>
+                <a href="soal-pilihan-ganda-statistika-kelas-8-smp.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20pilihan%20ganda%20statistika%20kelas%208%20smp&amp;w=50&amp;h=50&amp;c=7" alt="soal pilihan ganda statistika kelas 8 smp">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-matematika-kelas-9-halaman-20-21.html" class="be-post-title">
+				 <h6>kunci jawaban matematika kelas 9 halaman 20 21 </h6>
+                </a>
+                <a href="kunci-jawaban-matematika-kelas-9-halaman-20-21.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20matematika%20kelas%209%20halaman%2020%2021&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban matematika kelas 9 halaman 20 21">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-osn-matematika-smp-2019-dan-pembahasannya-pdf.html" class="be-post-title">
+				 <h6>soal osn matematika smp 2019 dan pembahasannya pdf </h6>
+                </a>
+                <a href="soal-osn-matematika-smp-2019-dan-pembahasannya-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20osn%20matematika%20smp%202019%20dan%20pembahasannya%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal osn matematika smp 2019 dan pembahasannya pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hubungan-kausalitas-dalam-teks-eksplanasi.html" class="be-post-title">
+				 <h6>hubungan kausalitas dalam teks eksplanasi </h6>
+                </a>
+                <a href="hubungan-kausalitas-dalam-teks-eksplanasi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hubungan%20kausalitas%20dalam%20teks%20eksplanasi&amp;w=50&amp;h=50&amp;c=7" alt="hubungan kausalitas dalam teks eksplanasi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berkembangnya-sistem-pendidikan-barat-melahirkan-golongan.html" class="be-post-title">
+				 <h6>berkembangnya sistem pendidikan barat melahirkan golongan </h6>
+                </a>
+                <a href="berkembangnya-sistem-pendidikan-barat-melahirkan-golongan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berkembangnya%20sistem%20pendidikan%20barat%20melahirkan%20golongan&amp;w=50&amp;h=50&amp;c=7" alt="berkembangnya sistem pendidikan barat melahirkan golongan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jika-terjadi-perubahan-bentuk-energi-jumlah-energi-akan.html" class="be-post-title">
+				 <h6>jika terjadi perubahan bentuk energi jumlah energi akan </h6>
+                </a>
+                <a href="jika-terjadi-perubahan-bentuk-energi-jumlah-energi-akan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jika%20terjadi%20perubahan%20bentuk%20energi%20jumlah%20energi%20akan&amp;w=50&amp;h=50&amp;c=7" alt="jika terjadi perubahan bentuk energi jumlah energi akan">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

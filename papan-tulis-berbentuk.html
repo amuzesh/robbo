@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Papan Tulis Berbentuk at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Papan Tulis Berbentuk",
+  "datePublished": "2022-05-14T12:26:20Z",
+  "image": "https://tse1.mm.bing.net/th?q=papan%20tulis%20berbentuk",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=papan%20tulis%20berbentuk&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=papan%20tulis%20berbentuk" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=papan%20tulis%20berbentuk" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Papan Tulis Berbentuk at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Papan Tulis Berbentuk</h2>
+    <p><strong>Papan Tulis Berbentuk</strong>. Papan tulis adalah papan dari kayu  dengan permukaan yang bisa ditulis ulang dengan menggunakan kapur tulis. Perbekalan kantor ( office suplies ) yaitu alat bantu bahan yang digunakan untuk membantu pelaksanaan pekerjaan kantor sehingga lebih cepat selesai, lebih tepat, dan lebih baik.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=papan%20tulis%20berbentuk" alt="Raja Kantor Blog" />
+        <br>
+        <figcaption>Raja Kantor Blog from www.rajakantor.com</figcaption>
+    </figure>
+        <p>
+        Berapa sentimeter panjang bagian papan tulis yang dicat pak dona? Jumlah sisi persegi panjang = 4 b. Di tempat tinggal udin terdapat sebuah tanah lapang yang.
+    </p>
+    <h3>Raja Kantor Blog</h3>
+    <p>Aman dan cepat hanya di bukalapak. Ia merupakan veteran perang korea bernama martin heite. Beli papan tulis berbentuk terbaru harga murah july 2022 di tokopedia! Jadi, lebar papan tulis tersebut adalah 2,5 m.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Papan Tulis RKC Mainan Edukasi Anak Shopee Indonesia" data-src="https://i2.wp.com/cf.shopee.co.id/file/7088d3d9ebba659c249dc188e48850cb" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: shopee.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Papan tulis berdiri anak 2 in 1 blackboard dan whiteboard: Ketahui jenis dan bahan papan tulis whiteboard. Jadi, keliling pekarangan rumah tersebut adalah 44 m. 2rb+ 5.0 (1 rating) pertanyaan serupa. Papan tulis tersebut membutuhkan 2 kaleng cat berukuran kecil untuk tiap m².</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="10+ Permukaan Papan Tulis Berbentuk Background Contoh File Guru" data-src="https://i2.wp.com/sc01.alicdn.com/kf/HTB1Ptn4azfguuRjy1zeq6z0KFXaL.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: contohfileguru.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pak dona mengecat tepi papan tulis yang berbentuk persegi panjang berukuran panjang 155 cm dan lebar 80 cm. Di tempat tinggal udin terdapat sebuah tanah lapang yang. Berapakah keliling papan tulis tersebut? 30 cm dan 50 cm. Jumlah sisi persegi panjang = 4 b.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Papan Tulis Berbentuk Gajah Mainan Edukasi" data-src="https://i2.wp.com/444toys.com/wp-content/uploads/2020/07/Papan-Tulis-Berbentuk-Gajah-Mainan-Edukasi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 444toys.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Warna kapur tulis putih yang kontras dengan papan tulis hitam akan membuat tulisan lebih mudah terbaca. Penghapus juga merujuk kepada penghapus pada papan tulis seperti papan hitam atau papan putih. Ketahui jenis dan bahan papan tulis whiteboard. Galih mempunyai papan tulis yang berbentuk persegi. 2rb+ 5.0 (1 rating) pertanyaan serupa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="KERTAS PAPAN TULIS TEMPEL PORTABLE / PAPAN TULIS GULUNG LIPAT BERBENTUK" data-src="https://i2.wp.com/cf.shopee.co.id/file/7d53e1735eb75c42c409415fe87c6b7c" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: shopee.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Papan tulis yang ada diruang kelas berbentuk persegi panjang. Berbentuk apakah gambar papan catur tersebut? Aman dan cepat hanya di bukalapak. Papan pameran / papan kenyataan 6. Ketahui jenis dan bahan papan tulis whiteboard.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jual Mainan Edukasi Anak Papan Tulis Belajar Anak OCT0016 Jakarta" data-src="https://i2.wp.com/ecs7.tokopedia.net/img/cache/700/product-1/2020/9/2/114355569/114355569_b208d4c2-b9da-4102-baa1-83b31fc95d33_700_700" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tokopedia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Warna kapur tulis putih yang kontras dengan papan tulis hitam akan membuat tulisan lebih mudah terbaca. Kertas, pena, tinta, printer, penghapus, stapler, gunting. Papan tulis anak berdiri / easel: Jual beli papan tulis terbaru 2022, tersedia berbagai pilihan papan tulis harga murah! Crayon whatever it takes font.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jual Whiteboard/Papan Tulis berbentuk lembaran, berbahan plastik PP" data-src="https://i2.wp.com/s3.bukalapak.com/img/3581063795/w-1000/Whiteboard_Papan_Tulis_berbentuk_lembaran__berbahan_plastik_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bukalapak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berapa sentimeter panjang bagian papan tulis yang dicat pak dona? Ibu mempunyai kain berbentuk persegi panjang dengan ukuran lebar 13 cm dan luas 585 cm 2. Berbentuk apakah gambar papan catur tersebut? Aman dan cepat hanya di bukalapak. Menganalisa dan mengevaluasi proses pemecahan 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Raja Kantor Blog" data-src="https://i2.wp.com/www.rajakantor.com/blog/wp-content/uploads/2019/02/27.-Harga-Papan-Tulis-1024x961.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.rajakantor.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kumpulan 8 font tulisan kapur papan tulis gratis yang dapat kalian unduh secara gratis. Memberikan kesempatan siswa untuk bertanya dan memberikan tanggapan 2. Papan tulis tersebut memiliki dua muka. Papan tulis anak berdiri / easel: Papan elektronik papan tulis para guru telah mengiktiraf papan kapur sebagai alat bantu mengajar di dalam bilik darjah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Drawing board papan tulis papan tulis hapus / papan" data-src="https://i2.wp.com/cf.shopee.co.id/file/55f48cda8ca18b18f46813b808fc6e2f" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: shopee.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ibu mempunyai kain berbentuk persegi panjang dengan ukuran lebar 13 cm dan luas 585 cm 2. Di tempat tinggal udin terdapat sebuah tanah lapang yang. Beli papan tulis berbentuk terbaru harga murah july 2022 di tokopedia! Sofa dan maula membeli kain berbentuk persegi panjang. Papan tulis tersebut membutuhkan 2 kaleng cat berukuran kecil untuk tiap m².</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jual Whiteboard/Papan Tulis berbentuk lembaran, berbahan plastik PP" data-src="https://i2.wp.com/s3.bukalapak.com/img/8481063795/large/Whiteboard_Papan_Tulis_berbentuk_lembaran__berbahan_plastik_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bukalapak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Papan tulis anak/ white board bisa berdiri free spidol. Papan pameran / papan kenyataan 6. Karena ada 4 papan tulis maka luas seluruh papan tulis adalah 4 x 16 = 64 cm². Tarik perhatian siswa, guru, dan orang lain di bidang terkait pendidikan dengan templat powerpoint papan tulis ini. Beli papan tulis berbentuk terbaru harga murah july 2022 di tokopedia!</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jual Whiteboard/Papan Tulis berbentuk lembaran, berbahan plastik PP" data-src="https://i2.wp.com/s3.bukalapak.com/img/8581063795/w-1000/Whiteboard_Papan_Tulis_berbentuk_lembaran__berbahan_plastik_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bukalapak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Memberikan kesempatan siswa untuk bertanya dan memberikan tanggapan 2. Papan elektronik papan tulis para guru telah mengiktiraf papan kapur sebagai alat bantu mengajar di dalam bilik darjah. Penghapus papan hitam tradisional merupakan blok kayu berbentuk persegi panjang yang dibuat dari kain berbahan wol. Papan tulis whiteboard papan tulis whiteboard adalah sarana informasi berbentuk papan board dapat ditulis dengan spidol whiteboard.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="langkah-langkah-menulis-teks-deskripsi.html" class="be-post-title">
+				 <h6>langkah langkah menulis teks deskripsi </h6>
+                </a>
+                <a href="langkah-langkah-menulis-teks-deskripsi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=langkah%20langkah%20menulis%20teks%20deskripsi&amp;w=50&amp;h=50&amp;c=7" alt="langkah langkah menulis teks deskripsi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="adonan-roti-yang-sudah-diberi-khamir.html" class="be-post-title">
+				 <h6>adonan roti yang sudah diberi khamir </h6>
+                </a>
+                <a href="adonan-roti-yang-sudah-diberi-khamir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=adonan%20roti%20yang%20sudah%20diberi%20khamir&amp;w=50&amp;h=50&amp;c=7" alt="adonan roti yang sudah diberi khamir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-un-ipa-sd-kelas-6-2020.html" class="be-post-title">
+				 <h6>soal un ipa sd kelas 6 2020 </h6>
+                </a>
+                <a href="soal-un-ipa-sd-kelas-6-2020.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20un%20ipa%20sd%20kelas%206%202020&amp;w=50&amp;h=50&amp;c=7" alt="soal un ipa sd kelas 6 2020">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="langkah-pertama-membuat-teks-prosedur-adalah.html" class="be-post-title">
+				 <h6>langkah pertama membuat teks prosedur adalah </h6>
+                </a>
+                <a href="langkah-pertama-membuat-teks-prosedur-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=langkah%20pertama%20membuat%20teks%20prosedur%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="langkah pertama membuat teks prosedur adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="download-soal-try-out-bahasa-indonesia-kelas-6-sd.html" class="be-post-title">
+				 <h6>download soal try out bahasa indonesia kelas 6 sd </h6>
+                </a>
+                <a href="download-soal-try-out-bahasa-indonesia-kelas-6-sd.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=download%20soal%20try%20out%20bahasa%20indonesia%20kelas%206%20sd&amp;w=50&amp;h=50&amp;c=7" alt="download soal try out bahasa indonesia kelas 6 sd">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="lembaga-sosial-yang-ditentang-oleh-masyarakat-disebut-dengan.html" class="be-post-title">
+				 <h6>lembaga sosial yang ditentang oleh masyarakat disebut dengan </h6>
+                </a>
+                <a href="lembaga-sosial-yang-ditentang-oleh-masyarakat-disebut-dengan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=lembaga%20sosial%20yang%20ditentang%20oleh%20masyarakat%20disebut%20dengan&amp;w=50&amp;h=50&amp;c=7" alt="lembaga sosial yang ditentang oleh masyarakat disebut dengan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-kelas-2-sd-tema-5-halaman-108.html" class="be-post-title">
+				 <h6>kunci jawaban kelas 2 sd tema 5 halaman 108 </h6>
+                </a>
+                <a href="kunci-jawaban-kelas-2-sd-tema-5-halaman-108.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20kelas%202%20sd%20tema%205%20halaman%20108&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban kelas 2 sd tema 5 halaman 108">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komposisi-kimia-dari-kerak-samudera-adalah.html" class="be-post-title">
+				 <h6>komposisi kimia dari kerak samudera adalah </h6>
+                </a>
+                <a href="komposisi-kimia-dari-kerak-samudera-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komposisi%20kimia%20dari%20kerak%20samudera%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="komposisi kimia dari kerak samudera adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-yang-merupakan-bidang-kajian-ekonomi-mikro-adalah.html" class="be-post-title">
+				 <h6>berikut ini yang merupakan bidang kajian ekonomi mikro adalah </h6>
+                </a>
+                <a href="berikut-ini-yang-merupakan-bidang-kajian-ekonomi-mikro-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20yang%20merupakan%20bidang%20kajian%20ekonomi%20mikro%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini yang merupakan bidang kajian ekonomi mikro adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="amoeba-mendapat-mangsa-dengan-cara.html" class="be-post-title">
+				 <h6>amoeba mendapat mangsa dengan cara </h6>
+                </a>
+                <a href="amoeba-mendapat-mangsa-dengan-cara.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=amoeba%20mendapat%20mangsa%20dengan%20cara&amp;w=50&amp;h=50&amp;c=7" alt="amoeba mendapat mangsa dengan cara">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

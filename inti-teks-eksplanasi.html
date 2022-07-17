@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Inti Teks Eksplanasi at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Inti Teks Eksplanasi",
+  "datePublished": "2022-07-07T08:28:59Z",
+  "image": "https://tse1.mm.bing.net/th?q=inti%20teks%20eksplanasi",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=inti%20teks%20eksplanasi&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=inti%20teks%20eksplanasi" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=inti%20teks%20eksplanasi" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Inti Teks Eksplanasi at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Inti Teks Eksplanasi</h2>
+    <p><strong>Inti Teks Eksplanasi</strong>. Selain itu juga menjelaskan proses terjadinya suatu peristiwa. Bagian interpretasi ini tentu saja dapat diisi dengan pendapat dan perspektif penulis, berdasarkan deskripsi data dan fenomena itu sendiri.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=inti%20teks%20eksplanasi" alt="Inti Dari Teks Eksplanasi Berada Pada Bagian 2022 Cimahi Kota" />
+        <br>
+        <figcaption>Inti Dari Teks Eksplanasi Berada Pada Bagian 2022 Cimahi Kota from cimahikota.co.id</figcaption>
+    </figure>
+        <p>
+        Kompetensi inti kompetensi inti (ki) dijelaskan dalam kemendikbud nomor 24 tahun 2016, yaitu sebagai berikut. Contoh teks eksplanasi tentang banjir. Teks eksplanasi adalah teks yang bertujuan memaparkan atau menjelaskan proses terjadinya suatu fenomena, baik alam maupun sosial, yang terjadi secara alamiah (tanpa campur tangan manusia).
+    </p>
+    <h3>Inti Dari Teks Eksplanasi Berada Pada Bagian 2022 Cimahi Kota</h3>
+    <p>Didalam teks eksplanasi secara umum membahas tentang berbagai fenomena sebagai berikut, kecuali. Interpretasi adalah bagian akhir atau penutup dari teks eksplanasi. (inti penjelasan apa yang disampaikan), dan interpretasi (pandangan atau simpulan). Memuat informasi berdasarkan fakta (faktual).</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Teks Eksplanasi Berada Pada Bagian Guru Luring" data-src="https://i2.wp.com/id-static.z-dn.net/files/d86/7108e4068b69f67648dc4da9e74e0641.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: guruluring.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sementara pendapat kedua menyebutkan kalau struktur teks eksplanasi terdiri dari identifikasi fenomena, proses kejadian, dan ulasan. Liputan6.com, jakarta pengertian teks eksplanasi penting dipahami. Contoh teks eksplanasi tentang banjir. Banjir merupakan fenomena alam berupa naiknya air pada suatu daerah dan menutupi permukaan daerah tersebut. Di sinilah penjelasan yang lebih jelas tentang proses dimulai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Dari Teks Eksplanasi Berada Pada Bagian 2022 Cimahi Kota" data-src="https://i2.wp.com/id-static.z-dn.net/files/d9d/5a0921a465608de66fb5050cf04bfcf8.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cimahikota.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mengutip dari buku super complete smp/mts 7, 8, 9 karya elis khoerunnisa, putriani khairun nisa, dan elisa suhartini (2020:581), pengertian teks eksplanasi adalah teks yang menjelaskan tentang proses terjadinya atau terbentuknya suatu fenomena alam maupun peristiwa sosial. Jadi, jawaban yang tepat adalah d. Pendapat pertama menyebutkan kalau struktur teks eksplanasi terdiri dari pernyataan umum, deretan penjelas, dan interpretasi. Kompetensi inti.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Dari Teks Eksplanasi Berada Pada Bagian Berbagi Teks Penting" data-src="https://i2.wp.com/id-static.z-dn.net/files/dfa/8bcf230e02eeaa5de7729aa297efe18d.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berbagiteks.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menggunakan konjungsi waktu dan kausal misalnya jika, bila, sehingga, sebelum, pertama, dan kemudian. Inti dari cara menulis teks eksplanasi adalah penjelasan kausalitas. Teks berarti tulisan panjang, dan eksplanasi berasal dari kata bahasa inggris “explain” yang berarti menjelaskan. Saat ini kamu akan belajar teks eksplanasi. Identifikasi fenomena atau pernyataan umum, yaitu bagian yang berisi penyataan umum tentang suatu peristiwa atau kejadian.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Teks Eksplanasi Berada Pada Bagian Guru Luring" data-src="https://i2.wp.com/id-static.z-dn.net/files/d1d/7601015af0696d28228a4db0500007bc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: guruluring.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Muatannya didasarkan pada pendapat / opini c. Teks berarti tulisan panjang, dan eksplanasi berasal dari kata bahasa inggris “explain” yang berarti menjelaskan. Umumnya, pada teks eksplanasi, sebuah. Suatu kejadian baik itu kejadian alam maupun kejadian sosial yang terjadi di sekitar kita, selalu memiliki hubungan sebab akibat dan proses. Kompetensi, hakikat teks eksplanasi, hakikat menganalisis teks eksplanasi, hakikat menulis teks eksplanasi,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Teks Eksplanasi Terdapat Pada Bagian Murid Santuy" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/3M9ddHsNd54rHiLY5vSAdx0AnVPSaKhEibsBVyGHJybQA8UaHdv0LvTZXknEuv7zJcD_gY7SovvXTbkgC-mGoQtMwBn9O5fUi287QuVkQbeXhaoAhhTZBibEQyKSEAZ744oubEyypUQBW-sCd7XUy2NRLjGMg8o88pzK0LtARQ=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: muridsantuydoc.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Teks eksplanasi memiliki ciri bahasa sebagai berikut yaitu: Interpretasi (opsional) teks penutup yang bersifat pilihan yang merupakan intisari atau kesimpulan dari pernyataan umum dan deretan penjelas. Jadi, jawaban yang tepat adalah d. Teks eksplanasi adalah teks yang bertujuan memaparkan atau menjelaskan proses terjadinya suatu fenomena, baik alam maupun sosial, yang terjadi secara alamiah (tanpa campur tangan manusia). Pertama, kalian mengemukakan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Dari Teks Eksplanasi Berada Pada Bagian 2022 Cimahi Kota" data-src="https://i2.wp.com/id-static.z-dn.net/files/d06/00603d9cccb9465857c3bb652a4b6543.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cimahikota.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Liputan6.com, jakarta pengertian teks eksplanasi penting dipahami. Umumnya, pada teks eksplanasi, sebuah. Teks eksplanasi adalah teks yang berisi tentang proses terjadinya suatu peristiwa, mulai dari fenomena alam hingga fenomena sosial. Agar sedulur lebih jelas lagi, berikut ini beberapa bagian atau struktur yang membentuk teks eksplanasi itu sendiri: Lebih banyak menggunakan kata kerja material dan relasional.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="1. tentukan struktur teks tersebut 2. jelaskan ciri ciri teks" data-src="https://i2.wp.com/id-static.z-dn.net/files/d65/b606805aeb42455b80c8c9db2803518c.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">By hasbi mutsaniposted on november 22 2019. Menjelaskan suatu kondisi atau fenomena. Teks eksplanasi yang berjudul “penyebab tanah longsor” dapat disajikan secara ringkas. Muatannya didasarkan pada pendapat / opini c. Struktur teks eksplanasi yang berikutnya ada bagian penjelasan, bagian yang menjadi inti dari teks eksplanasi itu sendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Dari Teks Eksplanasi Berada Pada Bagian Kunci Jawaban" data-src="https://i2.wp.com/minto.id/wp-content/uploads/2022/03/logo-3.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: minto.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berisi inti sari, kesimpulan, atau pernyataan tentang topik yang telah dijelaskan. Teks eksplanasi biasanya berisi tentang sebuah proses atau topik dan berbicara tentang mengapa dan bagiamana. Sehingga, teks eksplanasi adalah sebuah teks yang berfungsi untuk memperjelas sesuatu yang bisa berupa apa saja. Gempa tsunami gerhana bulan angin topan tanah longsor serta bencana lainnya dimana berhubungan terhadap alam. Bagaimana tahapan sebelum.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Dari Teks Eksplanasi Berada Pada Bagian Berbagi Teks Penting" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/CWkPMYZttIXXZYkzcpMRc_bC0Rc9Yhns2o0p5wYCBAoqh85HRglSnyfMiM0KIpGFqRqCUnyGwGzkDwTrhcgwIGe3yeEC9y8rIGQd0bwKxqo-ScyF4MyRMYdp2jG59xpaR_XF1SHbMgRTmXi2HA6FZnJ0FLE=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: berbagiteks.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Di dalam teks eksplanasi secara umum. Memuat informasi yang bersifat keilmuan. Contoh teks eksplanasi sosial, fungsi teks eksplanasi, inti teks eksplanasi terdapat pada bagian, jenis jenis teks eksplanasi, kaidah kebahasaan teks eksplanasi, kaidah kebahasaan teks. Pengertian, ciri, struktur, kaidah kebahasaan, langkah menyusun dan contohnya yang diulas oleh teks.co.id. Dan penjelasan bagaimana menghadapi fenomena yang sama ketika terulang di masa depan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Inti Teks Eksplanasi Berada Pada Bagian Guru Luring" data-src="https://i2.wp.com/id-static.z-dn.net/files/d1d/08b1d05c17be3dfa83e9caacb65b4a2a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: guruluring.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Umumnya, pada teks eksplanasi, sebuah. Teks eksplanasi yang berjudul “penyebab tanah longsor” dapat disajikan secara ringkas. Saat ini kamu akan belajar teks eksplanasi. Inti teks eksplanasi berada pada bagian jawaban : Deretan penjelasan dijelaskan fakta tentang proses terjadinya sesuatu dan sebab.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cacing-palolo-yang-bisa-dimakan-dan-termasuk-dalam-kelas.html" class="be-post-title">
+				 <h6>cacing palolo yang bisa dimakan dan termasuk dalam kelas </h6>
+                </a>
+                <a href="cacing-palolo-yang-bisa-dimakan-dan-termasuk-dalam-kelas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cacing%20palolo%20yang%20bisa%20dimakan%20dan%20termasuk%20dalam%20kelas&amp;w=50&amp;h=50&amp;c=7" alt="cacing palolo yang bisa dimakan dan termasuk dalam kelas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-ini-yang-bukan-tujuan-dari-reboisasi-adalah.html" class="be-post-title">
+				 <h6>berikut ini yang bukan tujuan dari reboisasi adalah </h6>
+                </a>
+                <a href="berikut-ini-yang-bukan-tujuan-dari-reboisasi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20ini%20yang%20bukan%20tujuan%20dari%20reboisasi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut ini yang bukan tujuan dari reboisasi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="na2-c2-o4.html" class="be-post-title">
+				 <h6>na2 c2 o4 </h6>
+                </a>
+                <a href="na2-c2-o4.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=na2%20c2%20o4&amp;w=50&amp;h=50&amp;c=7" alt="na2 c2 o4">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-perbedaan-gerak-lurus-beraturan-dan-gerak-lurus-berubah-beraturan.html" class="be-post-title">
+				 <h6>jelaskan perbedaan gerak lurus beraturan dan gerak lurus berubah beraturan </h6>
+                </a>
+                <a href="jelaskan-perbedaan-gerak-lurus-beraturan-dan-gerak-lurus-berubah-beraturan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20perbedaan%20gerak%20lurus%20beraturan%20dan%20gerak%20lurus%20berubah%20beraturan&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan perbedaan gerak lurus beraturan dan gerak lurus berubah beraturan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="langka-dalam-pengertian-ilmu-ekonomi-adalah.html" class="be-post-title">
+				 <h6>langka dalam pengertian ilmu ekonomi adalah </h6>
+                </a>
+                <a href="langka-dalam-pengertian-ilmu-ekonomi-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=langka%20dalam%20pengertian%20ilmu%20ekonomi%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="langka dalam pengertian ilmu ekonomi adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-osn-ipa-sd-2022-dan-kunci-jawaban-pdf.html" class="be-post-title">
+				 <h6>soal osn ipa sd 2022 dan kunci jawaban pdf </h6>
+                </a>
+                <a href="soal-osn-ipa-sd-2022-dan-kunci-jawaban-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20osn%20ipa%20sd%202022%20dan%20kunci%20jawaban%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal osn ipa sd 2022 dan kunci jawaban pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="arti-monopoli-perdagangan.html" class="be-post-title">
+				 <h6>arti monopoli perdagangan </h6>
+                </a>
+                <a href="arti-monopoli-perdagangan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=arti%20monopoli%20perdagangan&amp;w=50&amp;h=50&amp;c=7" alt="arti monopoli perdagangan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nama-lain-dari-ppki.html" class="be-post-title">
+				 <h6>nama lain dari ppki </h6>
+                </a>
+                <a href="nama-lain-dari-ppki.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nama%20lain%20dari%20ppki&amp;w=50&amp;h=50&amp;c=7" alt="nama lain dari ppki">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kobalt-iii-nitrat.html" class="be-post-title">
+				 <h6>kobalt iii nitrat </h6>
+                </a>
+                <a href="kobalt-iii-nitrat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kobalt%20iii%20nitrat&amp;w=50&amp;h=50&amp;c=7" alt="kobalt iii nitrat">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pemberontakan-di-atau-tii-jawa-barat-dipimpin-oleh.html" class="be-post-title">
+				 <h6>pemberontakan di atau tii jawa barat dipimpin oleh </h6>
+                </a>
+                <a href="pemberontakan-di-atau-tii-jawa-barat-dipimpin-oleh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pemberontakan%20di%20atau%20tii%20jawa%20barat%20dipimpin%20oleh&amp;w=50&amp;h=50&amp;c=7" alt="pemberontakan di atau tii jawa barat dipimpin oleh">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

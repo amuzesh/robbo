@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Diferensiasi Area at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Diferensiasi Area",
+  "datePublished": "2022-05-26T14:00:44Z",
+  "image": "https://tse1.mm.bing.net/th?q=diferensiasi%20area",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=diferensiasi%20area&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=diferensiasi%20area" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=diferensiasi%20area" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Diferensiasi Area at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Diferensiasi Area</h2>
+    <p><strong>Diferensiasi Area</strong>. Konsep diferensiasi area dikenal dengan perbedaan wilayah. Wilayah indonesia berbentuk kepulauan dan terletak di.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=diferensiasi%20area" alt="Perbedaan antara Diferensiasi dan Integrasi" />
+        <br>
+        <figcaption>Perbedaan antara Diferensiasi dan Integrasi from id.spot-the-difference.info</figcaption>
+    </figure>
+        <p>
+        Daerah atau wilayah di permukaan bumi mempunyai. Karakteristik setiap wilayah umumnya berbeda, baik dalam hal keberagaman bentang alam, sumber daya, pembangunan, perekonomian, maupun sosial. Diferensiasi area adalah perbedaan interaksi antara satu wilayah dimuka bumi dengan wilayah yang lainnya.
+    </p>
+    <h3>Perbedaan antara Diferensiasi dan Integrasi</h3>
+    <p>Contoh konsep ini misalnya masyarakat yang tinggal. Konsep geografi yang kesembilan adalah difresiansi area. Kajian pada konsep geografi ini berkaitan dengan. Diferensiasi area diferensiasi area menggambarkan.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perbedaan antara Diferensiasi dan Integrasi" data-src="https://i2.wp.com/spot-the-difference.info/img/difference-between/249/difference-between-differentiation-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.spot-the-difference.info</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contohnya adalah perbedaan ragam bahasa antara penduduk pemalang. Contoh interaksi penduduk akibat diferensiasi area yaitu interaksi penduduk yang tinggal di daerah pantai dengan penduduk di daerah pegunungan karena di pantai sulit untuk. Karakteristik setiap wilayah umumnya berbeda, baik dalam hal keberagaman bentang alam, sumber daya, pembangunan, perekonomian, maupun sosial. Diferensiasi area adalah perbedaan interaksi antara satu wilayah dimuka bumi dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DIFERENSIASI MAGMA PDF" data-src="https://i2.wp.com/3.bp.blogspot.com/_JRp7TJWTx4A/S68teffYYyI/AAAAAAAAAPA/xubLrsgGk6I/s1600/Diferensiasi Dapur Magma.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: iamadek.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contoh interaksi penduduk akibat diferensiasi area yaitu interaksi penduduk yang tinggal di daerah pantai dengan penduduk di daerah pegunungan karena di pantai sulit untuk. Daerah atau wilayah di permukaan bumi mempunyai kondisi fisik, sumber daya dan manusia yang. Karakteristik setiap wilayah umumnya berbeda, baik dalam hal keberagaman bentang alam, sumber daya, pembangunan, perekonomian, maupun sosial. Diferensiasi area digunakan untuk menjelaskan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Materi Geografi Kelas X GEOGRAFI SMAN 1 KABAWO" data-src="https://i2.wp.com/1.bp.blogspot.com/-AJ2HWr0ESiw/YQ39j2KdwTI/AAAAAAAAHJ8/u-nV2nlaa3sq4WVr-qMf3bujMCD10yMugCLcBGAsYHQ/w640-h265/aglomerasi%2Bpemukiman.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: geografisman1kabawo.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diferensiasi area digunakan untuk menjelaskan keunikan atau karakteristik yang khas dari suatu daerah. Diferensiasi area menggambarkan keunikan atau karakteristik antara wilayah satu dengan yang lainnya. Konsep diferensiasi area adalah konsep yang membahas mengenai perbedaan karakteristik berbagai wiayah.perbedaan karakteristik dapat berupa bentang alam, kependudukan,. Diferensiasi area adalah perbedaan antara dua wilayah atau lebih. Diferensiasi area diferensiasi area menggambarkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contoh Soal Latihan SBMPTN Geografi dan Kunci Jawaban Geograph88" data-src="https://i2.wp.com/3.bp.blogspot.com/-wITWs8VGLZY/XHeGkxvTyXI/AAAAAAAALAU/O_jFOgTs5g8_cj0XwMNub5JXSEA3mOIGwCLcBGAs/w1200-h630-p-k-no-nu/sds.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: geograph88.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Karakteristik setiap wilayah umumnya berbeda, baik dalam hal keberagaman bentang alam, sumber daya, pembangunan, perekonomian, maupun sosial. Kajian pada konsep geografi ini berkaitan dengan. Konsep geografi yang kesembilan adalah difresiansi area. Konsep diferensiasi area bertujuan untuk menunjukkan dan menjelaskan mengapa terdapat perbedaan fenomena baik fisik maupun sosial antar wilayah. Contoh :jenis tanaman yang di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√10 Konsep Geografi Beserta Contohnya (Lengkap) Freedomnesia" data-src="https://i2.wp.com/www.freedomnesia.id/wp-content/uploads/2019/07/Konsep-Diferensiasi-Area.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.freedomnesia.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contoh interaksi penduduk akibat diferensiasi area yaitu interaksi penduduk yang tinggal di daerah pantai dengan penduduk di daerah pegunungan karena di pantai sulit untuk. Konsep berisi ciri khas suatu daerah yang tidak dimiliki oleh daerah lainnya, sehingga. Daerah atau wilayah di permukaan bumi mempunyai. Setiap wilayah memiliki karakteristik dan. Diferensiasi area diferensiasi area menggambarkan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsep Esensial Geografi Zona Geografi" data-src="https://i2.wp.com/4.bp.blogspot.com/-87dHMSUzGyQ/Wy4pSsfWn3I/AAAAAAAAAOk/AlJvykt-6XQAKu95XE95ROj71b_giNdkACLcBGAs/s1600/diferensiasi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.zonageografi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diferensiasi area menggambarkan keunikan atau karakteristik antara wilayah satu dengan yang lainnya. Daerah atau wilayah di permukaan bumi mempunyai kondisi fisik, sumber daya dan manusia yang. Diferensiasi area adalah perbedaan interaksi antara satu wilayah dimuka bumi dengan wilayah yang lainnya. Konsep diferensiasi area ini, digunakan untuk mempelajari perbedaan gejala geografi antara wilayah yang satu dengan yang lain di permukaan bumi..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsep esensial geografi" data-src="https://i2.wp.com/image.slidesharecdn.com/konsepesensialgeografi-151019111249-lva1-app6892/95/konsep-esensial-geografi-11-638.jpg?cb=1445253201" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diferensiasi area digunakan untuk menjelaskan keunikan atau karakteristik yang khas dari suatu daerah. Konsep diferensiasi area adalah suatu konsep esensial geografi yang membahas tentang perbedaan kondisi yang terjadi antara suatu wilayah dengan. Diferensiasi zona adalah perbedaan dalam interaksi antara suatu wilayah bumi dan daerah lainnya. Konsep diferensiasi area adalah konsep yang membahas mengenai perbedaan karakteristik berbagai wiayah.perbedaan karakteristik dapat berupa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsep Geografi 10 Konsep beserta Penjelasan dan Contohnya Insan Pelajar" data-src="https://i2.wp.com/insanpelajar.com/wp-content/uploads/2020/01/Switzerland-1024x768.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: insanpelajar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Karakteristik setiap wilayah umumnya berbeda, baik dalam hal keberagaman bentang alam, sumber daya, pembangunan, perekonomian, maupun sosial. Daerah atau wilayah di permukaan bumi mempunyai kondisi fisik, sumber daya dan manusia yang. Diferensiasi area adalah konsep geografi yang berkaitan dengan perbedaan interaksi makhluk hidup antara satu wilayah dan wilayah lainnya di permukaan bumi. Diferensiasi area digunakan untuk menjelaskan keunikan atau karakteristik.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="10 KONSEP GEOGRAFI Beserta Contoh &amp; Penjelasannya [LENGKAP]" data-src="https://i2.wp.com/www.nesabamedia.com/wp-content/uploads/2019/04/konsep-diferensiasi-area.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.nesabamedia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contohnya adalah perbedaan ragam bahasa antara penduduk pemalang. Konsep berisi ciri khas suatu daerah yang tidak dimiliki oleh daerah lainnya, sehingga. Contoh :jenis tanaman yang di. Konsep diferensiasi area bertujuan untuk menunjukkan dan menjelaskan fenomena yang berbeda antar satu daerah dengan daerah yang lainnya, fenomena ini baik fenomena. Setiap wilayah memiliki karakteristik dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Konsep Diferensiasi Area" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/62962403/original/24babfbccf/1624059626?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Daerah atau wilayah di permukaan bumi mempunyai. Konsep berisi ciri khas suatu daerah yang tidak dimiliki oleh daerah lainnya, sehingga. Konsep diferensiasi area adalah suatu konsep esensial geografi yang membahas tentang perbedaan kondisi yang terjadi antara suatu wilayah dengan. Diferensiasi area menggambarkan keunikan atau karakteristik antara wilayah satu dengan yang lainnya. Diferensiasi area digunakan untuk menjelaskan keunikan atau karakteristik yang.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="indonesia-merdeka-karena.html" class="be-post-title">
+				 <h6>indonesia merdeka karena </h6>
+                </a>
+                <a href="indonesia-merdeka-karena.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=indonesia%20merdeka%20karena&amp;w=50&amp;h=50&amp;c=7" alt="indonesia merdeka karena">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-matematika-kelas-6-sd-semester-2-pdf.html" class="be-post-title">
+				 <h6>soal uas matematika kelas 6 sd semester 2 pdf </h6>
+                </a>
+                <a href="soal-uas-matematika-kelas-6-sd-semester-2-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20matematika%20kelas%206%20sd%20semester%202%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal uas matematika kelas 6 sd semester 2 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="media-tanam-yang-tidak-digunakan-dalam-teknologi-hidroponik-adalah.html" class="be-post-title">
+				 <h6>media tanam yang tidak digunakan dalam teknologi hidroponik adalah </h6>
+                </a>
+                <a href="media-tanam-yang-tidak-digunakan-dalam-teknologi-hidroponik-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=media%20tanam%20yang%20tidak%20digunakan%20dalam%20teknologi%20hidroponik%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="media tanam yang tidak digunakan dalam teknologi hidroponik adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cara-memasang-amperemeter-pada-rangkaian-listrik-adalah-secara.html" class="be-post-title">
+				 <h6>cara memasang amperemeter pada rangkaian listrik adalah secara </h6>
+                </a>
+                <a href="cara-memasang-amperemeter-pada-rangkaian-listrik-adalah-secara.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20memasang%20amperemeter%20pada%20rangkaian%20listrik%20adalah%20secara&amp;w=50&amp;h=50&amp;c=7" alt="cara memasang amperemeter pada rangkaian listrik adalah secara">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="foto-udara-termasuk-hasil-penginderaan-jauh-yang-dihasilkan-oleh.html" class="be-post-title">
+				 <h6>foto udara termasuk hasil penginderaan jauh yang dihasilkan oleh </h6>
+                </a>
+                <a href="foto-udara-termasuk-hasil-penginderaan-jauh-yang-dihasilkan-oleh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=foto%20udara%20termasuk%20hasil%20penginderaan%20jauh%20yang%20dihasilkan%20oleh&amp;w=50&amp;h=50&amp;c=7" alt="foto udara termasuk hasil penginderaan jauh yang dihasilkan oleh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="norma-custom-adalah.html" class="be-post-title">
+				 <h6>norma custom adalah </h6>
+                </a>
+                <a href="norma-custom-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=norma%20custom%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="norma custom adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uas-fisika-kelas-xi-semester-1-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal uas fisika kelas xi semester 1 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-uas-fisika-kelas-xi-semester-1-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uas%20fisika%20kelas%20xi%20semester%201%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal uas fisika kelas xi semester 1 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gambar-ilustrasi-dibagi-menjadi.html" class="be-post-title">
+				 <h6>gambar ilustrasi dibagi menjadi </h6>
+                </a>
+                <a href="gambar-ilustrasi-dibagi-menjadi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gambar%20ilustrasi%20dibagi%20menjadi&amp;w=50&amp;h=50&amp;c=7" alt="gambar ilustrasi dibagi menjadi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uts-pjok-sd-kelas-2-semester-2.html" class="be-post-title">
+				 <h6>soal uts pjok sd kelas 2 semester 2 </h6>
+                </a>
+                <a href="soal-uts-pjok-sd-kelas-2-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uts%20pjok%20sd%20kelas%202%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="soal uts pjok sd kelas 2 semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="data-teristris-adalah-data-sig-yang-diperoleh-dari.html" class="be-post-title">
+				 <h6>data teristris adalah data sig yang diperoleh dari </h6>
+                </a>
+                <a href="data-teristris-adalah-data-sig-yang-diperoleh-dari.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=data%20teristris%20adalah%20data%20sig%20yang%20diperoleh%20dari&amp;w=50&amp;h=50&amp;c=7" alt="data teristris adalah data sig yang diperoleh dari">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

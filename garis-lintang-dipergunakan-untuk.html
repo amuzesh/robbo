@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Garis Lintang Dipergunakan Untuk at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Garis Lintang Dipergunakan Untuk",
+  "datePublished": "2022-06-10T17:54:25Z",
+  "image": "https://tse1.mm.bing.net/th?q=garis%20lintang%20dipergunakan%20untuk",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=garis%20lintang%20dipergunakan%20untuk&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=garis%20lintang%20dipergunakan%20untuk" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=garis%20lintang%20dipergunakan%20untuk" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Garis Lintang Dipergunakan Untuk at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Garis Lintang Dipergunakan Untuk</h2>
+    <p><strong>Garis Lintang Dipergunakan Untuk</strong>. Garis lintang menandakan sumbu x dan garus bujur menandakan sumbu y dalam. Garis lintang dipergunakan untuk membagi wilayah.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=garis%20lintang%20dipergunakan%20untuk" alt="Perbedaan Garis Lintang dengan Garis Bujur Konsep Geografi" />
+        <br>
+        <figcaption>Perbedaan Garis Lintang dengan Garis Bujur Konsep Geografi from www.konsepgeografi.net</figcaption>
+    </figure>
+        <p>
+        Lu untuk lintang utara, ls untuk lintang selatan, dan bt untuk bujur timur. Garis lintang ialah merupakan suatu garis maya yang melingkar dibumi dan dapat ditarik dari arah barat sampai timur. Garis lintang digunakan sebagai acuan untuk menentukan perbedaan zona iklim di bumi.
+    </p>
+    <h3>Perbedaan Garis Lintang dengan Garis Bujur Konsep Geografi</h3>
+    <p>Posisi lintang biasanya dinotasikan dengan simbol huruf yunani φ. Letak astronomis merupakan posisi indonesia terhadap garis khayal pada peta,. Garis lintang adalah sebuah garis khayal yang digunakan untuk menentukan lokasi di bumi terhadap khatulistiwa (utara atau selatan). Dengan menggunakan bantuan garis lintang, dapat diketahui iklim yang berada di belahan negara.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Garis Lintang dan Garis Bujur REFERENSIANA" data-src="https://i2.wp.com/3.bp.blogspot.com/-2ubAz8OdZ90/Vg3qkLE29XI/AAAAAAAAAbk/1Ere2FSK6Sw/s1600/garis-astronomis.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: referensianaa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Liputan6.com, jakarta garis lintang adalah suatu garis yang kamu pelajari dalam pelajaran geografi. Garis lintang digunakan untuk menandai perbedaan zona iklim di muka bumi. Posisi lintang biasanya dinotasikan dengan simbol huruf yunani φ. Apa yang dimaksud dengan garis lintang dan garis bujur adalah sebuah koordinat yang. Fungsi garis lintang tak hanya untuk menunjukkan koordinat lokasi bersama garis bujur, tapi juga.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Garis Bujur Lintang, Pengertian, Pembangian, Fungs Globe" data-src="https://i2.wp.com/www.dosenpendidikan.co.id/wp-content/uploads/2019/11/garis-bujur.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dosenpendidikan.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Garis lintang dipergunakan untuk membagi wilayah. Letak astronomis merupakan posisi indonesia terhadap garis khayal pada peta,. Garis lintang ini memiliki peran untuk mengetahui keadaan iklim dan letak. Lintang adalah sudut yang berkisar dari 0 ° di khatulistiwa hingga 90 ° (utara atau selatan) di kutub. Garis yang berada di sebelah utara ekuator disebut dengan lintang utara (lu) sedangkan garis yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="12 Komponen Peta dan Penjelasannya [LENGKAP]" data-src="https://i2.wp.com/elrajab.com/wp-content/uploads/2018/11/garis-lintang-768x449.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elrajab.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menurut karakteristik ini, untuk mencapai definisi perubahan suhu yang lebih baik menurut garis lintang wilayah, tiga jenis zona garis lintang telah didefinisikan yang dikenal. Garis lintang ini memiliki peran untuk mengetahui keadaan iklim dan letak. Garis lintang yang melingkari bumi dari bagian ekuator hingga ke bagian kutub utara dan bagian kutub selatan. Garis lintang dipergunakan untuk membagi wilayah. Dilansir dari.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gambar Globe Beserta Garis Lintang Dan Garis Bujur Tempat Berbagi Gambar" data-src="https://i2.wp.com/image.slidesharecdn.com/pengantarkartografi4-140912085823-phpapp02/95/pengantar-kartografi-20-638.jpg?cb=1410513019" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: iniberbagigambar.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Garis lintang yang melingkari bumi dari bagian ekuator hingga ke bagian kutub utara dan bagian kutub selatan. Fungsi garis lintang tak hanya untuk menunjukkan koordinat lokasi bersama garis bujur, tapi juga digunakan sebagai penanda dalam pemba gian zona iklim di bumi. Dengan menggunakan bantuan garis lintang, dapat diketahui iklim yang berada di belahan negara. Garis bujur adalah sebuah garis imajiner.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengartian Garis Khatulistiwa, Garis Lintang dan Garis Bujur Terlengkap" data-src="https://i2.wp.com/4.bp.blogspot.com/-tR1kC_BTrEA/VijtOlk_dFI/AAAAAAAAEhE/QwL3xOL5oC8/w1200-h630-p-k-no-nu/garis%2Bkhatulistiwa.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: duniawisata123.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Garis lintang digunakan untuk menandai perbedaan zona iklim di muka bumi. Menurut ilmu geografi, garis lintang adalah sebuah garis khayal yang digunakan untuk menentukan lokasi di bumi yang berpusat pada garis khatulistiwa (utara atau selatan). Posisi lintang biasanya dinotasikan dengan simbol huruf yunani φ. Kota a terletak pada garis 105 barat timur dan kota b terletak pada garis bibir pada.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Garis Lintang dan Garis Bujur" data-src="https://i2.wp.com/1.bp.blogspot.com/-0Avntm_txcI/W4iPVy46XMI/AAAAAAAAGQM/6UZuCe7nvPEtBLkNyUS3UJZ83xnf9aKUQCLcBGAs/s1600/Garis%2BLintang%2Bdan%2BGaris%2BBujur.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tokominiregal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Garis lintang atau latitude (dilambangkan dengan simbol yunani φ) merupakan garis khayal yang digunakan sebagai salah satu penentu lokasi di bumi. Lintang adalah sudut yang berkisar dari 0 ° di khatulistiwa hingga 90 ° (utara atau selatan) di kutub. Letak astronomis merupakan posisi indonesia terhadap garis khayal pada peta,. Garis yang berada di sebelah utara ekuator disebut dengan lintang utara.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perbedaan Garis Lintang dengan Garis Bujur Konsep Geografi" data-src="https://i2.wp.com/2.bp.blogspot.com/-rHdlzhaRzCM/WStAmiNONkI/AAAAAAAAHkc/3AfzKiHlyL4cheZgbTbHNj5EJZHZvXepACK4B/s1600/perbedaan-garis-lintang-dengan-garis-bujur.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.konsepgeografi.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apa yang dimaksud dengan garis lintang dan garis bujur adalah sebuah koordinat yang. Kemudian, saya sangat menyarankan anda untuk membaca. Garis lintang digunakan untuk menandai perbedaan zona iklim di muka bumi. Garis lintang digunakan sebagai acuan untuk menentukan perbedaan zona iklim di bumi. Garis yang berada di sebelah utara ekuator disebut dengan lintang utara (lu) sedangkan garis yang berada di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pramuka Hidupku Laut Jalanku LETAK GARIS LINTANG DAN GARIS BUJUR PADA" data-src="https://i2.wp.com/1.bp.blogspot.com/-epUckrysQUA/VkR201UuygI/AAAAAAAAAEI/2jLanUwsiTI/s1600/IPS%2B6.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wisnulinggofranjaya.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Garis lintang ialah garis imajiner atau imajiner, yang biasanya digunakan untuk menentukan posisi di bumi yang berpusat di garis khatulistiwa di belahan. Dengan menggunakan bantuan garis lintang, dapat diketahui iklim yang berada di belahan negara. Garis lintang merupakan garis maya yang digunakan untuk menentukan sebuah lokasi di bumi yang berpusat pada garis khatulistiwa (utara dan selatan). Posisi lintang merupakan penghitungan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Perbedaan Garis Lintang Dan Garis Bujur Terkait Perbedaan" data-src="https://i2.wp.com/yuksinau.co.id/wp-content/uploads/2019/08/Garis-Bujur-dan-Garis-Lintang.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: terkaitperbedaan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menurut ilmu geografi, garis lintang adalah sebuah garis khayal yang digunakan untuk menentukan lokasi di bumi yang berpusat pada garis khatulistiwa (utara atau selatan). Garis lintang ini memiliki peran untuk mengetahui keadaan iklim dan letak. Garis lintang ialah merupakan suatu garis maya yang melingkar dibumi dan dapat ditarik dari arah barat sampai timur. Garis lintang atau latitude (dilambangkan dengan simbol.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Garis Lintang, Fungsi dan Pembagian Iklim Berdasarkan Garis" data-src="https://i2.wp.com/www.pelajaran.co.id/wp-content/uploads/2018/08/Garis-Lintang.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pelajaran.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Gambar garis bujur dan garis lintang. Biasanya mereka menggunakan garis lintang dan bujur untuk menuju markas musuh. Garis lintang dipergunakan untuk membagi wilayah. Lintang adalah sudut yang berkisar dari 0 ° di khatulistiwa hingga 90 ° (utara atau selatan) di kutub. Garis lintang ialah garis imajiner atau imajiner, yang biasanya digunakan untuk menentukan posisi di bumi yang berpusat di garis.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-latar-belakang-terjadinya-pertempuran-surabaya.html" class="be-post-title">
+				 <h6>jelaskan latar belakang terjadinya pertempuran surabaya </h6>
+                </a>
+                <a href="jelaskan-latar-belakang-terjadinya-pertempuran-surabaya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20latar%20belakang%20terjadinya%20pertempuran%20surabaya&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan latar belakang terjadinya pertempuran surabaya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="adrenalin-adalah-hormon-yang-berfungsi-untuk.html" class="be-post-title">
+				 <h6>adrenalin adalah hormon yang berfungsi untuk </h6>
+                </a>
+                <a href="adrenalin-adalah-hormon-yang-berfungsi-untuk.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=adrenalin%20adalah%20hormon%20yang%20berfungsi%20untuk&amp;w=50&amp;h=50&amp;c=7" alt="adrenalin adalah hormon yang berfungsi untuk">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-akm-literasi-smp-kelas-8-2020.html" class="be-post-title">
+				 <h6>contoh soal akm literasi smp kelas 8 2020 </h6>
+                </a>
+                <a href="contoh-soal-akm-literasi-smp-kelas-8-2020.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20akm%20literasi%20smp%20kelas%208%202020&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal akm literasi smp kelas 8 2020">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="fungsi-organ-pernapasan-yang-ditunjukkan-oleh-huruf-x-adalah.html" class="be-post-title">
+				 <h6>fungsi organ pernapasan yang ditunjukkan oleh huruf x adalah </h6>
+                </a>
+                <a href="fungsi-organ-pernapasan-yang-ditunjukkan-oleh-huruf-x-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=fungsi%20organ%20pernapasan%20yang%20ditunjukkan%20oleh%20huruf%20x%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="fungsi organ pernapasan yang ditunjukkan oleh huruf x adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-dari-pameran-tetap-atau-permanen-adalah.html" class="be-post-title">
+				 <h6>contoh dari pameran tetap atau permanen adalah </h6>
+                </a>
+                <a href="contoh-dari-pameran-tetap-atau-permanen-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20dari%20pameran%20tetap%20atau%20permanen%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="contoh dari pameran tetap atau permanen adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="big-bank-soal-kimia-sma-pdf.html" class="be-post-title">
+				 <h6>big bank soal kimia sma pdf </h6>
+                </a>
+                <a href="big-bank-soal-kimia-sma-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=big%20bank%20soal%20kimia%20sma%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="big bank soal kimia sma pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-kalimat-partisipan.html" class="be-post-title">
+				 <h6>contoh kalimat partisipan </h6>
+                </a>
+                <a href="contoh-kalimat-partisipan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20kalimat%20partisipan&amp;w=50&amp;h=50&amp;c=7" alt="contoh kalimat partisipan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-teater-non-tradisional-adalah.html" class="be-post-title">
+				 <h6>contoh teater non tradisional adalah </h6>
+                </a>
+                <a href="contoh-teater-non-tradisional-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20teater%20non%20tradisional%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="contoh teater non tradisional adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="latar-belakang-dibentuknya-voc.html" class="be-post-title">
+				 <h6>latar belakang dibentuknya voc </h6>
+                </a>
+                <a href="latar-belakang-dibentuknya-voc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=latar%20belakang%20dibentuknya%20voc&amp;w=50&amp;h=50&amp;c=7" alt="latar belakang dibentuknya voc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="orang-yang-menjual-barang.html" class="be-post-title">
+				 <h6>orang yang menjual barang </h6>
+                </a>
+                <a href="orang-yang-menjual-barang.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=orang%20yang%20menjual%20barang&amp;w=50&amp;h=50&amp;c=7" alt="orang yang menjual barang">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

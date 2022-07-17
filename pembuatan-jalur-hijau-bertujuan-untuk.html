@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Pembuatan Jalur Hijau Bertujuan Untuk at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Pembuatan Jalur Hijau Bertujuan Untuk",
+  "datePublished": "2022-04-09T07:30:55Z",
+  "image": "https://tse1.mm.bing.net/th?q=pembuatan%20jalur%20hijau%20bertujuan%20untuk",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=pembuatan%20jalur%20hijau%20bertujuan%20untuk&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pembuatan%20jalur%20hijau%20bertujuan%20untuk" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=pembuatan%20jalur%20hijau%20bertujuan%20untuk" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Pembuatan Jalur Hijau Bertujuan Untuk at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Pembuatan Jalur Hijau Bertujuan Untuk</h2>
+    <p><strong>Pembuatan Jalur Hijau Bertujuan Untuk</strong>. Potensi besar pariwisata halal indonesia tempati urutan kedua gmti 2022. Fungsi jalur merah dan jalur hijau.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=pembuatan%20jalur%20hijau%20bertujuan%20untuk" alt="Sat Pol PP Sidak Proyek Senderan di Jalur Hijau Bali Tribune" />
+        <br>
+        <figcaption>Sat Pol PP Sidak Proyek Senderan di Jalur Hijau Bali Tribune from balitribune.co.id</figcaption>
+    </figure>
+        <p>
+        Berikut alasan mengapa perlu adanya jalur pejalan kali di pabrik. Pemberian fasilitas jalur hijau kepada investor baru berdampak pada realisasi investasi yang bisa berjalan lebih cepat. Dengan demikian, pilihan jawaban yang tepat adalah e.
+    </p>
+    <h3>Sat Pol PP Sidak Proyek Senderan di Jalur Hijau Bali Tribune</h3>
+    <p>Pemberian fasilitas jalur hijau kepada investor baru berdampak pada realisasi investasi yang bisa berjalan lebih cepat. Diperoleh tabel hasil nilai biomassa, simpanan karbon dan serapan co2 untuk keseluruhan jalur penelitian dalam satuan tonha. Sebanyak 62 perusahaan dari 66 perusahaan yang mendapatkan fasilitas itu telah mulai mengimpor barang modal untuk pabrik yang didirikan dan menyerap tenaga kerja. Zona hijau serta jalur hijau.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JASA PEMBUATAN TAMAN MURAH TUKANG TAMAN JASA TUKANG TAMAN TUKANG" data-src="https://i2.wp.com/2.bp.blogspot.com/--igqoOEyoSE/V4Er517UdxI/AAAAAAAAAX0/33wT9TI0NSAGAgbAyWtWQ48eoLCUMOTAwCKgB/s1600/jasa%2Btanam%2Brumput.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wahanalandscape.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bukan hanya merah dan hijau saja, penjaluran barang impor juga ada yang jalur kuning, mitra utama (mita) non prioritas, dan jalur mita prioritas,” ujar robert. Jalur hijau dibuat dengan tujuan mengendalikan pencemaran karbondioksida, mengendalikan pertumbuhan pembangunan, mencegah dua kota atau lebih menyatu, dan mempertahankan daerah hijau, rekreasi, ataupun daerah resapan hujan. 10 cara alami hilangkan ketombe wajib coba! Mengurangi kandungan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pembuatan Jalur Khusus Sepeda ANTARA Foto" data-src="https://i2.wp.com/v-images2.antarafoto.com/pembuatan-jalur-khusus-sepeda-plgxxz-hl.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.antarafoto.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Adapula jalur hijau yang merupakan daerah yang kaya akan vegetasi dan dibuat secara menjalur atau memanjang di sekitar lingkungan kota atau pemukiman masyarakat. Pembuatan jalur hijau bertujuan untuk. Jalur tersebut nantinya akan digunakan untuk para pejalan kaki dan difungsikan untuk memberikan keteduhan serta mengurangi polusi akibat asap kendaraan bermotor. Bukan hanya merah dan hijau saja, penjaluran barang impor juga ada.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kawasan Wilayah Perkotaan Perencanaan Jalur Hijau di Kota Manado" data-src="https://i2.wp.com/3.bp.blogspot.com/-x0giebKiJYw/UQWAlJ_9vvI/AAAAAAAAAYs/STNaDRfYBh4/s1600/_MG_6835.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: danielkawuwung.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pemberlakuan jalur hijau, jalur kuning, dan jalur merah bea cukai menjadi salah satu rangkaian dari proses pengawasan yang dilakukan pemerintah. Hanya saja para importir jalur mita non prioritas tetap akan dilakukan pemeriksaan untuk barang ekspor yang diimpor kembali (reimpor), barang yang terkena pemeriksaan acak, atau barang impor sementara. Evaluasi yang dilakukan badan koordinasi penanaman modal. Ruang terbuka hijau (rth) adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Proyek Pedestrian dan Jalur Sepeda Kota Semarang Pamboedi File&#039;s" data-src="https://i2.wp.com/4.bp.blogspot.com/-9geeTP8bYZE/UCu2BeJq3CI/AAAAAAAACQA/2AGqTXK5o0E/s1600/180268_3347618573614_596738339_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pamboedifiles.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pemberlakuan jalur hijau, jalur kuning, dan jalur merah bea cukai menjadi salah satu rangkaian dari proses pengawasan yang dilakukan pemerintah. Bahan berbahaya beracun yang dibuang ke sungai dapat mematikan ikan, karena. Jalur hijau merupakan daerah hijau sekitar lingkungan permukiman atau sekitar kota, bertujuan mengendalikan pencemaran karbondioksida, mengendalikan pertumbuhan pembangunan, mencegah dua kota atau lebih menyatu, dan mempertahankan daerah hijau, rekreasi,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Rencana Pembuatan Jalur Hijau Oleh Dinas PU &amp; BLH Nabire Dalam Rangka" data-src="https://i2.wp.com/www.nabire.net/wp-content/uploads/2017/01/123-12.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.nabire.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Suatu jalur vegetasi sepanjang perbatasan zona peralihan, yang memisahkan suatu tipe daerah sumber daya dari lainnya. Halaman ini terakhir diubah pada 29 desember 2011, pukul 06.11. Mengurangi kandungan oksigen di udara. Dikatakan “hijau” karena ruang terbuka hijau menjadi tempat tumbuhnya tanaman, baik yang tumbuh dengan sendirinya (secara alamiah) maupun yang sengaja ditanam. Sejumlah pekerja menyelesaikan proyek pembuatan jalur hijau di.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sat Pol PP Sidak Proyek Senderan di Jalur Hijau Bali Tribune" data-src="https://i2.wp.com/balitribune.co.id/sites/default/files/styles/xtra_large/public/field/image/2824 - Keba 1  MASTER - TINJAU - Satpol PP Tabanan di jalur hijau (FILEminimizer).JPG?itok=0Lgy7R0m" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: balitribune.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Fungsi jalur merah dan jalur hijau. Dengan tenaga ahli yang berpengalaman, anda akan mendapatkan taman impian anda dengan kualitas terbaik dan tentunya harga yang bersahabat. Ruang terbuka hijau (pengertian, tujuan, fungsi, tipologi dan jenisnya) oleh muchlisin riadi maret 11, 2021. Bukan hanya merah dan hijau saja, penjaluran barang impor juga ada yang jalur kuning, mitra utama (mita) non prioritas, dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pembuatan Jalur Hijau ANTARA Foto" data-src="https://i2.wp.com/v-images2.antarafoto.com/pembuatan-jalur-hijau-m5rfb1-hl.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.antarafoto.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Transportasi hijau atau bisa juga disebut dalam bahasa inggrisnya disebut sebagai green transport merupakan perangkat transportasi yang berwawasan lingkungan. Berdasarkan pasal 3 ayat (2) uu kepabeanan, pemeriksaan pabean terhadap barang impor dilakukan dengan meneliti dokumen dan memeriksa fisik barang. Seperti yang sudah dikatakan sebelumnya, bahwa setiap pabrik diwajibkan memiliki jalur pejalan kaki. Mencegah pencemaran udara oleh cfc. Mengurangi kandungan oksigen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pemanfaatan Ruang Terbuka Hijau di jalur lambat Bogorame Kecamatan Demak" data-src="https://i2.wp.com/dinputaru.demakkab.go.id/wp-content/uploads/2019/12/72411449_2648371835223804_2573132029681479355_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dinputaru.demakkab.go.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pembuatan jalur hijau bertujuan untuk. Dengan tenaga ahli yang berpengalaman, anda akan mendapatkan taman impian anda dengan kualitas terbaik dan tentunya harga yang bersahabat. Pembuatan jalur hijau bertujuan untuk. Merupakan pendekatan yang digunakan untuk menciptakan transportasi yang sedikit atau tidak menghasilkan gas rumah kaca. Setelah itu nilai simpanan karbon tonha dan serapan co2 tonha ditotalkan untuk per satu jalur hijau.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Anggaran Rp 62,5 Miliar Hanya untuk Bangun 49 Km Jalur Sepeda yang Diwarnai" data-src="https://i2.wp.com/media.suara.com/pictures/653x366/2018/02/21/57684-rencana-penambahan-jalur-sepeda.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.suara.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tugas hr kini makin efisien; Berikut alasan mengapa perlu adanya jalur pejalan kali di pabrik. Halaman ini terakhir diubah pada 29 desember 2011, pukul 06.11. Cari terjemahan di wikidata untuk: Jalur hijau dibuat dengan tujuan mengendalikan pencemaran karbondioksida, mengendalikan pertumbuhan pembangunan, mencegah dua kota atau lebih menyatu, dan mempertahankan daerah hijau, rekreasi, ataupun daerah resapan hujan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="GLAD TO SHARE JASA PEMBUATAN SIGNED AKRILIK JALUR EVAKUASI DLL BEKASI" data-src="https://i2.wp.com/3.bp.blogspot.com/-OQ9d-u5-xFM/VjUac5gV9SI/AAAAAAAAB_U/lxUxwy_Cnx0/s1600/Cibitung-20151101-01329.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bwservicecenter.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berdasarkan pasal 3 ayat (2) uu kepabeanan, pemeriksaan pabean terhadap barang impor dilakukan dengan meneliti dokumen dan memeriksa fisik barang. Pembuatan jalur hijau bertujuan untuk. Mengurangi kandungan oksigen di udara b. Dikatakan “hijau” karena ruang terbuka hijau menjadi tempat tumbuhnya tanaman, baik yang tumbuh dengan sendirinya (secara alamiah) maupun yang sengaja ditanam. Mencegah terjadinya hujan asam d.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-ipa-kelas-5-semester-1-pdf.html" class="be-post-title">
+				 <h6>soal ipa kelas 5 semester 1 pdf </h6>
+                </a>
+                <a href="soal-ipa-kelas-5-semester-1-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20ipa%20kelas%205%20semester%201%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal ipa kelas 5 semester 1 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gerak-lurus-berubah-beraturan-adalah-gerak-yang-memiliki.html" class="be-post-title">
+				 <h6>gerak lurus berubah beraturan adalah gerak yang memiliki </h6>
+                </a>
+                <a href="gerak-lurus-berubah-beraturan-adalah-gerak-yang-memiliki.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gerak%20lurus%20berubah%20beraturan%20adalah%20gerak%20yang%20memiliki&amp;w=50&amp;h=50&amp;c=7" alt="gerak lurus berubah beraturan adalah gerak yang memiliki">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-penjas-kelas-4-sd-semester-1.html" class="be-post-title">
+				 <h6>contoh soal penjas kelas 4 sd semester 1 </h6>
+                </a>
+                <a href="contoh-soal-penjas-kelas-4-sd-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20penjas%20kelas%204%20sd%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal penjas kelas 4 sd semester 1">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="organisasi-pergerakan-nasional-boedi-oetomo-dipimpin-oleh.html" class="be-post-title">
+				 <h6>organisasi pergerakan nasional boedi oetomo dipimpin oleh </h6>
+                </a>
+                <a href="organisasi-pergerakan-nasional-boedi-oetomo-dipimpin-oleh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=organisasi%20pergerakan%20nasional%20boedi%20oetomo%20dipimpin%20oleh&amp;w=50&amp;h=50&amp;c=7" alt="organisasi pergerakan nasional boedi oetomo dipimpin oleh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bagian-sel-yang-berfungsi-mengatur-keluar-masuknya-zat-adalah.html" class="be-post-title">
+				 <h6>bagian sel yang berfungsi mengatur keluar masuknya zat adalah </h6>
+                </a>
+                <a href="bagian-sel-yang-berfungsi-mengatur-keluar-masuknya-zat-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bagian%20sel%20yang%20berfungsi%20mengatur%20keluar%20masuknya%20zat%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="bagian sel yang berfungsi mengatur keluar masuknya zat adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="golongan-darah-yang-merupakan-resipien-universal-adalah.html" class="be-post-title">
+				 <h6>golongan darah yang merupakan resipien universal adalah </h6>
+                </a>
+                <a href="golongan-darah-yang-merupakan-resipien-universal-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=golongan%20darah%20yang%20merupakan%20resipien%20universal%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="golongan darah yang merupakan resipien universal adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-fisika-kelas-12-beserta-jawabannya.html" class="be-post-title">
+				 <h6>contoh soal fisika kelas 12 beserta jawabannya </h6>
+                </a>
+                <a href="contoh-soal-fisika-kelas-12-beserta-jawabannya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20fisika%20kelas%2012%20beserta%20jawabannya&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal fisika kelas 12 beserta jawabannya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bank-soal-sejarah-sma-dan-kunci-jawaban-pdf.html" class="be-post-title">
+				 <h6>bank soal sejarah sma dan kunci jawaban pdf </h6>
+                </a>
+                <a href="bank-soal-sejarah-sma-dan-kunci-jawaban-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bank%20soal%20sejarah%20sma%20dan%20kunci%20jawaban%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="bank soal sejarah sma dan kunci jawaban pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="my-english-really-since-i-moved-to-australia.html" class="be-post-title">
+				 <h6>my english really since i moved to australia </h6>
+                </a>
+                <a href="my-english-really-since-i-moved-to-australia.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=my%20english%20really%20since%20i%20moved%20to%20australia&amp;w=50&amp;h=50&amp;c=7" alt="my english really since i moved to australia">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="download-soal-olimpiade-ipa-sd-2021-pdf.html" class="be-post-title">
+				 <h6>download soal olimpiade ipa sd 2021 pdf </h6>
+                </a>
+                <a href="download-soal-olimpiade-ipa-sd-2021-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=download%20soal%20olimpiade%20ipa%20sd%202021%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="download soal olimpiade ipa sd 2021 pdf">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Jangkauan Semi Interkuartil at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Jangkauan Semi Interkuartil",
+  "datePublished": "2022-07-07T15:56:33Z",
+  "image": "https://tse1.mm.bing.net/th?q=jangkauan%20semi%20interkuartil",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=jangkauan%20semi%20interkuartil&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=jangkauan%20semi%20interkuartil" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=jangkauan%20semi%20interkuartil" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Jangkauan Semi Interkuartil at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Jangkauan Semi Interkuartil</h2>
+    <p><strong>Jangkauan Semi Interkuartil</strong>. 2, 4, 7, 6, 8, 8, 3, 2 Dengan rumus kuartil kelompok :</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=jangkauan%20semi%20interkuartil" alt="Terbaru 28+ Rumus Jangkauan" />
+        <br>
+        <figcaption>Terbaru 28+ Rumus Jangkauan from terindah.gepics.com</figcaption>
+    </figure>
+        <p>
+        Contoh soal menentukan jangkauan antarkuartil dan simpangan kuartil (data kelompok. Dengan rumus kuartil kelompok : Jangkauan interkuartil sering disebut juga rentang interkuartil (interquartil range), disebut juga hamparan (h) yaitu s elisih antara kuartil atas.
+    </p>
+    <h3>Terbaru 28+ Rumus Jangkauan</h3>
+    <p>Jawaban paling sesuai dengan pertanyaan hitunglah jangkauan semi interkuartil dari data berikut ini: Dengan rumus kuartil kelompok : Perhatikan ilustrasi di bawah ini untuk penjelasan letak q di antara q1, q2, dan q3. Jangkauan semi antarkuartil didefinisikan sebagai setengah kali panjang hamparan.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cara Mencari Jangkauan Python" data-src="https://i2.wp.com/image.slidesharecdn.com/mediapembelajarankel-7-120523080518-phpapp02/95/media-pembelajaran-staistika-58-728.jpg?cb=1337760435" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: contoh69.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cara cepat menyelesaikan jangkauan kuartil dan simpangan kuartil. Inilah item yang dipilih saat ini. Perhatikan ilustrasi di bawah ini untuk penjelasan letak q di antara q 1, q 2, dan q 3. Dengan rumus kuartil kelompok : Sebelum membaca tentang ukuran penyebaran data, sebaiknya kita baca.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Revisi Terbaru Contoh Soal Range Inter Kuartil Unduh File Guru" data-src="https://i2.wp.com/3.bp.blogspot.com/-JwuykqSRoWw/WpdY4piPJKI/AAAAAAAAAI0/VZvuXKiuURck_PvYkMJr0xw8A1SLyC-YgCK4BGAYYCw/s1600/IMG20180228232715.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: unduhfile-guru.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pada ukuran penyebaran data, kita akan mempelajari materi jangkauan (range), simpangan, ragam (variansi), ukuran penyebaran pada nilai kuartil, dan pencilan (outlier). 2, 4, 7, 6, 8, 8, 3, 2 Uji jangkauan interkuartil untuk normalitas distribusi. Cara cepat menyelesaikan jangkauan kuartil dan simpangan. Jangkauan semi antarkuartil sering disebut jangkauan interkuartil atau simpangan kuartil.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Terbaru 28+ Rumus Jangkauan" data-src="https://i2.wp.com/id-static.z-dn.net/files/d08/f1c0e19085250895f50b83b354aab41b.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: terindah.gepics.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contoh soal menentukan jangkauan antarkuartil dan simpangan kuartil (data kelompok. Tentukan jangkauan kuartil dan simpangan kuartil dari tabel dibawah ini : Seperti halnya dengan range (jangkauan),. Jangkauan semi antarkuartil didefinisikan sebagai setengah kali panjang hamparan. Mengutip buku cerdas belajar matematika untuk kelas xi, simpangan kuartil adalah setengah dari selisih kuartil atas (q₃) dengan kuartil bawah (q₁).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ukuran Penyebaran Data Jangkauan Kuartil Jangkauan Interkuartil Soalan 0" data-src="https://i2.wp.com/lh3.googleusercontent.com/proxy/ivraW6xyxNVYN5x1gE2oIWcVOPwUwrXAg0xwF343BNsOF77yfVbKzQddc3P1M9TubBzk-quiNTzPuWu2bkhpSA4uU_soOgvUYmgh69vTnt8Q0taNnSLX2tfQ0ox1wOjjUjBFiayXiT9omMkvbUKQ-yH--mMk32uD4kGWmZNGjc-G4E7O92Bz7vNt3bI7Ftf9B1hWomgv0TuCTMiw3ROBbzYRO7xz3BZVsxq0wTAJOAsUQoQ-Jwb-=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soalan0.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika iqr bernilai kecil, mаka penyebaran dаtа sangаt homogen dan jika iqr. Perhatikan ilustrasi di bawah ini untuk penjelasan letak q di antara q1, q2, dan q3. Sebelum membaca tentang ukuran penyebaran data, sebaiknya kita baca. Misi kami adalah memberikan pendidikan kelas dunia secara gratis kepada siapa pun, di mana saja. Halo google vans untuk mencari jangkauan semi interkuartil pertama.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ditentukan data 6,7,3,2,2,2,2,5,4,8. Jangkauan semi interkuartil adalah" data-src="https://i2.wp.com/id-static.z-dn.net/files/d6f/f596387204e05ff5c28fda6f6124d7e1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diberikan data tunggal sebanyak n: Jika jangkauan semiinterkuartil dinotasikan dengan qd, maka: Pada ukuran penyebaran data, kita akan mempelajari materi jangkauan (range), simpangan, ragam (variansi), ukuran penyebaran pada nilai kuartil, dan pencilan (outlier). 47, 32, 38, 42, 45,53, 59, 64, 60, 61 jawab: Dalam bagian lain simpangan kuartil dapat juga disebut dengan jangkauan semi interkuartil.oleh karena itu, pembahasan tentang simpangan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pengertian Jangkauan Antar Kuartil Dan Semi Interkuartil Beserta Contoh" data-src="https://i2.wp.com/image3.slideserve.com/6002532/jangkauan-quartil-dan-jangkauan-persentil-10-90-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bumisoal.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diberikan data tunggal sebanyak n: Simpangan kuartil atau jangkauan semi interkuartil merupakan salah satu ukuran penyebaran data dan ditentukan sebagai setengah selisih antara kuartil atas dan kuartil bawah. Cara cepat menyelesaikan jangkauan kuartil dan simpangan. Contoh soal menentukan jangkauan antarkuartil dan simpangan kuartil (data kelompok. Simpangan kuartil atau bisa disebut juga jangkauan semi antar kuartil merupakan setengah dari jangkauan antar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="27. Jangkauan semi interkuartil data 3, 4, 3,4, 5, 6, 6, 7, 7, 8, 4, 7" data-src="https://i2.wp.com/id-static.z-dn.net/files/d54/9435c663bf5014254ab0c3565e543b15.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dengan rumus kuartil kelompok : Cara cepat menyelesaikan jangkauan kuartil dan simpangan kuartil. Jаngkauаn interkuartil (iqr) berguna untuk mengukur vаriasi dari penyebarаn sebuаh distribusi datа. Untuk menentukan jangkauan kuartil kita harus mencari q1,q2,q3terlebih dahulu dengan rumus kuartil kelompok karena soalnya merupakan sebuah tabel. Perhatikan ilustrasi di bawah ini untuk penjelasan letak q di antara q 1, q 2, dan q.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Terbaru 28+ Rumus Jangkauan" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/J7ltHGP5WbpM1K8PNcqKF3X11-DZsYkrls1G-NhAr1d30Xn1ByRPReXJwUeZXlMJPfgy6Cep9QmHnfPOCosgMPQs5Sh-kTR03pK_i9QC5EipNohSVV64I4szC6L2EO6Q9tTQei8IYUBE1IvEUDbYPeHEE1aUfKRa05YYqsi_Gyw=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: terindah.gepics.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Uji jangkauan interkuartil untuk normalitas distribusi. Pertama, jаngkauan interkuartil (iqr) аdаlah selisih yаng dibentuk antarа kuartil tiga dengan kuаrtil sаtu dalаm sebuah distribusi datа atau set datа. Diberikan data tunggal sebanyak n: Perhatikan ilustrasi di bawah ini untuk penjelasan letak q di antara q1, q2, dan q3. 2, 4, 7, 6, 8, 8, 3, 2</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(DOC) Statistikakwartildesipersentilrangedanjangkauansemi" data-src="https://i2.wp.com/0.academia-photos.com/attachment_thumbnails/35620093/mini_magick20180818-11893-1nnjrm.png?1534584776" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.academia.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dengan rumus kuartil kelompok : Mengutip buku cerdas belajar matematika untuk kelas xi, simpangan kuartil adalah setengah dari selisih kuartil atas (q₃) dengan kuartil bawah (q₁). Uji jangkauan interkuartil untuk normalitas distribusi. Simpangan kuartil atau jangkauan semiinterkuartil adalah setengah dari jangkauan interkuartil. Tentukan jangkauan kuartil dan simpangan kuartil dari tabel dibawah ini :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Rumus Rentang Semi Antar Kuartil Sekolah" data-src="https://i2.wp.com/slidetodoc.com/presentation_image_h/ed4ac60484b94259a803f85afa68afea/image-15.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: learn-organized.github.io</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">47, 32, 38, 42, 45,53, 59, 64, 60, 61 jawab: Misi kami adalah memberikan pendidikan kelas dunia secara gratis kepada siapa pun, di mana saja. Jawaban paling sesuai dengan pertanyaan hitunglah jangkauan semi interkuartil dari data berikut ini: Jangkauan semi antarkuartil didefinisikan sebagai setengah kali panjang hamparan. Perhatikan ilustrasi di bawah ini untuk penjelasan letak q di antara q 1,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="berikut-yang-bukan-merupakan-lembaga-dana-pensiun-adalah.html" class="be-post-title">
+				 <h6>berikut yang bukan merupakan lembaga dana pensiun adalah </h6>
+                </a>
+                <a href="berikut-yang-bukan-merupakan-lembaga-dana-pensiun-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20yang%20bukan%20merupakan%20lembaga%20dana%20pensiun%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="berikut yang bukan merupakan lembaga dana pensiun adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-matematika-smp-kelas-8-semester-2-dan-kunci-jawaban.html" class="be-post-title">
+				 <h6>soal matematika smp kelas 8 semester 2 dan kunci jawaban </h6>
+                </a>
+                <a href="soal-matematika-smp-kelas-8-semester-2-dan-kunci-jawaban.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20matematika%20smp%20kelas%208%20semester%202%20dan%20kunci%20jawaban&amp;w=50&amp;h=50&amp;c=7" alt="soal matematika smp kelas 8 semester 2 dan kunci jawaban">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pada-fotosintesis-reaksi-pengikatan-co2-berlangsung-di-dalam.html" class="be-post-title">
+				 <h6>pada fotosintesis reaksi pengikatan co2 berlangsung di dalam </h6>
+                </a>
+                <a href="pada-fotosintesis-reaksi-pengikatan-co2-berlangsung-di-dalam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pada%20fotosintesis%20reaksi%20pengikatan%20co2%20berlangsung%20di%20dalam&amp;w=50&amp;h=50&amp;c=7" alt="pada fotosintesis reaksi pengikatan co2 berlangsung di dalam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kunci-jawaban-tema-5-kelas-2-sd-halaman-44.html" class="be-post-title">
+				 <h6>kunci jawaban tema 5 kelas 2 sd halaman 44 </h6>
+                </a>
+                <a href="kunci-jawaban-tema-5-kelas-2-sd-halaman-44.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kunci%20jawaban%20tema%205%20kelas%202%20sd%20halaman%2044&amp;w=50&amp;h=50&amp;c=7" alt="kunci jawaban tema 5 kelas 2 sd halaman 44">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="membandingkan-ciri-dan-reproduksi-oomycota-dan-myxomycota.html" class="be-post-title">
+				 <h6>membandingkan ciri dan reproduksi oomycota dan myxomycota </h6>
+                </a>
+                <a href="membandingkan-ciri-dan-reproduksi-oomycota-dan-myxomycota.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=membandingkan%20ciri%20dan%20reproduksi%20oomycota%20dan%20myxomycota&amp;w=50&amp;h=50&amp;c=7" alt="membandingkan ciri dan reproduksi oomycota dan myxomycota">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aliran-kegiatan-pemberian-upah-yang-pertama-yaitu.html" class="be-post-title">
+				 <h6>aliran kegiatan pemberian upah yang pertama yaitu </h6>
+                </a>
+                <a href="aliran-kegiatan-pemberian-upah-yang-pertama-yaitu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aliran%20kegiatan%20pemberian%20upah%20yang%20pertama%20yaitu&amp;w=50&amp;h=50&amp;c=7" alt="aliran kegiatan pemberian upah yang pertama yaitu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-bahasa-inggris-smk-kelas-10-semester-2.html" class="be-post-title">
+				 <h6>soal bahasa inggris smk kelas 10 semester 2 </h6>
+                </a>
+                <a href="soal-bahasa-inggris-smk-kelas-10-semester-2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20bahasa%20inggris%20smk%20kelas%2010%20semester%202&amp;w=50&amp;h=50&amp;c=7" alt="soal bahasa inggris smk kelas 10 semester 2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="latihan-soal-ipa-smp-kelas-9.html" class="be-post-title">
+				 <h6>latihan soal ipa smp kelas 9 </h6>
+                </a>
+                <a href="latihan-soal-ipa-smp-kelas-9.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=latihan%20soal%20ipa%20smp%20kelas%209&amp;w=50&amp;h=50&amp;c=7" alt="latihan soal ipa smp kelas 9">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-perilaku-menyimpang-primer-diantaranya.html" class="be-post-title">
+				 <h6>contoh perilaku menyimpang primer diantaranya </h6>
+                </a>
+                <a href="contoh-perilaku-menyimpang-primer-diantaranya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20perilaku%20menyimpang%20primer%20diantaranya&amp;w=50&amp;h=50&amp;c=7" alt="contoh perilaku menyimpang primer diantaranya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="contoh-soal-uts-matematika-kelas-8-smp-semester-1.html" class="be-post-title">
+				 <h6>contoh soal uts matematika kelas 8 smp semester 1 </h6>
+                </a>
+                <a href="contoh-soal-uts-matematika-kelas-8-smp-semester-1.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20soal%20uts%20matematika%20kelas%208%20smp%20semester%201&amp;w=50&amp;h=50&amp;c=7" alt="contoh soal uts matematika kelas 8 smp semester 1">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

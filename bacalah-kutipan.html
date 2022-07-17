@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bacalah Kutipan at Kumpulan Soal Dan Kunci Jawaban
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ahmad Muhkrom",
+    "url": "https://www.google.com/search?q=Ahmad Muhkrom"
+  },
+  "headline": "Bacalah Kutipan",
+  "datePublished": "2022-06-19T13:31:52Z",
+  "image": "https://tse1.mm.bing.net/th?q=bacalah%20kutipan",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Guru Malas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=bacalah%20kutipan&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bacalah%20kutipan" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bacalah%20kutipan" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Guru Malas
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bacalah Kutipan at Kumpulan Soal Dan Kunci Jawaban
+          </h1>
+          <p class="lead">
+                          Cari Kumpulan Soal dan Kunci Jawaban 2022 Gratis!!
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Bacalah Kutipan</h2>
+    <p><strong>Bacalah Kutipan</strong>. Berikut jawaban yang paling benar dari pertanyaan: Di sekitar jalan simpang tiga dekat pasar, nama paman klungsu sudah lama mapan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=bacalah%20kutipan" alt="√ Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas" />
+        <br>
+        <figcaption>√ Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas from www.wanitabaik.com</figcaption>
+    </figure>
+        <p>
+        Hujan mulai menetes turun ketika rana sampai rumahnya. Kesenjangan tersebut terlihat dengan adanya. Tekadnya ia harus jadi orang.
+    </p>
+    <h3>√ Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas</h3>
+    <p>Memang, ia sering mendapat sapaan seperti itu di. Soal novel kelas 12 semester ganjil. Di era keterbukaan ini, setiap orang rasanya tidak perlu takut lagi untuk mengemukakan atau. Kesenjangan tersebut terlihat dengan adanya.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas" data-src="https://i2.wp.com/thumb.mathpresso.io/qanda-storage/0ba7b8dc-2c20-4640-824e-dc85789eb462.jpg?target_format=jpg&amp;width=642" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wanitabaik.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bacalah kutipan biografi tokoh berikut! Di sekitar jalan simpang tiga dekat pasar, nama paman klungsu sudah lama mapan. Berikut jawaban yang paling benar dari pertanyaan: Cerita ini baik dan mudah ditangkap. Bacalah kutipan karya ilmiah berikut!</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="bacalah kutipan teks fantasi berikut Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d7b/019782f478b06ba7ae2cb50b1188de82.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Memang kelihatannya ia mempunyai banyak masalah. Bacalah kutipan novel di bawah ini! Rana merasa tubuhnya demikian berat. Jika kita menjaga kebersihan, hidup kita. Sampah kertas adalah sampah yang termasuk sampah anorganik yang sangat sulit diuraikan dan membutuhkan waktu yang lama untuk.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas" data-src="https://i2.wp.com/thumb-m.mathpresso.io/qanda-thumbnail-storage/questions/JxVs3bUkoTDpUeyTkEhvMc3QCWRtZlcpJt4ZFE3FKF2mHy0fwgCqY.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wanitabaik.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bacalah kutipan artikel berikut ini! Bacalah kutipan teks berikut ini! Kesenjangan tersebut terlihat dengan adanya. Menyentuh permukaan samodra raya 2. Perhatikan penggalan puisi berikut untuk menjawab soal nomor 59, 60, dan 61!</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bacalah Kembali Kutipan Novel Sejarah Kemelut Di Majapahit Jilid 01" data-src="https://i2.wp.com/id-static.z-dn.net/files/d9a/76a9a5aace324a098148cca082d3a796.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cerpengratis1.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Menyentuh permukaan samodra raya 2. Entah apa yang telah terjadi dengannya. Bacalah kutipan cerpen berikut untuk menjawab soal nomor 22 dan 23! Matahari bangkit dari sanubariku 1. Bacalah kutipan cerita pendek berikut ini untuk soal nomor 26 dan 27.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas" data-src="https://i2.wp.com/id-static.z-dn.net/files/dcf/0a3c4411fe342fd792f296083a7d9370.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.se-intelligence.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dilansir dari ensiklopedia, bacalah kutipan teks opini berikut untuk menjawab soal berikut! Dilansir dari ensiklopedia, bacalah kutipan cerita berikut! Menyentuh permukaan samodra raya 2. Kesenjangan tersebut terlihat dengan adanya. Jika kita menjaga kebersihan, hidup kita.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="√ Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas" data-src="https://i2.wp.com/thumb-m.mathpresso.io/qanda-thumbnail-storage/questions/w2BIqmfkLTE0UYRSrJtkGtBvc50ilQt4lTZquxFXMCgJfXrCK2.jpg?target_format=jpg&amp;width=640" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wanitabaik.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika kita menjaga kebersihan, hidup kita. Sampah kertas adalah sampah yang termasuk sampah anorganik yang sangat sulit diuraikan dan membutuhkan waktu yang lama untuk. Pada saat datang, ia langsung marah. Beberapa tahun belakangan ini kesenjangan di indonesia cenderung naik. Menyentuh permukaan samodra raya 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bacalah kutipan teks berikut! Jawab yah Brainly.co.id" data-src="https://i2.wp.com/id-static.z-dn.net/files/d2e/4d521380b386be304fbd533b6e0dc036.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bacalah kutipan esai berikut dengan seksama! Perhatikan penggalan puisi berikut untuk menjawab soal nomor 59, 60, dan 61! Malam itu, di dalam kamar, seorang gadis kecil bernama kasih tidur di atas tempat tidurnya, tapi ia sulit tidur karena di luar udara begitu buruk dan suara. Di era keterbukaan ini, setiap orang rasanya tidak perlu takut lagi untuk mengemukakan atau. Matahari.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bacalah kutipan teks inspirasi berikut dengan cermat! Pak nino adalah" data-src="https://i2.wp.com/id-static.z-dn.net/files/d0a/daa0b971b43eaaef7094c00fac53d647.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contoh soal unsur pembangunan puisi. Bacalah kutipan artikel berikut ini! Bacalah kutipan teks berikut ini! Bacalah kutipan cerpen berikut untuk menjawab soal nomor 22 dan 23! Cerita ini baik dan mudah ditangkap.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bacalah Kutipan Cerpen Berikut Terik Hari Ini Begitu Panas" data-src="https://i2.wp.com/thumb-m.mathpresso.io/qanda-thumbnail-storage/questions/ngGurvfALi1qte5T9DhZyTv9cBPUQ6s3bFndtzLU9FgpTk9fEnC5n.jpg?target_format=jpg&amp;width=640" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.se-intelligence.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jika kita menjaga kebersihan, hidup kita. Entah apa yang telah terjadi dengannya. Contoh soal unsur pembangunan puisi. Bacalah kutipan artikel berikut ini! Guru, terima kasih atas ilmu yang guru berikan kepadaku.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="39+ Bacalah Kutipan Novel Laskar Pelangi Berikut Ini Kemudian Buatlah" data-src="https://i2.wp.com/id-static.z-dn.net/files/d0e/3930cebf4462def575362582dad9242a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kutipanku.eu.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut jawaban yang paling benar dari pertanyaan: Dilansir dari ensiklopedia, bacalah kutipan teks biografi dan teks laporan berikut!teks biografi teks laporan stephen robert irwin lahir di melbourne, australia pada tanggal 22 februari 1962. Bacalah kutipan drama berikut ini! Pengarang novel ini, sutan takdir alisyahbana, membawa pembaharuan dibidang masalah. Kesenjangan tersebut terlihat dengan adanya.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-tema-5-kelas-2-sd-subtema-4.html" class="be-post-title">
+				 <h6>soal tema 5 kelas 2 sd subtema 4 </h6>
+                </a>
+                <a href="soal-tema-5-kelas-2-sd-subtema-4.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20tema%205%20kelas%202%20sd%20subtema%204&amp;w=50&amp;h=50&amp;c=7" alt="soal tema 5 kelas 2 sd subtema 4">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-pts-fisika-kelas-11-semester-2-kurikulum-2013-revisi.html" class="be-post-title">
+				 <h6>soal pts fisika kelas 11 semester 2 kurikulum 2013 revisi </h6>
+                </a>
+                <a href="soal-pts-fisika-kelas-11-semester-2-kurikulum-2013-revisi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20pts%20fisika%20kelas%2011%20semester%202%20kurikulum%202013%20revisi&amp;w=50&amp;h=50&amp;c=7" alt="soal pts fisika kelas 11 semester 2 kurikulum 2013 revisi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-uts-pai-kelas-4-sd-semester-1-kurikulum-2013.html" class="be-post-title">
+				 <h6>soal uts pai kelas 4 sd semester 1 kurikulum 2013 </h6>
+                </a>
+                <a href="soal-uts-pai-kelas-4-sd-semester-1-kurikulum-2013.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20uts%20pai%20kelas%204%20sd%20semester%201%20kurikulum%202013&amp;w=50&amp;h=50&amp;c=7" alt="soal uts pai kelas 4 sd semester 1 kurikulum 2013">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-akm-numerasi-sma-pdf.html" class="be-post-title">
+				 <h6>soal akm numerasi sma pdf </h6>
+                </a>
+                <a href="soal-akm-numerasi-sma-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20akm%20numerasi%20sma%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal akm numerasi sma pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="alasan-gerakan-separatis-apra-mempertahankan-negara-pasundan-adalah.html" class="be-post-title">
+				 <h6>alasan gerakan separatis apra mempertahankan negara pasundan adalah </h6>
+                </a>
+                <a href="alasan-gerakan-separatis-apra-mempertahankan-negara-pasundan-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=alasan%20gerakan%20separatis%20apra%20mempertahankan%20negara%20pasundan%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="alasan gerakan separatis apra mempertahankan negara pasundan adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pada-kubus-abcd-efgh-pasangan-garis-yang-bersilangan-adalah.html" class="be-post-title">
+				 <h6>pada kubus abcd efgh pasangan garis yang bersilangan adalah </h6>
+                </a>
+                <a href="pada-kubus-abcd-efgh-pasangan-garis-yang-bersilangan-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pada%20kubus%20abcd%20efgh%20pasangan%20garis%20yang%20bersilangan%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="pada kubus abcd efgh pasangan garis yang bersilangan adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hewan-triploblastik-selomata.html" class="be-post-title">
+				 <h6>hewan triploblastik selomata </h6>
+                </a>
+                <a href="hewan-triploblastik-selomata.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hewan%20triploblastik%20selomata&amp;w=50&amp;h=50&amp;c=7" alt="hewan triploblastik selomata">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kaki-berbentuk-x-merupakan-kelainan-pada-tulang-yang-disebabkan-oleh.html" class="be-post-title">
+				 <h6>kaki berbentuk x merupakan kelainan pada tulang yang disebabkan oleh </h6>
+                </a>
+                <a href="kaki-berbentuk-x-merupakan-kelainan-pada-tulang-yang-disebabkan-oleh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kaki%20berbentuk%20x%20merupakan%20kelainan%20pada%20tulang%20yang%20disebabkan%20oleh&amp;w=50&amp;h=50&amp;c=7" alt="kaki berbentuk x merupakan kelainan pada tulang yang disebabkan oleh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="soal-matematika-sd-kelas-6-pdf.html" class="be-post-title">
+				 <h6>soal matematika sd kelas 6 pdf </h6>
+                </a>
+                <a href="soal-matematika-sd-kelas-6-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=soal%20matematika%20sd%20kelas%206%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="soal matematika sd kelas 6 pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="jelaskan-pengertian-keseimbangan-lingkungan.html" class="be-post-title">
+				 <h6>jelaskan pengertian keseimbangan lingkungan </h6>
+                </a>
+                <a href="jelaskan-pengertian-keseimbangan-lingkungan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20pengertian%20keseimbangan%20lingkungan&amp;w=50&amp;h=50&amp;c=7" alt="jelaskan pengertian keseimbangan lingkungan">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Guru Malas. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>
